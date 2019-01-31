@@ -7,6 +7,7 @@ const { varint } = require('protocol-buffers-encodings')
 const { Request, Response } = require('../types.js').abci
 
 const MAX_MESSAGE_SIZE = 104857600 // 100mb
+//debug.enabled = true;
 
 class Connection extends EventEmitter {
   constructor (stream, onMessage) {
@@ -82,6 +83,21 @@ class Connection extends EventEmitter {
     // log outgoing messages, except for 'flush'
     if (debug.enabled && !message.flush) {
       debug('>>', Response.fromObject(message))
+      
+      if (message && message.exception && message.exception.error){
+        //console.log( typeof(message) ) 
+        //console.log( typeof(message.exception) ) 
+
+        console.error( 'ABCI/Protobuf enciding error: ' + message.exception.error );
+
+        let messageBytes = Response.encode(message).finish()
+        let lengthBytes = varint.encode(messageBytes.length << 1)
+        this.stream.write(Buffer.from(lengthBytes))
+        this.stream.end(messageBytes);
+
+        throw new Error(message.exception.error);   
+        return;
+	   }
     }
     let messageBytes = Response.encode(message).finish()
     let lengthBytes = varint.encode(messageBytes.length << 1)
