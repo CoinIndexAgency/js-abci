@@ -35,6 +35,9 @@ function createServer (app) {
         message = { exception: { error: err.toString() } }
         conn.write(message)
         conn.close()
+        
+        //crash process if fail
+        process.exit(1);
       }
 
       // message handler not implemented in app, send emtpy response
