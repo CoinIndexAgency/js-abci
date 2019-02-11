@@ -1,12 +1,12 @@
 syntax = "proto3";
-package abci;
+package types;
 
 // For more information on gogo.proto, see:
 // https://github.com/gogo/protobuf/blob/master/extensions.md
-import "gogo.proto";
-import "timestamp.proto";
-import "tmlibs.proto";
-import "merkle.proto";
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
+import "github.com/tendermint/tendermint/libs/common/types.proto";
+import "github.com/tendermint/tendermint/crypto/merkle/merkle.proto";
 
 // This file is copied from http://github.com/tendermint/abci
 // NOTE: When using custom types, mind the warnings.
@@ -37,7 +37,6 @@ message Request {
     RequestDeliverTx deliver_tx = 19;
     RequestEndBlock end_block = 11;
     RequestCommit commit = 12;
-    RequestCheckBridge check_bridge = 13;
   }
 }
 
@@ -97,10 +96,6 @@ message RequestEndBlock {
 message RequestCommit {
 }
 
-message RequestCheckBridge {
-  int32 height = 1;
-}
-
 //----------------------------------------
 // Response types
 
@@ -118,7 +113,6 @@ message Response {
     ResponseDeliverTx deliver_tx = 10;
     ResponseEndBlock end_block = 11;
     ResponseCommit commit = 12;
-    ResponseCheckBridge check_bridge = 13;
   }
 }
 
@@ -205,10 +199,6 @@ message ResponseEndBlock {
 message ResponseCommit {
   // reserve 1
   bytes data = 2;
-}
-
-message ResponseCheckBridge {
-  uint32 status = 1;
 }
 
 //----------------------------------------
@@ -340,5 +330,4 @@ service ABCIApplication {
   rpc InitChain(RequestInitChain) returns (ResponseInitChain);
   rpc BeginBlock(RequestBeginBlock) returns (ResponseBeginBlock);
   rpc EndBlock(RequestEndBlock) returns (ResponseEndBlock);
-  rpc CheckBridge(RequestCheckBridge) returns (ResponseCheckBridge);
 }
