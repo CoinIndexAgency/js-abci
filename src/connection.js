@@ -59,7 +59,7 @@ class Connection extends EventEmitter {
     this.stream.pause()
 
     // log incoming messages, except for 'flush'
-    if (!message.flush) {
+    if (debug.enabled && !message.flush) {
       debug('<<', message)
     }
 
