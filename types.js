@@ -9,42 +9,41 @@ var $Reader = $protobuf.Reader, $Writer = $protobuf.Writer, $util = $protobuf.ut
 // Exported root namespace
 var $root = $protobuf.roots["default"] || ($protobuf.roots["default"] = {});
 
-$root.abci = (function() {
+$root.types = (function() {
 
     /**
-     * Namespace abci.
-     * @exports abci
+     * Namespace types.
+     * @exports types
      * @namespace
      */
-    var abci = {};
+    var types = {};
 
-    abci.Request = (function() {
+    types.Request = (function() {
 
         /**
          * Properties of a Request.
-         * @memberof abci
+         * @memberof types
          * @interface IRequest
-         * @property {abci.IRequestEcho|null} [echo] Request echo
-         * @property {abci.IRequestFlush|null} [flush] Request flush
-         * @property {abci.IRequestInfo|null} [info] Request info
-         * @property {abci.IRequestSetOption|null} [setOption] Request setOption
-         * @property {abci.IRequestInitChain|null} [initChain] Request initChain
-         * @property {abci.IRequestQuery|null} [query] Request query
-         * @property {abci.IRequestBeginBlock|null} [beginBlock] Request beginBlock
-         * @property {abci.IRequestCheckTx|null} [checkTx] Request checkTx
-         * @property {abci.IRequestDeliverTx|null} [deliverTx] Request deliverTx
-         * @property {abci.IRequestEndBlock|null} [endBlock] Request endBlock
-         * @property {abci.IRequestCommit|null} [commit] Request commit
-         * @property {abci.IRequestCheckBridge|null} [checkBridge] Request checkBridge
+         * @property {types.IRequestEcho|null} [echo] Request echo
+         * @property {types.IRequestFlush|null} [flush] Request flush
+         * @property {types.IRequestInfo|null} [info] Request info
+         * @property {types.IRequestSetOption|null} [setOption] Request setOption
+         * @property {types.IRequestInitChain|null} [initChain] Request initChain
+         * @property {types.IRequestQuery|null} [query] Request query
+         * @property {types.IRequestBeginBlock|null} [beginBlock] Request beginBlock
+         * @property {types.IRequestCheckTx|null} [checkTx] Request checkTx
+         * @property {types.IRequestDeliverTx|null} [deliverTx] Request deliverTx
+         * @property {types.IRequestEndBlock|null} [endBlock] Request endBlock
+         * @property {types.IRequestCommit|null} [commit] Request commit
          */
 
         /**
          * Constructs a new Request.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a Request.
          * @implements IRequest
          * @constructor
-         * @param {abci.IRequest=} [properties] Properties to set
+         * @param {types.IRequest=} [properties] Properties to set
          */
         function Request(properties) {
             if (properties)
@@ -55,132 +54,124 @@ $root.abci = (function() {
 
         /**
          * Request echo.
-         * @member {abci.IRequestEcho|null|undefined} echo
-         * @memberof abci.Request
+         * @member {types.IRequestEcho|null|undefined} echo
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.echo = null;
 
         /**
          * Request flush.
-         * @member {abci.IRequestFlush|null|undefined} flush
-         * @memberof abci.Request
+         * @member {types.IRequestFlush|null|undefined} flush
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.flush = null;
 
         /**
          * Request info.
-         * @member {abci.IRequestInfo|null|undefined} info
-         * @memberof abci.Request
+         * @member {types.IRequestInfo|null|undefined} info
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.info = null;
 
         /**
          * Request setOption.
-         * @member {abci.IRequestSetOption|null|undefined} setOption
-         * @memberof abci.Request
+         * @member {types.IRequestSetOption|null|undefined} setOption
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.setOption = null;
 
         /**
          * Request initChain.
-         * @member {abci.IRequestInitChain|null|undefined} initChain
-         * @memberof abci.Request
+         * @member {types.IRequestInitChain|null|undefined} initChain
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.initChain = null;
 
         /**
          * Request query.
-         * @member {abci.IRequestQuery|null|undefined} query
-         * @memberof abci.Request
+         * @member {types.IRequestQuery|null|undefined} query
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.query = null;
 
         /**
          * Request beginBlock.
-         * @member {abci.IRequestBeginBlock|null|undefined} beginBlock
-         * @memberof abci.Request
+         * @member {types.IRequestBeginBlock|null|undefined} beginBlock
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.beginBlock = null;
 
         /**
          * Request checkTx.
-         * @member {abci.IRequestCheckTx|null|undefined} checkTx
-         * @memberof abci.Request
+         * @member {types.IRequestCheckTx|null|undefined} checkTx
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.checkTx = null;
 
         /**
          * Request deliverTx.
-         * @member {abci.IRequestDeliverTx|null|undefined} deliverTx
-         * @memberof abci.Request
+         * @member {types.IRequestDeliverTx|null|undefined} deliverTx
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.deliverTx = null;
 
         /**
          * Request endBlock.
-         * @member {abci.IRequestEndBlock|null|undefined} endBlock
-         * @memberof abci.Request
+         * @member {types.IRequestEndBlock|null|undefined} endBlock
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.endBlock = null;
 
         /**
          * Request commit.
-         * @member {abci.IRequestCommit|null|undefined} commit
-         * @memberof abci.Request
+         * @member {types.IRequestCommit|null|undefined} commit
+         * @memberof types.Request
          * @instance
          */
         Request.prototype.commit = null;
-
-        /**
-         * Request checkBridge.
-         * @member {abci.IRequestCheckBridge|null|undefined} checkBridge
-         * @memberof abci.Request
-         * @instance
-         */
-        Request.prototype.checkBridge = null;
 
         // OneOf field names bound to virtual getters and setters
         var $oneOfFields;
 
         /**
          * Request value.
-         * @member {"echo"|"flush"|"info"|"setOption"|"initChain"|"query"|"beginBlock"|"checkTx"|"deliverTx"|"endBlock"|"commit"|"checkBridge"|undefined} value
-         * @memberof abci.Request
+         * @member {"echo"|"flush"|"info"|"setOption"|"initChain"|"query"|"beginBlock"|"checkTx"|"deliverTx"|"endBlock"|"commit"|undefined} value
+         * @memberof types.Request
          * @instance
          */
         Object.defineProperty(Request.prototype, "value", {
-            get: $util.oneOfGetter($oneOfFields = ["echo", "flush", "info", "setOption", "initChain", "query", "beginBlock", "checkTx", "deliverTx", "endBlock", "commit", "checkBridge"]),
+            get: $util.oneOfGetter($oneOfFields = ["echo", "flush", "info", "setOption", "initChain", "query", "beginBlock", "checkTx", "deliverTx", "endBlock", "commit"]),
             set: $util.oneOfSetter($oneOfFields)
         });
 
         /**
          * Creates a new Request instance using the specified properties.
          * @function create
-         * @memberof abci.Request
+         * @memberof types.Request
          * @static
-         * @param {abci.IRequest=} [properties] Properties to set
-         * @returns {abci.Request} Request instance
+         * @param {types.IRequest=} [properties] Properties to set
+         * @returns {types.Request} Request instance
          */
         Request.create = function create(properties) {
             return new Request(properties);
         };
 
         /**
-         * Encodes the specified Request message. Does not implicitly {@link abci.Request.verify|verify} messages.
+         * Encodes the specified Request message. Does not implicitly {@link types.Request.verify|verify} messages.
          * @function encode
-         * @memberof abci.Request
+         * @memberof types.Request
          * @static
-         * @param {abci.IRequest} message Request message or plain object to encode
+         * @param {types.IRequest} message Request message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -188,38 +179,36 @@ $root.abci = (function() {
             if (!writer)
                 writer = $Writer.create();
             if (message.echo != null && message.hasOwnProperty("echo"))
-                $root.abci.RequestEcho.encode(message.echo, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                $root.types.RequestEcho.encode(message.echo, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
             if (message.flush != null && message.hasOwnProperty("flush"))
-                $root.abci.RequestFlush.encode(message.flush, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
+                $root.types.RequestFlush.encode(message.flush, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
             if (message.info != null && message.hasOwnProperty("info"))
-                $root.abci.RequestInfo.encode(message.info, writer.uint32(/* id 4, wireType 2 =*/34).fork()).ldelim();
+                $root.types.RequestInfo.encode(message.info, writer.uint32(/* id 4, wireType 2 =*/34).fork()).ldelim();
             if (message.setOption != null && message.hasOwnProperty("setOption"))
-                $root.abci.RequestSetOption.encode(message.setOption, writer.uint32(/* id 5, wireType 2 =*/42).fork()).ldelim();
+                $root.types.RequestSetOption.encode(message.setOption, writer.uint32(/* id 5, wireType 2 =*/42).fork()).ldelim();
             if (message.initChain != null && message.hasOwnProperty("initChain"))
-                $root.abci.RequestInitChain.encode(message.initChain, writer.uint32(/* id 6, wireType 2 =*/50).fork()).ldelim();
+                $root.types.RequestInitChain.encode(message.initChain, writer.uint32(/* id 6, wireType 2 =*/50).fork()).ldelim();
             if (message.query != null && message.hasOwnProperty("query"))
-                $root.abci.RequestQuery.encode(message.query, writer.uint32(/* id 7, wireType 2 =*/58).fork()).ldelim();
+                $root.types.RequestQuery.encode(message.query, writer.uint32(/* id 7, wireType 2 =*/58).fork()).ldelim();
             if (message.beginBlock != null && message.hasOwnProperty("beginBlock"))
-                $root.abci.RequestBeginBlock.encode(message.beginBlock, writer.uint32(/* id 8, wireType 2 =*/66).fork()).ldelim();
+                $root.types.RequestBeginBlock.encode(message.beginBlock, writer.uint32(/* id 8, wireType 2 =*/66).fork()).ldelim();
             if (message.checkTx != null && message.hasOwnProperty("checkTx"))
-                $root.abci.RequestCheckTx.encode(message.checkTx, writer.uint32(/* id 9, wireType 2 =*/74).fork()).ldelim();
+                $root.types.RequestCheckTx.encode(message.checkTx, writer.uint32(/* id 9, wireType 2 =*/74).fork()).ldelim();
             if (message.endBlock != null && message.hasOwnProperty("endBlock"))
-                $root.abci.RequestEndBlock.encode(message.endBlock, writer.uint32(/* id 11, wireType 2 =*/90).fork()).ldelim();
+                $root.types.RequestEndBlock.encode(message.endBlock, writer.uint32(/* id 11, wireType 2 =*/90).fork()).ldelim();
             if (message.commit != null && message.hasOwnProperty("commit"))
-                $root.abci.RequestCommit.encode(message.commit, writer.uint32(/* id 12, wireType 2 =*/98).fork()).ldelim();
-            if (message.checkBridge != null && message.hasOwnProperty("checkBridge"))
-                $root.abci.RequestCheckBridge.encode(message.checkBridge, writer.uint32(/* id 13, wireType 2 =*/106).fork()).ldelim();
+                $root.types.RequestCommit.encode(message.commit, writer.uint32(/* id 12, wireType 2 =*/98).fork()).ldelim();
             if (message.deliverTx != null && message.hasOwnProperty("deliverTx"))
-                $root.abci.RequestDeliverTx.encode(message.deliverTx, writer.uint32(/* id 19, wireType 2 =*/154).fork()).ldelim();
+                $root.types.RequestDeliverTx.encode(message.deliverTx, writer.uint32(/* id 19, wireType 2 =*/154).fork()).ldelim();
             return writer;
         };
 
         /**
-         * Encodes the specified Request message, length delimited. Does not implicitly {@link abci.Request.verify|verify} messages.
+         * Encodes the specified Request message, length delimited. Does not implicitly {@link types.Request.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.Request
+         * @memberof types.Request
          * @static
-         * @param {abci.IRequest} message Request message or plain object to encode
+         * @param {types.IRequest} message Request message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -230,56 +219,53 @@ $root.abci = (function() {
         /**
          * Decodes a Request message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.Request
+         * @memberof types.Request
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.Request} Request
+         * @returns {types.Request} Request
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         Request.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.Request();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.Request();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
                 case 2:
-                    message.echo = $root.abci.RequestEcho.decode(reader, reader.uint32());
+                    message.echo = $root.types.RequestEcho.decode(reader, reader.uint32());
                     break;
                 case 3:
-                    message.flush = $root.abci.RequestFlush.decode(reader, reader.uint32());
+                    message.flush = $root.types.RequestFlush.decode(reader, reader.uint32());
                     break;
                 case 4:
-                    message.info = $root.abci.RequestInfo.decode(reader, reader.uint32());
+                    message.info = $root.types.RequestInfo.decode(reader, reader.uint32());
                     break;
                 case 5:
-                    message.setOption = $root.abci.RequestSetOption.decode(reader, reader.uint32());
+                    message.setOption = $root.types.RequestSetOption.decode(reader, reader.uint32());
                     break;
                 case 6:
-                    message.initChain = $root.abci.RequestInitChain.decode(reader, reader.uint32());
+                    message.initChain = $root.types.RequestInitChain.decode(reader, reader.uint32());
                     break;
                 case 7:
-                    message.query = $root.abci.RequestQuery.decode(reader, reader.uint32());
+                    message.query = $root.types.RequestQuery.decode(reader, reader.uint32());
                     break;
                 case 8:
-                    message.beginBlock = $root.abci.RequestBeginBlock.decode(reader, reader.uint32());
+                    message.beginBlock = $root.types.RequestBeginBlock.decode(reader, reader.uint32());
                     break;
                 case 9:
-                    message.checkTx = $root.abci.RequestCheckTx.decode(reader, reader.uint32());
+                    message.checkTx = $root.types.RequestCheckTx.decode(reader, reader.uint32());
                     break;
                 case 19:
-                    message.deliverTx = $root.abci.RequestDeliverTx.decode(reader, reader.uint32());
+                    message.deliverTx = $root.types.RequestDeliverTx.decode(reader, reader.uint32());
                     break;
                 case 11:
-                    message.endBlock = $root.abci.RequestEndBlock.decode(reader, reader.uint32());
+                    message.endBlock = $root.types.RequestEndBlock.decode(reader, reader.uint32());
                     break;
                 case 12:
-                    message.commit = $root.abci.RequestCommit.decode(reader, reader.uint32());
-                    break;
-                case 13:
-                    message.checkBridge = $root.abci.RequestCheckBridge.decode(reader, reader.uint32());
+                    message.commit = $root.types.RequestCommit.decode(reader, reader.uint32());
                     break;
                 default:
                     reader.skipType(tag & 7);
@@ -292,10 +278,10 @@ $root.abci = (function() {
         /**
          * Decodes a Request message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.Request
+         * @memberof types.Request
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.Request} Request
+         * @returns {types.Request} Request
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -308,7 +294,7 @@ $root.abci = (function() {
         /**
          * Verifies a Request message.
          * @function verify
-         * @memberof abci.Request
+         * @memberof types.Request
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -320,7 +306,7 @@ $root.abci = (function() {
             if (message.echo != null && message.hasOwnProperty("echo")) {
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestEcho.verify(message.echo);
+                    var error = $root.types.RequestEcho.verify(message.echo);
                     if (error)
                         return "echo." + error;
                 }
@@ -330,7 +316,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestFlush.verify(message.flush);
+                    var error = $root.types.RequestFlush.verify(message.flush);
                     if (error)
                         return "flush." + error;
                 }
@@ -340,7 +326,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestInfo.verify(message.info);
+                    var error = $root.types.RequestInfo.verify(message.info);
                     if (error)
                         return "info." + error;
                 }
@@ -350,7 +336,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestSetOption.verify(message.setOption);
+                    var error = $root.types.RequestSetOption.verify(message.setOption);
                     if (error)
                         return "setOption." + error;
                 }
@@ -360,7 +346,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestInitChain.verify(message.initChain);
+                    var error = $root.types.RequestInitChain.verify(message.initChain);
                     if (error)
                         return "initChain." + error;
                 }
@@ -370,7 +356,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestQuery.verify(message.query);
+                    var error = $root.types.RequestQuery.verify(message.query);
                     if (error)
                         return "query." + error;
                 }
@@ -380,7 +366,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestBeginBlock.verify(message.beginBlock);
+                    var error = $root.types.RequestBeginBlock.verify(message.beginBlock);
                     if (error)
                         return "beginBlock." + error;
                 }
@@ -390,7 +376,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestCheckTx.verify(message.checkTx);
+                    var error = $root.types.RequestCheckTx.verify(message.checkTx);
                     if (error)
                         return "checkTx." + error;
                 }
@@ -400,7 +386,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestDeliverTx.verify(message.deliverTx);
+                    var error = $root.types.RequestDeliverTx.verify(message.deliverTx);
                     if (error)
                         return "deliverTx." + error;
                 }
@@ -410,7 +396,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestEndBlock.verify(message.endBlock);
+                    var error = $root.types.RequestEndBlock.verify(message.endBlock);
                     if (error)
                         return "endBlock." + error;
                 }
@@ -420,19 +406,9 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.RequestCommit.verify(message.commit);
+                    var error = $root.types.RequestCommit.verify(message.commit);
                     if (error)
                         return "commit." + error;
-                }
-            }
-            if (message.checkBridge != null && message.hasOwnProperty("checkBridge")) {
-                if (properties.value === 1)
-                    return "value: multiple values";
-                properties.value = 1;
-                {
-                    var error = $root.abci.RequestCheckBridge.verify(message.checkBridge);
-                    if (error)
-                        return "checkBridge." + error;
                 }
             }
             return null;
@@ -441,74 +417,69 @@ $root.abci = (function() {
         /**
          * Creates a Request message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.Request
+         * @memberof types.Request
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.Request} Request
+         * @returns {types.Request} Request
          */
         Request.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.Request)
+            if (object instanceof $root.types.Request)
                 return object;
-            var message = new $root.abci.Request();
+            var message = new $root.types.Request();
             if (object.echo != null) {
                 if (typeof object.echo !== "object")
-                    throw TypeError(".abci.Request.echo: object expected");
-                message.echo = $root.abci.RequestEcho.fromObject(object.echo);
+                    throw TypeError(".types.Request.echo: object expected");
+                message.echo = $root.types.RequestEcho.fromObject(object.echo);
             }
             if (object.flush != null) {
                 if (typeof object.flush !== "object")
-                    throw TypeError(".abci.Request.flush: object expected");
-                message.flush = $root.abci.RequestFlush.fromObject(object.flush);
+                    throw TypeError(".types.Request.flush: object expected");
+                message.flush = $root.types.RequestFlush.fromObject(object.flush);
             }
             if (object.info != null) {
                 if (typeof object.info !== "object")
-                    throw TypeError(".abci.Request.info: object expected");
-                message.info = $root.abci.RequestInfo.fromObject(object.info);
+                    throw TypeError(".types.Request.info: object expected");
+                message.info = $root.types.RequestInfo.fromObject(object.info);
             }
             if (object.setOption != null) {
                 if (typeof object.setOption !== "object")
-                    throw TypeError(".abci.Request.setOption: object expected");
-                message.setOption = $root.abci.RequestSetOption.fromObject(object.setOption);
+                    throw TypeError(".types.Request.setOption: object expected");
+                message.setOption = $root.types.RequestSetOption.fromObject(object.setOption);
             }
             if (object.initChain != null) {
                 if (typeof object.initChain !== "object")
-                    throw TypeError(".abci.Request.initChain: object expected");
-                message.initChain = $root.abci.RequestInitChain.fromObject(object.initChain);
+                    throw TypeError(".types.Request.initChain: object expected");
+                message.initChain = $root.types.RequestInitChain.fromObject(object.initChain);
             }
             if (object.query != null) {
                 if (typeof object.query !== "object")
-                    throw TypeError(".abci.Request.query: object expected");
-                message.query = $root.abci.RequestQuery.fromObject(object.query);
+                    throw TypeError(".types.Request.query: object expected");
+                message.query = $root.types.RequestQuery.fromObject(object.query);
             }
             if (object.beginBlock != null) {
                 if (typeof object.beginBlock !== "object")
-                    throw TypeError(".abci.Request.beginBlock: object expected");
-                message.beginBlock = $root.abci.RequestBeginBlock.fromObject(object.beginBlock);
+                    throw TypeError(".types.Request.beginBlock: object expected");
+                message.beginBlock = $root.types.RequestBeginBlock.fromObject(object.beginBlock);
             }
             if (object.checkTx != null) {
                 if (typeof object.checkTx !== "object")
-                    throw TypeError(".abci.Request.checkTx: object expected");
-                message.checkTx = $root.abci.RequestCheckTx.fromObject(object.checkTx);
+                    throw TypeError(".types.Request.checkTx: object expected");
+                message.checkTx = $root.types.RequestCheckTx.fromObject(object.checkTx);
             }
             if (object.deliverTx != null) {
                 if (typeof object.deliverTx !== "object")
-                    throw TypeError(".abci.Request.deliverTx: object expected");
-                message.deliverTx = $root.abci.RequestDeliverTx.fromObject(object.deliverTx);
+                    throw TypeError(".types.Request.deliverTx: object expected");
+                message.deliverTx = $root.types.RequestDeliverTx.fromObject(object.deliverTx);
             }
             if (object.endBlock != null) {
                 if (typeof object.endBlock !== "object")
-                    throw TypeError(".abci.Request.endBlock: object expected");
-                message.endBlock = $root.abci.RequestEndBlock.fromObject(object.endBlock);
+                    throw TypeError(".types.Request.endBlock: object expected");
+                message.endBlock = $root.types.RequestEndBlock.fromObject(object.endBlock);
             }
             if (object.commit != null) {
                 if (typeof object.commit !== "object")
-                    throw TypeError(".abci.Request.commit: object expected");
-                message.commit = $root.abci.RequestCommit.fromObject(object.commit);
-            }
-            if (object.checkBridge != null) {
-                if (typeof object.checkBridge !== "object")
-                    throw TypeError(".abci.Request.checkBridge: object expected");
-                message.checkBridge = $root.abci.RequestCheckBridge.fromObject(object.checkBridge);
+                    throw TypeError(".types.Request.commit: object expected");
+                message.commit = $root.types.RequestCommit.fromObject(object.commit);
             }
             return message;
         };
@@ -516,9 +487,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a Request message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.Request
+         * @memberof types.Request
          * @static
-         * @param {abci.Request} message Request
+         * @param {types.Request} message Request
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -527,62 +498,57 @@ $root.abci = (function() {
                 options = {};
             var object = {};
             if (message.echo != null && message.hasOwnProperty("echo")) {
-                object.echo = $root.abci.RequestEcho.toObject(message.echo, options);
+                object.echo = $root.types.RequestEcho.toObject(message.echo, options);
                 if (options.oneofs)
                     object.value = "echo";
             }
             if (message.flush != null && message.hasOwnProperty("flush")) {
-                object.flush = $root.abci.RequestFlush.toObject(message.flush, options);
+                object.flush = $root.types.RequestFlush.toObject(message.flush, options);
                 if (options.oneofs)
                     object.value = "flush";
             }
             if (message.info != null && message.hasOwnProperty("info")) {
-                object.info = $root.abci.RequestInfo.toObject(message.info, options);
+                object.info = $root.types.RequestInfo.toObject(message.info, options);
                 if (options.oneofs)
                     object.value = "info";
             }
             if (message.setOption != null && message.hasOwnProperty("setOption")) {
-                object.setOption = $root.abci.RequestSetOption.toObject(message.setOption, options);
+                object.setOption = $root.types.RequestSetOption.toObject(message.setOption, options);
                 if (options.oneofs)
                     object.value = "setOption";
             }
             if (message.initChain != null && message.hasOwnProperty("initChain")) {
-                object.initChain = $root.abci.RequestInitChain.toObject(message.initChain, options);
+                object.initChain = $root.types.RequestInitChain.toObject(message.initChain, options);
                 if (options.oneofs)
                     object.value = "initChain";
             }
             if (message.query != null && message.hasOwnProperty("query")) {
-                object.query = $root.abci.RequestQuery.toObject(message.query, options);
+                object.query = $root.types.RequestQuery.toObject(message.query, options);
                 if (options.oneofs)
                     object.value = "query";
             }
             if (message.beginBlock != null && message.hasOwnProperty("beginBlock")) {
-                object.beginBlock = $root.abci.RequestBeginBlock.toObject(message.beginBlock, options);
+                object.beginBlock = $root.types.RequestBeginBlock.toObject(message.beginBlock, options);
                 if (options.oneofs)
                     object.value = "beginBlock";
             }
             if (message.checkTx != null && message.hasOwnProperty("checkTx")) {
-                object.checkTx = $root.abci.RequestCheckTx.toObject(message.checkTx, options);
+                object.checkTx = $root.types.RequestCheckTx.toObject(message.checkTx, options);
                 if (options.oneofs)
                     object.value = "checkTx";
             }
             if (message.endBlock != null && message.hasOwnProperty("endBlock")) {
-                object.endBlock = $root.abci.RequestEndBlock.toObject(message.endBlock, options);
+                object.endBlock = $root.types.RequestEndBlock.toObject(message.endBlock, options);
                 if (options.oneofs)
                     object.value = "endBlock";
             }
             if (message.commit != null && message.hasOwnProperty("commit")) {
-                object.commit = $root.abci.RequestCommit.toObject(message.commit, options);
+                object.commit = $root.types.RequestCommit.toObject(message.commit, options);
                 if (options.oneofs)
                     object.value = "commit";
             }
-            if (message.checkBridge != null && message.hasOwnProperty("checkBridge")) {
-                object.checkBridge = $root.abci.RequestCheckBridge.toObject(message.checkBridge, options);
-                if (options.oneofs)
-                    object.value = "checkBridge";
-            }
             if (message.deliverTx != null && message.hasOwnProperty("deliverTx")) {
-                object.deliverTx = $root.abci.RequestDeliverTx.toObject(message.deliverTx, options);
+                object.deliverTx = $root.types.RequestDeliverTx.toObject(message.deliverTx, options);
                 if (options.oneofs)
                     object.value = "deliverTx";
             }
@@ -592,7 +558,7 @@ $root.abci = (function() {
         /**
          * Converts this Request to JSON.
          * @function toJSON
-         * @memberof abci.Request
+         * @memberof types.Request
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -603,22 +569,22 @@ $root.abci = (function() {
         return Request;
     })();
 
-    abci.RequestEcho = (function() {
+    types.RequestEcho = (function() {
 
         /**
          * Properties of a RequestEcho.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestEcho
          * @property {string|null} [message] RequestEcho message
          */
 
         /**
          * Constructs a new RequestEcho.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestEcho.
          * @implements IRequestEcho
          * @constructor
-         * @param {abci.IRequestEcho=} [properties] Properties to set
+         * @param {types.IRequestEcho=} [properties] Properties to set
          */
         function RequestEcho(properties) {
             if (properties)
@@ -630,7 +596,7 @@ $root.abci = (function() {
         /**
          * RequestEcho message.
          * @member {string} message
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @instance
          */
         RequestEcho.prototype.message = "";
@@ -638,21 +604,21 @@ $root.abci = (function() {
         /**
          * Creates a new RequestEcho instance using the specified properties.
          * @function create
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @static
-         * @param {abci.IRequestEcho=} [properties] Properties to set
-         * @returns {abci.RequestEcho} RequestEcho instance
+         * @param {types.IRequestEcho=} [properties] Properties to set
+         * @returns {types.RequestEcho} RequestEcho instance
          */
         RequestEcho.create = function create(properties) {
             return new RequestEcho(properties);
         };
 
         /**
-         * Encodes the specified RequestEcho message. Does not implicitly {@link abci.RequestEcho.verify|verify} messages.
+         * Encodes the specified RequestEcho message. Does not implicitly {@link types.RequestEcho.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @static
-         * @param {abci.IRequestEcho} message RequestEcho message or plain object to encode
+         * @param {types.IRequestEcho} message RequestEcho message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -665,11 +631,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified RequestEcho message, length delimited. Does not implicitly {@link abci.RequestEcho.verify|verify} messages.
+         * Encodes the specified RequestEcho message, length delimited. Does not implicitly {@link types.RequestEcho.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @static
-         * @param {abci.IRequestEcho} message RequestEcho message or plain object to encode
+         * @param {types.IRequestEcho} message RequestEcho message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -680,18 +646,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestEcho message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestEcho} RequestEcho
+         * @returns {types.RequestEcho} RequestEcho
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestEcho.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestEcho();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestEcho();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -709,10 +675,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestEcho message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestEcho} RequestEcho
+         * @returns {types.RequestEcho} RequestEcho
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -725,7 +691,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestEcho message.
          * @function verify
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -742,15 +708,15 @@ $root.abci = (function() {
         /**
          * Creates a RequestEcho message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestEcho} RequestEcho
+         * @returns {types.RequestEcho} RequestEcho
          */
         RequestEcho.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestEcho)
+            if (object instanceof $root.types.RequestEcho)
                 return object;
-            var message = new $root.abci.RequestEcho();
+            var message = new $root.types.RequestEcho();
             if (object.message != null)
                 message.message = String(object.message);
             return message;
@@ -759,9 +725,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a RequestEcho message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @static
-         * @param {abci.RequestEcho} message RequestEcho
+         * @param {types.RequestEcho} message RequestEcho
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -779,7 +745,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestEcho to JSON.
          * @function toJSON
-         * @memberof abci.RequestEcho
+         * @memberof types.RequestEcho
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -790,21 +756,21 @@ $root.abci = (function() {
         return RequestEcho;
     })();
 
-    abci.RequestFlush = (function() {
+    types.RequestFlush = (function() {
 
         /**
          * Properties of a RequestFlush.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestFlush
          */
 
         /**
          * Constructs a new RequestFlush.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestFlush.
          * @implements IRequestFlush
          * @constructor
-         * @param {abci.IRequestFlush=} [properties] Properties to set
+         * @param {types.IRequestFlush=} [properties] Properties to set
          */
         function RequestFlush(properties) {
             if (properties)
@@ -816,21 +782,21 @@ $root.abci = (function() {
         /**
          * Creates a new RequestFlush instance using the specified properties.
          * @function create
-         * @memberof abci.RequestFlush
+         * @memberof types.RequestFlush
          * @static
-         * @param {abci.IRequestFlush=} [properties] Properties to set
-         * @returns {abci.RequestFlush} RequestFlush instance
+         * @param {types.IRequestFlush=} [properties] Properties to set
+         * @returns {types.RequestFlush} RequestFlush instance
          */
         RequestFlush.create = function create(properties) {
             return new RequestFlush(properties);
         };
 
         /**
-         * Encodes the specified RequestFlush message. Does not implicitly {@link abci.RequestFlush.verify|verify} messages.
+         * Encodes the specified RequestFlush message. Does not implicitly {@link types.RequestFlush.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestFlush
+         * @memberof types.RequestFlush
          * @static
-         * @param {abci.IRequestFlush} message RequestFlush message or plain object to encode
+         * @param {types.IRequestFlush} message RequestFlush message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -841,11 +807,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified RequestFlush message, length delimited. Does not implicitly {@link abci.RequestFlush.verify|verify} messages.
+         * Encodes the specified RequestFlush message, length delimited. Does not implicitly {@link types.RequestFlush.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestFlush
+         * @memberof types.RequestFlush
          * @static
-         * @param {abci.IRequestFlush} message RequestFlush message or plain object to encode
+         * @param {types.IRequestFlush} message RequestFlush message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -856,18 +822,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestFlush message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestFlush
+         * @memberof types.RequestFlush
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestFlush} RequestFlush
+         * @returns {types.RequestFlush} RequestFlush
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestFlush.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestFlush();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestFlush();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -882,10 +848,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestFlush message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestFlush
+         * @memberof types.RequestFlush
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestFlush} RequestFlush
+         * @returns {types.RequestFlush} RequestFlush
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -898,7 +864,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestFlush message.
          * @function verify
-         * @memberof abci.RequestFlush
+         * @memberof types.RequestFlush
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -912,23 +878,23 @@ $root.abci = (function() {
         /**
          * Creates a RequestFlush message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestFlush
+         * @memberof types.RequestFlush
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestFlush} RequestFlush
+         * @returns {types.RequestFlush} RequestFlush
          */
         RequestFlush.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestFlush)
+            if (object instanceof $root.types.RequestFlush)
                 return object;
-            return new $root.abci.RequestFlush();
+            return new $root.types.RequestFlush();
         };
 
         /**
          * Creates a plain object from a RequestFlush message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestFlush
+         * @memberof types.RequestFlush
          * @static
-         * @param {abci.RequestFlush} message RequestFlush
+         * @param {types.RequestFlush} message RequestFlush
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -939,7 +905,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestFlush to JSON.
          * @function toJSON
-         * @memberof abci.RequestFlush
+         * @memberof types.RequestFlush
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -950,11 +916,11 @@ $root.abci = (function() {
         return RequestFlush;
     })();
 
-    abci.RequestInfo = (function() {
+    types.RequestInfo = (function() {
 
         /**
          * Properties of a RequestInfo.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestInfo
          * @property {string|null} [version] RequestInfo version
          * @property {number|Long|null} [blockVersion] RequestInfo blockVersion
@@ -963,11 +929,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new RequestInfo.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestInfo.
          * @implements IRequestInfo
          * @constructor
-         * @param {abci.IRequestInfo=} [properties] Properties to set
+         * @param {types.IRequestInfo=} [properties] Properties to set
          */
         function RequestInfo(properties) {
             if (properties)
@@ -979,7 +945,7 @@ $root.abci = (function() {
         /**
          * RequestInfo version.
          * @member {string} version
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @instance
          */
         RequestInfo.prototype.version = "";
@@ -987,37 +953,37 @@ $root.abci = (function() {
         /**
          * RequestInfo blockVersion.
          * @member {number|Long} blockVersion
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @instance
          */
-        RequestInfo.prototype.blockVersion = 0;
+        RequestInfo.prototype.blockVersion = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
 
         /**
          * RequestInfo p2pVersion.
          * @member {number|Long} p2pVersion
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @instance
          */
-        RequestInfo.prototype.p2pVersion = 0;
+        RequestInfo.prototype.p2pVersion = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
 
         /**
          * Creates a new RequestInfo instance using the specified properties.
          * @function create
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @static
-         * @param {abci.IRequestInfo=} [properties] Properties to set
-         * @returns {abci.RequestInfo} RequestInfo instance
+         * @param {types.IRequestInfo=} [properties] Properties to set
+         * @returns {types.RequestInfo} RequestInfo instance
          */
         RequestInfo.create = function create(properties) {
             return new RequestInfo(properties);
         };
 
         /**
-         * Encodes the specified RequestInfo message. Does not implicitly {@link abci.RequestInfo.verify|verify} messages.
+         * Encodes the specified RequestInfo message. Does not implicitly {@link types.RequestInfo.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @static
-         * @param {abci.IRequestInfo} message RequestInfo message or plain object to encode
+         * @param {types.IRequestInfo} message RequestInfo message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -1034,11 +1000,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified RequestInfo message, length delimited. Does not implicitly {@link abci.RequestInfo.verify|verify} messages.
+         * Encodes the specified RequestInfo message, length delimited. Does not implicitly {@link types.RequestInfo.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @static
-         * @param {abci.IRequestInfo} message RequestInfo message or plain object to encode
+         * @param {types.IRequestInfo} message RequestInfo message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -1049,18 +1015,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestInfo message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestInfo} RequestInfo
+         * @returns {types.RequestInfo} RequestInfo
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestInfo.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestInfo();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestInfo();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -1084,10 +1050,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestInfo message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestInfo} RequestInfo
+         * @returns {types.RequestInfo} RequestInfo
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -1100,7 +1066,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestInfo message.
          * @function verify
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1123,15 +1089,15 @@ $root.abci = (function() {
         /**
          * Creates a RequestInfo message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestInfo} RequestInfo
+         * @returns {types.RequestInfo} RequestInfo
          */
         RequestInfo.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestInfo)
+            if (object instanceof $root.types.RequestInfo)
                 return object;
-            var message = new $root.abci.RequestInfo();
+            var message = new $root.types.RequestInfo();
             if (object.version != null)
                 message.version = String(object.version);
             if (object.blockVersion != null)
@@ -1158,9 +1124,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a RequestInfo message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @static
-         * @param {abci.RequestInfo} message RequestInfo
+         * @param {types.RequestInfo} message RequestInfo
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -1170,8 +1136,16 @@ $root.abci = (function() {
             var object = {};
             if (options.defaults) {
                 object.version = "";
-                object.blockVersion = 0;
-                object.p2pVersion = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, true);
+                    object.blockVersion = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.blockVersion = options.longs === String ? "0" : 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, true);
+                    object.p2pVersion = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.p2pVersion = options.longs === String ? "0" : 0;
             }
             if (message.version != null && message.hasOwnProperty("version"))
                 object.version = message.version;
@@ -1191,7 +1165,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestInfo to JSON.
          * @function toJSON
-         * @memberof abci.RequestInfo
+         * @memberof types.RequestInfo
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -1202,11 +1176,11 @@ $root.abci = (function() {
         return RequestInfo;
     })();
 
-    abci.RequestSetOption = (function() {
+    types.RequestSetOption = (function() {
 
         /**
          * Properties of a RequestSetOption.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestSetOption
          * @property {string|null} [key] RequestSetOption key
          * @property {string|null} [value] RequestSetOption value
@@ -1214,11 +1188,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new RequestSetOption.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestSetOption.
          * @implements IRequestSetOption
          * @constructor
-         * @param {abci.IRequestSetOption=} [properties] Properties to set
+         * @param {types.IRequestSetOption=} [properties] Properties to set
          */
         function RequestSetOption(properties) {
             if (properties)
@@ -1230,7 +1204,7 @@ $root.abci = (function() {
         /**
          * RequestSetOption key.
          * @member {string} key
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @instance
          */
         RequestSetOption.prototype.key = "";
@@ -1238,7 +1212,7 @@ $root.abci = (function() {
         /**
          * RequestSetOption value.
          * @member {string} value
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @instance
          */
         RequestSetOption.prototype.value = "";
@@ -1246,21 +1220,21 @@ $root.abci = (function() {
         /**
          * Creates a new RequestSetOption instance using the specified properties.
          * @function create
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @static
-         * @param {abci.IRequestSetOption=} [properties] Properties to set
-         * @returns {abci.RequestSetOption} RequestSetOption instance
+         * @param {types.IRequestSetOption=} [properties] Properties to set
+         * @returns {types.RequestSetOption} RequestSetOption instance
          */
         RequestSetOption.create = function create(properties) {
             return new RequestSetOption(properties);
         };
 
         /**
-         * Encodes the specified RequestSetOption message. Does not implicitly {@link abci.RequestSetOption.verify|verify} messages.
+         * Encodes the specified RequestSetOption message. Does not implicitly {@link types.RequestSetOption.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @static
-         * @param {abci.IRequestSetOption} message RequestSetOption message or plain object to encode
+         * @param {types.IRequestSetOption} message RequestSetOption message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -1275,11 +1249,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified RequestSetOption message, length delimited. Does not implicitly {@link abci.RequestSetOption.verify|verify} messages.
+         * Encodes the specified RequestSetOption message, length delimited. Does not implicitly {@link types.RequestSetOption.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @static
-         * @param {abci.IRequestSetOption} message RequestSetOption message or plain object to encode
+         * @param {types.IRequestSetOption} message RequestSetOption message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -1290,18 +1264,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestSetOption message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestSetOption} RequestSetOption
+         * @returns {types.RequestSetOption} RequestSetOption
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestSetOption.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestSetOption();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestSetOption();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -1322,10 +1296,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestSetOption message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestSetOption} RequestSetOption
+         * @returns {types.RequestSetOption} RequestSetOption
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -1338,7 +1312,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestSetOption message.
          * @function verify
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1358,15 +1332,15 @@ $root.abci = (function() {
         /**
          * Creates a RequestSetOption message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestSetOption} RequestSetOption
+         * @returns {types.RequestSetOption} RequestSetOption
          */
         RequestSetOption.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestSetOption)
+            if (object instanceof $root.types.RequestSetOption)
                 return object;
-            var message = new $root.abci.RequestSetOption();
+            var message = new $root.types.RequestSetOption();
             if (object.key != null)
                 message.key = String(object.key);
             if (object.value != null)
@@ -1377,9 +1351,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a RequestSetOption message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @static
-         * @param {abci.RequestSetOption} message RequestSetOption
+         * @param {types.RequestSetOption} message RequestSetOption
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -1401,7 +1375,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestSetOption to JSON.
          * @function toJSON
-         * @memberof abci.RequestSetOption
+         * @memberof types.RequestSetOption
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -1412,26 +1386,26 @@ $root.abci = (function() {
         return RequestSetOption;
     })();
 
-    abci.RequestInitChain = (function() {
+    types.RequestInitChain = (function() {
 
         /**
          * Properties of a RequestInitChain.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestInitChain
          * @property {google.protobuf.ITimestamp|null} [time] RequestInitChain time
          * @property {string|null} [chainId] RequestInitChain chainId
-         * @property {abci.IConsensusParams|null} [consensusParams] RequestInitChain consensusParams
-         * @property {Array.<abci.IValidatorUpdate>|null} [validators] RequestInitChain validators
+         * @property {types.IConsensusParams|null} [consensusParams] RequestInitChain consensusParams
+         * @property {Array.<types.IValidatorUpdate>|null} [validators] RequestInitChain validators
          * @property {Uint8Array|null} [appStateBytes] RequestInitChain appStateBytes
          */
 
         /**
          * Constructs a new RequestInitChain.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestInitChain.
          * @implements IRequestInitChain
          * @constructor
-         * @param {abci.IRequestInitChain=} [properties] Properties to set
+         * @param {types.IRequestInitChain=} [properties] Properties to set
          */
         function RequestInitChain(properties) {
             this.validators = [];
@@ -1444,7 +1418,7 @@ $root.abci = (function() {
         /**
          * RequestInitChain time.
          * @member {google.protobuf.ITimestamp|null|undefined} time
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @instance
          */
         RequestInitChain.prototype.time = null;
@@ -1452,23 +1426,23 @@ $root.abci = (function() {
         /**
          * RequestInitChain chainId.
          * @member {string} chainId
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @instance
          */
         RequestInitChain.prototype.chainId = "";
 
         /**
          * RequestInitChain consensusParams.
-         * @member {abci.IConsensusParams|null|undefined} consensusParams
-         * @memberof abci.RequestInitChain
+         * @member {types.IConsensusParams|null|undefined} consensusParams
+         * @memberof types.RequestInitChain
          * @instance
          */
         RequestInitChain.prototype.consensusParams = null;
 
         /**
          * RequestInitChain validators.
-         * @member {Array.<abci.IValidatorUpdate>} validators
-         * @memberof abci.RequestInitChain
+         * @member {Array.<types.IValidatorUpdate>} validators
+         * @memberof types.RequestInitChain
          * @instance
          */
         RequestInitChain.prototype.validators = $util.emptyArray;
@@ -1476,7 +1450,7 @@ $root.abci = (function() {
         /**
          * RequestInitChain appStateBytes.
          * @member {Uint8Array} appStateBytes
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @instance
          */
         RequestInitChain.prototype.appStateBytes = $util.newBuffer([]);
@@ -1484,21 +1458,21 @@ $root.abci = (function() {
         /**
          * Creates a new RequestInitChain instance using the specified properties.
          * @function create
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @static
-         * @param {abci.IRequestInitChain=} [properties] Properties to set
-         * @returns {abci.RequestInitChain} RequestInitChain instance
+         * @param {types.IRequestInitChain=} [properties] Properties to set
+         * @returns {types.RequestInitChain} RequestInitChain instance
          */
         RequestInitChain.create = function create(properties) {
             return new RequestInitChain(properties);
         };
 
         /**
-         * Encodes the specified RequestInitChain message. Does not implicitly {@link abci.RequestInitChain.verify|verify} messages.
+         * Encodes the specified RequestInitChain message. Does not implicitly {@link types.RequestInitChain.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @static
-         * @param {abci.IRequestInitChain} message RequestInitChain message or plain object to encode
+         * @param {types.IRequestInitChain} message RequestInitChain message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -1510,21 +1484,21 @@ $root.abci = (function() {
             if (message.chainId != null && message.hasOwnProperty("chainId"))
                 writer.uint32(/* id 2, wireType 2 =*/18).string(message.chainId);
             if (message.consensusParams != null && message.hasOwnProperty("consensusParams"))
-                $root.abci.ConsensusParams.encode(message.consensusParams, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
+                $root.types.ConsensusParams.encode(message.consensusParams, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
             if (message.validators != null && message.validators.length)
                 for (var i = 0; i < message.validators.length; ++i)
-                    $root.abci.ValidatorUpdate.encode(message.validators[i], writer.uint32(/* id 4, wireType 2 =*/34).fork()).ldelim();
+                    $root.types.ValidatorUpdate.encode(message.validators[i], writer.uint32(/* id 4, wireType 2 =*/34).fork()).ldelim();
             if (message.appStateBytes != null && message.hasOwnProperty("appStateBytes"))
                 writer.uint32(/* id 5, wireType 2 =*/42).bytes(message.appStateBytes);
             return writer;
         };
 
         /**
-         * Encodes the specified RequestInitChain message, length delimited. Does not implicitly {@link abci.RequestInitChain.verify|verify} messages.
+         * Encodes the specified RequestInitChain message, length delimited. Does not implicitly {@link types.RequestInitChain.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @static
-         * @param {abci.IRequestInitChain} message RequestInitChain message or plain object to encode
+         * @param {types.IRequestInitChain} message RequestInitChain message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -1535,18 +1509,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestInitChain message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestInitChain} RequestInitChain
+         * @returns {types.RequestInitChain} RequestInitChain
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestInitChain.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestInitChain();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestInitChain();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -1557,12 +1531,12 @@ $root.abci = (function() {
                     message.chainId = reader.string();
                     break;
                 case 3:
-                    message.consensusParams = $root.abci.ConsensusParams.decode(reader, reader.uint32());
+                    message.consensusParams = $root.types.ConsensusParams.decode(reader, reader.uint32());
                     break;
                 case 4:
                     if (!(message.validators && message.validators.length))
                         message.validators = [];
-                    message.validators.push($root.abci.ValidatorUpdate.decode(reader, reader.uint32()));
+                    message.validators.push($root.types.ValidatorUpdate.decode(reader, reader.uint32()));
                     break;
                 case 5:
                     message.appStateBytes = reader.bytes();
@@ -1578,10 +1552,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestInitChain message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestInitChain} RequestInitChain
+         * @returns {types.RequestInitChain} RequestInitChain
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -1594,7 +1568,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestInitChain message.
          * @function verify
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1611,7 +1585,7 @@ $root.abci = (function() {
                 if (!$util.isString(message.chainId))
                     return "chainId: string expected";
             if (message.consensusParams != null && message.hasOwnProperty("consensusParams")) {
-                var error = $root.abci.ConsensusParams.verify(message.consensusParams);
+                var error = $root.types.ConsensusParams.verify(message.consensusParams);
                 if (error)
                     return "consensusParams." + error;
             }
@@ -1619,7 +1593,7 @@ $root.abci = (function() {
                 if (!Array.isArray(message.validators))
                     return "validators: array expected";
                 for (var i = 0; i < message.validators.length; ++i) {
-                    var error = $root.abci.ValidatorUpdate.verify(message.validators[i]);
+                    var error = $root.types.ValidatorUpdate.verify(message.validators[i]);
                     if (error)
                         return "validators." + error;
                 }
@@ -1633,35 +1607,35 @@ $root.abci = (function() {
         /**
          * Creates a RequestInitChain message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestInitChain} RequestInitChain
+         * @returns {types.RequestInitChain} RequestInitChain
          */
         RequestInitChain.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestInitChain)
+            if (object instanceof $root.types.RequestInitChain)
                 return object;
-            var message = new $root.abci.RequestInitChain();
+            var message = new $root.types.RequestInitChain();
             if (object.time != null) {
                 if (typeof object.time !== "object")
-                    throw TypeError(".abci.RequestInitChain.time: object expected");
+                    throw TypeError(".types.RequestInitChain.time: object expected");
                 message.time = $root.google.protobuf.Timestamp.fromObject(object.time);
             }
             if (object.chainId != null)
                 message.chainId = String(object.chainId);
             if (object.consensusParams != null) {
                 if (typeof object.consensusParams !== "object")
-                    throw TypeError(".abci.RequestInitChain.consensusParams: object expected");
-                message.consensusParams = $root.abci.ConsensusParams.fromObject(object.consensusParams);
+                    throw TypeError(".types.RequestInitChain.consensusParams: object expected");
+                message.consensusParams = $root.types.ConsensusParams.fromObject(object.consensusParams);
             }
             if (object.validators) {
                 if (!Array.isArray(object.validators))
-                    throw TypeError(".abci.RequestInitChain.validators: array expected");
+                    throw TypeError(".types.RequestInitChain.validators: array expected");
                 message.validators = [];
                 for (var i = 0; i < object.validators.length; ++i) {
                     if (typeof object.validators[i] !== "object")
-                        throw TypeError(".abci.RequestInitChain.validators: object expected");
-                    message.validators[i] = $root.abci.ValidatorUpdate.fromObject(object.validators[i]);
+                        throw TypeError(".types.RequestInitChain.validators: object expected");
+                    message.validators[i] = $root.types.ValidatorUpdate.fromObject(object.validators[i]);
                 }
             }
             if (object.appStateBytes != null)
@@ -1675,9 +1649,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a RequestInitChain message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @static
-         * @param {abci.RequestInitChain} message RequestInitChain
+         * @param {types.RequestInitChain} message RequestInitChain
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -1704,11 +1678,11 @@ $root.abci = (function() {
             if (message.chainId != null && message.hasOwnProperty("chainId"))
                 object.chainId = message.chainId;
             if (message.consensusParams != null && message.hasOwnProperty("consensusParams"))
-                object.consensusParams = $root.abci.ConsensusParams.toObject(message.consensusParams, options);
+                object.consensusParams = $root.types.ConsensusParams.toObject(message.consensusParams, options);
             if (message.validators && message.validators.length) {
                 object.validators = [];
                 for (var j = 0; j < message.validators.length; ++j)
-                    object.validators[j] = $root.abci.ValidatorUpdate.toObject(message.validators[j], options);
+                    object.validators[j] = $root.types.ValidatorUpdate.toObject(message.validators[j], options);
             }
             if (message.appStateBytes != null && message.hasOwnProperty("appStateBytes"))
                 object.appStateBytes = options.bytes === String ? $util.base64.encode(message.appStateBytes, 0, message.appStateBytes.length) : options.bytes === Array ? Array.prototype.slice.call(message.appStateBytes) : message.appStateBytes;
@@ -1718,7 +1692,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestInitChain to JSON.
          * @function toJSON
-         * @memberof abci.RequestInitChain
+         * @memberof types.RequestInitChain
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -1729,11 +1703,11 @@ $root.abci = (function() {
         return RequestInitChain;
     })();
 
-    abci.RequestQuery = (function() {
+    types.RequestQuery = (function() {
 
         /**
          * Properties of a RequestQuery.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestQuery
          * @property {Uint8Array|null} [data] RequestQuery data
          * @property {string|null} [path] RequestQuery path
@@ -1743,11 +1717,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new RequestQuery.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestQuery.
          * @implements IRequestQuery
          * @constructor
-         * @param {abci.IRequestQuery=} [properties] Properties to set
+         * @param {types.IRequestQuery=} [properties] Properties to set
          */
         function RequestQuery(properties) {
             if (properties)
@@ -1759,7 +1733,7 @@ $root.abci = (function() {
         /**
          * RequestQuery data.
          * @member {Uint8Array} data
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @instance
          */
         RequestQuery.prototype.data = $util.newBuffer([]);
@@ -1767,7 +1741,7 @@ $root.abci = (function() {
         /**
          * RequestQuery path.
          * @member {string} path
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @instance
          */
         RequestQuery.prototype.path = "";
@@ -1775,15 +1749,15 @@ $root.abci = (function() {
         /**
          * RequestQuery height.
          * @member {number|Long} height
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @instance
          */
-        RequestQuery.prototype.height = 0;
+        RequestQuery.prototype.height = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * RequestQuery prove.
          * @member {boolean} prove
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @instance
          */
         RequestQuery.prototype.prove = false;
@@ -1791,21 +1765,21 @@ $root.abci = (function() {
         /**
          * Creates a new RequestQuery instance using the specified properties.
          * @function create
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @static
-         * @param {abci.IRequestQuery=} [properties] Properties to set
-         * @returns {abci.RequestQuery} RequestQuery instance
+         * @param {types.IRequestQuery=} [properties] Properties to set
+         * @returns {types.RequestQuery} RequestQuery instance
          */
         RequestQuery.create = function create(properties) {
             return new RequestQuery(properties);
         };
 
         /**
-         * Encodes the specified RequestQuery message. Does not implicitly {@link abci.RequestQuery.verify|verify} messages.
+         * Encodes the specified RequestQuery message. Does not implicitly {@link types.RequestQuery.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @static
-         * @param {abci.IRequestQuery} message RequestQuery message or plain object to encode
+         * @param {types.IRequestQuery} message RequestQuery message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -1824,11 +1798,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified RequestQuery message, length delimited. Does not implicitly {@link abci.RequestQuery.verify|verify} messages.
+         * Encodes the specified RequestQuery message, length delimited. Does not implicitly {@link types.RequestQuery.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @static
-         * @param {abci.IRequestQuery} message RequestQuery message or plain object to encode
+         * @param {types.IRequestQuery} message RequestQuery message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -1839,18 +1813,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestQuery message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestQuery} RequestQuery
+         * @returns {types.RequestQuery} RequestQuery
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestQuery.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestQuery();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestQuery();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -1877,10 +1851,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestQuery message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestQuery} RequestQuery
+         * @returns {types.RequestQuery} RequestQuery
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -1893,7 +1867,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestQuery message.
          * @function verify
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1919,15 +1893,15 @@ $root.abci = (function() {
         /**
          * Creates a RequestQuery message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestQuery} RequestQuery
+         * @returns {types.RequestQuery} RequestQuery
          */
         RequestQuery.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestQuery)
+            if (object instanceof $root.types.RequestQuery)
                 return object;
-            var message = new $root.abci.RequestQuery();
+            var message = new $root.types.RequestQuery();
             if (object.data != null)
                 if (typeof object.data === "string")
                     $util.base64.decode(object.data, message.data = $util.newBuffer($util.base64.length(object.data)), 0);
@@ -1952,9 +1926,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a RequestQuery message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @static
-         * @param {abci.RequestQuery} message RequestQuery
+         * @param {types.RequestQuery} message RequestQuery
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -1971,7 +1945,11 @@ $root.abci = (function() {
                         object.data = $util.newBuffer(object.data);
                 }
                 object.path = "";
-                object.height = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.height = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.height = options.longs === String ? "0" : 0;
                 object.prove = false;
             }
             if (message.data != null && message.hasOwnProperty("data"))
@@ -1991,7 +1969,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestQuery to JSON.
          * @function toJSON
-         * @memberof abci.RequestQuery
+         * @memberof types.RequestQuery
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -2002,25 +1980,25 @@ $root.abci = (function() {
         return RequestQuery;
     })();
 
-    abci.RequestBeginBlock = (function() {
+    types.RequestBeginBlock = (function() {
 
         /**
          * Properties of a RequestBeginBlock.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestBeginBlock
          * @property {Uint8Array|null} [hash] RequestBeginBlock hash
-         * @property {abci.IHeader|null} [header] RequestBeginBlock header
-         * @property {abci.ILastCommitInfo|null} [lastCommitInfo] RequestBeginBlock lastCommitInfo
-         * @property {Array.<abci.IEvidence>|null} [byzantineValidators] RequestBeginBlock byzantineValidators
+         * @property {types.IHeader|null} [header] RequestBeginBlock header
+         * @property {types.ILastCommitInfo|null} [lastCommitInfo] RequestBeginBlock lastCommitInfo
+         * @property {Array.<types.IEvidence>|null} [byzantineValidators] RequestBeginBlock byzantineValidators
          */
 
         /**
          * Constructs a new RequestBeginBlock.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestBeginBlock.
          * @implements IRequestBeginBlock
          * @constructor
-         * @param {abci.IRequestBeginBlock=} [properties] Properties to set
+         * @param {types.IRequestBeginBlock=} [properties] Properties to set
          */
         function RequestBeginBlock(properties) {
             this.byzantineValidators = [];
@@ -2033,31 +2011,31 @@ $root.abci = (function() {
         /**
          * RequestBeginBlock hash.
          * @member {Uint8Array} hash
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @instance
          */
         RequestBeginBlock.prototype.hash = $util.newBuffer([]);
 
         /**
          * RequestBeginBlock header.
-         * @member {abci.IHeader|null|undefined} header
-         * @memberof abci.RequestBeginBlock
+         * @member {types.IHeader|null|undefined} header
+         * @memberof types.RequestBeginBlock
          * @instance
          */
         RequestBeginBlock.prototype.header = null;
 
         /**
          * RequestBeginBlock lastCommitInfo.
-         * @member {abci.ILastCommitInfo|null|undefined} lastCommitInfo
-         * @memberof abci.RequestBeginBlock
+         * @member {types.ILastCommitInfo|null|undefined} lastCommitInfo
+         * @memberof types.RequestBeginBlock
          * @instance
          */
         RequestBeginBlock.prototype.lastCommitInfo = null;
 
         /**
          * RequestBeginBlock byzantineValidators.
-         * @member {Array.<abci.IEvidence>} byzantineValidators
-         * @memberof abci.RequestBeginBlock
+         * @member {Array.<types.IEvidence>} byzantineValidators
+         * @memberof types.RequestBeginBlock
          * @instance
          */
         RequestBeginBlock.prototype.byzantineValidators = $util.emptyArray;
@@ -2065,21 +2043,21 @@ $root.abci = (function() {
         /**
          * Creates a new RequestBeginBlock instance using the specified properties.
          * @function create
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @static
-         * @param {abci.IRequestBeginBlock=} [properties] Properties to set
-         * @returns {abci.RequestBeginBlock} RequestBeginBlock instance
+         * @param {types.IRequestBeginBlock=} [properties] Properties to set
+         * @returns {types.RequestBeginBlock} RequestBeginBlock instance
          */
         RequestBeginBlock.create = function create(properties) {
             return new RequestBeginBlock(properties);
         };
 
         /**
-         * Encodes the specified RequestBeginBlock message. Does not implicitly {@link abci.RequestBeginBlock.verify|verify} messages.
+         * Encodes the specified RequestBeginBlock message. Does not implicitly {@link types.RequestBeginBlock.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @static
-         * @param {abci.IRequestBeginBlock} message RequestBeginBlock message or plain object to encode
+         * @param {types.IRequestBeginBlock} message RequestBeginBlock message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2089,21 +2067,21 @@ $root.abci = (function() {
             if (message.hash != null && message.hasOwnProperty("hash"))
                 writer.uint32(/* id 1, wireType 2 =*/10).bytes(message.hash);
             if (message.header != null && message.hasOwnProperty("header"))
-                $root.abci.Header.encode(message.header, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                $root.types.Header.encode(message.header, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
             if (message.lastCommitInfo != null && message.hasOwnProperty("lastCommitInfo"))
-                $root.abci.LastCommitInfo.encode(message.lastCommitInfo, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
+                $root.types.LastCommitInfo.encode(message.lastCommitInfo, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
             if (message.byzantineValidators != null && message.byzantineValidators.length)
                 for (var i = 0; i < message.byzantineValidators.length; ++i)
-                    $root.abci.Evidence.encode(message.byzantineValidators[i], writer.uint32(/* id 4, wireType 2 =*/34).fork()).ldelim();
+                    $root.types.Evidence.encode(message.byzantineValidators[i], writer.uint32(/* id 4, wireType 2 =*/34).fork()).ldelim();
             return writer;
         };
 
         /**
-         * Encodes the specified RequestBeginBlock message, length delimited. Does not implicitly {@link abci.RequestBeginBlock.verify|verify} messages.
+         * Encodes the specified RequestBeginBlock message, length delimited. Does not implicitly {@link types.RequestBeginBlock.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @static
-         * @param {abci.IRequestBeginBlock} message RequestBeginBlock message or plain object to encode
+         * @param {types.IRequestBeginBlock} message RequestBeginBlock message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2114,18 +2092,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestBeginBlock message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestBeginBlock} RequestBeginBlock
+         * @returns {types.RequestBeginBlock} RequestBeginBlock
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestBeginBlock.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestBeginBlock();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestBeginBlock();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -2133,15 +2111,15 @@ $root.abci = (function() {
                     message.hash = reader.bytes();
                     break;
                 case 2:
-                    message.header = $root.abci.Header.decode(reader, reader.uint32());
+                    message.header = $root.types.Header.decode(reader, reader.uint32());
                     break;
                 case 3:
-                    message.lastCommitInfo = $root.abci.LastCommitInfo.decode(reader, reader.uint32());
+                    message.lastCommitInfo = $root.types.LastCommitInfo.decode(reader, reader.uint32());
                     break;
                 case 4:
                     if (!(message.byzantineValidators && message.byzantineValidators.length))
                         message.byzantineValidators = [];
-                    message.byzantineValidators.push($root.abci.Evidence.decode(reader, reader.uint32()));
+                    message.byzantineValidators.push($root.types.Evidence.decode(reader, reader.uint32()));
                     break;
                 default:
                     reader.skipType(tag & 7);
@@ -2154,10 +2132,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestBeginBlock message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestBeginBlock} RequestBeginBlock
+         * @returns {types.RequestBeginBlock} RequestBeginBlock
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -2170,7 +2148,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestBeginBlock message.
          * @function verify
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2182,12 +2160,12 @@ $root.abci = (function() {
                 if (!(message.hash && typeof message.hash.length === "number" || $util.isString(message.hash)))
                     return "hash: buffer expected";
             if (message.header != null && message.hasOwnProperty("header")) {
-                var error = $root.abci.Header.verify(message.header);
+                var error = $root.types.Header.verify(message.header);
                 if (error)
                     return "header." + error;
             }
             if (message.lastCommitInfo != null && message.hasOwnProperty("lastCommitInfo")) {
-                var error = $root.abci.LastCommitInfo.verify(message.lastCommitInfo);
+                var error = $root.types.LastCommitInfo.verify(message.lastCommitInfo);
                 if (error)
                     return "lastCommitInfo." + error;
             }
@@ -2195,7 +2173,7 @@ $root.abci = (function() {
                 if (!Array.isArray(message.byzantineValidators))
                     return "byzantineValidators: array expected";
                 for (var i = 0; i < message.byzantineValidators.length; ++i) {
-                    var error = $root.abci.Evidence.verify(message.byzantineValidators[i]);
+                    var error = $root.types.Evidence.verify(message.byzantineValidators[i]);
                     if (error)
                         return "byzantineValidators." + error;
                 }
@@ -2206,15 +2184,15 @@ $root.abci = (function() {
         /**
          * Creates a RequestBeginBlock message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestBeginBlock} RequestBeginBlock
+         * @returns {types.RequestBeginBlock} RequestBeginBlock
          */
         RequestBeginBlock.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestBeginBlock)
+            if (object instanceof $root.types.RequestBeginBlock)
                 return object;
-            var message = new $root.abci.RequestBeginBlock();
+            var message = new $root.types.RequestBeginBlock();
             if (object.hash != null)
                 if (typeof object.hash === "string")
                     $util.base64.decode(object.hash, message.hash = $util.newBuffer($util.base64.length(object.hash)), 0);
@@ -2222,22 +2200,22 @@ $root.abci = (function() {
                     message.hash = object.hash;
             if (object.header != null) {
                 if (typeof object.header !== "object")
-                    throw TypeError(".abci.RequestBeginBlock.header: object expected");
-                message.header = $root.abci.Header.fromObject(object.header);
+                    throw TypeError(".types.RequestBeginBlock.header: object expected");
+                message.header = $root.types.Header.fromObject(object.header);
             }
             if (object.lastCommitInfo != null) {
                 if (typeof object.lastCommitInfo !== "object")
-                    throw TypeError(".abci.RequestBeginBlock.lastCommitInfo: object expected");
-                message.lastCommitInfo = $root.abci.LastCommitInfo.fromObject(object.lastCommitInfo);
+                    throw TypeError(".types.RequestBeginBlock.lastCommitInfo: object expected");
+                message.lastCommitInfo = $root.types.LastCommitInfo.fromObject(object.lastCommitInfo);
             }
             if (object.byzantineValidators) {
                 if (!Array.isArray(object.byzantineValidators))
-                    throw TypeError(".abci.RequestBeginBlock.byzantineValidators: array expected");
+                    throw TypeError(".types.RequestBeginBlock.byzantineValidators: array expected");
                 message.byzantineValidators = [];
                 for (var i = 0; i < object.byzantineValidators.length; ++i) {
                     if (typeof object.byzantineValidators[i] !== "object")
-                        throw TypeError(".abci.RequestBeginBlock.byzantineValidators: object expected");
-                    message.byzantineValidators[i] = $root.abci.Evidence.fromObject(object.byzantineValidators[i]);
+                        throw TypeError(".types.RequestBeginBlock.byzantineValidators: object expected");
+                    message.byzantineValidators[i] = $root.types.Evidence.fromObject(object.byzantineValidators[i]);
                 }
             }
             return message;
@@ -2246,9 +2224,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a RequestBeginBlock message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @static
-         * @param {abci.RequestBeginBlock} message RequestBeginBlock
+         * @param {types.RequestBeginBlock} message RequestBeginBlock
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -2272,13 +2250,13 @@ $root.abci = (function() {
             if (message.hash != null && message.hasOwnProperty("hash"))
                 object.hash = options.bytes === String ? $util.base64.encode(message.hash, 0, message.hash.length) : options.bytes === Array ? Array.prototype.slice.call(message.hash) : message.hash;
             if (message.header != null && message.hasOwnProperty("header"))
-                object.header = $root.abci.Header.toObject(message.header, options);
+                object.header = $root.types.Header.toObject(message.header, options);
             if (message.lastCommitInfo != null && message.hasOwnProperty("lastCommitInfo"))
-                object.lastCommitInfo = $root.abci.LastCommitInfo.toObject(message.lastCommitInfo, options);
+                object.lastCommitInfo = $root.types.LastCommitInfo.toObject(message.lastCommitInfo, options);
             if (message.byzantineValidators && message.byzantineValidators.length) {
                 object.byzantineValidators = [];
                 for (var j = 0; j < message.byzantineValidators.length; ++j)
-                    object.byzantineValidators[j] = $root.abci.Evidence.toObject(message.byzantineValidators[j], options);
+                    object.byzantineValidators[j] = $root.types.Evidence.toObject(message.byzantineValidators[j], options);
             }
             return object;
         };
@@ -2286,7 +2264,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestBeginBlock to JSON.
          * @function toJSON
-         * @memberof abci.RequestBeginBlock
+         * @memberof types.RequestBeginBlock
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -2297,22 +2275,22 @@ $root.abci = (function() {
         return RequestBeginBlock;
     })();
 
-    abci.RequestCheckTx = (function() {
+    types.RequestCheckTx = (function() {
 
         /**
          * Properties of a RequestCheckTx.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestCheckTx
          * @property {Uint8Array|null} [tx] RequestCheckTx tx
          */
 
         /**
          * Constructs a new RequestCheckTx.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestCheckTx.
          * @implements IRequestCheckTx
          * @constructor
-         * @param {abci.IRequestCheckTx=} [properties] Properties to set
+         * @param {types.IRequestCheckTx=} [properties] Properties to set
          */
         function RequestCheckTx(properties) {
             if (properties)
@@ -2324,7 +2302,7 @@ $root.abci = (function() {
         /**
          * RequestCheckTx tx.
          * @member {Uint8Array} tx
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @instance
          */
         RequestCheckTx.prototype.tx = $util.newBuffer([]);
@@ -2332,21 +2310,21 @@ $root.abci = (function() {
         /**
          * Creates a new RequestCheckTx instance using the specified properties.
          * @function create
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @static
-         * @param {abci.IRequestCheckTx=} [properties] Properties to set
-         * @returns {abci.RequestCheckTx} RequestCheckTx instance
+         * @param {types.IRequestCheckTx=} [properties] Properties to set
+         * @returns {types.RequestCheckTx} RequestCheckTx instance
          */
         RequestCheckTx.create = function create(properties) {
             return new RequestCheckTx(properties);
         };
 
         /**
-         * Encodes the specified RequestCheckTx message. Does not implicitly {@link abci.RequestCheckTx.verify|verify} messages.
+         * Encodes the specified RequestCheckTx message. Does not implicitly {@link types.RequestCheckTx.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @static
-         * @param {abci.IRequestCheckTx} message RequestCheckTx message or plain object to encode
+         * @param {types.IRequestCheckTx} message RequestCheckTx message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2359,11 +2337,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified RequestCheckTx message, length delimited. Does not implicitly {@link abci.RequestCheckTx.verify|verify} messages.
+         * Encodes the specified RequestCheckTx message, length delimited. Does not implicitly {@link types.RequestCheckTx.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @static
-         * @param {abci.IRequestCheckTx} message RequestCheckTx message or plain object to encode
+         * @param {types.IRequestCheckTx} message RequestCheckTx message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2374,18 +2352,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestCheckTx message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestCheckTx} RequestCheckTx
+         * @returns {types.RequestCheckTx} RequestCheckTx
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestCheckTx.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestCheckTx();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestCheckTx();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -2403,10 +2381,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestCheckTx message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestCheckTx} RequestCheckTx
+         * @returns {types.RequestCheckTx} RequestCheckTx
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -2419,7 +2397,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestCheckTx message.
          * @function verify
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2436,15 +2414,15 @@ $root.abci = (function() {
         /**
          * Creates a RequestCheckTx message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestCheckTx} RequestCheckTx
+         * @returns {types.RequestCheckTx} RequestCheckTx
          */
         RequestCheckTx.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestCheckTx)
+            if (object instanceof $root.types.RequestCheckTx)
                 return object;
-            var message = new $root.abci.RequestCheckTx();
+            var message = new $root.types.RequestCheckTx();
             if (object.tx != null)
                 if (typeof object.tx === "string")
                     $util.base64.decode(object.tx, message.tx = $util.newBuffer($util.base64.length(object.tx)), 0);
@@ -2456,9 +2434,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a RequestCheckTx message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @static
-         * @param {abci.RequestCheckTx} message RequestCheckTx
+         * @param {types.RequestCheckTx} message RequestCheckTx
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -2482,7 +2460,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestCheckTx to JSON.
          * @function toJSON
-         * @memberof abci.RequestCheckTx
+         * @memberof types.RequestCheckTx
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -2493,22 +2471,22 @@ $root.abci = (function() {
         return RequestCheckTx;
     })();
 
-    abci.RequestDeliverTx = (function() {
+    types.RequestDeliverTx = (function() {
 
         /**
          * Properties of a RequestDeliverTx.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestDeliverTx
          * @property {Uint8Array|null} [tx] RequestDeliverTx tx
          */
 
         /**
          * Constructs a new RequestDeliverTx.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestDeliverTx.
          * @implements IRequestDeliverTx
          * @constructor
-         * @param {abci.IRequestDeliverTx=} [properties] Properties to set
+         * @param {types.IRequestDeliverTx=} [properties] Properties to set
          */
         function RequestDeliverTx(properties) {
             if (properties)
@@ -2520,7 +2498,7 @@ $root.abci = (function() {
         /**
          * RequestDeliverTx tx.
          * @member {Uint8Array} tx
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @instance
          */
         RequestDeliverTx.prototype.tx = $util.newBuffer([]);
@@ -2528,21 +2506,21 @@ $root.abci = (function() {
         /**
          * Creates a new RequestDeliverTx instance using the specified properties.
          * @function create
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @static
-         * @param {abci.IRequestDeliverTx=} [properties] Properties to set
-         * @returns {abci.RequestDeliverTx} RequestDeliverTx instance
+         * @param {types.IRequestDeliverTx=} [properties] Properties to set
+         * @returns {types.RequestDeliverTx} RequestDeliverTx instance
          */
         RequestDeliverTx.create = function create(properties) {
             return new RequestDeliverTx(properties);
         };
 
         /**
-         * Encodes the specified RequestDeliverTx message. Does not implicitly {@link abci.RequestDeliverTx.verify|verify} messages.
+         * Encodes the specified RequestDeliverTx message. Does not implicitly {@link types.RequestDeliverTx.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @static
-         * @param {abci.IRequestDeliverTx} message RequestDeliverTx message or plain object to encode
+         * @param {types.IRequestDeliverTx} message RequestDeliverTx message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2555,11 +2533,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified RequestDeliverTx message, length delimited. Does not implicitly {@link abci.RequestDeliverTx.verify|verify} messages.
+         * Encodes the specified RequestDeliverTx message, length delimited. Does not implicitly {@link types.RequestDeliverTx.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @static
-         * @param {abci.IRequestDeliverTx} message RequestDeliverTx message or plain object to encode
+         * @param {types.IRequestDeliverTx} message RequestDeliverTx message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2570,18 +2548,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestDeliverTx message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestDeliverTx} RequestDeliverTx
+         * @returns {types.RequestDeliverTx} RequestDeliverTx
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestDeliverTx.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestDeliverTx();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestDeliverTx();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -2599,10 +2577,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestDeliverTx message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestDeliverTx} RequestDeliverTx
+         * @returns {types.RequestDeliverTx} RequestDeliverTx
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -2615,7 +2593,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestDeliverTx message.
          * @function verify
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2632,15 +2610,15 @@ $root.abci = (function() {
         /**
          * Creates a RequestDeliverTx message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestDeliverTx} RequestDeliverTx
+         * @returns {types.RequestDeliverTx} RequestDeliverTx
          */
         RequestDeliverTx.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestDeliverTx)
+            if (object instanceof $root.types.RequestDeliverTx)
                 return object;
-            var message = new $root.abci.RequestDeliverTx();
+            var message = new $root.types.RequestDeliverTx();
             if (object.tx != null)
                 if (typeof object.tx === "string")
                     $util.base64.decode(object.tx, message.tx = $util.newBuffer($util.base64.length(object.tx)), 0);
@@ -2652,9 +2630,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a RequestDeliverTx message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @static
-         * @param {abci.RequestDeliverTx} message RequestDeliverTx
+         * @param {types.RequestDeliverTx} message RequestDeliverTx
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -2678,7 +2656,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestDeliverTx to JSON.
          * @function toJSON
-         * @memberof abci.RequestDeliverTx
+         * @memberof types.RequestDeliverTx
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -2689,22 +2667,22 @@ $root.abci = (function() {
         return RequestDeliverTx;
     })();
 
-    abci.RequestEndBlock = (function() {
+    types.RequestEndBlock = (function() {
 
         /**
          * Properties of a RequestEndBlock.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestEndBlock
          * @property {number|Long|null} [height] RequestEndBlock height
          */
 
         /**
          * Constructs a new RequestEndBlock.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestEndBlock.
          * @implements IRequestEndBlock
          * @constructor
-         * @param {abci.IRequestEndBlock=} [properties] Properties to set
+         * @param {types.IRequestEndBlock=} [properties] Properties to set
          */
         function RequestEndBlock(properties) {
             if (properties)
@@ -2716,29 +2694,29 @@ $root.abci = (function() {
         /**
          * RequestEndBlock height.
          * @member {number|Long} height
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @instance
          */
-        RequestEndBlock.prototype.height = 0;
+        RequestEndBlock.prototype.height = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Creates a new RequestEndBlock instance using the specified properties.
          * @function create
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @static
-         * @param {abci.IRequestEndBlock=} [properties] Properties to set
-         * @returns {abci.RequestEndBlock} RequestEndBlock instance
+         * @param {types.IRequestEndBlock=} [properties] Properties to set
+         * @returns {types.RequestEndBlock} RequestEndBlock instance
          */
         RequestEndBlock.create = function create(properties) {
             return new RequestEndBlock(properties);
         };
 
         /**
-         * Encodes the specified RequestEndBlock message. Does not implicitly {@link abci.RequestEndBlock.verify|verify} messages.
+         * Encodes the specified RequestEndBlock message. Does not implicitly {@link types.RequestEndBlock.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @static
-         * @param {abci.IRequestEndBlock} message RequestEndBlock message or plain object to encode
+         * @param {types.IRequestEndBlock} message RequestEndBlock message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2751,11 +2729,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified RequestEndBlock message, length delimited. Does not implicitly {@link abci.RequestEndBlock.verify|verify} messages.
+         * Encodes the specified RequestEndBlock message, length delimited. Does not implicitly {@link types.RequestEndBlock.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @static
-         * @param {abci.IRequestEndBlock} message RequestEndBlock message or plain object to encode
+         * @param {types.IRequestEndBlock} message RequestEndBlock message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2766,18 +2744,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestEndBlock message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestEndBlock} RequestEndBlock
+         * @returns {types.RequestEndBlock} RequestEndBlock
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestEndBlock.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestEndBlock();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestEndBlock();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -2795,10 +2773,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestEndBlock message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestEndBlock} RequestEndBlock
+         * @returns {types.RequestEndBlock} RequestEndBlock
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -2811,7 +2789,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestEndBlock message.
          * @function verify
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2828,15 +2806,15 @@ $root.abci = (function() {
         /**
          * Creates a RequestEndBlock message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestEndBlock} RequestEndBlock
+         * @returns {types.RequestEndBlock} RequestEndBlock
          */
         RequestEndBlock.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestEndBlock)
+            if (object instanceof $root.types.RequestEndBlock)
                 return object;
-            var message = new $root.abci.RequestEndBlock();
+            var message = new $root.types.RequestEndBlock();
             if (object.height != null)
                 if ($util.Long)
                     (message.height = $util.Long.fromValue(object.height)).unsigned = false;
@@ -2852,9 +2830,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a RequestEndBlock message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @static
-         * @param {abci.RequestEndBlock} message RequestEndBlock
+         * @param {types.RequestEndBlock} message RequestEndBlock
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -2863,7 +2841,11 @@ $root.abci = (function() {
                 options = {};
             var object = {};
             if (options.defaults)
-                object.height = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.height = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.height = options.longs === String ? "0" : 0;
             if (message.height != null && message.hasOwnProperty("height"))
                 if (typeof message.height === "number")
                     object.height = options.longs === String ? String(message.height) : message.height;
@@ -2875,7 +2857,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestEndBlock to JSON.
          * @function toJSON
-         * @memberof abci.RequestEndBlock
+         * @memberof types.RequestEndBlock
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -2886,21 +2868,21 @@ $root.abci = (function() {
         return RequestEndBlock;
     })();
 
-    abci.RequestCommit = (function() {
+    types.RequestCommit = (function() {
 
         /**
          * Properties of a RequestCommit.
-         * @memberof abci
+         * @memberof types
          * @interface IRequestCommit
          */
 
         /**
          * Constructs a new RequestCommit.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a RequestCommit.
          * @implements IRequestCommit
          * @constructor
-         * @param {abci.IRequestCommit=} [properties] Properties to set
+         * @param {types.IRequestCommit=} [properties] Properties to set
          */
         function RequestCommit(properties) {
             if (properties)
@@ -2912,21 +2894,21 @@ $root.abci = (function() {
         /**
          * Creates a new RequestCommit instance using the specified properties.
          * @function create
-         * @memberof abci.RequestCommit
+         * @memberof types.RequestCommit
          * @static
-         * @param {abci.IRequestCommit=} [properties] Properties to set
-         * @returns {abci.RequestCommit} RequestCommit instance
+         * @param {types.IRequestCommit=} [properties] Properties to set
+         * @returns {types.RequestCommit} RequestCommit instance
          */
         RequestCommit.create = function create(properties) {
             return new RequestCommit(properties);
         };
 
         /**
-         * Encodes the specified RequestCommit message. Does not implicitly {@link abci.RequestCommit.verify|verify} messages.
+         * Encodes the specified RequestCommit message. Does not implicitly {@link types.RequestCommit.verify|verify} messages.
          * @function encode
-         * @memberof abci.RequestCommit
+         * @memberof types.RequestCommit
          * @static
-         * @param {abci.IRequestCommit} message RequestCommit message or plain object to encode
+         * @param {types.IRequestCommit} message RequestCommit message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2937,11 +2919,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified RequestCommit message, length delimited. Does not implicitly {@link abci.RequestCommit.verify|verify} messages.
+         * Encodes the specified RequestCommit message, length delimited. Does not implicitly {@link types.RequestCommit.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.RequestCommit
+         * @memberof types.RequestCommit
          * @static
-         * @param {abci.IRequestCommit} message RequestCommit message or plain object to encode
+         * @param {types.IRequestCommit} message RequestCommit message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -2952,18 +2934,18 @@ $root.abci = (function() {
         /**
          * Decodes a RequestCommit message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.RequestCommit
+         * @memberof types.RequestCommit
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestCommit} RequestCommit
+         * @returns {types.RequestCommit} RequestCommit
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         RequestCommit.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestCommit();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.RequestCommit();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -2978,10 +2960,10 @@ $root.abci = (function() {
         /**
          * Decodes a RequestCommit message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.RequestCommit
+         * @memberof types.RequestCommit
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestCommit} RequestCommit
+         * @returns {types.RequestCommit} RequestCommit
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -2994,7 +2976,7 @@ $root.abci = (function() {
         /**
          * Verifies a RequestCommit message.
          * @function verify
-         * @memberof abci.RequestCommit
+         * @memberof types.RequestCommit
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3008,23 +2990,23 @@ $root.abci = (function() {
         /**
          * Creates a RequestCommit message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.RequestCommit
+         * @memberof types.RequestCommit
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestCommit} RequestCommit
+         * @returns {types.RequestCommit} RequestCommit
          */
         RequestCommit.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestCommit)
+            if (object instanceof $root.types.RequestCommit)
                 return object;
-            return new $root.abci.RequestCommit();
+            return new $root.types.RequestCommit();
         };
 
         /**
          * Creates a plain object from a RequestCommit message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.RequestCommit
+         * @memberof types.RequestCommit
          * @static
-         * @param {abci.RequestCommit} message RequestCommit
+         * @param {types.RequestCommit} message RequestCommit
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -3035,7 +3017,7 @@ $root.abci = (function() {
         /**
          * Converts this RequestCommit to JSON.
          * @function toJSON
-         * @memberof abci.RequestCommit
+         * @memberof types.RequestCommit
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -3046,221 +3028,33 @@ $root.abci = (function() {
         return RequestCommit;
     })();
 
-    abci.RequestCheckBridge = (function() {
-
-        /**
-         * Properties of a RequestCheckBridge.
-         * @memberof abci
-         * @interface IRequestCheckBridge
-         * @property {number|null} [height] RequestCheckBridge height
-         */
-
-        /**
-         * Constructs a new RequestCheckBridge.
-         * @memberof abci
-         * @classdesc Represents a RequestCheckBridge.
-         * @implements IRequestCheckBridge
-         * @constructor
-         * @param {abci.IRequestCheckBridge=} [properties] Properties to set
-         */
-        function RequestCheckBridge(properties) {
-            if (properties)
-                for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
-                    if (properties[keys[i]] != null)
-                        this[keys[i]] = properties[keys[i]];
-        }
-
-        /**
-         * RequestCheckBridge height.
-         * @member {number} height
-         * @memberof abci.RequestCheckBridge
-         * @instance
-         */
-        RequestCheckBridge.prototype.height = 0;
-
-        /**
-         * Creates a new RequestCheckBridge instance using the specified properties.
-         * @function create
-         * @memberof abci.RequestCheckBridge
-         * @static
-         * @param {abci.IRequestCheckBridge=} [properties] Properties to set
-         * @returns {abci.RequestCheckBridge} RequestCheckBridge instance
-         */
-        RequestCheckBridge.create = function create(properties) {
-            return new RequestCheckBridge(properties);
-        };
-
-        /**
-         * Encodes the specified RequestCheckBridge message. Does not implicitly {@link abci.RequestCheckBridge.verify|verify} messages.
-         * @function encode
-         * @memberof abci.RequestCheckBridge
-         * @static
-         * @param {abci.IRequestCheckBridge} message RequestCheckBridge message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        RequestCheckBridge.encode = function encode(message, writer) {
-            if (!writer)
-                writer = $Writer.create();
-            if (message.height != null && message.hasOwnProperty("height"))
-                writer.uint32(/* id 1, wireType 0 =*/8).int32(message.height);
-            return writer;
-        };
-
-        /**
-         * Encodes the specified RequestCheckBridge message, length delimited. Does not implicitly {@link abci.RequestCheckBridge.verify|verify} messages.
-         * @function encodeDelimited
-         * @memberof abci.RequestCheckBridge
-         * @static
-         * @param {abci.IRequestCheckBridge} message RequestCheckBridge message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        RequestCheckBridge.encodeDelimited = function encodeDelimited(message, writer) {
-            return this.encode(message, writer).ldelim();
-        };
-
-        /**
-         * Decodes a RequestCheckBridge message from the specified reader or buffer.
-         * @function decode
-         * @memberof abci.RequestCheckBridge
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @param {number} [length] Message length if known beforehand
-         * @returns {abci.RequestCheckBridge} RequestCheckBridge
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        RequestCheckBridge.decode = function decode(reader, length) {
-            if (!(reader instanceof $Reader))
-                reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.RequestCheckBridge();
-            while (reader.pos < end) {
-                var tag = reader.uint32();
-                switch (tag >>> 3) {
-                case 1:
-                    message.height = reader.int32();
-                    break;
-                default:
-                    reader.skipType(tag & 7);
-                    break;
-                }
-            }
-            return message;
-        };
-
-        /**
-         * Decodes a RequestCheckBridge message from the specified reader or buffer, length delimited.
-         * @function decodeDelimited
-         * @memberof abci.RequestCheckBridge
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.RequestCheckBridge} RequestCheckBridge
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        RequestCheckBridge.decodeDelimited = function decodeDelimited(reader) {
-            if (!(reader instanceof $Reader))
-                reader = new $Reader(reader);
-            return this.decode(reader, reader.uint32());
-        };
-
-        /**
-         * Verifies a RequestCheckBridge message.
-         * @function verify
-         * @memberof abci.RequestCheckBridge
-         * @static
-         * @param {Object.<string,*>} message Plain object to verify
-         * @returns {string|null} `null` if valid, otherwise the reason why it is not
-         */
-        RequestCheckBridge.verify = function verify(message) {
-            if (typeof message !== "object" || message === null)
-                return "object expected";
-            if (message.height != null && message.hasOwnProperty("height"))
-                if (!$util.isInteger(message.height))
-                    return "height: integer expected";
-            return null;
-        };
-
-        /**
-         * Creates a RequestCheckBridge message from a plain object. Also converts values to their respective internal types.
-         * @function fromObject
-         * @memberof abci.RequestCheckBridge
-         * @static
-         * @param {Object.<string,*>} object Plain object
-         * @returns {abci.RequestCheckBridge} RequestCheckBridge
-         */
-        RequestCheckBridge.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.RequestCheckBridge)
-                return object;
-            var message = new $root.abci.RequestCheckBridge();
-            if (object.height != null)
-                message.height = object.height | 0;
-            return message;
-        };
-
-        /**
-         * Creates a plain object from a RequestCheckBridge message. Also converts values to other types if specified.
-         * @function toObject
-         * @memberof abci.RequestCheckBridge
-         * @static
-         * @param {abci.RequestCheckBridge} message RequestCheckBridge
-         * @param {$protobuf.IConversionOptions} [options] Conversion options
-         * @returns {Object.<string,*>} Plain object
-         */
-        RequestCheckBridge.toObject = function toObject(message, options) {
-            if (!options)
-                options = {};
-            var object = {};
-            if (options.defaults)
-                object.height = 0;
-            if (message.height != null && message.hasOwnProperty("height"))
-                object.height = message.height;
-            return object;
-        };
-
-        /**
-         * Converts this RequestCheckBridge to JSON.
-         * @function toJSON
-         * @memberof abci.RequestCheckBridge
-         * @instance
-         * @returns {Object.<string,*>} JSON object
-         */
-        RequestCheckBridge.prototype.toJSON = function toJSON() {
-            return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
-        };
-
-        return RequestCheckBridge;
-    })();
-
-    abci.Response = (function() {
+    types.Response = (function() {
 
         /**
          * Properties of a Response.
-         * @memberof abci
+         * @memberof types
          * @interface IResponse
-         * @property {abci.IResponseException|null} [exception] Response exception
-         * @property {abci.IResponseEcho|null} [echo] Response echo
-         * @property {abci.IResponseFlush|null} [flush] Response flush
-         * @property {abci.IResponseInfo|null} [info] Response info
-         * @property {abci.IResponseSetOption|null} [setOption] Response setOption
-         * @property {abci.IResponseInitChain|null} [initChain] Response initChain
-         * @property {abci.IResponseQuery|null} [query] Response query
-         * @property {abci.IResponseBeginBlock|null} [beginBlock] Response beginBlock
-         * @property {abci.IResponseCheckTx|null} [checkTx] Response checkTx
-         * @property {abci.IResponseDeliverTx|null} [deliverTx] Response deliverTx
-         * @property {abci.IResponseEndBlock|null} [endBlock] Response endBlock
-         * @property {abci.IResponseCommit|null} [commit] Response commit
-         * @property {abci.IResponseCheckBridge|null} [checkBridge] Response checkBridge
+         * @property {types.IResponseException|null} [exception] Response exception
+         * @property {types.IResponseEcho|null} [echo] Response echo
+         * @property {types.IResponseFlush|null} [flush] Response flush
+         * @property {types.IResponseInfo|null} [info] Response info
+         * @property {types.IResponseSetOption|null} [setOption] Response setOption
+         * @property {types.IResponseInitChain|null} [initChain] Response initChain
+         * @property {types.IResponseQuery|null} [query] Response query
+         * @property {types.IResponseBeginBlock|null} [beginBlock] Response beginBlock
+         * @property {types.IResponseCheckTx|null} [checkTx] Response checkTx
+         * @property {types.IResponseDeliverTx|null} [deliverTx] Response deliverTx
+         * @property {types.IResponseEndBlock|null} [endBlock] Response endBlock
+         * @property {types.IResponseCommit|null} [commit] Response commit
          */
 
         /**
          * Constructs a new Response.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a Response.
          * @implements IResponse
          * @constructor
-         * @param {abci.IResponse=} [properties] Properties to set
+         * @param {types.IResponse=} [properties] Properties to set
          */
         function Response(properties) {
             if (properties)
@@ -3271,140 +3065,132 @@ $root.abci = (function() {
 
         /**
          * Response exception.
-         * @member {abci.IResponseException|null|undefined} exception
-         * @memberof abci.Response
+         * @member {types.IResponseException|null|undefined} exception
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.exception = null;
 
         /**
          * Response echo.
-         * @member {abci.IResponseEcho|null|undefined} echo
-         * @memberof abci.Response
+         * @member {types.IResponseEcho|null|undefined} echo
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.echo = null;
 
         /**
          * Response flush.
-         * @member {abci.IResponseFlush|null|undefined} flush
-         * @memberof abci.Response
+         * @member {types.IResponseFlush|null|undefined} flush
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.flush = null;
 
         /**
          * Response info.
-         * @member {abci.IResponseInfo|null|undefined} info
-         * @memberof abci.Response
+         * @member {types.IResponseInfo|null|undefined} info
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.info = null;
 
         /**
          * Response setOption.
-         * @member {abci.IResponseSetOption|null|undefined} setOption
-         * @memberof abci.Response
+         * @member {types.IResponseSetOption|null|undefined} setOption
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.setOption = null;
 
         /**
          * Response initChain.
-         * @member {abci.IResponseInitChain|null|undefined} initChain
-         * @memberof abci.Response
+         * @member {types.IResponseInitChain|null|undefined} initChain
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.initChain = null;
 
         /**
          * Response query.
-         * @member {abci.IResponseQuery|null|undefined} query
-         * @memberof abci.Response
+         * @member {types.IResponseQuery|null|undefined} query
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.query = null;
 
         /**
          * Response beginBlock.
-         * @member {abci.IResponseBeginBlock|null|undefined} beginBlock
-         * @memberof abci.Response
+         * @member {types.IResponseBeginBlock|null|undefined} beginBlock
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.beginBlock = null;
 
         /**
          * Response checkTx.
-         * @member {abci.IResponseCheckTx|null|undefined} checkTx
-         * @memberof abci.Response
+         * @member {types.IResponseCheckTx|null|undefined} checkTx
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.checkTx = null;
 
         /**
          * Response deliverTx.
-         * @member {abci.IResponseDeliverTx|null|undefined} deliverTx
-         * @memberof abci.Response
+         * @member {types.IResponseDeliverTx|null|undefined} deliverTx
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.deliverTx = null;
 
         /**
          * Response endBlock.
-         * @member {abci.IResponseEndBlock|null|undefined} endBlock
-         * @memberof abci.Response
+         * @member {types.IResponseEndBlock|null|undefined} endBlock
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.endBlock = null;
 
         /**
          * Response commit.
-         * @member {abci.IResponseCommit|null|undefined} commit
-         * @memberof abci.Response
+         * @member {types.IResponseCommit|null|undefined} commit
+         * @memberof types.Response
          * @instance
          */
         Response.prototype.commit = null;
-
-        /**
-         * Response checkBridge.
-         * @member {abci.IResponseCheckBridge|null|undefined} checkBridge
-         * @memberof abci.Response
-         * @instance
-         */
-        Response.prototype.checkBridge = null;
 
         // OneOf field names bound to virtual getters and setters
         var $oneOfFields;
 
         /**
          * Response value.
-         * @member {"exception"|"echo"|"flush"|"info"|"setOption"|"initChain"|"query"|"beginBlock"|"checkTx"|"deliverTx"|"endBlock"|"commit"|"checkBridge"|undefined} value
-         * @memberof abci.Response
+         * @member {"exception"|"echo"|"flush"|"info"|"setOption"|"initChain"|"query"|"beginBlock"|"checkTx"|"deliverTx"|"endBlock"|"commit"|undefined} value
+         * @memberof types.Response
          * @instance
          */
         Object.defineProperty(Response.prototype, "value", {
-            get: $util.oneOfGetter($oneOfFields = ["exception", "echo", "flush", "info", "setOption", "initChain", "query", "beginBlock", "checkTx", "deliverTx", "endBlock", "commit", "checkBridge"]),
+            get: $util.oneOfGetter($oneOfFields = ["exception", "echo", "flush", "info", "setOption", "initChain", "query", "beginBlock", "checkTx", "deliverTx", "endBlock", "commit"]),
             set: $util.oneOfSetter($oneOfFields)
         });
 
         /**
          * Creates a new Response instance using the specified properties.
          * @function create
-         * @memberof abci.Response
+         * @memberof types.Response
          * @static
-         * @param {abci.IResponse=} [properties] Properties to set
-         * @returns {abci.Response} Response instance
+         * @param {types.IResponse=} [properties] Properties to set
+         * @returns {types.Response} Response instance
          */
         Response.create = function create(properties) {
             return new Response(properties);
         };
 
         /**
-         * Encodes the specified Response message. Does not implicitly {@link abci.Response.verify|verify} messages.
+         * Encodes the specified Response message. Does not implicitly {@link types.Response.verify|verify} messages.
          * @function encode
-         * @memberof abci.Response
+         * @memberof types.Response
          * @static
-         * @param {abci.IResponse} message Response message or plain object to encode
+         * @param {types.IResponse} message Response message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -3412,40 +3198,38 @@ $root.abci = (function() {
             if (!writer)
                 writer = $Writer.create();
             if (message.exception != null && message.hasOwnProperty("exception"))
-                $root.abci.ResponseException.encode(message.exception, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                $root.types.ResponseException.encode(message.exception, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
             if (message.echo != null && message.hasOwnProperty("echo"))
-                $root.abci.ResponseEcho.encode(message.echo, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                $root.types.ResponseEcho.encode(message.echo, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
             if (message.flush != null && message.hasOwnProperty("flush"))
-                $root.abci.ResponseFlush.encode(message.flush, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
+                $root.types.ResponseFlush.encode(message.flush, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
             if (message.info != null && message.hasOwnProperty("info"))
-                $root.abci.ResponseInfo.encode(message.info, writer.uint32(/* id 4, wireType 2 =*/34).fork()).ldelim();
+                $root.types.ResponseInfo.encode(message.info, writer.uint32(/* id 4, wireType 2 =*/34).fork()).ldelim();
             if (message.setOption != null && message.hasOwnProperty("setOption"))
-                $root.abci.ResponseSetOption.encode(message.setOption, writer.uint32(/* id 5, wireType 2 =*/42).fork()).ldelim();
+                $root.types.ResponseSetOption.encode(message.setOption, writer.uint32(/* id 5, wireType 2 =*/42).fork()).ldelim();
             if (message.initChain != null && message.hasOwnProperty("initChain"))
-                $root.abci.ResponseInitChain.encode(message.initChain, writer.uint32(/* id 6, wireType 2 =*/50).fork()).ldelim();
+                $root.types.ResponseInitChain.encode(message.initChain, writer.uint32(/* id 6, wireType 2 =*/50).fork()).ldelim();
             if (message.query != null && message.hasOwnProperty("query"))
-                $root.abci.ResponseQuery.encode(message.query, writer.uint32(/* id 7, wireType 2 =*/58).fork()).ldelim();
+                $root.types.ResponseQuery.encode(message.query, writer.uint32(/* id 7, wireType 2 =*/58).fork()).ldelim();
             if (message.beginBlock != null && message.hasOwnProperty("beginBlock"))
-                $root.abci.ResponseBeginBlock.encode(message.beginBlock, writer.uint32(/* id 8, wireType 2 =*/66).fork()).ldelim();
+                $root.types.ResponseBeginBlock.encode(message.beginBlock, writer.uint32(/* id 8, wireType 2 =*/66).fork()).ldelim();
             if (message.checkTx != null && message.hasOwnProperty("checkTx"))
-                $root.abci.ResponseCheckTx.encode(message.checkTx, writer.uint32(/* id 9, wireType 2 =*/74).fork()).ldelim();
+                $root.types.ResponseCheckTx.encode(message.checkTx, writer.uint32(/* id 9, wireType 2 =*/74).fork()).ldelim();
             if (message.deliverTx != null && message.hasOwnProperty("deliverTx"))
-                $root.abci.ResponseDeliverTx.encode(message.deliverTx, writer.uint32(/* id 10, wireType 2 =*/82).fork()).ldelim();
+                $root.types.ResponseDeliverTx.encode(message.deliverTx, writer.uint32(/* id 10, wireType 2 =*/82).fork()).ldelim();
             if (message.endBlock != null && message.hasOwnProperty("endBlock"))
-                $root.abci.ResponseEndBlock.encode(message.endBlock, writer.uint32(/* id 11, wireType 2 =*/90).fork()).ldelim();
+                $root.types.ResponseEndBlock.encode(message.endBlock, writer.uint32(/* id 11, wireType 2 =*/90).fork()).ldelim();
             if (message.commit != null && message.hasOwnProperty("commit"))
-                $root.abci.ResponseCommit.encode(message.commit, writer.uint32(/* id 12, wireType 2 =*/98).fork()).ldelim();
-            if (message.checkBridge != null && message.hasOwnProperty("checkBridge"))
-                $root.abci.ResponseCheckBridge.encode(message.checkBridge, writer.uint32(/* id 13, wireType 2 =*/106).fork()).ldelim();
+                $root.types.ResponseCommit.encode(message.commit, writer.uint32(/* id 12, wireType 2 =*/98).fork()).ldelim();
             return writer;
         };
 
         /**
-         * Encodes the specified Response message, length delimited. Does not implicitly {@link abci.Response.verify|verify} messages.
+         * Encodes the specified Response message, length delimited. Does not implicitly {@link types.Response.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.Response
+         * @memberof types.Response
          * @static
-         * @param {abci.IResponse} message Response message or plain object to encode
+         * @param {types.IResponse} message Response message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -3456,59 +3240,56 @@ $root.abci = (function() {
         /**
          * Decodes a Response message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.Response
+         * @memberof types.Response
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.Response} Response
+         * @returns {types.Response} Response
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         Response.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.Response();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.Response();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
                 case 1:
-                    message.exception = $root.abci.ResponseException.decode(reader, reader.uint32());
+                    message.exception = $root.types.ResponseException.decode(reader, reader.uint32());
                     break;
                 case 2:
-                    message.echo = $root.abci.ResponseEcho.decode(reader, reader.uint32());
+                    message.echo = $root.types.ResponseEcho.decode(reader, reader.uint32());
                     break;
                 case 3:
-                    message.flush = $root.abci.ResponseFlush.decode(reader, reader.uint32());
+                    message.flush = $root.types.ResponseFlush.decode(reader, reader.uint32());
                     break;
                 case 4:
-                    message.info = $root.abci.ResponseInfo.decode(reader, reader.uint32());
+                    message.info = $root.types.ResponseInfo.decode(reader, reader.uint32());
                     break;
                 case 5:
-                    message.setOption = $root.abci.ResponseSetOption.decode(reader, reader.uint32());
+                    message.setOption = $root.types.ResponseSetOption.decode(reader, reader.uint32());
                     break;
                 case 6:
-                    message.initChain = $root.abci.ResponseInitChain.decode(reader, reader.uint32());
+                    message.initChain = $root.types.ResponseInitChain.decode(reader, reader.uint32());
                     break;
                 case 7:
-                    message.query = $root.abci.ResponseQuery.decode(reader, reader.uint32());
+                    message.query = $root.types.ResponseQuery.decode(reader, reader.uint32());
                     break;
                 case 8:
-                    message.beginBlock = $root.abci.ResponseBeginBlock.decode(reader, reader.uint32());
+                    message.beginBlock = $root.types.ResponseBeginBlock.decode(reader, reader.uint32());
                     break;
                 case 9:
-                    message.checkTx = $root.abci.ResponseCheckTx.decode(reader, reader.uint32());
+                    message.checkTx = $root.types.ResponseCheckTx.decode(reader, reader.uint32());
                     break;
                 case 10:
-                    message.deliverTx = $root.abci.ResponseDeliverTx.decode(reader, reader.uint32());
+                    message.deliverTx = $root.types.ResponseDeliverTx.decode(reader, reader.uint32());
                     break;
                 case 11:
-                    message.endBlock = $root.abci.ResponseEndBlock.decode(reader, reader.uint32());
+                    message.endBlock = $root.types.ResponseEndBlock.decode(reader, reader.uint32());
                     break;
                 case 12:
-                    message.commit = $root.abci.ResponseCommit.decode(reader, reader.uint32());
-                    break;
-                case 13:
-                    message.checkBridge = $root.abci.ResponseCheckBridge.decode(reader, reader.uint32());
+                    message.commit = $root.types.ResponseCommit.decode(reader, reader.uint32());
                     break;
                 default:
                     reader.skipType(tag & 7);
@@ -3521,10 +3302,10 @@ $root.abci = (function() {
         /**
          * Decodes a Response message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.Response
+         * @memberof types.Response
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.Response} Response
+         * @returns {types.Response} Response
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -3537,7 +3318,7 @@ $root.abci = (function() {
         /**
          * Verifies a Response message.
          * @function verify
-         * @memberof abci.Response
+         * @memberof types.Response
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3549,7 +3330,7 @@ $root.abci = (function() {
             if (message.exception != null && message.hasOwnProperty("exception")) {
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseException.verify(message.exception);
+                    var error = $root.types.ResponseException.verify(message.exception);
                     if (error)
                         return "exception." + error;
                 }
@@ -3559,7 +3340,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseEcho.verify(message.echo);
+                    var error = $root.types.ResponseEcho.verify(message.echo);
                     if (error)
                         return "echo." + error;
                 }
@@ -3569,7 +3350,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseFlush.verify(message.flush);
+                    var error = $root.types.ResponseFlush.verify(message.flush);
                     if (error)
                         return "flush." + error;
                 }
@@ -3579,7 +3360,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseInfo.verify(message.info);
+                    var error = $root.types.ResponseInfo.verify(message.info);
                     if (error)
                         return "info." + error;
                 }
@@ -3589,7 +3370,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseSetOption.verify(message.setOption);
+                    var error = $root.types.ResponseSetOption.verify(message.setOption);
                     if (error)
                         return "setOption." + error;
                 }
@@ -3599,7 +3380,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseInitChain.verify(message.initChain);
+                    var error = $root.types.ResponseInitChain.verify(message.initChain);
                     if (error)
                         return "initChain." + error;
                 }
@@ -3609,7 +3390,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseQuery.verify(message.query);
+                    var error = $root.types.ResponseQuery.verify(message.query);
                     if (error)
                         return "query." + error;
                 }
@@ -3619,7 +3400,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseBeginBlock.verify(message.beginBlock);
+                    var error = $root.types.ResponseBeginBlock.verify(message.beginBlock);
                     if (error)
                         return "beginBlock." + error;
                 }
@@ -3629,7 +3410,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseCheckTx.verify(message.checkTx);
+                    var error = $root.types.ResponseCheckTx.verify(message.checkTx);
                     if (error)
                         return "checkTx." + error;
                 }
@@ -3639,7 +3420,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseDeliverTx.verify(message.deliverTx);
+                    var error = $root.types.ResponseDeliverTx.verify(message.deliverTx);
                     if (error)
                         return "deliverTx." + error;
                 }
@@ -3649,7 +3430,7 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseEndBlock.verify(message.endBlock);
+                    var error = $root.types.ResponseEndBlock.verify(message.endBlock);
                     if (error)
                         return "endBlock." + error;
                 }
@@ -3659,19 +3440,9 @@ $root.abci = (function() {
                     return "value: multiple values";
                 properties.value = 1;
                 {
-                    var error = $root.abci.ResponseCommit.verify(message.commit);
+                    var error = $root.types.ResponseCommit.verify(message.commit);
                     if (error)
                         return "commit." + error;
-                }
-            }
-            if (message.checkBridge != null && message.hasOwnProperty("checkBridge")) {
-                if (properties.value === 1)
-                    return "value: multiple values";
-                properties.value = 1;
-                {
-                    var error = $root.abci.ResponseCheckBridge.verify(message.checkBridge);
-                    if (error)
-                        return "checkBridge." + error;
                 }
             }
             return null;
@@ -3680,79 +3451,74 @@ $root.abci = (function() {
         /**
          * Creates a Response message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.Response
+         * @memberof types.Response
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.Response} Response
+         * @returns {types.Response} Response
          */
         Response.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.Response)
+            if (object instanceof $root.types.Response)
                 return object;
-            var message = new $root.abci.Response();
+            var message = new $root.types.Response();
             if (object.exception != null) {
                 if (typeof object.exception !== "object")
-                    throw TypeError(".abci.Response.exception: object expected");
-                message.exception = $root.abci.ResponseException.fromObject(object.exception);
+                    throw TypeError(".types.Response.exception: object expected");
+                message.exception = $root.types.ResponseException.fromObject(object.exception);
             }
             if (object.echo != null) {
                 if (typeof object.echo !== "object")
-                    throw TypeError(".abci.Response.echo: object expected");
-                message.echo = $root.abci.ResponseEcho.fromObject(object.echo);
+                    throw TypeError(".types.Response.echo: object expected");
+                message.echo = $root.types.ResponseEcho.fromObject(object.echo);
             }
             if (object.flush != null) {
                 if (typeof object.flush !== "object")
-                    throw TypeError(".abci.Response.flush: object expected");
-                message.flush = $root.abci.ResponseFlush.fromObject(object.flush);
+                    throw TypeError(".types.Response.flush: object expected");
+                message.flush = $root.types.ResponseFlush.fromObject(object.flush);
             }
             if (object.info != null) {
                 if (typeof object.info !== "object")
-                    throw TypeError(".abci.Response.info: object expected");
-                message.info = $root.abci.ResponseInfo.fromObject(object.info);
+                    throw TypeError(".types.Response.info: object expected");
+                message.info = $root.types.ResponseInfo.fromObject(object.info);
             }
             if (object.setOption != null) {
                 if (typeof object.setOption !== "object")
-                    throw TypeError(".abci.Response.setOption: object expected");
-                message.setOption = $root.abci.ResponseSetOption.fromObject(object.setOption);
+                    throw TypeError(".types.Response.setOption: object expected");
+                message.setOption = $root.types.ResponseSetOption.fromObject(object.setOption);
             }
             if (object.initChain != null) {
                 if (typeof object.initChain !== "object")
-                    throw TypeError(".abci.Response.initChain: object expected");
-                message.initChain = $root.abci.ResponseInitChain.fromObject(object.initChain);
+                    throw TypeError(".types.Response.initChain: object expected");
+                message.initChain = $root.types.ResponseInitChain.fromObject(object.initChain);
             }
             if (object.query != null) {
                 if (typeof object.query !== "object")
-                    throw TypeError(".abci.Response.query: object expected");
-                message.query = $root.abci.ResponseQuery.fromObject(object.query);
+                    throw TypeError(".types.Response.query: object expected");
+                message.query = $root.types.ResponseQuery.fromObject(object.query);
             }
             if (object.beginBlock != null) {
                 if (typeof object.beginBlock !== "object")
-                    throw TypeError(".abci.Response.beginBlock: object expected");
-                message.beginBlock = $root.abci.ResponseBeginBlock.fromObject(object.beginBlock);
+                    throw TypeError(".types.Response.beginBlock: object expected");
+                message.beginBlock = $root.types.ResponseBeginBlock.fromObject(object.beginBlock);
             }
             if (object.checkTx != null) {
                 if (typeof object.checkTx !== "object")
-                    throw TypeError(".abci.Response.checkTx: object expected");
-                message.checkTx = $root.abci.ResponseCheckTx.fromObject(object.checkTx);
+                    throw TypeError(".types.Response.checkTx: object expected");
+                message.checkTx = $root.types.ResponseCheckTx.fromObject(object.checkTx);
             }
             if (object.deliverTx != null) {
                 if (typeof object.deliverTx !== "object")
-                    throw TypeError(".abci.Response.deliverTx: object expected");
-                message.deliverTx = $root.abci.ResponseDeliverTx.fromObject(object.deliverTx);
+                    throw TypeError(".types.Response.deliverTx: object expected");
+                message.deliverTx = $root.types.ResponseDeliverTx.fromObject(object.deliverTx);
             }
             if (object.endBlock != null) {
                 if (typeof object.endBlock !== "object")
-                    throw TypeError(".abci.Response.endBlock: object expected");
-                message.endBlock = $root.abci.ResponseEndBlock.fromObject(object.endBlock);
+                    throw TypeError(".types.Response.endBlock: object expected");
+                message.endBlock = $root.types.ResponseEndBlock.fromObject(object.endBlock);
             }
             if (object.commit != null) {
                 if (typeof object.commit !== "object")
-                    throw TypeError(".abci.Response.commit: object expected");
-                message.commit = $root.abci.ResponseCommit.fromObject(object.commit);
-            }
-            if (object.checkBridge != null) {
-                if (typeof object.checkBridge !== "object")
-                    throw TypeError(".abci.Response.checkBridge: object expected");
-                message.checkBridge = $root.abci.ResponseCheckBridge.fromObject(object.checkBridge);
+                    throw TypeError(".types.Response.commit: object expected");
+                message.commit = $root.types.ResponseCommit.fromObject(object.commit);
             }
             return message;
         };
@@ -3760,9 +3526,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a Response message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.Response
+         * @memberof types.Response
          * @static
-         * @param {abci.Response} message Response
+         * @param {types.Response} message Response
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -3771,69 +3537,64 @@ $root.abci = (function() {
                 options = {};
             var object = {};
             if (message.exception != null && message.hasOwnProperty("exception")) {
-                object.exception = $root.abci.ResponseException.toObject(message.exception, options);
+                object.exception = $root.types.ResponseException.toObject(message.exception, options);
                 if (options.oneofs)
                     object.value = "exception";
             }
             if (message.echo != null && message.hasOwnProperty("echo")) {
-                object.echo = $root.abci.ResponseEcho.toObject(message.echo, options);
+                object.echo = $root.types.ResponseEcho.toObject(message.echo, options);
                 if (options.oneofs)
                     object.value = "echo";
             }
             if (message.flush != null && message.hasOwnProperty("flush")) {
-                object.flush = $root.abci.ResponseFlush.toObject(message.flush, options);
+                object.flush = $root.types.ResponseFlush.toObject(message.flush, options);
                 if (options.oneofs)
                     object.value = "flush";
             }
             if (message.info != null && message.hasOwnProperty("info")) {
-                object.info = $root.abci.ResponseInfo.toObject(message.info, options);
+                object.info = $root.types.ResponseInfo.toObject(message.info, options);
                 if (options.oneofs)
                     object.value = "info";
             }
             if (message.setOption != null && message.hasOwnProperty("setOption")) {
-                object.setOption = $root.abci.ResponseSetOption.toObject(message.setOption, options);
+                object.setOption = $root.types.ResponseSetOption.toObject(message.setOption, options);
                 if (options.oneofs)
                     object.value = "setOption";
             }
             if (message.initChain != null && message.hasOwnProperty("initChain")) {
-                object.initChain = $root.abci.ResponseInitChain.toObject(message.initChain, options);
+                object.initChain = $root.types.ResponseInitChain.toObject(message.initChain, options);
                 if (options.oneofs)
                     object.value = "initChain";
             }
             if (message.query != null && message.hasOwnProperty("query")) {
-                object.query = $root.abci.ResponseQuery.toObject(message.query, options);
+                object.query = $root.types.ResponseQuery.toObject(message.query, options);
                 if (options.oneofs)
                     object.value = "query";
             }
             if (message.beginBlock != null && message.hasOwnProperty("beginBlock")) {
-                object.beginBlock = $root.abci.ResponseBeginBlock.toObject(message.beginBlock, options);
+                object.beginBlock = $root.types.ResponseBeginBlock.toObject(message.beginBlock, options);
                 if (options.oneofs)
                     object.value = "beginBlock";
             }
             if (message.checkTx != null && message.hasOwnProperty("checkTx")) {
-                object.checkTx = $root.abci.ResponseCheckTx.toObject(message.checkTx, options);
+                object.checkTx = $root.types.ResponseCheckTx.toObject(message.checkTx, options);
                 if (options.oneofs)
                     object.value = "checkTx";
             }
             if (message.deliverTx != null && message.hasOwnProperty("deliverTx")) {
-                object.deliverTx = $root.abci.ResponseDeliverTx.toObject(message.deliverTx, options);
+                object.deliverTx = $root.types.ResponseDeliverTx.toObject(message.deliverTx, options);
                 if (options.oneofs)
                     object.value = "deliverTx";
             }
             if (message.endBlock != null && message.hasOwnProperty("endBlock")) {
-                object.endBlock = $root.abci.ResponseEndBlock.toObject(message.endBlock, options);
+                object.endBlock = $root.types.ResponseEndBlock.toObject(message.endBlock, options);
                 if (options.oneofs)
                     object.value = "endBlock";
             }
             if (message.commit != null && message.hasOwnProperty("commit")) {
-                object.commit = $root.abci.ResponseCommit.toObject(message.commit, options);
+                object.commit = $root.types.ResponseCommit.toObject(message.commit, options);
                 if (options.oneofs)
                     object.value = "commit";
-            }
-            if (message.checkBridge != null && message.hasOwnProperty("checkBridge")) {
-                object.checkBridge = $root.abci.ResponseCheckBridge.toObject(message.checkBridge, options);
-                if (options.oneofs)
-                    object.value = "checkBridge";
             }
             return object;
         };
@@ -3841,7 +3602,7 @@ $root.abci = (function() {
         /**
          * Converts this Response to JSON.
          * @function toJSON
-         * @memberof abci.Response
+         * @memberof types.Response
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -3852,22 +3613,22 @@ $root.abci = (function() {
         return Response;
     })();
 
-    abci.ResponseException = (function() {
+    types.ResponseException = (function() {
 
         /**
          * Properties of a ResponseException.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseException
          * @property {string|null} [error] ResponseException error
          */
 
         /**
          * Constructs a new ResponseException.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseException.
          * @implements IResponseException
          * @constructor
-         * @param {abci.IResponseException=} [properties] Properties to set
+         * @param {types.IResponseException=} [properties] Properties to set
          */
         function ResponseException(properties) {
             if (properties)
@@ -3879,7 +3640,7 @@ $root.abci = (function() {
         /**
          * ResponseException error.
          * @member {string} error
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @instance
          */
         ResponseException.prototype.error = "";
@@ -3887,21 +3648,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseException instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @static
-         * @param {abci.IResponseException=} [properties] Properties to set
-         * @returns {abci.ResponseException} ResponseException instance
+         * @param {types.IResponseException=} [properties] Properties to set
+         * @returns {types.ResponseException} ResponseException instance
          */
         ResponseException.create = function create(properties) {
             return new ResponseException(properties);
         };
 
         /**
-         * Encodes the specified ResponseException message. Does not implicitly {@link abci.ResponseException.verify|verify} messages.
+         * Encodes the specified ResponseException message. Does not implicitly {@link types.ResponseException.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @static
-         * @param {abci.IResponseException} message ResponseException message or plain object to encode
+         * @param {types.IResponseException} message ResponseException message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -3914,11 +3675,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseException message, length delimited. Does not implicitly {@link abci.ResponseException.verify|verify} messages.
+         * Encodes the specified ResponseException message, length delimited. Does not implicitly {@link types.ResponseException.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @static
-         * @param {abci.IResponseException} message ResponseException message or plain object to encode
+         * @param {types.IResponseException} message ResponseException message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -3929,18 +3690,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseException message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseException} ResponseException
+         * @returns {types.ResponseException} ResponseException
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseException.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseException();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseException();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -3958,10 +3719,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseException message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseException} ResponseException
+         * @returns {types.ResponseException} ResponseException
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -3974,7 +3735,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseException message.
          * @function verify
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3991,15 +3752,15 @@ $root.abci = (function() {
         /**
          * Creates a ResponseException message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseException} ResponseException
+         * @returns {types.ResponseException} ResponseException
          */
         ResponseException.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseException)
+            if (object instanceof $root.types.ResponseException)
                 return object;
-            var message = new $root.abci.ResponseException();
+            var message = new $root.types.ResponseException();
             if (object.error != null)
                 message.error = String(object.error);
             return message;
@@ -4008,9 +3769,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseException message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @static
-         * @param {abci.ResponseException} message ResponseException
+         * @param {types.ResponseException} message ResponseException
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -4028,7 +3789,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseException to JSON.
          * @function toJSON
-         * @memberof abci.ResponseException
+         * @memberof types.ResponseException
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -4039,22 +3800,22 @@ $root.abci = (function() {
         return ResponseException;
     })();
 
-    abci.ResponseEcho = (function() {
+    types.ResponseEcho = (function() {
 
         /**
          * Properties of a ResponseEcho.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseEcho
          * @property {string|null} [message] ResponseEcho message
          */
 
         /**
          * Constructs a new ResponseEcho.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseEcho.
          * @implements IResponseEcho
          * @constructor
-         * @param {abci.IResponseEcho=} [properties] Properties to set
+         * @param {types.IResponseEcho=} [properties] Properties to set
          */
         function ResponseEcho(properties) {
             if (properties)
@@ -4066,7 +3827,7 @@ $root.abci = (function() {
         /**
          * ResponseEcho message.
          * @member {string} message
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @instance
          */
         ResponseEcho.prototype.message = "";
@@ -4074,21 +3835,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseEcho instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @static
-         * @param {abci.IResponseEcho=} [properties] Properties to set
-         * @returns {abci.ResponseEcho} ResponseEcho instance
+         * @param {types.IResponseEcho=} [properties] Properties to set
+         * @returns {types.ResponseEcho} ResponseEcho instance
          */
         ResponseEcho.create = function create(properties) {
             return new ResponseEcho(properties);
         };
 
         /**
-         * Encodes the specified ResponseEcho message. Does not implicitly {@link abci.ResponseEcho.verify|verify} messages.
+         * Encodes the specified ResponseEcho message. Does not implicitly {@link types.ResponseEcho.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @static
-         * @param {abci.IResponseEcho} message ResponseEcho message or plain object to encode
+         * @param {types.IResponseEcho} message ResponseEcho message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -4101,11 +3862,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseEcho message, length delimited. Does not implicitly {@link abci.ResponseEcho.verify|verify} messages.
+         * Encodes the specified ResponseEcho message, length delimited. Does not implicitly {@link types.ResponseEcho.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @static
-         * @param {abci.IResponseEcho} message ResponseEcho message or plain object to encode
+         * @param {types.IResponseEcho} message ResponseEcho message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -4116,18 +3877,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseEcho message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseEcho} ResponseEcho
+         * @returns {types.ResponseEcho} ResponseEcho
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseEcho.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseEcho();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseEcho();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -4145,10 +3906,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseEcho message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseEcho} ResponseEcho
+         * @returns {types.ResponseEcho} ResponseEcho
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -4161,7 +3922,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseEcho message.
          * @function verify
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4178,15 +3939,15 @@ $root.abci = (function() {
         /**
          * Creates a ResponseEcho message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseEcho} ResponseEcho
+         * @returns {types.ResponseEcho} ResponseEcho
          */
         ResponseEcho.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseEcho)
+            if (object instanceof $root.types.ResponseEcho)
                 return object;
-            var message = new $root.abci.ResponseEcho();
+            var message = new $root.types.ResponseEcho();
             if (object.message != null)
                 message.message = String(object.message);
             return message;
@@ -4195,9 +3956,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseEcho message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @static
-         * @param {abci.ResponseEcho} message ResponseEcho
+         * @param {types.ResponseEcho} message ResponseEcho
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -4215,7 +3976,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseEcho to JSON.
          * @function toJSON
-         * @memberof abci.ResponseEcho
+         * @memberof types.ResponseEcho
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -4226,21 +3987,21 @@ $root.abci = (function() {
         return ResponseEcho;
     })();
 
-    abci.ResponseFlush = (function() {
+    types.ResponseFlush = (function() {
 
         /**
          * Properties of a ResponseFlush.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseFlush
          */
 
         /**
          * Constructs a new ResponseFlush.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseFlush.
          * @implements IResponseFlush
          * @constructor
-         * @param {abci.IResponseFlush=} [properties] Properties to set
+         * @param {types.IResponseFlush=} [properties] Properties to set
          */
         function ResponseFlush(properties) {
             if (properties)
@@ -4252,21 +4013,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseFlush instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseFlush
+         * @memberof types.ResponseFlush
          * @static
-         * @param {abci.IResponseFlush=} [properties] Properties to set
-         * @returns {abci.ResponseFlush} ResponseFlush instance
+         * @param {types.IResponseFlush=} [properties] Properties to set
+         * @returns {types.ResponseFlush} ResponseFlush instance
          */
         ResponseFlush.create = function create(properties) {
             return new ResponseFlush(properties);
         };
 
         /**
-         * Encodes the specified ResponseFlush message. Does not implicitly {@link abci.ResponseFlush.verify|verify} messages.
+         * Encodes the specified ResponseFlush message. Does not implicitly {@link types.ResponseFlush.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseFlush
+         * @memberof types.ResponseFlush
          * @static
-         * @param {abci.IResponseFlush} message ResponseFlush message or plain object to encode
+         * @param {types.IResponseFlush} message ResponseFlush message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -4277,11 +4038,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseFlush message, length delimited. Does not implicitly {@link abci.ResponseFlush.verify|verify} messages.
+         * Encodes the specified ResponseFlush message, length delimited. Does not implicitly {@link types.ResponseFlush.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseFlush
+         * @memberof types.ResponseFlush
          * @static
-         * @param {abci.IResponseFlush} message ResponseFlush message or plain object to encode
+         * @param {types.IResponseFlush} message ResponseFlush message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -4292,18 +4053,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseFlush message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseFlush
+         * @memberof types.ResponseFlush
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseFlush} ResponseFlush
+         * @returns {types.ResponseFlush} ResponseFlush
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseFlush.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseFlush();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseFlush();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -4318,10 +4079,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseFlush message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseFlush
+         * @memberof types.ResponseFlush
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseFlush} ResponseFlush
+         * @returns {types.ResponseFlush} ResponseFlush
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -4334,7 +4095,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseFlush message.
          * @function verify
-         * @memberof abci.ResponseFlush
+         * @memberof types.ResponseFlush
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4348,23 +4109,23 @@ $root.abci = (function() {
         /**
          * Creates a ResponseFlush message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseFlush
+         * @memberof types.ResponseFlush
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseFlush} ResponseFlush
+         * @returns {types.ResponseFlush} ResponseFlush
          */
         ResponseFlush.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseFlush)
+            if (object instanceof $root.types.ResponseFlush)
                 return object;
-            return new $root.abci.ResponseFlush();
+            return new $root.types.ResponseFlush();
         };
 
         /**
          * Creates a plain object from a ResponseFlush message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseFlush
+         * @memberof types.ResponseFlush
          * @static
-         * @param {abci.ResponseFlush} message ResponseFlush
+         * @param {types.ResponseFlush} message ResponseFlush
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -4375,7 +4136,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseFlush to JSON.
          * @function toJSON
-         * @memberof abci.ResponseFlush
+         * @memberof types.ResponseFlush
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -4386,11 +4147,11 @@ $root.abci = (function() {
         return ResponseFlush;
     })();
 
-    abci.ResponseInfo = (function() {
+    types.ResponseInfo = (function() {
 
         /**
          * Properties of a ResponseInfo.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseInfo
          * @property {string|null} [data] ResponseInfo data
          * @property {string|null} [version] ResponseInfo version
@@ -4401,11 +4162,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new ResponseInfo.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseInfo.
          * @implements IResponseInfo
          * @constructor
-         * @param {abci.IResponseInfo=} [properties] Properties to set
+         * @param {types.IResponseInfo=} [properties] Properties to set
          */
         function ResponseInfo(properties) {
             if (properties)
@@ -4417,7 +4178,7 @@ $root.abci = (function() {
         /**
          * ResponseInfo data.
          * @member {string} data
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @instance
          */
         ResponseInfo.prototype.data = "";
@@ -4425,7 +4186,7 @@ $root.abci = (function() {
         /**
          * ResponseInfo version.
          * @member {string} version
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @instance
          */
         ResponseInfo.prototype.version = "";
@@ -4433,23 +4194,23 @@ $root.abci = (function() {
         /**
          * ResponseInfo appVersion.
          * @member {number|Long} appVersion
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @instance
          */
-        ResponseInfo.prototype.appVersion = 0;
+        ResponseInfo.prototype.appVersion = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
 
         /**
          * ResponseInfo lastBlockHeight.
          * @member {number|Long} lastBlockHeight
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @instance
          */
-        ResponseInfo.prototype.lastBlockHeight = 0;
+        ResponseInfo.prototype.lastBlockHeight = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * ResponseInfo lastBlockAppHash.
          * @member {Uint8Array} lastBlockAppHash
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @instance
          */
         ResponseInfo.prototype.lastBlockAppHash = $util.newBuffer([]);
@@ -4457,21 +4218,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseInfo instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @static
-         * @param {abci.IResponseInfo=} [properties] Properties to set
-         * @returns {abci.ResponseInfo} ResponseInfo instance
+         * @param {types.IResponseInfo=} [properties] Properties to set
+         * @returns {types.ResponseInfo} ResponseInfo instance
          */
         ResponseInfo.create = function create(properties) {
             return new ResponseInfo(properties);
         };
 
         /**
-         * Encodes the specified ResponseInfo message. Does not implicitly {@link abci.ResponseInfo.verify|verify} messages.
+         * Encodes the specified ResponseInfo message. Does not implicitly {@link types.ResponseInfo.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @static
-         * @param {abci.IResponseInfo} message ResponseInfo message or plain object to encode
+         * @param {types.IResponseInfo} message ResponseInfo message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -4492,11 +4253,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseInfo message, length delimited. Does not implicitly {@link abci.ResponseInfo.verify|verify} messages.
+         * Encodes the specified ResponseInfo message, length delimited. Does not implicitly {@link types.ResponseInfo.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @static
-         * @param {abci.IResponseInfo} message ResponseInfo message or plain object to encode
+         * @param {types.IResponseInfo} message ResponseInfo message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -4507,18 +4268,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseInfo message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseInfo} ResponseInfo
+         * @returns {types.ResponseInfo} ResponseInfo
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseInfo.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseInfo();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseInfo();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -4548,10 +4309,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseInfo message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseInfo} ResponseInfo
+         * @returns {types.ResponseInfo} ResponseInfo
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -4564,7 +4325,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseInfo message.
          * @function verify
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4593,15 +4354,15 @@ $root.abci = (function() {
         /**
          * Creates a ResponseInfo message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseInfo} ResponseInfo
+         * @returns {types.ResponseInfo} ResponseInfo
          */
         ResponseInfo.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseInfo)
+            if (object instanceof $root.types.ResponseInfo)
                 return object;
-            var message = new $root.abci.ResponseInfo();
+            var message = new $root.types.ResponseInfo();
             if (object.data != null)
                 message.data = String(object.data);
             if (object.version != null)
@@ -4635,9 +4396,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseInfo message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @static
-         * @param {abci.ResponseInfo} message ResponseInfo
+         * @param {types.ResponseInfo} message ResponseInfo
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -4648,8 +4409,16 @@ $root.abci = (function() {
             if (options.defaults) {
                 object.data = "";
                 object.version = "";
-                object.appVersion = 0;
-                object.lastBlockHeight = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, true);
+                    object.appVersion = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.appVersion = options.longs === String ? "0" : 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.lastBlockHeight = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.lastBlockHeight = options.longs === String ? "0" : 0;
                 if (options.bytes === String)
                     object.lastBlockAppHash = "";
                 else {
@@ -4680,7 +4449,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseInfo to JSON.
          * @function toJSON
-         * @memberof abci.ResponseInfo
+         * @memberof types.ResponseInfo
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -4691,11 +4460,11 @@ $root.abci = (function() {
         return ResponseInfo;
     })();
 
-    abci.ResponseSetOption = (function() {
+    types.ResponseSetOption = (function() {
 
         /**
          * Properties of a ResponseSetOption.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseSetOption
          * @property {number|null} [code] ResponseSetOption code
          * @property {string|null} [log] ResponseSetOption log
@@ -4704,11 +4473,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new ResponseSetOption.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseSetOption.
          * @implements IResponseSetOption
          * @constructor
-         * @param {abci.IResponseSetOption=} [properties] Properties to set
+         * @param {types.IResponseSetOption=} [properties] Properties to set
          */
         function ResponseSetOption(properties) {
             if (properties)
@@ -4720,7 +4489,7 @@ $root.abci = (function() {
         /**
          * ResponseSetOption code.
          * @member {number} code
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @instance
          */
         ResponseSetOption.prototype.code = 0;
@@ -4728,7 +4497,7 @@ $root.abci = (function() {
         /**
          * ResponseSetOption log.
          * @member {string} log
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @instance
          */
         ResponseSetOption.prototype.log = "";
@@ -4736,7 +4505,7 @@ $root.abci = (function() {
         /**
          * ResponseSetOption info.
          * @member {string} info
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @instance
          */
         ResponseSetOption.prototype.info = "";
@@ -4744,21 +4513,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseSetOption instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @static
-         * @param {abci.IResponseSetOption=} [properties] Properties to set
-         * @returns {abci.ResponseSetOption} ResponseSetOption instance
+         * @param {types.IResponseSetOption=} [properties] Properties to set
+         * @returns {types.ResponseSetOption} ResponseSetOption instance
          */
         ResponseSetOption.create = function create(properties) {
             return new ResponseSetOption(properties);
         };
 
         /**
-         * Encodes the specified ResponseSetOption message. Does not implicitly {@link abci.ResponseSetOption.verify|verify} messages.
+         * Encodes the specified ResponseSetOption message. Does not implicitly {@link types.ResponseSetOption.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @static
-         * @param {abci.IResponseSetOption} message ResponseSetOption message or plain object to encode
+         * @param {types.IResponseSetOption} message ResponseSetOption message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -4775,11 +4544,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseSetOption message, length delimited. Does not implicitly {@link abci.ResponseSetOption.verify|verify} messages.
+         * Encodes the specified ResponseSetOption message, length delimited. Does not implicitly {@link types.ResponseSetOption.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @static
-         * @param {abci.IResponseSetOption} message ResponseSetOption message or plain object to encode
+         * @param {types.IResponseSetOption} message ResponseSetOption message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -4790,18 +4559,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseSetOption message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseSetOption} ResponseSetOption
+         * @returns {types.ResponseSetOption} ResponseSetOption
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseSetOption.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseSetOption();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseSetOption();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -4825,10 +4594,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseSetOption message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseSetOption} ResponseSetOption
+         * @returns {types.ResponseSetOption} ResponseSetOption
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -4841,7 +4610,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseSetOption message.
          * @function verify
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4864,15 +4633,15 @@ $root.abci = (function() {
         /**
          * Creates a ResponseSetOption message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseSetOption} ResponseSetOption
+         * @returns {types.ResponseSetOption} ResponseSetOption
          */
         ResponseSetOption.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseSetOption)
+            if (object instanceof $root.types.ResponseSetOption)
                 return object;
-            var message = new $root.abci.ResponseSetOption();
+            var message = new $root.types.ResponseSetOption();
             if (object.code != null)
                 message.code = object.code >>> 0;
             if (object.log != null)
@@ -4885,9 +4654,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseSetOption message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @static
-         * @param {abci.ResponseSetOption} message ResponseSetOption
+         * @param {types.ResponseSetOption} message ResponseSetOption
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -4912,7 +4681,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseSetOption to JSON.
          * @function toJSON
-         * @memberof abci.ResponseSetOption
+         * @memberof types.ResponseSetOption
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -4923,23 +4692,23 @@ $root.abci = (function() {
         return ResponseSetOption;
     })();
 
-    abci.ResponseInitChain = (function() {
+    types.ResponseInitChain = (function() {
 
         /**
          * Properties of a ResponseInitChain.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseInitChain
-         * @property {abci.IConsensusParams|null} [consensusParams] ResponseInitChain consensusParams
-         * @property {Array.<abci.IValidatorUpdate>|null} [validators] ResponseInitChain validators
+         * @property {types.IConsensusParams|null} [consensusParams] ResponseInitChain consensusParams
+         * @property {Array.<types.IValidatorUpdate>|null} [validators] ResponseInitChain validators
          */
 
         /**
          * Constructs a new ResponseInitChain.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseInitChain.
          * @implements IResponseInitChain
          * @constructor
-         * @param {abci.IResponseInitChain=} [properties] Properties to set
+         * @param {types.IResponseInitChain=} [properties] Properties to set
          */
         function ResponseInitChain(properties) {
             this.validators = [];
@@ -4951,16 +4720,16 @@ $root.abci = (function() {
 
         /**
          * ResponseInitChain consensusParams.
-         * @member {abci.IConsensusParams|null|undefined} consensusParams
-         * @memberof abci.ResponseInitChain
+         * @member {types.IConsensusParams|null|undefined} consensusParams
+         * @memberof types.ResponseInitChain
          * @instance
          */
         ResponseInitChain.prototype.consensusParams = null;
 
         /**
          * ResponseInitChain validators.
-         * @member {Array.<abci.IValidatorUpdate>} validators
-         * @memberof abci.ResponseInitChain
+         * @member {Array.<types.IValidatorUpdate>} validators
+         * @memberof types.ResponseInitChain
          * @instance
          */
         ResponseInitChain.prototype.validators = $util.emptyArray;
@@ -4968,21 +4737,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseInitChain instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseInitChain
+         * @memberof types.ResponseInitChain
          * @static
-         * @param {abci.IResponseInitChain=} [properties] Properties to set
-         * @returns {abci.ResponseInitChain} ResponseInitChain instance
+         * @param {types.IResponseInitChain=} [properties] Properties to set
+         * @returns {types.ResponseInitChain} ResponseInitChain instance
          */
         ResponseInitChain.create = function create(properties) {
             return new ResponseInitChain(properties);
         };
 
         /**
-         * Encodes the specified ResponseInitChain message. Does not implicitly {@link abci.ResponseInitChain.verify|verify} messages.
+         * Encodes the specified ResponseInitChain message. Does not implicitly {@link types.ResponseInitChain.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseInitChain
+         * @memberof types.ResponseInitChain
          * @static
-         * @param {abci.IResponseInitChain} message ResponseInitChain message or plain object to encode
+         * @param {types.IResponseInitChain} message ResponseInitChain message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -4990,19 +4759,19 @@ $root.abci = (function() {
             if (!writer)
                 writer = $Writer.create();
             if (message.consensusParams != null && message.hasOwnProperty("consensusParams"))
-                $root.abci.ConsensusParams.encode(message.consensusParams, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                $root.types.ConsensusParams.encode(message.consensusParams, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
             if (message.validators != null && message.validators.length)
                 for (var i = 0; i < message.validators.length; ++i)
-                    $root.abci.ValidatorUpdate.encode(message.validators[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                    $root.types.ValidatorUpdate.encode(message.validators[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
             return writer;
         };
 
         /**
-         * Encodes the specified ResponseInitChain message, length delimited. Does not implicitly {@link abci.ResponseInitChain.verify|verify} messages.
+         * Encodes the specified ResponseInitChain message, length delimited. Does not implicitly {@link types.ResponseInitChain.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseInitChain
+         * @memberof types.ResponseInitChain
          * @static
-         * @param {abci.IResponseInitChain} message ResponseInitChain message or plain object to encode
+         * @param {types.IResponseInitChain} message ResponseInitChain message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -5013,28 +4782,28 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseInitChain message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseInitChain
+         * @memberof types.ResponseInitChain
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseInitChain} ResponseInitChain
+         * @returns {types.ResponseInitChain} ResponseInitChain
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseInitChain.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseInitChain();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseInitChain();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
                 case 1:
-                    message.consensusParams = $root.abci.ConsensusParams.decode(reader, reader.uint32());
+                    message.consensusParams = $root.types.ConsensusParams.decode(reader, reader.uint32());
                     break;
                 case 2:
                     if (!(message.validators && message.validators.length))
                         message.validators = [];
-                    message.validators.push($root.abci.ValidatorUpdate.decode(reader, reader.uint32()));
+                    message.validators.push($root.types.ValidatorUpdate.decode(reader, reader.uint32()));
                     break;
                 default:
                     reader.skipType(tag & 7);
@@ -5047,10 +4816,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseInitChain message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseInitChain
+         * @memberof types.ResponseInitChain
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseInitChain} ResponseInitChain
+         * @returns {types.ResponseInitChain} ResponseInitChain
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -5063,7 +4832,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseInitChain message.
          * @function verify
-         * @memberof abci.ResponseInitChain
+         * @memberof types.ResponseInitChain
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -5072,7 +4841,7 @@ $root.abci = (function() {
             if (typeof message !== "object" || message === null)
                 return "object expected";
             if (message.consensusParams != null && message.hasOwnProperty("consensusParams")) {
-                var error = $root.abci.ConsensusParams.verify(message.consensusParams);
+                var error = $root.types.ConsensusParams.verify(message.consensusParams);
                 if (error)
                     return "consensusParams." + error;
             }
@@ -5080,7 +4849,7 @@ $root.abci = (function() {
                 if (!Array.isArray(message.validators))
                     return "validators: array expected";
                 for (var i = 0; i < message.validators.length; ++i) {
-                    var error = $root.abci.ValidatorUpdate.verify(message.validators[i]);
+                    var error = $root.types.ValidatorUpdate.verify(message.validators[i]);
                     if (error)
                         return "validators." + error;
                 }
@@ -5091,28 +4860,28 @@ $root.abci = (function() {
         /**
          * Creates a ResponseInitChain message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseInitChain
+         * @memberof types.ResponseInitChain
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseInitChain} ResponseInitChain
+         * @returns {types.ResponseInitChain} ResponseInitChain
          */
         ResponseInitChain.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseInitChain)
+            if (object instanceof $root.types.ResponseInitChain)
                 return object;
-            var message = new $root.abci.ResponseInitChain();
+            var message = new $root.types.ResponseInitChain();
             if (object.consensusParams != null) {
                 if (typeof object.consensusParams !== "object")
-                    throw TypeError(".abci.ResponseInitChain.consensusParams: object expected");
-                message.consensusParams = $root.abci.ConsensusParams.fromObject(object.consensusParams);
+                    throw TypeError(".types.ResponseInitChain.consensusParams: object expected");
+                message.consensusParams = $root.types.ConsensusParams.fromObject(object.consensusParams);
             }
             if (object.validators) {
                 if (!Array.isArray(object.validators))
-                    throw TypeError(".abci.ResponseInitChain.validators: array expected");
+                    throw TypeError(".types.ResponseInitChain.validators: array expected");
                 message.validators = [];
                 for (var i = 0; i < object.validators.length; ++i) {
                     if (typeof object.validators[i] !== "object")
-                        throw TypeError(".abci.ResponseInitChain.validators: object expected");
-                    message.validators[i] = $root.abci.ValidatorUpdate.fromObject(object.validators[i]);
+                        throw TypeError(".types.ResponseInitChain.validators: object expected");
+                    message.validators[i] = $root.types.ValidatorUpdate.fromObject(object.validators[i]);
                 }
             }
             return message;
@@ -5121,9 +4890,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseInitChain message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseInitChain
+         * @memberof types.ResponseInitChain
          * @static
-         * @param {abci.ResponseInitChain} message ResponseInitChain
+         * @param {types.ResponseInitChain} message ResponseInitChain
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -5136,11 +4905,11 @@ $root.abci = (function() {
             if (options.defaults)
                 object.consensusParams = null;
             if (message.consensusParams != null && message.hasOwnProperty("consensusParams"))
-                object.consensusParams = $root.abci.ConsensusParams.toObject(message.consensusParams, options);
+                object.consensusParams = $root.types.ConsensusParams.toObject(message.consensusParams, options);
             if (message.validators && message.validators.length) {
                 object.validators = [];
                 for (var j = 0; j < message.validators.length; ++j)
-                    object.validators[j] = $root.abci.ValidatorUpdate.toObject(message.validators[j], options);
+                    object.validators[j] = $root.types.ValidatorUpdate.toObject(message.validators[j], options);
             }
             return object;
         };
@@ -5148,7 +4917,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseInitChain to JSON.
          * @function toJSON
-         * @memberof abci.ResponseInitChain
+         * @memberof types.ResponseInitChain
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -5159,11 +4928,11 @@ $root.abci = (function() {
         return ResponseInitChain;
     })();
 
-    abci.ResponseQuery = (function() {
+    types.ResponseQuery = (function() {
 
         /**
          * Properties of a ResponseQuery.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseQuery
          * @property {number|null} [code] ResponseQuery code
          * @property {string|null} [log] ResponseQuery log
@@ -5178,11 +4947,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new ResponseQuery.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseQuery.
          * @implements IResponseQuery
          * @constructor
-         * @param {abci.IResponseQuery=} [properties] Properties to set
+         * @param {types.IResponseQuery=} [properties] Properties to set
          */
         function ResponseQuery(properties) {
             if (properties)
@@ -5194,7 +4963,7 @@ $root.abci = (function() {
         /**
          * ResponseQuery code.
          * @member {number} code
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          */
         ResponseQuery.prototype.code = 0;
@@ -5202,7 +4971,7 @@ $root.abci = (function() {
         /**
          * ResponseQuery log.
          * @member {string} log
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          */
         ResponseQuery.prototype.log = "";
@@ -5210,7 +4979,7 @@ $root.abci = (function() {
         /**
          * ResponseQuery info.
          * @member {string} info
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          */
         ResponseQuery.prototype.info = "";
@@ -5218,15 +4987,15 @@ $root.abci = (function() {
         /**
          * ResponseQuery index.
          * @member {number|Long} index
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          */
-        ResponseQuery.prototype.index = 0;
+        ResponseQuery.prototype.index = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * ResponseQuery key.
          * @member {Uint8Array} key
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          */
         ResponseQuery.prototype.key = $util.newBuffer([]);
@@ -5234,7 +5003,7 @@ $root.abci = (function() {
         /**
          * ResponseQuery value.
          * @member {Uint8Array} value
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          */
         ResponseQuery.prototype.value = $util.newBuffer([]);
@@ -5242,7 +5011,7 @@ $root.abci = (function() {
         /**
          * ResponseQuery proof.
          * @member {merkle.IProof|null|undefined} proof
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          */
         ResponseQuery.prototype.proof = null;
@@ -5250,15 +5019,15 @@ $root.abci = (function() {
         /**
          * ResponseQuery height.
          * @member {number|Long} height
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          */
-        ResponseQuery.prototype.height = 0;
+        ResponseQuery.prototype.height = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * ResponseQuery codespace.
          * @member {string} codespace
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          */
         ResponseQuery.prototype.codespace = "";
@@ -5266,21 +5035,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseQuery instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @static
-         * @param {abci.IResponseQuery=} [properties] Properties to set
-         * @returns {abci.ResponseQuery} ResponseQuery instance
+         * @param {types.IResponseQuery=} [properties] Properties to set
+         * @returns {types.ResponseQuery} ResponseQuery instance
          */
         ResponseQuery.create = function create(properties) {
             return new ResponseQuery(properties);
         };
 
         /**
-         * Encodes the specified ResponseQuery message. Does not implicitly {@link abci.ResponseQuery.verify|verify} messages.
+         * Encodes the specified ResponseQuery message. Does not implicitly {@link types.ResponseQuery.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @static
-         * @param {abci.IResponseQuery} message ResponseQuery message or plain object to encode
+         * @param {types.IResponseQuery} message ResponseQuery message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -5309,11 +5078,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseQuery message, length delimited. Does not implicitly {@link abci.ResponseQuery.verify|verify} messages.
+         * Encodes the specified ResponseQuery message, length delimited. Does not implicitly {@link types.ResponseQuery.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @static
-         * @param {abci.IResponseQuery} message ResponseQuery message or plain object to encode
+         * @param {types.IResponseQuery} message ResponseQuery message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -5324,18 +5093,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseQuery message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseQuery} ResponseQuery
+         * @returns {types.ResponseQuery} ResponseQuery
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseQuery.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseQuery();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseQuery();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -5377,10 +5146,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseQuery message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseQuery} ResponseQuery
+         * @returns {types.ResponseQuery} ResponseQuery
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -5393,7 +5162,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseQuery message.
          * @function verify
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -5436,15 +5205,15 @@ $root.abci = (function() {
         /**
          * Creates a ResponseQuery message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseQuery} ResponseQuery
+         * @returns {types.ResponseQuery} ResponseQuery
          */
         ResponseQuery.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseQuery)
+            if (object instanceof $root.types.ResponseQuery)
                 return object;
-            var message = new $root.abci.ResponseQuery();
+            var message = new $root.types.ResponseQuery();
             if (object.code != null)
                 message.code = object.code >>> 0;
             if (object.log != null)
@@ -5472,7 +5241,7 @@ $root.abci = (function() {
                     message.value = object.value;
             if (object.proof != null) {
                 if (typeof object.proof !== "object")
-                    throw TypeError(".abci.ResponseQuery.proof: object expected");
+                    throw TypeError(".types.ResponseQuery.proof: object expected");
                 message.proof = $root.merkle.Proof.fromObject(object.proof);
             }
             if (object.height != null)
@@ -5492,9 +5261,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseQuery message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @static
-         * @param {abci.ResponseQuery} message ResponseQuery
+         * @param {types.ResponseQuery} message ResponseQuery
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -5506,7 +5275,11 @@ $root.abci = (function() {
                 object.code = 0;
                 object.log = "";
                 object.info = "";
-                object.index = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.index = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.index = options.longs === String ? "0" : 0;
                 if (options.bytes === String)
                     object.key = "";
                 else {
@@ -5522,7 +5295,11 @@ $root.abci = (function() {
                         object.value = $util.newBuffer(object.value);
                 }
                 object.proof = null;
-                object.height = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.height = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.height = options.longs === String ? "0" : 0;
                 object.codespace = "";
             }
             if (message.code != null && message.hasOwnProperty("code"))
@@ -5555,7 +5332,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseQuery to JSON.
          * @function toJSON
-         * @memberof abci.ResponseQuery
+         * @memberof types.ResponseQuery
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -5566,22 +5343,22 @@ $root.abci = (function() {
         return ResponseQuery;
     })();
 
-    abci.ResponseBeginBlock = (function() {
+    types.ResponseBeginBlock = (function() {
 
         /**
          * Properties of a ResponseBeginBlock.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseBeginBlock
          * @property {Array.<common.IKVPair>|null} [tags] ResponseBeginBlock tags
          */
 
         /**
          * Constructs a new ResponseBeginBlock.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseBeginBlock.
          * @implements IResponseBeginBlock
          * @constructor
-         * @param {abci.IResponseBeginBlock=} [properties] Properties to set
+         * @param {types.IResponseBeginBlock=} [properties] Properties to set
          */
         function ResponseBeginBlock(properties) {
             this.tags = [];
@@ -5594,7 +5371,7 @@ $root.abci = (function() {
         /**
          * ResponseBeginBlock tags.
          * @member {Array.<common.IKVPair>} tags
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @instance
          */
         ResponseBeginBlock.prototype.tags = $util.emptyArray;
@@ -5602,21 +5379,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseBeginBlock instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @static
-         * @param {abci.IResponseBeginBlock=} [properties] Properties to set
-         * @returns {abci.ResponseBeginBlock} ResponseBeginBlock instance
+         * @param {types.IResponseBeginBlock=} [properties] Properties to set
+         * @returns {types.ResponseBeginBlock} ResponseBeginBlock instance
          */
         ResponseBeginBlock.create = function create(properties) {
             return new ResponseBeginBlock(properties);
         };
 
         /**
-         * Encodes the specified ResponseBeginBlock message. Does not implicitly {@link abci.ResponseBeginBlock.verify|verify} messages.
+         * Encodes the specified ResponseBeginBlock message. Does not implicitly {@link types.ResponseBeginBlock.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @static
-         * @param {abci.IResponseBeginBlock} message ResponseBeginBlock message or plain object to encode
+         * @param {types.IResponseBeginBlock} message ResponseBeginBlock message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -5630,11 +5407,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseBeginBlock message, length delimited. Does not implicitly {@link abci.ResponseBeginBlock.verify|verify} messages.
+         * Encodes the specified ResponseBeginBlock message, length delimited. Does not implicitly {@link types.ResponseBeginBlock.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @static
-         * @param {abci.IResponseBeginBlock} message ResponseBeginBlock message or plain object to encode
+         * @param {types.IResponseBeginBlock} message ResponseBeginBlock message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -5645,18 +5422,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseBeginBlock message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseBeginBlock} ResponseBeginBlock
+         * @returns {types.ResponseBeginBlock} ResponseBeginBlock
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseBeginBlock.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseBeginBlock();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseBeginBlock();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -5676,10 +5453,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseBeginBlock message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseBeginBlock} ResponseBeginBlock
+         * @returns {types.ResponseBeginBlock} ResponseBeginBlock
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -5692,7 +5469,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseBeginBlock message.
          * @function verify
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -5715,22 +5492,22 @@ $root.abci = (function() {
         /**
          * Creates a ResponseBeginBlock message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseBeginBlock} ResponseBeginBlock
+         * @returns {types.ResponseBeginBlock} ResponseBeginBlock
          */
         ResponseBeginBlock.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseBeginBlock)
+            if (object instanceof $root.types.ResponseBeginBlock)
                 return object;
-            var message = new $root.abci.ResponseBeginBlock();
+            var message = new $root.types.ResponseBeginBlock();
             if (object.tags) {
                 if (!Array.isArray(object.tags))
-                    throw TypeError(".abci.ResponseBeginBlock.tags: array expected");
+                    throw TypeError(".types.ResponseBeginBlock.tags: array expected");
                 message.tags = [];
                 for (var i = 0; i < object.tags.length; ++i) {
                     if (typeof object.tags[i] !== "object")
-                        throw TypeError(".abci.ResponseBeginBlock.tags: object expected");
+                        throw TypeError(".types.ResponseBeginBlock.tags: object expected");
                     message.tags[i] = $root.common.KVPair.fromObject(object.tags[i]);
                 }
             }
@@ -5740,9 +5517,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseBeginBlock message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @static
-         * @param {abci.ResponseBeginBlock} message ResponseBeginBlock
+         * @param {types.ResponseBeginBlock} message ResponseBeginBlock
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -5763,7 +5540,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseBeginBlock to JSON.
          * @function toJSON
-         * @memberof abci.ResponseBeginBlock
+         * @memberof types.ResponseBeginBlock
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -5774,11 +5551,11 @@ $root.abci = (function() {
         return ResponseBeginBlock;
     })();
 
-    abci.ResponseCheckTx = (function() {
+    types.ResponseCheckTx = (function() {
 
         /**
          * Properties of a ResponseCheckTx.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseCheckTx
          * @property {number|null} [code] ResponseCheckTx code
          * @property {Uint8Array|null} [data] ResponseCheckTx data
@@ -5792,11 +5569,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new ResponseCheckTx.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseCheckTx.
          * @implements IResponseCheckTx
          * @constructor
-         * @param {abci.IResponseCheckTx=} [properties] Properties to set
+         * @param {types.IResponseCheckTx=} [properties] Properties to set
          */
         function ResponseCheckTx(properties) {
             this.tags = [];
@@ -5809,7 +5586,7 @@ $root.abci = (function() {
         /**
          * ResponseCheckTx code.
          * @member {number} code
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @instance
          */
         ResponseCheckTx.prototype.code = 0;
@@ -5817,7 +5594,7 @@ $root.abci = (function() {
         /**
          * ResponseCheckTx data.
          * @member {Uint8Array} data
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @instance
          */
         ResponseCheckTx.prototype.data = $util.newBuffer([]);
@@ -5825,7 +5602,7 @@ $root.abci = (function() {
         /**
          * ResponseCheckTx log.
          * @member {string} log
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @instance
          */
         ResponseCheckTx.prototype.log = "";
@@ -5833,7 +5610,7 @@ $root.abci = (function() {
         /**
          * ResponseCheckTx info.
          * @member {string} info
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @instance
          */
         ResponseCheckTx.prototype.info = "";
@@ -5841,23 +5618,23 @@ $root.abci = (function() {
         /**
          * ResponseCheckTx gasWanted.
          * @member {number|Long} gasWanted
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @instance
          */
-        ResponseCheckTx.prototype.gasWanted = 0;
+        ResponseCheckTx.prototype.gasWanted = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * ResponseCheckTx gasUsed.
          * @member {number|Long} gasUsed
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @instance
          */
-        ResponseCheckTx.prototype.gasUsed = 0;
+        ResponseCheckTx.prototype.gasUsed = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * ResponseCheckTx tags.
          * @member {Array.<common.IKVPair>} tags
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @instance
          */
         ResponseCheckTx.prototype.tags = $util.emptyArray;
@@ -5865,7 +5642,7 @@ $root.abci = (function() {
         /**
          * ResponseCheckTx codespace.
          * @member {string} codespace
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @instance
          */
         ResponseCheckTx.prototype.codespace = "";
@@ -5873,21 +5650,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseCheckTx instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @static
-         * @param {abci.IResponseCheckTx=} [properties] Properties to set
-         * @returns {abci.ResponseCheckTx} ResponseCheckTx instance
+         * @param {types.IResponseCheckTx=} [properties] Properties to set
+         * @returns {types.ResponseCheckTx} ResponseCheckTx instance
          */
         ResponseCheckTx.create = function create(properties) {
             return new ResponseCheckTx(properties);
         };
 
         /**
-         * Encodes the specified ResponseCheckTx message. Does not implicitly {@link abci.ResponseCheckTx.verify|verify} messages.
+         * Encodes the specified ResponseCheckTx message. Does not implicitly {@link types.ResponseCheckTx.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @static
-         * @param {abci.IResponseCheckTx} message ResponseCheckTx message or plain object to encode
+         * @param {types.IResponseCheckTx} message ResponseCheckTx message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -5915,11 +5692,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseCheckTx message, length delimited. Does not implicitly {@link abci.ResponseCheckTx.verify|verify} messages.
+         * Encodes the specified ResponseCheckTx message, length delimited. Does not implicitly {@link types.ResponseCheckTx.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @static
-         * @param {abci.IResponseCheckTx} message ResponseCheckTx message or plain object to encode
+         * @param {types.IResponseCheckTx} message ResponseCheckTx message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -5930,18 +5707,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseCheckTx message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseCheckTx} ResponseCheckTx
+         * @returns {types.ResponseCheckTx} ResponseCheckTx
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseCheckTx.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseCheckTx();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseCheckTx();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -5982,10 +5759,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseCheckTx message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseCheckTx} ResponseCheckTx
+         * @returns {types.ResponseCheckTx} ResponseCheckTx
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -5998,7 +5775,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseCheckTx message.
          * @function verify
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -6042,15 +5819,15 @@ $root.abci = (function() {
         /**
          * Creates a ResponseCheckTx message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseCheckTx} ResponseCheckTx
+         * @returns {types.ResponseCheckTx} ResponseCheckTx
          */
         ResponseCheckTx.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseCheckTx)
+            if (object instanceof $root.types.ResponseCheckTx)
                 return object;
-            var message = new $root.abci.ResponseCheckTx();
+            var message = new $root.types.ResponseCheckTx();
             if (object.code != null)
                 message.code = object.code >>> 0;
             if (object.data != null)
@@ -6082,11 +5859,11 @@ $root.abci = (function() {
                     message.gasUsed = new $util.LongBits(object.gasUsed.low >>> 0, object.gasUsed.high >>> 0).toNumber();
             if (object.tags) {
                 if (!Array.isArray(object.tags))
-                    throw TypeError(".abci.ResponseCheckTx.tags: array expected");
+                    throw TypeError(".types.ResponseCheckTx.tags: array expected");
                 message.tags = [];
                 for (var i = 0; i < object.tags.length; ++i) {
                     if (typeof object.tags[i] !== "object")
-                        throw TypeError(".abci.ResponseCheckTx.tags: object expected");
+                        throw TypeError(".types.ResponseCheckTx.tags: object expected");
                     message.tags[i] = $root.common.KVPair.fromObject(object.tags[i]);
                 }
             }
@@ -6098,9 +5875,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseCheckTx message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @static
-         * @param {abci.ResponseCheckTx} message ResponseCheckTx
+         * @param {types.ResponseCheckTx} message ResponseCheckTx
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -6121,8 +5898,16 @@ $root.abci = (function() {
                 }
                 object.log = "";
                 object.info = "";
-                object.gasWanted = 0;
-                object.gasUsed = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.gasWanted = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.gasWanted = options.longs === String ? "0" : 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.gasUsed = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.gasUsed = options.longs === String ? "0" : 0;
                 object.codespace = "";
             }
             if (message.code != null && message.hasOwnProperty("code"))
@@ -6156,7 +5941,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseCheckTx to JSON.
          * @function toJSON
-         * @memberof abci.ResponseCheckTx
+         * @memberof types.ResponseCheckTx
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -6167,11 +5952,11 @@ $root.abci = (function() {
         return ResponseCheckTx;
     })();
 
-    abci.ResponseDeliverTx = (function() {
+    types.ResponseDeliverTx = (function() {
 
         /**
          * Properties of a ResponseDeliverTx.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseDeliverTx
          * @property {number|null} [code] ResponseDeliverTx code
          * @property {Uint8Array|null} [data] ResponseDeliverTx data
@@ -6185,11 +5970,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new ResponseDeliverTx.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseDeliverTx.
          * @implements IResponseDeliverTx
          * @constructor
-         * @param {abci.IResponseDeliverTx=} [properties] Properties to set
+         * @param {types.IResponseDeliverTx=} [properties] Properties to set
          */
         function ResponseDeliverTx(properties) {
             this.tags = [];
@@ -6202,7 +5987,7 @@ $root.abci = (function() {
         /**
          * ResponseDeliverTx code.
          * @member {number} code
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @instance
          */
         ResponseDeliverTx.prototype.code = 0;
@@ -6210,7 +5995,7 @@ $root.abci = (function() {
         /**
          * ResponseDeliverTx data.
          * @member {Uint8Array} data
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @instance
          */
         ResponseDeliverTx.prototype.data = $util.newBuffer([]);
@@ -6218,7 +6003,7 @@ $root.abci = (function() {
         /**
          * ResponseDeliverTx log.
          * @member {string} log
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @instance
          */
         ResponseDeliverTx.prototype.log = "";
@@ -6226,7 +6011,7 @@ $root.abci = (function() {
         /**
          * ResponseDeliverTx info.
          * @member {string} info
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @instance
          */
         ResponseDeliverTx.prototype.info = "";
@@ -6234,23 +6019,23 @@ $root.abci = (function() {
         /**
          * ResponseDeliverTx gasWanted.
          * @member {number|Long} gasWanted
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @instance
          */
-        ResponseDeliverTx.prototype.gasWanted = 0;
+        ResponseDeliverTx.prototype.gasWanted = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * ResponseDeliverTx gasUsed.
          * @member {number|Long} gasUsed
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @instance
          */
-        ResponseDeliverTx.prototype.gasUsed = 0;
+        ResponseDeliverTx.prototype.gasUsed = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * ResponseDeliverTx tags.
          * @member {Array.<common.IKVPair>} tags
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @instance
          */
         ResponseDeliverTx.prototype.tags = $util.emptyArray;
@@ -6258,7 +6043,7 @@ $root.abci = (function() {
         /**
          * ResponseDeliverTx codespace.
          * @member {string} codespace
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @instance
          */
         ResponseDeliverTx.prototype.codespace = "";
@@ -6266,21 +6051,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseDeliverTx instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @static
-         * @param {abci.IResponseDeliverTx=} [properties] Properties to set
-         * @returns {abci.ResponseDeliverTx} ResponseDeliverTx instance
+         * @param {types.IResponseDeliverTx=} [properties] Properties to set
+         * @returns {types.ResponseDeliverTx} ResponseDeliverTx instance
          */
         ResponseDeliverTx.create = function create(properties) {
             return new ResponseDeliverTx(properties);
         };
 
         /**
-         * Encodes the specified ResponseDeliverTx message. Does not implicitly {@link abci.ResponseDeliverTx.verify|verify} messages.
+         * Encodes the specified ResponseDeliverTx message. Does not implicitly {@link types.ResponseDeliverTx.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @static
-         * @param {abci.IResponseDeliverTx} message ResponseDeliverTx message or plain object to encode
+         * @param {types.IResponseDeliverTx} message ResponseDeliverTx message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -6308,11 +6093,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseDeliverTx message, length delimited. Does not implicitly {@link abci.ResponseDeliverTx.verify|verify} messages.
+         * Encodes the specified ResponseDeliverTx message, length delimited. Does not implicitly {@link types.ResponseDeliverTx.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @static
-         * @param {abci.IResponseDeliverTx} message ResponseDeliverTx message or plain object to encode
+         * @param {types.IResponseDeliverTx} message ResponseDeliverTx message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -6323,18 +6108,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseDeliverTx message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseDeliverTx} ResponseDeliverTx
+         * @returns {types.ResponseDeliverTx} ResponseDeliverTx
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseDeliverTx.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseDeliverTx();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseDeliverTx();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -6375,10 +6160,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseDeliverTx message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseDeliverTx} ResponseDeliverTx
+         * @returns {types.ResponseDeliverTx} ResponseDeliverTx
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -6391,7 +6176,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseDeliverTx message.
          * @function verify
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -6435,15 +6220,15 @@ $root.abci = (function() {
         /**
          * Creates a ResponseDeliverTx message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseDeliverTx} ResponseDeliverTx
+         * @returns {types.ResponseDeliverTx} ResponseDeliverTx
          */
         ResponseDeliverTx.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseDeliverTx)
+            if (object instanceof $root.types.ResponseDeliverTx)
                 return object;
-            var message = new $root.abci.ResponseDeliverTx();
+            var message = new $root.types.ResponseDeliverTx();
             if (object.code != null)
                 message.code = object.code >>> 0;
             if (object.data != null)
@@ -6475,11 +6260,11 @@ $root.abci = (function() {
                     message.gasUsed = new $util.LongBits(object.gasUsed.low >>> 0, object.gasUsed.high >>> 0).toNumber();
             if (object.tags) {
                 if (!Array.isArray(object.tags))
-                    throw TypeError(".abci.ResponseDeliverTx.tags: array expected");
+                    throw TypeError(".types.ResponseDeliverTx.tags: array expected");
                 message.tags = [];
                 for (var i = 0; i < object.tags.length; ++i) {
                     if (typeof object.tags[i] !== "object")
-                        throw TypeError(".abci.ResponseDeliverTx.tags: object expected");
+                        throw TypeError(".types.ResponseDeliverTx.tags: object expected");
                     message.tags[i] = $root.common.KVPair.fromObject(object.tags[i]);
                 }
             }
@@ -6491,9 +6276,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseDeliverTx message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @static
-         * @param {abci.ResponseDeliverTx} message ResponseDeliverTx
+         * @param {types.ResponseDeliverTx} message ResponseDeliverTx
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -6514,8 +6299,16 @@ $root.abci = (function() {
                 }
                 object.log = "";
                 object.info = "";
-                object.gasWanted = 0;
-                object.gasUsed = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.gasWanted = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.gasWanted = options.longs === String ? "0" : 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.gasUsed = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.gasUsed = options.longs === String ? "0" : 0;
                 object.codespace = "";
             }
             if (message.code != null && message.hasOwnProperty("code"))
@@ -6549,7 +6342,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseDeliverTx to JSON.
          * @function toJSON
-         * @memberof abci.ResponseDeliverTx
+         * @memberof types.ResponseDeliverTx
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -6560,24 +6353,24 @@ $root.abci = (function() {
         return ResponseDeliverTx;
     })();
 
-    abci.ResponseEndBlock = (function() {
+    types.ResponseEndBlock = (function() {
 
         /**
          * Properties of a ResponseEndBlock.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseEndBlock
-         * @property {Array.<abci.IValidatorUpdate>|null} [validatorUpdates] ResponseEndBlock validatorUpdates
-         * @property {abci.IConsensusParams|null} [consensusParamUpdates] ResponseEndBlock consensusParamUpdates
+         * @property {Array.<types.IValidatorUpdate>|null} [validatorUpdates] ResponseEndBlock validatorUpdates
+         * @property {types.IConsensusParams|null} [consensusParamUpdates] ResponseEndBlock consensusParamUpdates
          * @property {Array.<common.IKVPair>|null} [tags] ResponseEndBlock tags
          */
 
         /**
          * Constructs a new ResponseEndBlock.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseEndBlock.
          * @implements IResponseEndBlock
          * @constructor
-         * @param {abci.IResponseEndBlock=} [properties] Properties to set
+         * @param {types.IResponseEndBlock=} [properties] Properties to set
          */
         function ResponseEndBlock(properties) {
             this.validatorUpdates = [];
@@ -6590,16 +6383,16 @@ $root.abci = (function() {
 
         /**
          * ResponseEndBlock validatorUpdates.
-         * @member {Array.<abci.IValidatorUpdate>} validatorUpdates
-         * @memberof abci.ResponseEndBlock
+         * @member {Array.<types.IValidatorUpdate>} validatorUpdates
+         * @memberof types.ResponseEndBlock
          * @instance
          */
         ResponseEndBlock.prototype.validatorUpdates = $util.emptyArray;
 
         /**
          * ResponseEndBlock consensusParamUpdates.
-         * @member {abci.IConsensusParams|null|undefined} consensusParamUpdates
-         * @memberof abci.ResponseEndBlock
+         * @member {types.IConsensusParams|null|undefined} consensusParamUpdates
+         * @memberof types.ResponseEndBlock
          * @instance
          */
         ResponseEndBlock.prototype.consensusParamUpdates = null;
@@ -6607,7 +6400,7 @@ $root.abci = (function() {
         /**
          * ResponseEndBlock tags.
          * @member {Array.<common.IKVPair>} tags
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @instance
          */
         ResponseEndBlock.prototype.tags = $util.emptyArray;
@@ -6615,21 +6408,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseEndBlock instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @static
-         * @param {abci.IResponseEndBlock=} [properties] Properties to set
-         * @returns {abci.ResponseEndBlock} ResponseEndBlock instance
+         * @param {types.IResponseEndBlock=} [properties] Properties to set
+         * @returns {types.ResponseEndBlock} ResponseEndBlock instance
          */
         ResponseEndBlock.create = function create(properties) {
             return new ResponseEndBlock(properties);
         };
 
         /**
-         * Encodes the specified ResponseEndBlock message. Does not implicitly {@link abci.ResponseEndBlock.verify|verify} messages.
+         * Encodes the specified ResponseEndBlock message. Does not implicitly {@link types.ResponseEndBlock.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @static
-         * @param {abci.IResponseEndBlock} message ResponseEndBlock message or plain object to encode
+         * @param {types.IResponseEndBlock} message ResponseEndBlock message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -6638,9 +6431,9 @@ $root.abci = (function() {
                 writer = $Writer.create();
             if (message.validatorUpdates != null && message.validatorUpdates.length)
                 for (var i = 0; i < message.validatorUpdates.length; ++i)
-                    $root.abci.ValidatorUpdate.encode(message.validatorUpdates[i], writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                    $root.types.ValidatorUpdate.encode(message.validatorUpdates[i], writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
             if (message.consensusParamUpdates != null && message.hasOwnProperty("consensusParamUpdates"))
-                $root.abci.ConsensusParams.encode(message.consensusParamUpdates, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                $root.types.ConsensusParams.encode(message.consensusParamUpdates, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
             if (message.tags != null && message.tags.length)
                 for (var i = 0; i < message.tags.length; ++i)
                     $root.common.KVPair.encode(message.tags[i], writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
@@ -6648,11 +6441,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseEndBlock message, length delimited. Does not implicitly {@link abci.ResponseEndBlock.verify|verify} messages.
+         * Encodes the specified ResponseEndBlock message, length delimited. Does not implicitly {@link types.ResponseEndBlock.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @static
-         * @param {abci.IResponseEndBlock} message ResponseEndBlock message or plain object to encode
+         * @param {types.IResponseEndBlock} message ResponseEndBlock message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -6663,28 +6456,28 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseEndBlock message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseEndBlock} ResponseEndBlock
+         * @returns {types.ResponseEndBlock} ResponseEndBlock
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseEndBlock.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseEndBlock();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseEndBlock();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
                 case 1:
                     if (!(message.validatorUpdates && message.validatorUpdates.length))
                         message.validatorUpdates = [];
-                    message.validatorUpdates.push($root.abci.ValidatorUpdate.decode(reader, reader.uint32()));
+                    message.validatorUpdates.push($root.types.ValidatorUpdate.decode(reader, reader.uint32()));
                     break;
                 case 2:
-                    message.consensusParamUpdates = $root.abci.ConsensusParams.decode(reader, reader.uint32());
+                    message.consensusParamUpdates = $root.types.ConsensusParams.decode(reader, reader.uint32());
                     break;
                 case 3:
                     if (!(message.tags && message.tags.length))
@@ -6702,10 +6495,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseEndBlock message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseEndBlock} ResponseEndBlock
+         * @returns {types.ResponseEndBlock} ResponseEndBlock
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -6718,7 +6511,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseEndBlock message.
          * @function verify
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -6730,13 +6523,13 @@ $root.abci = (function() {
                 if (!Array.isArray(message.validatorUpdates))
                     return "validatorUpdates: array expected";
                 for (var i = 0; i < message.validatorUpdates.length; ++i) {
-                    var error = $root.abci.ValidatorUpdate.verify(message.validatorUpdates[i]);
+                    var error = $root.types.ValidatorUpdate.verify(message.validatorUpdates[i]);
                     if (error)
                         return "validatorUpdates." + error;
                 }
             }
             if (message.consensusParamUpdates != null && message.hasOwnProperty("consensusParamUpdates")) {
-                var error = $root.abci.ConsensusParams.verify(message.consensusParamUpdates);
+                var error = $root.types.ConsensusParams.verify(message.consensusParamUpdates);
                 if (error)
                     return "consensusParamUpdates." + error;
             }
@@ -6755,37 +6548,37 @@ $root.abci = (function() {
         /**
          * Creates a ResponseEndBlock message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseEndBlock} ResponseEndBlock
+         * @returns {types.ResponseEndBlock} ResponseEndBlock
          */
         ResponseEndBlock.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseEndBlock)
+            if (object instanceof $root.types.ResponseEndBlock)
                 return object;
-            var message = new $root.abci.ResponseEndBlock();
+            var message = new $root.types.ResponseEndBlock();
             if (object.validatorUpdates) {
                 if (!Array.isArray(object.validatorUpdates))
-                    throw TypeError(".abci.ResponseEndBlock.validatorUpdates: array expected");
+                    throw TypeError(".types.ResponseEndBlock.validatorUpdates: array expected");
                 message.validatorUpdates = [];
                 for (var i = 0; i < object.validatorUpdates.length; ++i) {
                     if (typeof object.validatorUpdates[i] !== "object")
-                        throw TypeError(".abci.ResponseEndBlock.validatorUpdates: object expected");
-                    message.validatorUpdates[i] = $root.abci.ValidatorUpdate.fromObject(object.validatorUpdates[i]);
+                        throw TypeError(".types.ResponseEndBlock.validatorUpdates: object expected");
+                    message.validatorUpdates[i] = $root.types.ValidatorUpdate.fromObject(object.validatorUpdates[i]);
                 }
             }
             if (object.consensusParamUpdates != null) {
                 if (typeof object.consensusParamUpdates !== "object")
-                    throw TypeError(".abci.ResponseEndBlock.consensusParamUpdates: object expected");
-                message.consensusParamUpdates = $root.abci.ConsensusParams.fromObject(object.consensusParamUpdates);
+                    throw TypeError(".types.ResponseEndBlock.consensusParamUpdates: object expected");
+                message.consensusParamUpdates = $root.types.ConsensusParams.fromObject(object.consensusParamUpdates);
             }
             if (object.tags) {
                 if (!Array.isArray(object.tags))
-                    throw TypeError(".abci.ResponseEndBlock.tags: array expected");
+                    throw TypeError(".types.ResponseEndBlock.tags: array expected");
                 message.tags = [];
                 for (var i = 0; i < object.tags.length; ++i) {
                     if (typeof object.tags[i] !== "object")
-                        throw TypeError(".abci.ResponseEndBlock.tags: object expected");
+                        throw TypeError(".types.ResponseEndBlock.tags: object expected");
                     message.tags[i] = $root.common.KVPair.fromObject(object.tags[i]);
                 }
             }
@@ -6795,9 +6588,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseEndBlock message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @static
-         * @param {abci.ResponseEndBlock} message ResponseEndBlock
+         * @param {types.ResponseEndBlock} message ResponseEndBlock
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -6814,10 +6607,10 @@ $root.abci = (function() {
             if (message.validatorUpdates && message.validatorUpdates.length) {
                 object.validatorUpdates = [];
                 for (var j = 0; j < message.validatorUpdates.length; ++j)
-                    object.validatorUpdates[j] = $root.abci.ValidatorUpdate.toObject(message.validatorUpdates[j], options);
+                    object.validatorUpdates[j] = $root.types.ValidatorUpdate.toObject(message.validatorUpdates[j], options);
             }
             if (message.consensusParamUpdates != null && message.hasOwnProperty("consensusParamUpdates"))
-                object.consensusParamUpdates = $root.abci.ConsensusParams.toObject(message.consensusParamUpdates, options);
+                object.consensusParamUpdates = $root.types.ConsensusParams.toObject(message.consensusParamUpdates, options);
             if (message.tags && message.tags.length) {
                 object.tags = [];
                 for (var j = 0; j < message.tags.length; ++j)
@@ -6829,7 +6622,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseEndBlock to JSON.
          * @function toJSON
-         * @memberof abci.ResponseEndBlock
+         * @memberof types.ResponseEndBlock
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -6840,22 +6633,22 @@ $root.abci = (function() {
         return ResponseEndBlock;
     })();
 
-    abci.ResponseCommit = (function() {
+    types.ResponseCommit = (function() {
 
         /**
          * Properties of a ResponseCommit.
-         * @memberof abci
+         * @memberof types
          * @interface IResponseCommit
          * @property {Uint8Array|null} [data] ResponseCommit data
          */
 
         /**
          * Constructs a new ResponseCommit.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ResponseCommit.
          * @implements IResponseCommit
          * @constructor
-         * @param {abci.IResponseCommit=} [properties] Properties to set
+         * @param {types.IResponseCommit=} [properties] Properties to set
          */
         function ResponseCommit(properties) {
             if (properties)
@@ -6867,7 +6660,7 @@ $root.abci = (function() {
         /**
          * ResponseCommit data.
          * @member {Uint8Array} data
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @instance
          */
         ResponseCommit.prototype.data = $util.newBuffer([]);
@@ -6875,21 +6668,21 @@ $root.abci = (function() {
         /**
          * Creates a new ResponseCommit instance using the specified properties.
          * @function create
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @static
-         * @param {abci.IResponseCommit=} [properties] Properties to set
-         * @returns {abci.ResponseCommit} ResponseCommit instance
+         * @param {types.IResponseCommit=} [properties] Properties to set
+         * @returns {types.ResponseCommit} ResponseCommit instance
          */
         ResponseCommit.create = function create(properties) {
             return new ResponseCommit(properties);
         };
 
         /**
-         * Encodes the specified ResponseCommit message. Does not implicitly {@link abci.ResponseCommit.verify|verify} messages.
+         * Encodes the specified ResponseCommit message. Does not implicitly {@link types.ResponseCommit.verify|verify} messages.
          * @function encode
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @static
-         * @param {abci.IResponseCommit} message ResponseCommit message or plain object to encode
+         * @param {types.IResponseCommit} message ResponseCommit message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -6902,11 +6695,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ResponseCommit message, length delimited. Does not implicitly {@link abci.ResponseCommit.verify|verify} messages.
+         * Encodes the specified ResponseCommit message, length delimited. Does not implicitly {@link types.ResponseCommit.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @static
-         * @param {abci.IResponseCommit} message ResponseCommit message or plain object to encode
+         * @param {types.IResponseCommit} message ResponseCommit message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -6917,18 +6710,18 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseCommit message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseCommit} ResponseCommit
+         * @returns {types.ResponseCommit} ResponseCommit
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ResponseCommit.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseCommit();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ResponseCommit();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -6946,10 +6739,10 @@ $root.abci = (function() {
         /**
          * Decodes a ResponseCommit message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseCommit} ResponseCommit
+         * @returns {types.ResponseCommit} ResponseCommit
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -6962,7 +6755,7 @@ $root.abci = (function() {
         /**
          * Verifies a ResponseCommit message.
          * @function verify
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -6979,15 +6772,15 @@ $root.abci = (function() {
         /**
          * Creates a ResponseCommit message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseCommit} ResponseCommit
+         * @returns {types.ResponseCommit} ResponseCommit
          */
         ResponseCommit.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseCommit)
+            if (object instanceof $root.types.ResponseCommit)
                 return object;
-            var message = new $root.abci.ResponseCommit();
+            var message = new $root.types.ResponseCommit();
             if (object.data != null)
                 if (typeof object.data === "string")
                     $util.base64.decode(object.data, message.data = $util.newBuffer($util.base64.length(object.data)), 0);
@@ -6999,9 +6792,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ResponseCommit message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @static
-         * @param {abci.ResponseCommit} message ResponseCommit
+         * @param {types.ResponseCommit} message ResponseCommit
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -7025,7 +6818,7 @@ $root.abci = (function() {
         /**
          * Converts this ResponseCommit to JSON.
          * @function toJSON
-         * @memberof abci.ResponseCommit
+         * @memberof types.ResponseCommit
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -7036,211 +6829,24 @@ $root.abci = (function() {
         return ResponseCommit;
     })();
 
-    abci.ResponseCheckBridge = (function() {
-
-        /**
-         * Properties of a ResponseCheckBridge.
-         * @memberof abci
-         * @interface IResponseCheckBridge
-         * @property {number|null} [status] ResponseCheckBridge status
-         */
-
-        /**
-         * Constructs a new ResponseCheckBridge.
-         * @memberof abci
-         * @classdesc Represents a ResponseCheckBridge.
-         * @implements IResponseCheckBridge
-         * @constructor
-         * @param {abci.IResponseCheckBridge=} [properties] Properties to set
-         */
-        function ResponseCheckBridge(properties) {
-            if (properties)
-                for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
-                    if (properties[keys[i]] != null)
-                        this[keys[i]] = properties[keys[i]];
-        }
-
-        /**
-         * ResponseCheckBridge status.
-         * @member {number} status
-         * @memberof abci.ResponseCheckBridge
-         * @instance
-         */
-        ResponseCheckBridge.prototype.status = 0;
-
-        /**
-         * Creates a new ResponseCheckBridge instance using the specified properties.
-         * @function create
-         * @memberof abci.ResponseCheckBridge
-         * @static
-         * @param {abci.IResponseCheckBridge=} [properties] Properties to set
-         * @returns {abci.ResponseCheckBridge} ResponseCheckBridge instance
-         */
-        ResponseCheckBridge.create = function create(properties) {
-            return new ResponseCheckBridge(properties);
-        };
-
-        /**
-         * Encodes the specified ResponseCheckBridge message. Does not implicitly {@link abci.ResponseCheckBridge.verify|verify} messages.
-         * @function encode
-         * @memberof abci.ResponseCheckBridge
-         * @static
-         * @param {abci.IResponseCheckBridge} message ResponseCheckBridge message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        ResponseCheckBridge.encode = function encode(message, writer) {
-            if (!writer)
-                writer = $Writer.create();
-            if (message.status != null && message.hasOwnProperty("status"))
-                writer.uint32(/* id 1, wireType 0 =*/8).uint32(message.status);
-            return writer;
-        };
-
-        /**
-         * Encodes the specified ResponseCheckBridge message, length delimited. Does not implicitly {@link abci.ResponseCheckBridge.verify|verify} messages.
-         * @function encodeDelimited
-         * @memberof abci.ResponseCheckBridge
-         * @static
-         * @param {abci.IResponseCheckBridge} message ResponseCheckBridge message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        ResponseCheckBridge.encodeDelimited = function encodeDelimited(message, writer) {
-            return this.encode(message, writer).ldelim();
-        };
-
-        /**
-         * Decodes a ResponseCheckBridge message from the specified reader or buffer.
-         * @function decode
-         * @memberof abci.ResponseCheckBridge
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ResponseCheckBridge} ResponseCheckBridge
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        ResponseCheckBridge.decode = function decode(reader, length) {
-            if (!(reader instanceof $Reader))
-                reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ResponseCheckBridge();
-            while (reader.pos < end) {
-                var tag = reader.uint32();
-                switch (tag >>> 3) {
-                case 1:
-                    message.status = reader.uint32();
-                    break;
-                default:
-                    reader.skipType(tag & 7);
-                    break;
-                }
-            }
-            return message;
-        };
-
-        /**
-         * Decodes a ResponseCheckBridge message from the specified reader or buffer, length delimited.
-         * @function decodeDelimited
-         * @memberof abci.ResponseCheckBridge
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ResponseCheckBridge} ResponseCheckBridge
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        ResponseCheckBridge.decodeDelimited = function decodeDelimited(reader) {
-            if (!(reader instanceof $Reader))
-                reader = new $Reader(reader);
-            return this.decode(reader, reader.uint32());
-        };
-
-        /**
-         * Verifies a ResponseCheckBridge message.
-         * @function verify
-         * @memberof abci.ResponseCheckBridge
-         * @static
-         * @param {Object.<string,*>} message Plain object to verify
-         * @returns {string|null} `null` if valid, otherwise the reason why it is not
-         */
-        ResponseCheckBridge.verify = function verify(message) {
-            if (typeof message !== "object" || message === null)
-                return "object expected";
-            if (message.status != null && message.hasOwnProperty("status"))
-                if (!$util.isInteger(message.status))
-                    return "status: integer expected";
-            return null;
-        };
-
-        /**
-         * Creates a ResponseCheckBridge message from a plain object. Also converts values to their respective internal types.
-         * @function fromObject
-         * @memberof abci.ResponseCheckBridge
-         * @static
-         * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ResponseCheckBridge} ResponseCheckBridge
-         */
-        ResponseCheckBridge.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ResponseCheckBridge)
-                return object;
-            var message = new $root.abci.ResponseCheckBridge();
-            if (object.status != null)
-                message.status = object.status >>> 0;
-            return message;
-        };
-
-        /**
-         * Creates a plain object from a ResponseCheckBridge message. Also converts values to other types if specified.
-         * @function toObject
-         * @memberof abci.ResponseCheckBridge
-         * @static
-         * @param {abci.ResponseCheckBridge} message ResponseCheckBridge
-         * @param {$protobuf.IConversionOptions} [options] Conversion options
-         * @returns {Object.<string,*>} Plain object
-         */
-        ResponseCheckBridge.toObject = function toObject(message, options) {
-            if (!options)
-                options = {};
-            var object = {};
-            if (options.defaults)
-                object.status = 0;
-            if (message.status != null && message.hasOwnProperty("status"))
-                object.status = message.status;
-            return object;
-        };
-
-        /**
-         * Converts this ResponseCheckBridge to JSON.
-         * @function toJSON
-         * @memberof abci.ResponseCheckBridge
-         * @instance
-         * @returns {Object.<string,*>} JSON object
-         */
-        ResponseCheckBridge.prototype.toJSON = function toJSON() {
-            return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
-        };
-
-        return ResponseCheckBridge;
-    })();
-
-    abci.ConsensusParams = (function() {
+    types.ConsensusParams = (function() {
 
         /**
          * Properties of a ConsensusParams.
-         * @memberof abci
+         * @memberof types
          * @interface IConsensusParams
-         * @property {abci.IBlockSizeParams|null} [blockSize] ConsensusParams blockSize
-         * @property {abci.IEvidenceParams|null} [evidence] ConsensusParams evidence
-         * @property {abci.IValidatorParams|null} [validator] ConsensusParams validator
+         * @property {types.IBlockSizeParams|null} [blockSize] ConsensusParams blockSize
+         * @property {types.IEvidenceParams|null} [evidence] ConsensusParams evidence
+         * @property {types.IValidatorParams|null} [validator] ConsensusParams validator
          */
 
         /**
          * Constructs a new ConsensusParams.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ConsensusParams.
          * @implements IConsensusParams
          * @constructor
-         * @param {abci.IConsensusParams=} [properties] Properties to set
+         * @param {types.IConsensusParams=} [properties] Properties to set
          */
         function ConsensusParams(properties) {
             if (properties)
@@ -7251,24 +6857,24 @@ $root.abci = (function() {
 
         /**
          * ConsensusParams blockSize.
-         * @member {abci.IBlockSizeParams|null|undefined} blockSize
-         * @memberof abci.ConsensusParams
+         * @member {types.IBlockSizeParams|null|undefined} blockSize
+         * @memberof types.ConsensusParams
          * @instance
          */
         ConsensusParams.prototype.blockSize = null;
 
         /**
          * ConsensusParams evidence.
-         * @member {abci.IEvidenceParams|null|undefined} evidence
-         * @memberof abci.ConsensusParams
+         * @member {types.IEvidenceParams|null|undefined} evidence
+         * @memberof types.ConsensusParams
          * @instance
          */
         ConsensusParams.prototype.evidence = null;
 
         /**
          * ConsensusParams validator.
-         * @member {abci.IValidatorParams|null|undefined} validator
-         * @memberof abci.ConsensusParams
+         * @member {types.IValidatorParams|null|undefined} validator
+         * @memberof types.ConsensusParams
          * @instance
          */
         ConsensusParams.prototype.validator = null;
@@ -7276,21 +6882,21 @@ $root.abci = (function() {
         /**
          * Creates a new ConsensusParams instance using the specified properties.
          * @function create
-         * @memberof abci.ConsensusParams
+         * @memberof types.ConsensusParams
          * @static
-         * @param {abci.IConsensusParams=} [properties] Properties to set
-         * @returns {abci.ConsensusParams} ConsensusParams instance
+         * @param {types.IConsensusParams=} [properties] Properties to set
+         * @returns {types.ConsensusParams} ConsensusParams instance
          */
         ConsensusParams.create = function create(properties) {
             return new ConsensusParams(properties);
         };
 
         /**
-         * Encodes the specified ConsensusParams message. Does not implicitly {@link abci.ConsensusParams.verify|verify} messages.
+         * Encodes the specified ConsensusParams message. Does not implicitly {@link types.ConsensusParams.verify|verify} messages.
          * @function encode
-         * @memberof abci.ConsensusParams
+         * @memberof types.ConsensusParams
          * @static
-         * @param {abci.IConsensusParams} message ConsensusParams message or plain object to encode
+         * @param {types.IConsensusParams} message ConsensusParams message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -7298,20 +6904,20 @@ $root.abci = (function() {
             if (!writer)
                 writer = $Writer.create();
             if (message.blockSize != null && message.hasOwnProperty("blockSize"))
-                $root.abci.BlockSizeParams.encode(message.blockSize, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                $root.types.BlockSizeParams.encode(message.blockSize, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
             if (message.evidence != null && message.hasOwnProperty("evidence"))
-                $root.abci.EvidenceParams.encode(message.evidence, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                $root.types.EvidenceParams.encode(message.evidence, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
             if (message.validator != null && message.hasOwnProperty("validator"))
-                $root.abci.ValidatorParams.encode(message.validator, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
+                $root.types.ValidatorParams.encode(message.validator, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
             return writer;
         };
 
         /**
-         * Encodes the specified ConsensusParams message, length delimited. Does not implicitly {@link abci.ConsensusParams.verify|verify} messages.
+         * Encodes the specified ConsensusParams message, length delimited. Does not implicitly {@link types.ConsensusParams.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ConsensusParams
+         * @memberof types.ConsensusParams
          * @static
-         * @param {abci.IConsensusParams} message ConsensusParams message or plain object to encode
+         * @param {types.IConsensusParams} message ConsensusParams message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -7322,29 +6928,29 @@ $root.abci = (function() {
         /**
          * Decodes a ConsensusParams message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ConsensusParams
+         * @memberof types.ConsensusParams
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ConsensusParams} ConsensusParams
+         * @returns {types.ConsensusParams} ConsensusParams
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ConsensusParams.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ConsensusParams();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ConsensusParams();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
                 case 1:
-                    message.blockSize = $root.abci.BlockSizeParams.decode(reader, reader.uint32());
+                    message.blockSize = $root.types.BlockSizeParams.decode(reader, reader.uint32());
                     break;
                 case 2:
-                    message.evidence = $root.abci.EvidenceParams.decode(reader, reader.uint32());
+                    message.evidence = $root.types.EvidenceParams.decode(reader, reader.uint32());
                     break;
                 case 3:
-                    message.validator = $root.abci.ValidatorParams.decode(reader, reader.uint32());
+                    message.validator = $root.types.ValidatorParams.decode(reader, reader.uint32());
                     break;
                 default:
                     reader.skipType(tag & 7);
@@ -7357,10 +6963,10 @@ $root.abci = (function() {
         /**
          * Decodes a ConsensusParams message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ConsensusParams
+         * @memberof types.ConsensusParams
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ConsensusParams} ConsensusParams
+         * @returns {types.ConsensusParams} ConsensusParams
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -7373,7 +6979,7 @@ $root.abci = (function() {
         /**
          * Verifies a ConsensusParams message.
          * @function verify
-         * @memberof abci.ConsensusParams
+         * @memberof types.ConsensusParams
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -7382,17 +6988,17 @@ $root.abci = (function() {
             if (typeof message !== "object" || message === null)
                 return "object expected";
             if (message.blockSize != null && message.hasOwnProperty("blockSize")) {
-                var error = $root.abci.BlockSizeParams.verify(message.blockSize);
+                var error = $root.types.BlockSizeParams.verify(message.blockSize);
                 if (error)
                     return "blockSize." + error;
             }
             if (message.evidence != null && message.hasOwnProperty("evidence")) {
-                var error = $root.abci.EvidenceParams.verify(message.evidence);
+                var error = $root.types.EvidenceParams.verify(message.evidence);
                 if (error)
                     return "evidence." + error;
             }
             if (message.validator != null && message.hasOwnProperty("validator")) {
-                var error = $root.abci.ValidatorParams.verify(message.validator);
+                var error = $root.types.ValidatorParams.verify(message.validator);
                 if (error)
                     return "validator." + error;
             }
@@ -7402,29 +7008,29 @@ $root.abci = (function() {
         /**
          * Creates a ConsensusParams message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ConsensusParams
+         * @memberof types.ConsensusParams
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ConsensusParams} ConsensusParams
+         * @returns {types.ConsensusParams} ConsensusParams
          */
         ConsensusParams.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ConsensusParams)
+            if (object instanceof $root.types.ConsensusParams)
                 return object;
-            var message = new $root.abci.ConsensusParams();
+            var message = new $root.types.ConsensusParams();
             if (object.blockSize != null) {
                 if (typeof object.blockSize !== "object")
-                    throw TypeError(".abci.ConsensusParams.blockSize: object expected");
-                message.blockSize = $root.abci.BlockSizeParams.fromObject(object.blockSize);
+                    throw TypeError(".types.ConsensusParams.blockSize: object expected");
+                message.blockSize = $root.types.BlockSizeParams.fromObject(object.blockSize);
             }
             if (object.evidence != null) {
                 if (typeof object.evidence !== "object")
-                    throw TypeError(".abci.ConsensusParams.evidence: object expected");
-                message.evidence = $root.abci.EvidenceParams.fromObject(object.evidence);
+                    throw TypeError(".types.ConsensusParams.evidence: object expected");
+                message.evidence = $root.types.EvidenceParams.fromObject(object.evidence);
             }
             if (object.validator != null) {
                 if (typeof object.validator !== "object")
-                    throw TypeError(".abci.ConsensusParams.validator: object expected");
-                message.validator = $root.abci.ValidatorParams.fromObject(object.validator);
+                    throw TypeError(".types.ConsensusParams.validator: object expected");
+                message.validator = $root.types.ValidatorParams.fromObject(object.validator);
             }
             return message;
         };
@@ -7432,9 +7038,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ConsensusParams message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ConsensusParams
+         * @memberof types.ConsensusParams
          * @static
-         * @param {abci.ConsensusParams} message ConsensusParams
+         * @param {types.ConsensusParams} message ConsensusParams
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -7448,18 +7054,18 @@ $root.abci = (function() {
                 object.validator = null;
             }
             if (message.blockSize != null && message.hasOwnProperty("blockSize"))
-                object.blockSize = $root.abci.BlockSizeParams.toObject(message.blockSize, options);
+                object.blockSize = $root.types.BlockSizeParams.toObject(message.blockSize, options);
             if (message.evidence != null && message.hasOwnProperty("evidence"))
-                object.evidence = $root.abci.EvidenceParams.toObject(message.evidence, options);
+                object.evidence = $root.types.EvidenceParams.toObject(message.evidence, options);
             if (message.validator != null && message.hasOwnProperty("validator"))
-                object.validator = $root.abci.ValidatorParams.toObject(message.validator, options);
+                object.validator = $root.types.ValidatorParams.toObject(message.validator, options);
             return object;
         };
 
         /**
          * Converts this ConsensusParams to JSON.
          * @function toJSON
-         * @memberof abci.ConsensusParams
+         * @memberof types.ConsensusParams
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -7470,11 +7076,11 @@ $root.abci = (function() {
         return ConsensusParams;
     })();
 
-    abci.BlockSizeParams = (function() {
+    types.BlockSizeParams = (function() {
 
         /**
          * Properties of a BlockSizeParams.
-         * @memberof abci
+         * @memberof types
          * @interface IBlockSizeParams
          * @property {number|Long|null} [maxBytes] BlockSizeParams maxBytes
          * @property {number|Long|null} [maxGas] BlockSizeParams maxGas
@@ -7482,11 +7088,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new BlockSizeParams.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a BlockSizeParams.
          * @implements IBlockSizeParams
          * @constructor
-         * @param {abci.IBlockSizeParams=} [properties] Properties to set
+         * @param {types.IBlockSizeParams=} [properties] Properties to set
          */
         function BlockSizeParams(properties) {
             if (properties)
@@ -7498,37 +7104,37 @@ $root.abci = (function() {
         /**
          * BlockSizeParams maxBytes.
          * @member {number|Long} maxBytes
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @instance
          */
-        BlockSizeParams.prototype.maxBytes = 0;
+        BlockSizeParams.prototype.maxBytes = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * BlockSizeParams maxGas.
          * @member {number|Long} maxGas
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @instance
          */
-        BlockSizeParams.prototype.maxGas = 0;
+        BlockSizeParams.prototype.maxGas = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Creates a new BlockSizeParams instance using the specified properties.
          * @function create
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @static
-         * @param {abci.IBlockSizeParams=} [properties] Properties to set
-         * @returns {abci.BlockSizeParams} BlockSizeParams instance
+         * @param {types.IBlockSizeParams=} [properties] Properties to set
+         * @returns {types.BlockSizeParams} BlockSizeParams instance
          */
         BlockSizeParams.create = function create(properties) {
             return new BlockSizeParams(properties);
         };
 
         /**
-         * Encodes the specified BlockSizeParams message. Does not implicitly {@link abci.BlockSizeParams.verify|verify} messages.
+         * Encodes the specified BlockSizeParams message. Does not implicitly {@link types.BlockSizeParams.verify|verify} messages.
          * @function encode
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @static
-         * @param {abci.IBlockSizeParams} message BlockSizeParams message or plain object to encode
+         * @param {types.IBlockSizeParams} message BlockSizeParams message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -7543,11 +7149,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified BlockSizeParams message, length delimited. Does not implicitly {@link abci.BlockSizeParams.verify|verify} messages.
+         * Encodes the specified BlockSizeParams message, length delimited. Does not implicitly {@link types.BlockSizeParams.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @static
-         * @param {abci.IBlockSizeParams} message BlockSizeParams message or plain object to encode
+         * @param {types.IBlockSizeParams} message BlockSizeParams message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -7558,18 +7164,18 @@ $root.abci = (function() {
         /**
          * Decodes a BlockSizeParams message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.BlockSizeParams} BlockSizeParams
+         * @returns {types.BlockSizeParams} BlockSizeParams
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         BlockSizeParams.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.BlockSizeParams();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.BlockSizeParams();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -7590,10 +7196,10 @@ $root.abci = (function() {
         /**
          * Decodes a BlockSizeParams message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.BlockSizeParams} BlockSizeParams
+         * @returns {types.BlockSizeParams} BlockSizeParams
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -7606,7 +7212,7 @@ $root.abci = (function() {
         /**
          * Verifies a BlockSizeParams message.
          * @function verify
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -7626,15 +7232,15 @@ $root.abci = (function() {
         /**
          * Creates a BlockSizeParams message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.BlockSizeParams} BlockSizeParams
+         * @returns {types.BlockSizeParams} BlockSizeParams
          */
         BlockSizeParams.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.BlockSizeParams)
+            if (object instanceof $root.types.BlockSizeParams)
                 return object;
-            var message = new $root.abci.BlockSizeParams();
+            var message = new $root.types.BlockSizeParams();
             if (object.maxBytes != null)
                 if ($util.Long)
                     (message.maxBytes = $util.Long.fromValue(object.maxBytes)).unsigned = false;
@@ -7659,9 +7265,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a BlockSizeParams message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @static
-         * @param {abci.BlockSizeParams} message BlockSizeParams
+         * @param {types.BlockSizeParams} message BlockSizeParams
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -7670,8 +7276,16 @@ $root.abci = (function() {
                 options = {};
             var object = {};
             if (options.defaults) {
-                object.maxBytes = 0;
-                object.maxGas = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.maxBytes = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.maxBytes = options.longs === String ? "0" : 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.maxGas = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.maxGas = options.longs === String ? "0" : 0;
             }
             if (message.maxBytes != null && message.hasOwnProperty("maxBytes"))
                 if (typeof message.maxBytes === "number")
@@ -7689,7 +7303,7 @@ $root.abci = (function() {
         /**
          * Converts this BlockSizeParams to JSON.
          * @function toJSON
-         * @memberof abci.BlockSizeParams
+         * @memberof types.BlockSizeParams
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -7700,22 +7314,22 @@ $root.abci = (function() {
         return BlockSizeParams;
     })();
 
-    abci.EvidenceParams = (function() {
+    types.EvidenceParams = (function() {
 
         /**
          * Properties of an EvidenceParams.
-         * @memberof abci
+         * @memberof types
          * @interface IEvidenceParams
          * @property {number|Long|null} [maxAge] EvidenceParams maxAge
          */
 
         /**
          * Constructs a new EvidenceParams.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents an EvidenceParams.
          * @implements IEvidenceParams
          * @constructor
-         * @param {abci.IEvidenceParams=} [properties] Properties to set
+         * @param {types.IEvidenceParams=} [properties] Properties to set
          */
         function EvidenceParams(properties) {
             if (properties)
@@ -7727,29 +7341,29 @@ $root.abci = (function() {
         /**
          * EvidenceParams maxAge.
          * @member {number|Long} maxAge
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @instance
          */
-        EvidenceParams.prototype.maxAge = 0;
+        EvidenceParams.prototype.maxAge = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Creates a new EvidenceParams instance using the specified properties.
          * @function create
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @static
-         * @param {abci.IEvidenceParams=} [properties] Properties to set
-         * @returns {abci.EvidenceParams} EvidenceParams instance
+         * @param {types.IEvidenceParams=} [properties] Properties to set
+         * @returns {types.EvidenceParams} EvidenceParams instance
          */
         EvidenceParams.create = function create(properties) {
             return new EvidenceParams(properties);
         };
 
         /**
-         * Encodes the specified EvidenceParams message. Does not implicitly {@link abci.EvidenceParams.verify|verify} messages.
+         * Encodes the specified EvidenceParams message. Does not implicitly {@link types.EvidenceParams.verify|verify} messages.
          * @function encode
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @static
-         * @param {abci.IEvidenceParams} message EvidenceParams message or plain object to encode
+         * @param {types.IEvidenceParams} message EvidenceParams message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -7762,11 +7376,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified EvidenceParams message, length delimited. Does not implicitly {@link abci.EvidenceParams.verify|verify} messages.
+         * Encodes the specified EvidenceParams message, length delimited. Does not implicitly {@link types.EvidenceParams.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @static
-         * @param {abci.IEvidenceParams} message EvidenceParams message or plain object to encode
+         * @param {types.IEvidenceParams} message EvidenceParams message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -7777,18 +7391,18 @@ $root.abci = (function() {
         /**
          * Decodes an EvidenceParams message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.EvidenceParams} EvidenceParams
+         * @returns {types.EvidenceParams} EvidenceParams
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         EvidenceParams.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.EvidenceParams();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.EvidenceParams();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -7806,10 +7420,10 @@ $root.abci = (function() {
         /**
          * Decodes an EvidenceParams message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.EvidenceParams} EvidenceParams
+         * @returns {types.EvidenceParams} EvidenceParams
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -7822,7 +7436,7 @@ $root.abci = (function() {
         /**
          * Verifies an EvidenceParams message.
          * @function verify
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -7839,15 +7453,15 @@ $root.abci = (function() {
         /**
          * Creates an EvidenceParams message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.EvidenceParams} EvidenceParams
+         * @returns {types.EvidenceParams} EvidenceParams
          */
         EvidenceParams.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.EvidenceParams)
+            if (object instanceof $root.types.EvidenceParams)
                 return object;
-            var message = new $root.abci.EvidenceParams();
+            var message = new $root.types.EvidenceParams();
             if (object.maxAge != null)
                 if ($util.Long)
                     (message.maxAge = $util.Long.fromValue(object.maxAge)).unsigned = false;
@@ -7863,9 +7477,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from an EvidenceParams message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @static
-         * @param {abci.EvidenceParams} message EvidenceParams
+         * @param {types.EvidenceParams} message EvidenceParams
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -7874,7 +7488,11 @@ $root.abci = (function() {
                 options = {};
             var object = {};
             if (options.defaults)
-                object.maxAge = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.maxAge = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.maxAge = options.longs === String ? "0" : 0;
             if (message.maxAge != null && message.hasOwnProperty("maxAge"))
                 if (typeof message.maxAge === "number")
                     object.maxAge = options.longs === String ? String(message.maxAge) : message.maxAge;
@@ -7886,7 +7504,7 @@ $root.abci = (function() {
         /**
          * Converts this EvidenceParams to JSON.
          * @function toJSON
-         * @memberof abci.EvidenceParams
+         * @memberof types.EvidenceParams
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -7897,22 +7515,22 @@ $root.abci = (function() {
         return EvidenceParams;
     })();
 
-    abci.ValidatorParams = (function() {
+    types.ValidatorParams = (function() {
 
         /**
          * Properties of a ValidatorParams.
-         * @memberof abci
+         * @memberof types
          * @interface IValidatorParams
          * @property {Array.<string>|null} [pubKeyTypes] ValidatorParams pubKeyTypes
          */
 
         /**
          * Constructs a new ValidatorParams.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ValidatorParams.
          * @implements IValidatorParams
          * @constructor
-         * @param {abci.IValidatorParams=} [properties] Properties to set
+         * @param {types.IValidatorParams=} [properties] Properties to set
          */
         function ValidatorParams(properties) {
             this.pubKeyTypes = [];
@@ -7925,7 +7543,7 @@ $root.abci = (function() {
         /**
          * ValidatorParams pubKeyTypes.
          * @member {Array.<string>} pubKeyTypes
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @instance
          */
         ValidatorParams.prototype.pubKeyTypes = $util.emptyArray;
@@ -7933,21 +7551,21 @@ $root.abci = (function() {
         /**
          * Creates a new ValidatorParams instance using the specified properties.
          * @function create
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @static
-         * @param {abci.IValidatorParams=} [properties] Properties to set
-         * @returns {abci.ValidatorParams} ValidatorParams instance
+         * @param {types.IValidatorParams=} [properties] Properties to set
+         * @returns {types.ValidatorParams} ValidatorParams instance
          */
         ValidatorParams.create = function create(properties) {
             return new ValidatorParams(properties);
         };
 
         /**
-         * Encodes the specified ValidatorParams message. Does not implicitly {@link abci.ValidatorParams.verify|verify} messages.
+         * Encodes the specified ValidatorParams message. Does not implicitly {@link types.ValidatorParams.verify|verify} messages.
          * @function encode
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @static
-         * @param {abci.IValidatorParams} message ValidatorParams message or plain object to encode
+         * @param {types.IValidatorParams} message ValidatorParams message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -7961,11 +7579,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified ValidatorParams message, length delimited. Does not implicitly {@link abci.ValidatorParams.verify|verify} messages.
+         * Encodes the specified ValidatorParams message, length delimited. Does not implicitly {@link types.ValidatorParams.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @static
-         * @param {abci.IValidatorParams} message ValidatorParams message or plain object to encode
+         * @param {types.IValidatorParams} message ValidatorParams message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -7976,18 +7594,18 @@ $root.abci = (function() {
         /**
          * Decodes a ValidatorParams message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ValidatorParams} ValidatorParams
+         * @returns {types.ValidatorParams} ValidatorParams
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ValidatorParams.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ValidatorParams();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ValidatorParams();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -8007,10 +7625,10 @@ $root.abci = (function() {
         /**
          * Decodes a ValidatorParams message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ValidatorParams} ValidatorParams
+         * @returns {types.ValidatorParams} ValidatorParams
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -8023,7 +7641,7 @@ $root.abci = (function() {
         /**
          * Verifies a ValidatorParams message.
          * @function verify
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -8044,18 +7662,18 @@ $root.abci = (function() {
         /**
          * Creates a ValidatorParams message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ValidatorParams} ValidatorParams
+         * @returns {types.ValidatorParams} ValidatorParams
          */
         ValidatorParams.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ValidatorParams)
+            if (object instanceof $root.types.ValidatorParams)
                 return object;
-            var message = new $root.abci.ValidatorParams();
+            var message = new $root.types.ValidatorParams();
             if (object.pubKeyTypes) {
                 if (!Array.isArray(object.pubKeyTypes))
-                    throw TypeError(".abci.ValidatorParams.pubKeyTypes: array expected");
+                    throw TypeError(".types.ValidatorParams.pubKeyTypes: array expected");
                 message.pubKeyTypes = [];
                 for (var i = 0; i < object.pubKeyTypes.length; ++i)
                     message.pubKeyTypes[i] = String(object.pubKeyTypes[i]);
@@ -8066,9 +7684,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ValidatorParams message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @static
-         * @param {abci.ValidatorParams} message ValidatorParams
+         * @param {types.ValidatorParams} message ValidatorParams
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -8089,7 +7707,7 @@ $root.abci = (function() {
         /**
          * Converts this ValidatorParams to JSON.
          * @function toJSON
-         * @memberof abci.ValidatorParams
+         * @memberof types.ValidatorParams
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -8100,23 +7718,23 @@ $root.abci = (function() {
         return ValidatorParams;
     })();
 
-    abci.LastCommitInfo = (function() {
+    types.LastCommitInfo = (function() {
 
         /**
          * Properties of a LastCommitInfo.
-         * @memberof abci
+         * @memberof types
          * @interface ILastCommitInfo
          * @property {number|null} [round] LastCommitInfo round
-         * @property {Array.<abci.IVoteInfo>|null} [votes] LastCommitInfo votes
+         * @property {Array.<types.IVoteInfo>|null} [votes] LastCommitInfo votes
          */
 
         /**
          * Constructs a new LastCommitInfo.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a LastCommitInfo.
          * @implements ILastCommitInfo
          * @constructor
-         * @param {abci.ILastCommitInfo=} [properties] Properties to set
+         * @param {types.ILastCommitInfo=} [properties] Properties to set
          */
         function LastCommitInfo(properties) {
             this.votes = [];
@@ -8129,15 +7747,15 @@ $root.abci = (function() {
         /**
          * LastCommitInfo round.
          * @member {number} round
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @instance
          */
         LastCommitInfo.prototype.round = 0;
 
         /**
          * LastCommitInfo votes.
-         * @member {Array.<abci.IVoteInfo>} votes
-         * @memberof abci.LastCommitInfo
+         * @member {Array.<types.IVoteInfo>} votes
+         * @memberof types.LastCommitInfo
          * @instance
          */
         LastCommitInfo.prototype.votes = $util.emptyArray;
@@ -8145,21 +7763,21 @@ $root.abci = (function() {
         /**
          * Creates a new LastCommitInfo instance using the specified properties.
          * @function create
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @static
-         * @param {abci.ILastCommitInfo=} [properties] Properties to set
-         * @returns {abci.LastCommitInfo} LastCommitInfo instance
+         * @param {types.ILastCommitInfo=} [properties] Properties to set
+         * @returns {types.LastCommitInfo} LastCommitInfo instance
          */
         LastCommitInfo.create = function create(properties) {
             return new LastCommitInfo(properties);
         };
 
         /**
-         * Encodes the specified LastCommitInfo message. Does not implicitly {@link abci.LastCommitInfo.verify|verify} messages.
+         * Encodes the specified LastCommitInfo message. Does not implicitly {@link types.LastCommitInfo.verify|verify} messages.
          * @function encode
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @static
-         * @param {abci.ILastCommitInfo} message LastCommitInfo message or plain object to encode
+         * @param {types.ILastCommitInfo} message LastCommitInfo message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -8170,16 +7788,16 @@ $root.abci = (function() {
                 writer.uint32(/* id 1, wireType 0 =*/8).int32(message.round);
             if (message.votes != null && message.votes.length)
                 for (var i = 0; i < message.votes.length; ++i)
-                    $root.abci.VoteInfo.encode(message.votes[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                    $root.types.VoteInfo.encode(message.votes[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
             return writer;
         };
 
         /**
-         * Encodes the specified LastCommitInfo message, length delimited. Does not implicitly {@link abci.LastCommitInfo.verify|verify} messages.
+         * Encodes the specified LastCommitInfo message, length delimited. Does not implicitly {@link types.LastCommitInfo.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @static
-         * @param {abci.ILastCommitInfo} message LastCommitInfo message or plain object to encode
+         * @param {types.ILastCommitInfo} message LastCommitInfo message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -8190,18 +7808,18 @@ $root.abci = (function() {
         /**
          * Decodes a LastCommitInfo message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.LastCommitInfo} LastCommitInfo
+         * @returns {types.LastCommitInfo} LastCommitInfo
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         LastCommitInfo.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.LastCommitInfo();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.LastCommitInfo();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -8211,7 +7829,7 @@ $root.abci = (function() {
                 case 2:
                     if (!(message.votes && message.votes.length))
                         message.votes = [];
-                    message.votes.push($root.abci.VoteInfo.decode(reader, reader.uint32()));
+                    message.votes.push($root.types.VoteInfo.decode(reader, reader.uint32()));
                     break;
                 default:
                     reader.skipType(tag & 7);
@@ -8224,10 +7842,10 @@ $root.abci = (function() {
         /**
          * Decodes a LastCommitInfo message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.LastCommitInfo} LastCommitInfo
+         * @returns {types.LastCommitInfo} LastCommitInfo
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -8240,7 +7858,7 @@ $root.abci = (function() {
         /**
          * Verifies a LastCommitInfo message.
          * @function verify
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -8255,7 +7873,7 @@ $root.abci = (function() {
                 if (!Array.isArray(message.votes))
                     return "votes: array expected";
                 for (var i = 0; i < message.votes.length; ++i) {
-                    var error = $root.abci.VoteInfo.verify(message.votes[i]);
+                    var error = $root.types.VoteInfo.verify(message.votes[i]);
                     if (error)
                         return "votes." + error;
                 }
@@ -8266,25 +7884,25 @@ $root.abci = (function() {
         /**
          * Creates a LastCommitInfo message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.LastCommitInfo} LastCommitInfo
+         * @returns {types.LastCommitInfo} LastCommitInfo
          */
         LastCommitInfo.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.LastCommitInfo)
+            if (object instanceof $root.types.LastCommitInfo)
                 return object;
-            var message = new $root.abci.LastCommitInfo();
+            var message = new $root.types.LastCommitInfo();
             if (object.round != null)
                 message.round = object.round | 0;
             if (object.votes) {
                 if (!Array.isArray(object.votes))
-                    throw TypeError(".abci.LastCommitInfo.votes: array expected");
+                    throw TypeError(".types.LastCommitInfo.votes: array expected");
                 message.votes = [];
                 for (var i = 0; i < object.votes.length; ++i) {
                     if (typeof object.votes[i] !== "object")
-                        throw TypeError(".abci.LastCommitInfo.votes: object expected");
-                    message.votes[i] = $root.abci.VoteInfo.fromObject(object.votes[i]);
+                        throw TypeError(".types.LastCommitInfo.votes: object expected");
+                    message.votes[i] = $root.types.VoteInfo.fromObject(object.votes[i]);
                 }
             }
             return message;
@@ -8293,9 +7911,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a LastCommitInfo message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @static
-         * @param {abci.LastCommitInfo} message LastCommitInfo
+         * @param {types.LastCommitInfo} message LastCommitInfo
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -8312,7 +7930,7 @@ $root.abci = (function() {
             if (message.votes && message.votes.length) {
                 object.votes = [];
                 for (var j = 0; j < message.votes.length; ++j)
-                    object.votes[j] = $root.abci.VoteInfo.toObject(message.votes[j], options);
+                    object.votes[j] = $root.types.VoteInfo.toObject(message.votes[j], options);
             }
             return object;
         };
@@ -8320,7 +7938,7 @@ $root.abci = (function() {
         /**
          * Converts this LastCommitInfo to JSON.
          * @function toJSON
-         * @memberof abci.LastCommitInfo
+         * @memberof types.LastCommitInfo
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -8331,19 +7949,19 @@ $root.abci = (function() {
         return LastCommitInfo;
     })();
 
-    abci.Header = (function() {
+    types.Header = (function() {
 
         /**
          * Properties of a Header.
-         * @memberof abci
+         * @memberof types
          * @interface IHeader
-         * @property {abci.IVersion|null} [version] Header version
+         * @property {types.IVersion|null} [version] Header version
          * @property {string|null} [chainId] Header chainId
          * @property {number|Long|null} [height] Header height
          * @property {google.protobuf.ITimestamp|null} [time] Header time
          * @property {number|Long|null} [numTxs] Header numTxs
          * @property {number|Long|null} [totalTxs] Header totalTxs
-         * @property {abci.IBlockID|null} [lastBlockId] Header lastBlockId
+         * @property {types.IBlockID|null} [lastBlockId] Header lastBlockId
          * @property {Uint8Array|null} [lastCommitHash] Header lastCommitHash
          * @property {Uint8Array|null} [dataHash] Header dataHash
          * @property {Uint8Array|null} [validatorsHash] Header validatorsHash
@@ -8357,11 +7975,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new Header.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a Header.
          * @implements IHeader
          * @constructor
-         * @param {abci.IHeader=} [properties] Properties to set
+         * @param {types.IHeader=} [properties] Properties to set
          */
         function Header(properties) {
             if (properties)
@@ -8372,8 +7990,8 @@ $root.abci = (function() {
 
         /**
          * Header version.
-         * @member {abci.IVersion|null|undefined} version
-         * @memberof abci.Header
+         * @member {types.IVersion|null|undefined} version
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.version = null;
@@ -8381,7 +7999,7 @@ $root.abci = (function() {
         /**
          * Header chainId.
          * @member {string} chainId
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.chainId = "";
@@ -8389,15 +8007,15 @@ $root.abci = (function() {
         /**
          * Header height.
          * @member {number|Long} height
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
-        Header.prototype.height = 0;
+        Header.prototype.height = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Header time.
          * @member {google.protobuf.ITimestamp|null|undefined} time
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.time = null;
@@ -8405,23 +8023,23 @@ $root.abci = (function() {
         /**
          * Header numTxs.
          * @member {number|Long} numTxs
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
-        Header.prototype.numTxs = 0;
+        Header.prototype.numTxs = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Header totalTxs.
          * @member {number|Long} totalTxs
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
-        Header.prototype.totalTxs = 0;
+        Header.prototype.totalTxs = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Header lastBlockId.
-         * @member {abci.IBlockID|null|undefined} lastBlockId
-         * @memberof abci.Header
+         * @member {types.IBlockID|null|undefined} lastBlockId
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.lastBlockId = null;
@@ -8429,7 +8047,7 @@ $root.abci = (function() {
         /**
          * Header lastCommitHash.
          * @member {Uint8Array} lastCommitHash
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.lastCommitHash = $util.newBuffer([]);
@@ -8437,7 +8055,7 @@ $root.abci = (function() {
         /**
          * Header dataHash.
          * @member {Uint8Array} dataHash
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.dataHash = $util.newBuffer([]);
@@ -8445,7 +8063,7 @@ $root.abci = (function() {
         /**
          * Header validatorsHash.
          * @member {Uint8Array} validatorsHash
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.validatorsHash = $util.newBuffer([]);
@@ -8453,7 +8071,7 @@ $root.abci = (function() {
         /**
          * Header nextValidatorsHash.
          * @member {Uint8Array} nextValidatorsHash
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.nextValidatorsHash = $util.newBuffer([]);
@@ -8461,7 +8079,7 @@ $root.abci = (function() {
         /**
          * Header consensusHash.
          * @member {Uint8Array} consensusHash
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.consensusHash = $util.newBuffer([]);
@@ -8469,7 +8087,7 @@ $root.abci = (function() {
         /**
          * Header appHash.
          * @member {Uint8Array} appHash
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.appHash = $util.newBuffer([]);
@@ -8477,7 +8095,7 @@ $root.abci = (function() {
         /**
          * Header lastResultsHash.
          * @member {Uint8Array} lastResultsHash
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.lastResultsHash = $util.newBuffer([]);
@@ -8485,7 +8103,7 @@ $root.abci = (function() {
         /**
          * Header evidenceHash.
          * @member {Uint8Array} evidenceHash
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.evidenceHash = $util.newBuffer([]);
@@ -8493,7 +8111,7 @@ $root.abci = (function() {
         /**
          * Header proposerAddress.
          * @member {Uint8Array} proposerAddress
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          */
         Header.prototype.proposerAddress = $util.newBuffer([]);
@@ -8501,21 +8119,21 @@ $root.abci = (function() {
         /**
          * Creates a new Header instance using the specified properties.
          * @function create
-         * @memberof abci.Header
+         * @memberof types.Header
          * @static
-         * @param {abci.IHeader=} [properties] Properties to set
-         * @returns {abci.Header} Header instance
+         * @param {types.IHeader=} [properties] Properties to set
+         * @returns {types.Header} Header instance
          */
         Header.create = function create(properties) {
             return new Header(properties);
         };
 
         /**
-         * Encodes the specified Header message. Does not implicitly {@link abci.Header.verify|verify} messages.
+         * Encodes the specified Header message. Does not implicitly {@link types.Header.verify|verify} messages.
          * @function encode
-         * @memberof abci.Header
+         * @memberof types.Header
          * @static
-         * @param {abci.IHeader} message Header message or plain object to encode
+         * @param {types.IHeader} message Header message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -8523,7 +8141,7 @@ $root.abci = (function() {
             if (!writer)
                 writer = $Writer.create();
             if (message.version != null && message.hasOwnProperty("version"))
-                $root.abci.Version.encode(message.version, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                $root.types.Version.encode(message.version, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
             if (message.chainId != null && message.hasOwnProperty("chainId"))
                 writer.uint32(/* id 2, wireType 2 =*/18).string(message.chainId);
             if (message.height != null && message.hasOwnProperty("height"))
@@ -8535,7 +8153,7 @@ $root.abci = (function() {
             if (message.totalTxs != null && message.hasOwnProperty("totalTxs"))
                 writer.uint32(/* id 6, wireType 0 =*/48).int64(message.totalTxs);
             if (message.lastBlockId != null && message.hasOwnProperty("lastBlockId"))
-                $root.abci.BlockID.encode(message.lastBlockId, writer.uint32(/* id 7, wireType 2 =*/58).fork()).ldelim();
+                $root.types.BlockID.encode(message.lastBlockId, writer.uint32(/* id 7, wireType 2 =*/58).fork()).ldelim();
             if (message.lastCommitHash != null && message.hasOwnProperty("lastCommitHash"))
                 writer.uint32(/* id 8, wireType 2 =*/66).bytes(message.lastCommitHash);
             if (message.dataHash != null && message.hasOwnProperty("dataHash"))
@@ -8558,11 +8176,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified Header message, length delimited. Does not implicitly {@link abci.Header.verify|verify} messages.
+         * Encodes the specified Header message, length delimited. Does not implicitly {@link types.Header.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.Header
+         * @memberof types.Header
          * @static
-         * @param {abci.IHeader} message Header message or plain object to encode
+         * @param {types.IHeader} message Header message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -8573,23 +8191,23 @@ $root.abci = (function() {
         /**
          * Decodes a Header message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.Header
+         * @memberof types.Header
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.Header} Header
+         * @returns {types.Header} Header
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         Header.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.Header();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.Header();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
                 case 1:
-                    message.version = $root.abci.Version.decode(reader, reader.uint32());
+                    message.version = $root.types.Version.decode(reader, reader.uint32());
                     break;
                 case 2:
                     message.chainId = reader.string();
@@ -8607,7 +8225,7 @@ $root.abci = (function() {
                     message.totalTxs = reader.int64();
                     break;
                 case 7:
-                    message.lastBlockId = $root.abci.BlockID.decode(reader, reader.uint32());
+                    message.lastBlockId = $root.types.BlockID.decode(reader, reader.uint32());
                     break;
                 case 8:
                     message.lastCommitHash = reader.bytes();
@@ -8647,10 +8265,10 @@ $root.abci = (function() {
         /**
          * Decodes a Header message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.Header
+         * @memberof types.Header
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.Header} Header
+         * @returns {types.Header} Header
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -8663,7 +8281,7 @@ $root.abci = (function() {
         /**
          * Verifies a Header message.
          * @function verify
-         * @memberof abci.Header
+         * @memberof types.Header
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -8672,7 +8290,7 @@ $root.abci = (function() {
             if (typeof message !== "object" || message === null)
                 return "object expected";
             if (message.version != null && message.hasOwnProperty("version")) {
-                var error = $root.abci.Version.verify(message.version);
+                var error = $root.types.Version.verify(message.version);
                 if (error)
                     return "version." + error;
             }
@@ -8694,7 +8312,7 @@ $root.abci = (function() {
                 if (!$util.isInteger(message.totalTxs) && !(message.totalTxs && $util.isInteger(message.totalTxs.low) && $util.isInteger(message.totalTxs.high)))
                     return "totalTxs: integer|Long expected";
             if (message.lastBlockId != null && message.hasOwnProperty("lastBlockId")) {
-                var error = $root.abci.BlockID.verify(message.lastBlockId);
+                var error = $root.types.BlockID.verify(message.lastBlockId);
                 if (error)
                     return "lastBlockId." + error;
             }
@@ -8731,19 +8349,19 @@ $root.abci = (function() {
         /**
          * Creates a Header message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.Header
+         * @memberof types.Header
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.Header} Header
+         * @returns {types.Header} Header
          */
         Header.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.Header)
+            if (object instanceof $root.types.Header)
                 return object;
-            var message = new $root.abci.Header();
+            var message = new $root.types.Header();
             if (object.version != null) {
                 if (typeof object.version !== "object")
-                    throw TypeError(".abci.Header.version: object expected");
-                message.version = $root.abci.Version.fromObject(object.version);
+                    throw TypeError(".types.Header.version: object expected");
+                message.version = $root.types.Version.fromObject(object.version);
             }
             if (object.chainId != null)
                 message.chainId = String(object.chainId);
@@ -8758,7 +8376,7 @@ $root.abci = (function() {
                     message.height = new $util.LongBits(object.height.low >>> 0, object.height.high >>> 0).toNumber();
             if (object.time != null) {
                 if (typeof object.time !== "object")
-                    throw TypeError(".abci.Header.time: object expected");
+                    throw TypeError(".types.Header.time: object expected");
                 message.time = $root.google.protobuf.Timestamp.fromObject(object.time);
             }
             if (object.numTxs != null)
@@ -8781,8 +8399,8 @@ $root.abci = (function() {
                     message.totalTxs = new $util.LongBits(object.totalTxs.low >>> 0, object.totalTxs.high >>> 0).toNumber();
             if (object.lastBlockId != null) {
                 if (typeof object.lastBlockId !== "object")
-                    throw TypeError(".abci.Header.lastBlockId: object expected");
-                message.lastBlockId = $root.abci.BlockID.fromObject(object.lastBlockId);
+                    throw TypeError(".types.Header.lastBlockId: object expected");
+                message.lastBlockId = $root.types.BlockID.fromObject(object.lastBlockId);
             }
             if (object.lastCommitHash != null)
                 if (typeof object.lastCommitHash === "string")
@@ -8835,9 +8453,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a Header message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.Header
+         * @memberof types.Header
          * @static
-         * @param {abci.Header} message Header
+         * @param {types.Header} message Header
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -8848,10 +8466,22 @@ $root.abci = (function() {
             if (options.defaults) {
                 object.version = null;
                 object.chainId = "";
-                object.height = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.height = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.height = options.longs === String ? "0" : 0;
                 object.time = null;
-                object.numTxs = 0;
-                object.totalTxs = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.numTxs = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.numTxs = options.longs === String ? "0" : 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.totalTxs = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.totalTxs = options.longs === String ? "0" : 0;
                 object.lastBlockId = null;
                 if (options.bytes === String)
                     object.lastCommitHash = "";
@@ -8918,7 +8548,7 @@ $root.abci = (function() {
                 }
             }
             if (message.version != null && message.hasOwnProperty("version"))
-                object.version = $root.abci.Version.toObject(message.version, options);
+                object.version = $root.types.Version.toObject(message.version, options);
             if (message.chainId != null && message.hasOwnProperty("chainId"))
                 object.chainId = message.chainId;
             if (message.height != null && message.hasOwnProperty("height"))
@@ -8939,7 +8569,7 @@ $root.abci = (function() {
                 else
                     object.totalTxs = options.longs === String ? $util.Long.prototype.toString.call(message.totalTxs) : options.longs === Number ? new $util.LongBits(message.totalTxs.low >>> 0, message.totalTxs.high >>> 0).toNumber() : message.totalTxs;
             if (message.lastBlockId != null && message.hasOwnProperty("lastBlockId"))
-                object.lastBlockId = $root.abci.BlockID.toObject(message.lastBlockId, options);
+                object.lastBlockId = $root.types.BlockID.toObject(message.lastBlockId, options);
             if (message.lastCommitHash != null && message.hasOwnProperty("lastCommitHash"))
                 object.lastCommitHash = options.bytes === String ? $util.base64.encode(message.lastCommitHash, 0, message.lastCommitHash.length) : options.bytes === Array ? Array.prototype.slice.call(message.lastCommitHash) : message.lastCommitHash;
             if (message.dataHash != null && message.hasOwnProperty("dataHash"))
@@ -8964,7 +8594,7 @@ $root.abci = (function() {
         /**
          * Converts this Header to JSON.
          * @function toJSON
-         * @memberof abci.Header
+         * @memberof types.Header
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -8975,11 +8605,11 @@ $root.abci = (function() {
         return Header;
     })();
 
-    abci.Version = (function() {
+    types.Version = (function() {
 
         /**
          * Properties of a Version.
-         * @memberof abci
+         * @memberof types
          * @interface IVersion
          * @property {number|Long|null} [Block] Version Block
          * @property {number|Long|null} [App] Version App
@@ -8987,11 +8617,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new Version.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a Version.
          * @implements IVersion
          * @constructor
-         * @param {abci.IVersion=} [properties] Properties to set
+         * @param {types.IVersion=} [properties] Properties to set
          */
         function Version(properties) {
             if (properties)
@@ -9003,37 +8633,37 @@ $root.abci = (function() {
         /**
          * Version Block.
          * @member {number|Long} Block
-         * @memberof abci.Version
+         * @memberof types.Version
          * @instance
          */
-        Version.prototype.Block = 0;
+        Version.prototype.Block = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
 
         /**
          * Version App.
          * @member {number|Long} App
-         * @memberof abci.Version
+         * @memberof types.Version
          * @instance
          */
-        Version.prototype.App = 0;
+        Version.prototype.App = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
 
         /**
          * Creates a new Version instance using the specified properties.
          * @function create
-         * @memberof abci.Version
+         * @memberof types.Version
          * @static
-         * @param {abci.IVersion=} [properties] Properties to set
-         * @returns {abci.Version} Version instance
+         * @param {types.IVersion=} [properties] Properties to set
+         * @returns {types.Version} Version instance
          */
         Version.create = function create(properties) {
             return new Version(properties);
         };
 
         /**
-         * Encodes the specified Version message. Does not implicitly {@link abci.Version.verify|verify} messages.
+         * Encodes the specified Version message. Does not implicitly {@link types.Version.verify|verify} messages.
          * @function encode
-         * @memberof abci.Version
+         * @memberof types.Version
          * @static
-         * @param {abci.IVersion} message Version message or plain object to encode
+         * @param {types.IVersion} message Version message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9048,11 +8678,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified Version message, length delimited. Does not implicitly {@link abci.Version.verify|verify} messages.
+         * Encodes the specified Version message, length delimited. Does not implicitly {@link types.Version.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.Version
+         * @memberof types.Version
          * @static
-         * @param {abci.IVersion} message Version message or plain object to encode
+         * @param {types.IVersion} message Version message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9063,18 +8693,18 @@ $root.abci = (function() {
         /**
          * Decodes a Version message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.Version
+         * @memberof types.Version
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.Version} Version
+         * @returns {types.Version} Version
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         Version.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.Version();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.Version();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -9095,10 +8725,10 @@ $root.abci = (function() {
         /**
          * Decodes a Version message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.Version
+         * @memberof types.Version
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.Version} Version
+         * @returns {types.Version} Version
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -9111,7 +8741,7 @@ $root.abci = (function() {
         /**
          * Verifies a Version message.
          * @function verify
-         * @memberof abci.Version
+         * @memberof types.Version
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -9131,15 +8761,15 @@ $root.abci = (function() {
         /**
          * Creates a Version message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.Version
+         * @memberof types.Version
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.Version} Version
+         * @returns {types.Version} Version
          */
         Version.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.Version)
+            if (object instanceof $root.types.Version)
                 return object;
-            var message = new $root.abci.Version();
+            var message = new $root.types.Version();
             if (object.Block != null)
                 if ($util.Long)
                     (message.Block = $util.Long.fromValue(object.Block)).unsigned = true;
@@ -9164,9 +8794,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a Version message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.Version
+         * @memberof types.Version
          * @static
-         * @param {abci.Version} message Version
+         * @param {types.Version} message Version
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -9175,8 +8805,16 @@ $root.abci = (function() {
                 options = {};
             var object = {};
             if (options.defaults) {
-                object.Block = 0;
-                object.App = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, true);
+                    object.Block = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.Block = options.longs === String ? "0" : 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, true);
+                    object.App = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.App = options.longs === String ? "0" : 0;
             }
             if (message.Block != null && message.hasOwnProperty("Block"))
                 if (typeof message.Block === "number")
@@ -9194,7 +8832,7 @@ $root.abci = (function() {
         /**
          * Converts this Version to JSON.
          * @function toJSON
-         * @memberof abci.Version
+         * @memberof types.Version
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -9205,23 +8843,23 @@ $root.abci = (function() {
         return Version;
     })();
 
-    abci.BlockID = (function() {
+    types.BlockID = (function() {
 
         /**
          * Properties of a BlockID.
-         * @memberof abci
+         * @memberof types
          * @interface IBlockID
          * @property {Uint8Array|null} [hash] BlockID hash
-         * @property {abci.IPartSetHeader|null} [partsHeader] BlockID partsHeader
+         * @property {types.IPartSetHeader|null} [partsHeader] BlockID partsHeader
          */
 
         /**
          * Constructs a new BlockID.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a BlockID.
          * @implements IBlockID
          * @constructor
-         * @param {abci.IBlockID=} [properties] Properties to set
+         * @param {types.IBlockID=} [properties] Properties to set
          */
         function BlockID(properties) {
             if (properties)
@@ -9233,15 +8871,15 @@ $root.abci = (function() {
         /**
          * BlockID hash.
          * @member {Uint8Array} hash
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @instance
          */
         BlockID.prototype.hash = $util.newBuffer([]);
 
         /**
          * BlockID partsHeader.
-         * @member {abci.IPartSetHeader|null|undefined} partsHeader
-         * @memberof abci.BlockID
+         * @member {types.IPartSetHeader|null|undefined} partsHeader
+         * @memberof types.BlockID
          * @instance
          */
         BlockID.prototype.partsHeader = null;
@@ -9249,21 +8887,21 @@ $root.abci = (function() {
         /**
          * Creates a new BlockID instance using the specified properties.
          * @function create
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @static
-         * @param {abci.IBlockID=} [properties] Properties to set
-         * @returns {abci.BlockID} BlockID instance
+         * @param {types.IBlockID=} [properties] Properties to set
+         * @returns {types.BlockID} BlockID instance
          */
         BlockID.create = function create(properties) {
             return new BlockID(properties);
         };
 
         /**
-         * Encodes the specified BlockID message. Does not implicitly {@link abci.BlockID.verify|verify} messages.
+         * Encodes the specified BlockID message. Does not implicitly {@link types.BlockID.verify|verify} messages.
          * @function encode
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @static
-         * @param {abci.IBlockID} message BlockID message or plain object to encode
+         * @param {types.IBlockID} message BlockID message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9273,16 +8911,16 @@ $root.abci = (function() {
             if (message.hash != null && message.hasOwnProperty("hash"))
                 writer.uint32(/* id 1, wireType 2 =*/10).bytes(message.hash);
             if (message.partsHeader != null && message.hasOwnProperty("partsHeader"))
-                $root.abci.PartSetHeader.encode(message.partsHeader, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                $root.types.PartSetHeader.encode(message.partsHeader, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
             return writer;
         };
 
         /**
-         * Encodes the specified BlockID message, length delimited. Does not implicitly {@link abci.BlockID.verify|verify} messages.
+         * Encodes the specified BlockID message, length delimited. Does not implicitly {@link types.BlockID.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @static
-         * @param {abci.IBlockID} message BlockID message or plain object to encode
+         * @param {types.IBlockID} message BlockID message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9293,18 +8931,18 @@ $root.abci = (function() {
         /**
          * Decodes a BlockID message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.BlockID} BlockID
+         * @returns {types.BlockID} BlockID
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         BlockID.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.BlockID();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.BlockID();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -9312,7 +8950,7 @@ $root.abci = (function() {
                     message.hash = reader.bytes();
                     break;
                 case 2:
-                    message.partsHeader = $root.abci.PartSetHeader.decode(reader, reader.uint32());
+                    message.partsHeader = $root.types.PartSetHeader.decode(reader, reader.uint32());
                     break;
                 default:
                     reader.skipType(tag & 7);
@@ -9325,10 +8963,10 @@ $root.abci = (function() {
         /**
          * Decodes a BlockID message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.BlockID} BlockID
+         * @returns {types.BlockID} BlockID
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -9341,7 +8979,7 @@ $root.abci = (function() {
         /**
          * Verifies a BlockID message.
          * @function verify
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -9353,7 +8991,7 @@ $root.abci = (function() {
                 if (!(message.hash && typeof message.hash.length === "number" || $util.isString(message.hash)))
                     return "hash: buffer expected";
             if (message.partsHeader != null && message.hasOwnProperty("partsHeader")) {
-                var error = $root.abci.PartSetHeader.verify(message.partsHeader);
+                var error = $root.types.PartSetHeader.verify(message.partsHeader);
                 if (error)
                     return "partsHeader." + error;
             }
@@ -9363,15 +9001,15 @@ $root.abci = (function() {
         /**
          * Creates a BlockID message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.BlockID} BlockID
+         * @returns {types.BlockID} BlockID
          */
         BlockID.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.BlockID)
+            if (object instanceof $root.types.BlockID)
                 return object;
-            var message = new $root.abci.BlockID();
+            var message = new $root.types.BlockID();
             if (object.hash != null)
                 if (typeof object.hash === "string")
                     $util.base64.decode(object.hash, message.hash = $util.newBuffer($util.base64.length(object.hash)), 0);
@@ -9379,8 +9017,8 @@ $root.abci = (function() {
                     message.hash = object.hash;
             if (object.partsHeader != null) {
                 if (typeof object.partsHeader !== "object")
-                    throw TypeError(".abci.BlockID.partsHeader: object expected");
-                message.partsHeader = $root.abci.PartSetHeader.fromObject(object.partsHeader);
+                    throw TypeError(".types.BlockID.partsHeader: object expected");
+                message.partsHeader = $root.types.PartSetHeader.fromObject(object.partsHeader);
             }
             return message;
         };
@@ -9388,9 +9026,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a BlockID message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @static
-         * @param {abci.BlockID} message BlockID
+         * @param {types.BlockID} message BlockID
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -9411,14 +9049,14 @@ $root.abci = (function() {
             if (message.hash != null && message.hasOwnProperty("hash"))
                 object.hash = options.bytes === String ? $util.base64.encode(message.hash, 0, message.hash.length) : options.bytes === Array ? Array.prototype.slice.call(message.hash) : message.hash;
             if (message.partsHeader != null && message.hasOwnProperty("partsHeader"))
-                object.partsHeader = $root.abci.PartSetHeader.toObject(message.partsHeader, options);
+                object.partsHeader = $root.types.PartSetHeader.toObject(message.partsHeader, options);
             return object;
         };
 
         /**
          * Converts this BlockID to JSON.
          * @function toJSON
-         * @memberof abci.BlockID
+         * @memberof types.BlockID
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -9429,11 +9067,11 @@ $root.abci = (function() {
         return BlockID;
     })();
 
-    abci.PartSetHeader = (function() {
+    types.PartSetHeader = (function() {
 
         /**
          * Properties of a PartSetHeader.
-         * @memberof abci
+         * @memberof types
          * @interface IPartSetHeader
          * @property {number|null} [total] PartSetHeader total
          * @property {Uint8Array|null} [hash] PartSetHeader hash
@@ -9441,11 +9079,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new PartSetHeader.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a PartSetHeader.
          * @implements IPartSetHeader
          * @constructor
-         * @param {abci.IPartSetHeader=} [properties] Properties to set
+         * @param {types.IPartSetHeader=} [properties] Properties to set
          */
         function PartSetHeader(properties) {
             if (properties)
@@ -9457,7 +9095,7 @@ $root.abci = (function() {
         /**
          * PartSetHeader total.
          * @member {number} total
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @instance
          */
         PartSetHeader.prototype.total = 0;
@@ -9465,7 +9103,7 @@ $root.abci = (function() {
         /**
          * PartSetHeader hash.
          * @member {Uint8Array} hash
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @instance
          */
         PartSetHeader.prototype.hash = $util.newBuffer([]);
@@ -9473,21 +9111,21 @@ $root.abci = (function() {
         /**
          * Creates a new PartSetHeader instance using the specified properties.
          * @function create
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @static
-         * @param {abci.IPartSetHeader=} [properties] Properties to set
-         * @returns {abci.PartSetHeader} PartSetHeader instance
+         * @param {types.IPartSetHeader=} [properties] Properties to set
+         * @returns {types.PartSetHeader} PartSetHeader instance
          */
         PartSetHeader.create = function create(properties) {
             return new PartSetHeader(properties);
         };
 
         /**
-         * Encodes the specified PartSetHeader message. Does not implicitly {@link abci.PartSetHeader.verify|verify} messages.
+         * Encodes the specified PartSetHeader message. Does not implicitly {@link types.PartSetHeader.verify|verify} messages.
          * @function encode
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @static
-         * @param {abci.IPartSetHeader} message PartSetHeader message or plain object to encode
+         * @param {types.IPartSetHeader} message PartSetHeader message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9502,11 +9140,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified PartSetHeader message, length delimited. Does not implicitly {@link abci.PartSetHeader.verify|verify} messages.
+         * Encodes the specified PartSetHeader message, length delimited. Does not implicitly {@link types.PartSetHeader.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @static
-         * @param {abci.IPartSetHeader} message PartSetHeader message or plain object to encode
+         * @param {types.IPartSetHeader} message PartSetHeader message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9517,18 +9155,18 @@ $root.abci = (function() {
         /**
          * Decodes a PartSetHeader message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.PartSetHeader} PartSetHeader
+         * @returns {types.PartSetHeader} PartSetHeader
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         PartSetHeader.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.PartSetHeader();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.PartSetHeader();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -9549,10 +9187,10 @@ $root.abci = (function() {
         /**
          * Decodes a PartSetHeader message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.PartSetHeader} PartSetHeader
+         * @returns {types.PartSetHeader} PartSetHeader
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -9565,7 +9203,7 @@ $root.abci = (function() {
         /**
          * Verifies a PartSetHeader message.
          * @function verify
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -9585,15 +9223,15 @@ $root.abci = (function() {
         /**
          * Creates a PartSetHeader message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.PartSetHeader} PartSetHeader
+         * @returns {types.PartSetHeader} PartSetHeader
          */
         PartSetHeader.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.PartSetHeader)
+            if (object instanceof $root.types.PartSetHeader)
                 return object;
-            var message = new $root.abci.PartSetHeader();
+            var message = new $root.types.PartSetHeader();
             if (object.total != null)
                 message.total = object.total | 0;
             if (object.hash != null)
@@ -9607,9 +9245,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a PartSetHeader message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @static
-         * @param {abci.PartSetHeader} message PartSetHeader
+         * @param {types.PartSetHeader} message PartSetHeader
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -9637,7 +9275,7 @@ $root.abci = (function() {
         /**
          * Converts this PartSetHeader to JSON.
          * @function toJSON
-         * @memberof abci.PartSetHeader
+         * @memberof types.PartSetHeader
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -9648,11 +9286,11 @@ $root.abci = (function() {
         return PartSetHeader;
     })();
 
-    abci.Validator = (function() {
+    types.Validator = (function() {
 
         /**
          * Properties of a Validator.
-         * @memberof abci
+         * @memberof types
          * @interface IValidator
          * @property {Uint8Array|null} [address] Validator address
          * @property {number|Long|null} [power] Validator power
@@ -9660,11 +9298,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new Validator.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a Validator.
          * @implements IValidator
          * @constructor
-         * @param {abci.IValidator=} [properties] Properties to set
+         * @param {types.IValidator=} [properties] Properties to set
          */
         function Validator(properties) {
             if (properties)
@@ -9676,7 +9314,7 @@ $root.abci = (function() {
         /**
          * Validator address.
          * @member {Uint8Array} address
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @instance
          */
         Validator.prototype.address = $util.newBuffer([]);
@@ -9684,29 +9322,29 @@ $root.abci = (function() {
         /**
          * Validator power.
          * @member {number|Long} power
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @instance
          */
-        Validator.prototype.power = 0;
+        Validator.prototype.power = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Creates a new Validator instance using the specified properties.
          * @function create
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @static
-         * @param {abci.IValidator=} [properties] Properties to set
-         * @returns {abci.Validator} Validator instance
+         * @param {types.IValidator=} [properties] Properties to set
+         * @returns {types.Validator} Validator instance
          */
         Validator.create = function create(properties) {
             return new Validator(properties);
         };
 
         /**
-         * Encodes the specified Validator message. Does not implicitly {@link abci.Validator.verify|verify} messages.
+         * Encodes the specified Validator message. Does not implicitly {@link types.Validator.verify|verify} messages.
          * @function encode
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @static
-         * @param {abci.IValidator} message Validator message or plain object to encode
+         * @param {types.IValidator} message Validator message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9721,11 +9359,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified Validator message, length delimited. Does not implicitly {@link abci.Validator.verify|verify} messages.
+         * Encodes the specified Validator message, length delimited. Does not implicitly {@link types.Validator.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @static
-         * @param {abci.IValidator} message Validator message or plain object to encode
+         * @param {types.IValidator} message Validator message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9736,18 +9374,18 @@ $root.abci = (function() {
         /**
          * Decodes a Validator message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.Validator} Validator
+         * @returns {types.Validator} Validator
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         Validator.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.Validator();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.Validator();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -9768,10 +9406,10 @@ $root.abci = (function() {
         /**
          * Decodes a Validator message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.Validator} Validator
+         * @returns {types.Validator} Validator
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -9784,7 +9422,7 @@ $root.abci = (function() {
         /**
          * Verifies a Validator message.
          * @function verify
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -9804,15 +9442,15 @@ $root.abci = (function() {
         /**
          * Creates a Validator message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.Validator} Validator
+         * @returns {types.Validator} Validator
          */
         Validator.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.Validator)
+            if (object instanceof $root.types.Validator)
                 return object;
-            var message = new $root.abci.Validator();
+            var message = new $root.types.Validator();
             if (object.address != null)
                 if (typeof object.address === "string")
                     $util.base64.decode(object.address, message.address = $util.newBuffer($util.base64.length(object.address)), 0);
@@ -9833,9 +9471,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a Validator message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @static
-         * @param {abci.Validator} message Validator
+         * @param {types.Validator} message Validator
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -9851,7 +9489,11 @@ $root.abci = (function() {
                     if (options.bytes !== Array)
                         object.address = $util.newBuffer(object.address);
                 }
-                object.power = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.power = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.power = options.longs === String ? "0" : 0;
             }
             if (message.address != null && message.hasOwnProperty("address"))
                 object.address = options.bytes === String ? $util.base64.encode(message.address, 0, message.address.length) : options.bytes === Array ? Array.prototype.slice.call(message.address) : message.address;
@@ -9866,7 +9508,7 @@ $root.abci = (function() {
         /**
          * Converts this Validator to JSON.
          * @function toJSON
-         * @memberof abci.Validator
+         * @memberof types.Validator
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -9877,23 +9519,23 @@ $root.abci = (function() {
         return Validator;
     })();
 
-    abci.ValidatorUpdate = (function() {
+    types.ValidatorUpdate = (function() {
 
         /**
          * Properties of a ValidatorUpdate.
-         * @memberof abci
+         * @memberof types
          * @interface IValidatorUpdate
-         * @property {abci.IPubKey|null} [pubKey] ValidatorUpdate pubKey
+         * @property {types.IPubKey|null} [pubKey] ValidatorUpdate pubKey
          * @property {number|Long|null} [power] ValidatorUpdate power
          */
 
         /**
          * Constructs a new ValidatorUpdate.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ValidatorUpdate.
          * @implements IValidatorUpdate
          * @constructor
-         * @param {abci.IValidatorUpdate=} [properties] Properties to set
+         * @param {types.IValidatorUpdate=} [properties] Properties to set
          */
         function ValidatorUpdate(properties) {
             if (properties)
@@ -9904,8 +9546,8 @@ $root.abci = (function() {
 
         /**
          * ValidatorUpdate pubKey.
-         * @member {abci.IPubKey|null|undefined} pubKey
-         * @memberof abci.ValidatorUpdate
+         * @member {types.IPubKey|null|undefined} pubKey
+         * @memberof types.ValidatorUpdate
          * @instance
          */
         ValidatorUpdate.prototype.pubKey = null;
@@ -9913,29 +9555,29 @@ $root.abci = (function() {
         /**
          * ValidatorUpdate power.
          * @member {number|Long} power
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @instance
          */
-        ValidatorUpdate.prototype.power = 0;
+        ValidatorUpdate.prototype.power = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Creates a new ValidatorUpdate instance using the specified properties.
          * @function create
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @static
-         * @param {abci.IValidatorUpdate=} [properties] Properties to set
-         * @returns {abci.ValidatorUpdate} ValidatorUpdate instance
+         * @param {types.IValidatorUpdate=} [properties] Properties to set
+         * @returns {types.ValidatorUpdate} ValidatorUpdate instance
          */
         ValidatorUpdate.create = function create(properties) {
             return new ValidatorUpdate(properties);
         };
 
         /**
-         * Encodes the specified ValidatorUpdate message. Does not implicitly {@link abci.ValidatorUpdate.verify|verify} messages.
+         * Encodes the specified ValidatorUpdate message. Does not implicitly {@link types.ValidatorUpdate.verify|verify} messages.
          * @function encode
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @static
-         * @param {abci.IValidatorUpdate} message ValidatorUpdate message or plain object to encode
+         * @param {types.IValidatorUpdate} message ValidatorUpdate message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9943,18 +9585,18 @@ $root.abci = (function() {
             if (!writer)
                 writer = $Writer.create();
             if (message.pubKey != null && message.hasOwnProperty("pubKey"))
-                $root.abci.PubKey.encode(message.pubKey, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                $root.types.PubKey.encode(message.pubKey, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
             if (message.power != null && message.hasOwnProperty("power"))
                 writer.uint32(/* id 2, wireType 0 =*/16).int64(message.power);
             return writer;
         };
 
         /**
-         * Encodes the specified ValidatorUpdate message, length delimited. Does not implicitly {@link abci.ValidatorUpdate.verify|verify} messages.
+         * Encodes the specified ValidatorUpdate message, length delimited. Does not implicitly {@link types.ValidatorUpdate.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @static
-         * @param {abci.IValidatorUpdate} message ValidatorUpdate message or plain object to encode
+         * @param {types.IValidatorUpdate} message ValidatorUpdate message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -9965,23 +9607,23 @@ $root.abci = (function() {
         /**
          * Decodes a ValidatorUpdate message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.ValidatorUpdate} ValidatorUpdate
+         * @returns {types.ValidatorUpdate} ValidatorUpdate
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         ValidatorUpdate.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.ValidatorUpdate();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.ValidatorUpdate();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
                 case 1:
-                    message.pubKey = $root.abci.PubKey.decode(reader, reader.uint32());
+                    message.pubKey = $root.types.PubKey.decode(reader, reader.uint32());
                     break;
                 case 2:
                     message.power = reader.int64();
@@ -9997,10 +9639,10 @@ $root.abci = (function() {
         /**
          * Decodes a ValidatorUpdate message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.ValidatorUpdate} ValidatorUpdate
+         * @returns {types.ValidatorUpdate} ValidatorUpdate
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -10013,7 +9655,7 @@ $root.abci = (function() {
         /**
          * Verifies a ValidatorUpdate message.
          * @function verify
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -10022,7 +9664,7 @@ $root.abci = (function() {
             if (typeof message !== "object" || message === null)
                 return "object expected";
             if (message.pubKey != null && message.hasOwnProperty("pubKey")) {
-                var error = $root.abci.PubKey.verify(message.pubKey);
+                var error = $root.types.PubKey.verify(message.pubKey);
                 if (error)
                     return "pubKey." + error;
             }
@@ -10035,19 +9677,19 @@ $root.abci = (function() {
         /**
          * Creates a ValidatorUpdate message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.ValidatorUpdate} ValidatorUpdate
+         * @returns {types.ValidatorUpdate} ValidatorUpdate
          */
         ValidatorUpdate.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.ValidatorUpdate)
+            if (object instanceof $root.types.ValidatorUpdate)
                 return object;
-            var message = new $root.abci.ValidatorUpdate();
+            var message = new $root.types.ValidatorUpdate();
             if (object.pubKey != null) {
                 if (typeof object.pubKey !== "object")
-                    throw TypeError(".abci.ValidatorUpdate.pubKey: object expected");
-                message.pubKey = $root.abci.PubKey.fromObject(object.pubKey);
+                    throw TypeError(".types.ValidatorUpdate.pubKey: object expected");
+                message.pubKey = $root.types.PubKey.fromObject(object.pubKey);
             }
             if (object.power != null)
                 if ($util.Long)
@@ -10064,9 +9706,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a ValidatorUpdate message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @static
-         * @param {abci.ValidatorUpdate} message ValidatorUpdate
+         * @param {types.ValidatorUpdate} message ValidatorUpdate
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -10076,10 +9718,14 @@ $root.abci = (function() {
             var object = {};
             if (options.defaults) {
                 object.pubKey = null;
-                object.power = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.power = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.power = options.longs === String ? "0" : 0;
             }
             if (message.pubKey != null && message.hasOwnProperty("pubKey"))
-                object.pubKey = $root.abci.PubKey.toObject(message.pubKey, options);
+                object.pubKey = $root.types.PubKey.toObject(message.pubKey, options);
             if (message.power != null && message.hasOwnProperty("power"))
                 if (typeof message.power === "number")
                     object.power = options.longs === String ? String(message.power) : message.power;
@@ -10091,7 +9737,7 @@ $root.abci = (function() {
         /**
          * Converts this ValidatorUpdate to JSON.
          * @function toJSON
-         * @memberof abci.ValidatorUpdate
+         * @memberof types.ValidatorUpdate
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -10102,23 +9748,23 @@ $root.abci = (function() {
         return ValidatorUpdate;
     })();
 
-    abci.VoteInfo = (function() {
+    types.VoteInfo = (function() {
 
         /**
          * Properties of a VoteInfo.
-         * @memberof abci
+         * @memberof types
          * @interface IVoteInfo
-         * @property {abci.IValidator|null} [validator] VoteInfo validator
+         * @property {types.IValidator|null} [validator] VoteInfo validator
          * @property {boolean|null} [signedLastBlock] VoteInfo signedLastBlock
          */
 
         /**
          * Constructs a new VoteInfo.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a VoteInfo.
          * @implements IVoteInfo
          * @constructor
-         * @param {abci.IVoteInfo=} [properties] Properties to set
+         * @param {types.IVoteInfo=} [properties] Properties to set
          */
         function VoteInfo(properties) {
             if (properties)
@@ -10129,8 +9775,8 @@ $root.abci = (function() {
 
         /**
          * VoteInfo validator.
-         * @member {abci.IValidator|null|undefined} validator
-         * @memberof abci.VoteInfo
+         * @member {types.IValidator|null|undefined} validator
+         * @memberof types.VoteInfo
          * @instance
          */
         VoteInfo.prototype.validator = null;
@@ -10138,7 +9784,7 @@ $root.abci = (function() {
         /**
          * VoteInfo signedLastBlock.
          * @member {boolean} signedLastBlock
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @instance
          */
         VoteInfo.prototype.signedLastBlock = false;
@@ -10146,21 +9792,21 @@ $root.abci = (function() {
         /**
          * Creates a new VoteInfo instance using the specified properties.
          * @function create
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @static
-         * @param {abci.IVoteInfo=} [properties] Properties to set
-         * @returns {abci.VoteInfo} VoteInfo instance
+         * @param {types.IVoteInfo=} [properties] Properties to set
+         * @returns {types.VoteInfo} VoteInfo instance
          */
         VoteInfo.create = function create(properties) {
             return new VoteInfo(properties);
         };
 
         /**
-         * Encodes the specified VoteInfo message. Does not implicitly {@link abci.VoteInfo.verify|verify} messages.
+         * Encodes the specified VoteInfo message. Does not implicitly {@link types.VoteInfo.verify|verify} messages.
          * @function encode
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @static
-         * @param {abci.IVoteInfo} message VoteInfo message or plain object to encode
+         * @param {types.IVoteInfo} message VoteInfo message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -10168,18 +9814,18 @@ $root.abci = (function() {
             if (!writer)
                 writer = $Writer.create();
             if (message.validator != null && message.hasOwnProperty("validator"))
-                $root.abci.Validator.encode(message.validator, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                $root.types.Validator.encode(message.validator, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
             if (message.signedLastBlock != null && message.hasOwnProperty("signedLastBlock"))
                 writer.uint32(/* id 2, wireType 0 =*/16).bool(message.signedLastBlock);
             return writer;
         };
 
         /**
-         * Encodes the specified VoteInfo message, length delimited. Does not implicitly {@link abci.VoteInfo.verify|verify} messages.
+         * Encodes the specified VoteInfo message, length delimited. Does not implicitly {@link types.VoteInfo.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @static
-         * @param {abci.IVoteInfo} message VoteInfo message or plain object to encode
+         * @param {types.IVoteInfo} message VoteInfo message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -10190,23 +9836,23 @@ $root.abci = (function() {
         /**
          * Decodes a VoteInfo message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.VoteInfo} VoteInfo
+         * @returns {types.VoteInfo} VoteInfo
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         VoteInfo.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.VoteInfo();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.VoteInfo();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
                 case 1:
-                    message.validator = $root.abci.Validator.decode(reader, reader.uint32());
+                    message.validator = $root.types.Validator.decode(reader, reader.uint32());
                     break;
                 case 2:
                     message.signedLastBlock = reader.bool();
@@ -10222,10 +9868,10 @@ $root.abci = (function() {
         /**
          * Decodes a VoteInfo message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.VoteInfo} VoteInfo
+         * @returns {types.VoteInfo} VoteInfo
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -10238,7 +9884,7 @@ $root.abci = (function() {
         /**
          * Verifies a VoteInfo message.
          * @function verify
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -10247,7 +9893,7 @@ $root.abci = (function() {
             if (typeof message !== "object" || message === null)
                 return "object expected";
             if (message.validator != null && message.hasOwnProperty("validator")) {
-                var error = $root.abci.Validator.verify(message.validator);
+                var error = $root.types.Validator.verify(message.validator);
                 if (error)
                     return "validator." + error;
             }
@@ -10260,19 +9906,19 @@ $root.abci = (function() {
         /**
          * Creates a VoteInfo message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.VoteInfo} VoteInfo
+         * @returns {types.VoteInfo} VoteInfo
          */
         VoteInfo.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.VoteInfo)
+            if (object instanceof $root.types.VoteInfo)
                 return object;
-            var message = new $root.abci.VoteInfo();
+            var message = new $root.types.VoteInfo();
             if (object.validator != null) {
                 if (typeof object.validator !== "object")
-                    throw TypeError(".abci.VoteInfo.validator: object expected");
-                message.validator = $root.abci.Validator.fromObject(object.validator);
+                    throw TypeError(".types.VoteInfo.validator: object expected");
+                message.validator = $root.types.Validator.fromObject(object.validator);
             }
             if (object.signedLastBlock != null)
                 message.signedLastBlock = Boolean(object.signedLastBlock);
@@ -10282,9 +9928,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a VoteInfo message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @static
-         * @param {abci.VoteInfo} message VoteInfo
+         * @param {types.VoteInfo} message VoteInfo
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -10297,7 +9943,7 @@ $root.abci = (function() {
                 object.signedLastBlock = false;
             }
             if (message.validator != null && message.hasOwnProperty("validator"))
-                object.validator = $root.abci.Validator.toObject(message.validator, options);
+                object.validator = $root.types.Validator.toObject(message.validator, options);
             if (message.signedLastBlock != null && message.hasOwnProperty("signedLastBlock"))
                 object.signedLastBlock = message.signedLastBlock;
             return object;
@@ -10306,7 +9952,7 @@ $root.abci = (function() {
         /**
          * Converts this VoteInfo to JSON.
          * @function toJSON
-         * @memberof abci.VoteInfo
+         * @memberof types.VoteInfo
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -10317,11 +9963,11 @@ $root.abci = (function() {
         return VoteInfo;
     })();
 
-    abci.PubKey = (function() {
+    types.PubKey = (function() {
 
         /**
          * Properties of a PubKey.
-         * @memberof abci
+         * @memberof types
          * @interface IPubKey
          * @property {string|null} [type] PubKey type
          * @property {Uint8Array|null} [data] PubKey data
@@ -10329,11 +9975,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new PubKey.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a PubKey.
          * @implements IPubKey
          * @constructor
-         * @param {abci.IPubKey=} [properties] Properties to set
+         * @param {types.IPubKey=} [properties] Properties to set
          */
         function PubKey(properties) {
             if (properties)
@@ -10345,7 +9991,7 @@ $root.abci = (function() {
         /**
          * PubKey type.
          * @member {string} type
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @instance
          */
         PubKey.prototype.type = "";
@@ -10353,7 +9999,7 @@ $root.abci = (function() {
         /**
          * PubKey data.
          * @member {Uint8Array} data
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @instance
          */
         PubKey.prototype.data = $util.newBuffer([]);
@@ -10361,21 +10007,21 @@ $root.abci = (function() {
         /**
          * Creates a new PubKey instance using the specified properties.
          * @function create
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @static
-         * @param {abci.IPubKey=} [properties] Properties to set
-         * @returns {abci.PubKey} PubKey instance
+         * @param {types.IPubKey=} [properties] Properties to set
+         * @returns {types.PubKey} PubKey instance
          */
         PubKey.create = function create(properties) {
             return new PubKey(properties);
         };
 
         /**
-         * Encodes the specified PubKey message. Does not implicitly {@link abci.PubKey.verify|verify} messages.
+         * Encodes the specified PubKey message. Does not implicitly {@link types.PubKey.verify|verify} messages.
          * @function encode
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @static
-         * @param {abci.IPubKey} message PubKey message or plain object to encode
+         * @param {types.IPubKey} message PubKey message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -10390,11 +10036,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified PubKey message, length delimited. Does not implicitly {@link abci.PubKey.verify|verify} messages.
+         * Encodes the specified PubKey message, length delimited. Does not implicitly {@link types.PubKey.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @static
-         * @param {abci.IPubKey} message PubKey message or plain object to encode
+         * @param {types.IPubKey} message PubKey message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -10405,18 +10051,18 @@ $root.abci = (function() {
         /**
          * Decodes a PubKey message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.PubKey} PubKey
+         * @returns {types.PubKey} PubKey
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         PubKey.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.PubKey();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.PubKey();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -10437,10 +10083,10 @@ $root.abci = (function() {
         /**
          * Decodes a PubKey message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.PubKey} PubKey
+         * @returns {types.PubKey} PubKey
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -10453,7 +10099,7 @@ $root.abci = (function() {
         /**
          * Verifies a PubKey message.
          * @function verify
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -10473,15 +10119,15 @@ $root.abci = (function() {
         /**
          * Creates a PubKey message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.PubKey} PubKey
+         * @returns {types.PubKey} PubKey
          */
         PubKey.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.PubKey)
+            if (object instanceof $root.types.PubKey)
                 return object;
-            var message = new $root.abci.PubKey();
+            var message = new $root.types.PubKey();
             if (object.type != null)
                 message.type = String(object.type);
             if (object.data != null)
@@ -10495,9 +10141,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from a PubKey message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @static
-         * @param {abci.PubKey} message PubKey
+         * @param {types.PubKey} message PubKey
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -10525,7 +10171,7 @@ $root.abci = (function() {
         /**
          * Converts this PubKey to JSON.
          * @function toJSON
-         * @memberof abci.PubKey
+         * @memberof types.PubKey
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -10536,14 +10182,14 @@ $root.abci = (function() {
         return PubKey;
     })();
 
-    abci.Evidence = (function() {
+    types.Evidence = (function() {
 
         /**
          * Properties of an Evidence.
-         * @memberof abci
+         * @memberof types
          * @interface IEvidence
          * @property {string|null} [type] Evidence type
-         * @property {abci.IValidator|null} [validator] Evidence validator
+         * @property {types.IValidator|null} [validator] Evidence validator
          * @property {number|Long|null} [height] Evidence height
          * @property {google.protobuf.ITimestamp|null} [time] Evidence time
          * @property {number|Long|null} [totalVotingPower] Evidence totalVotingPower
@@ -10551,11 +10197,11 @@ $root.abci = (function() {
 
         /**
          * Constructs a new Evidence.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents an Evidence.
          * @implements IEvidence
          * @constructor
-         * @param {abci.IEvidence=} [properties] Properties to set
+         * @param {types.IEvidence=} [properties] Properties to set
          */
         function Evidence(properties) {
             if (properties)
@@ -10567,15 +10213,15 @@ $root.abci = (function() {
         /**
          * Evidence type.
          * @member {string} type
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @instance
          */
         Evidence.prototype.type = "";
 
         /**
          * Evidence validator.
-         * @member {abci.IValidator|null|undefined} validator
-         * @memberof abci.Evidence
+         * @member {types.IValidator|null|undefined} validator
+         * @memberof types.Evidence
          * @instance
          */
         Evidence.prototype.validator = null;
@@ -10583,15 +10229,15 @@ $root.abci = (function() {
         /**
          * Evidence height.
          * @member {number|Long} height
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @instance
          */
-        Evidence.prototype.height = 0;
+        Evidence.prototype.height = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Evidence time.
          * @member {google.protobuf.ITimestamp|null|undefined} time
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @instance
          */
         Evidence.prototype.time = null;
@@ -10599,29 +10245,29 @@ $root.abci = (function() {
         /**
          * Evidence totalVotingPower.
          * @member {number|Long} totalVotingPower
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @instance
          */
-        Evidence.prototype.totalVotingPower = 0;
+        Evidence.prototype.totalVotingPower = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
         /**
          * Creates a new Evidence instance using the specified properties.
          * @function create
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @static
-         * @param {abci.IEvidence=} [properties] Properties to set
-         * @returns {abci.Evidence} Evidence instance
+         * @param {types.IEvidence=} [properties] Properties to set
+         * @returns {types.Evidence} Evidence instance
          */
         Evidence.create = function create(properties) {
             return new Evidence(properties);
         };
 
         /**
-         * Encodes the specified Evidence message. Does not implicitly {@link abci.Evidence.verify|verify} messages.
+         * Encodes the specified Evidence message. Does not implicitly {@link types.Evidence.verify|verify} messages.
          * @function encode
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @static
-         * @param {abci.IEvidence} message Evidence message or plain object to encode
+         * @param {types.IEvidence} message Evidence message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -10631,7 +10277,7 @@ $root.abci = (function() {
             if (message.type != null && message.hasOwnProperty("type"))
                 writer.uint32(/* id 1, wireType 2 =*/10).string(message.type);
             if (message.validator != null && message.hasOwnProperty("validator"))
-                $root.abci.Validator.encode(message.validator, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                $root.types.Validator.encode(message.validator, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
             if (message.height != null && message.hasOwnProperty("height"))
                 writer.uint32(/* id 3, wireType 0 =*/24).int64(message.height);
             if (message.time != null && message.hasOwnProperty("time"))
@@ -10642,11 +10288,11 @@ $root.abci = (function() {
         };
 
         /**
-         * Encodes the specified Evidence message, length delimited. Does not implicitly {@link abci.Evidence.verify|verify} messages.
+         * Encodes the specified Evidence message, length delimited. Does not implicitly {@link types.Evidence.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @static
-         * @param {abci.IEvidence} message Evidence message or plain object to encode
+         * @param {types.IEvidence} message Evidence message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -10657,18 +10303,18 @@ $root.abci = (function() {
         /**
          * Decodes an Evidence message from the specified reader or buffer.
          * @function decode
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {abci.Evidence} Evidence
+         * @returns {types.Evidence} Evidence
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         Evidence.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.abci.Evidence();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.types.Evidence();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -10676,7 +10322,7 @@ $root.abci = (function() {
                     message.type = reader.string();
                     break;
                 case 2:
-                    message.validator = $root.abci.Validator.decode(reader, reader.uint32());
+                    message.validator = $root.types.Validator.decode(reader, reader.uint32());
                     break;
                 case 3:
                     message.height = reader.int64();
@@ -10698,10 +10344,10 @@ $root.abci = (function() {
         /**
          * Decodes an Evidence message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {abci.Evidence} Evidence
+         * @returns {types.Evidence} Evidence
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -10714,7 +10360,7 @@ $root.abci = (function() {
         /**
          * Verifies an Evidence message.
          * @function verify
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -10726,7 +10372,7 @@ $root.abci = (function() {
                 if (!$util.isString(message.type))
                     return "type: string expected";
             if (message.validator != null && message.hasOwnProperty("validator")) {
-                var error = $root.abci.Validator.verify(message.validator);
+                var error = $root.types.Validator.verify(message.validator);
                 if (error)
                     return "validator." + error;
             }
@@ -10747,21 +10393,21 @@ $root.abci = (function() {
         /**
          * Creates an Evidence message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {abci.Evidence} Evidence
+         * @returns {types.Evidence} Evidence
          */
         Evidence.fromObject = function fromObject(object) {
-            if (object instanceof $root.abci.Evidence)
+            if (object instanceof $root.types.Evidence)
                 return object;
-            var message = new $root.abci.Evidence();
+            var message = new $root.types.Evidence();
             if (object.type != null)
                 message.type = String(object.type);
             if (object.validator != null) {
                 if (typeof object.validator !== "object")
-                    throw TypeError(".abci.Evidence.validator: object expected");
-                message.validator = $root.abci.Validator.fromObject(object.validator);
+                    throw TypeError(".types.Evidence.validator: object expected");
+                message.validator = $root.types.Validator.fromObject(object.validator);
             }
             if (object.height != null)
                 if ($util.Long)
@@ -10774,7 +10420,7 @@ $root.abci = (function() {
                     message.height = new $util.LongBits(object.height.low >>> 0, object.height.high >>> 0).toNumber();
             if (object.time != null) {
                 if (typeof object.time !== "object")
-                    throw TypeError(".abci.Evidence.time: object expected");
+                    throw TypeError(".types.Evidence.time: object expected");
                 message.time = $root.google.protobuf.Timestamp.fromObject(object.time);
             }
             if (object.totalVotingPower != null)
@@ -10792,9 +10438,9 @@ $root.abci = (function() {
         /**
          * Creates a plain object from an Evidence message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @static
-         * @param {abci.Evidence} message Evidence
+         * @param {types.Evidence} message Evidence
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -10805,14 +10451,22 @@ $root.abci = (function() {
             if (options.defaults) {
                 object.type = "";
                 object.validator = null;
-                object.height = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.height = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.height = options.longs === String ? "0" : 0;
                 object.time = null;
-                object.totalVotingPower = 0;
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.totalVotingPower = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.totalVotingPower = options.longs === String ? "0" : 0;
             }
             if (message.type != null && message.hasOwnProperty("type"))
                 object.type = message.type;
             if (message.validator != null && message.hasOwnProperty("validator"))
-                object.validator = $root.abci.Validator.toObject(message.validator, options);
+                object.validator = $root.types.Validator.toObject(message.validator, options);
             if (message.height != null && message.hasOwnProperty("height"))
                 if (typeof message.height === "number")
                     object.height = options.longs === String ? String(message.height) : message.height;
@@ -10831,7 +10485,7 @@ $root.abci = (function() {
         /**
          * Converts this Evidence to JSON.
          * @function toJSON
-         * @memberof abci.Evidence
+         * @memberof types.Evidence
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -10842,11 +10496,11 @@ $root.abci = (function() {
         return Evidence;
     })();
 
-    abci.ABCIApplication = (function() {
+    types.ABCIApplication = (function() {
 
         /**
          * Constructs a new ABCIApplication service.
-         * @memberof abci
+         * @memberof types
          * @classdesc Represents a ABCIApplication
          * @extends $protobuf.rpc.Service
          * @constructor
@@ -10863,7 +10517,7 @@ $root.abci = (function() {
         /**
          * Creates new ABCIApplication service using the specified rpc implementation.
          * @function create
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @static
          * @param {$protobuf.RPCImpl} rpcImpl RPC implementation
          * @param {boolean} [requestDelimited=false] Whether requests are length-delimited
@@ -10875,417 +10529,372 @@ $root.abci = (function() {
         };
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#echo}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#echo}.
+         * @memberof types.ABCIApplication
          * @typedef EchoCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseEcho} [response] ResponseEcho
+         * @param {types.ResponseEcho} [response] ResponseEcho
          */
 
         /**
          * Calls Echo.
          * @function echo
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestEcho} request RequestEcho message or plain object
-         * @param {abci.ABCIApplication.EchoCallback} callback Node-style callback called with the error, if any, and ResponseEcho
+         * @param {types.IRequestEcho} request RequestEcho message or plain object
+         * @param {types.ABCIApplication.EchoCallback} callback Node-style callback called with the error, if any, and ResponseEcho
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.echo = function echo(request, callback) {
-            return this.rpcCall(echo, $root.abci.RequestEcho, $root.abci.ResponseEcho, request, callback);
+            return this.rpcCall(echo, $root.types.RequestEcho, $root.types.ResponseEcho, request, callback);
         }, "name", { value: "Echo" });
 
         /**
          * Calls Echo.
          * @function echo
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestEcho} request RequestEcho message or plain object
-         * @returns {Promise<abci.ResponseEcho>} Promise
+         * @param {types.IRequestEcho} request RequestEcho message or plain object
+         * @returns {Promise<types.ResponseEcho>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#flush}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#flush}.
+         * @memberof types.ABCIApplication
          * @typedef FlushCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseFlush} [response] ResponseFlush
+         * @param {types.ResponseFlush} [response] ResponseFlush
          */
 
         /**
          * Calls Flush.
          * @function flush
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestFlush} request RequestFlush message or plain object
-         * @param {abci.ABCIApplication.FlushCallback} callback Node-style callback called with the error, if any, and ResponseFlush
+         * @param {types.IRequestFlush} request RequestFlush message or plain object
+         * @param {types.ABCIApplication.FlushCallback} callback Node-style callback called with the error, if any, and ResponseFlush
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.flush = function flush(request, callback) {
-            return this.rpcCall(flush, $root.abci.RequestFlush, $root.abci.ResponseFlush, request, callback);
+            return this.rpcCall(flush, $root.types.RequestFlush, $root.types.ResponseFlush, request, callback);
         }, "name", { value: "Flush" });
 
         /**
          * Calls Flush.
          * @function flush
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestFlush} request RequestFlush message or plain object
-         * @returns {Promise<abci.ResponseFlush>} Promise
+         * @param {types.IRequestFlush} request RequestFlush message or plain object
+         * @returns {Promise<types.ResponseFlush>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#info}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#info}.
+         * @memberof types.ABCIApplication
          * @typedef InfoCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseInfo} [response] ResponseInfo
+         * @param {types.ResponseInfo} [response] ResponseInfo
          */
 
         /**
          * Calls Info.
          * @function info
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestInfo} request RequestInfo message or plain object
-         * @param {abci.ABCIApplication.InfoCallback} callback Node-style callback called with the error, if any, and ResponseInfo
+         * @param {types.IRequestInfo} request RequestInfo message or plain object
+         * @param {types.ABCIApplication.InfoCallback} callback Node-style callback called with the error, if any, and ResponseInfo
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.info = function info(request, callback) {
-            return this.rpcCall(info, $root.abci.RequestInfo, $root.abci.ResponseInfo, request, callback);
+            return this.rpcCall(info, $root.types.RequestInfo, $root.types.ResponseInfo, request, callback);
         }, "name", { value: "Info" });
 
         /**
          * Calls Info.
          * @function info
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestInfo} request RequestInfo message or plain object
-         * @returns {Promise<abci.ResponseInfo>} Promise
+         * @param {types.IRequestInfo} request RequestInfo message or plain object
+         * @returns {Promise<types.ResponseInfo>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#setOption}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#setOption}.
+         * @memberof types.ABCIApplication
          * @typedef SetOptionCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseSetOption} [response] ResponseSetOption
+         * @param {types.ResponseSetOption} [response] ResponseSetOption
          */
 
         /**
          * Calls SetOption.
          * @function setOption
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestSetOption} request RequestSetOption message or plain object
-         * @param {abci.ABCIApplication.SetOptionCallback} callback Node-style callback called with the error, if any, and ResponseSetOption
+         * @param {types.IRequestSetOption} request RequestSetOption message or plain object
+         * @param {types.ABCIApplication.SetOptionCallback} callback Node-style callback called with the error, if any, and ResponseSetOption
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.setOption = function setOption(request, callback) {
-            return this.rpcCall(setOption, $root.abci.RequestSetOption, $root.abci.ResponseSetOption, request, callback);
+            return this.rpcCall(setOption, $root.types.RequestSetOption, $root.types.ResponseSetOption, request, callback);
         }, "name", { value: "SetOption" });
 
         /**
          * Calls SetOption.
          * @function setOption
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestSetOption} request RequestSetOption message or plain object
-         * @returns {Promise<abci.ResponseSetOption>} Promise
+         * @param {types.IRequestSetOption} request RequestSetOption message or plain object
+         * @returns {Promise<types.ResponseSetOption>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#deliverTx}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#deliverTx}.
+         * @memberof types.ABCIApplication
          * @typedef DeliverTxCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseDeliverTx} [response] ResponseDeliverTx
+         * @param {types.ResponseDeliverTx} [response] ResponseDeliverTx
          */
 
         /**
          * Calls DeliverTx.
          * @function deliverTx
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestDeliverTx} request RequestDeliverTx message or plain object
-         * @param {abci.ABCIApplication.DeliverTxCallback} callback Node-style callback called with the error, if any, and ResponseDeliverTx
+         * @param {types.IRequestDeliverTx} request RequestDeliverTx message or plain object
+         * @param {types.ABCIApplication.DeliverTxCallback} callback Node-style callback called with the error, if any, and ResponseDeliverTx
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.deliverTx = function deliverTx(request, callback) {
-            return this.rpcCall(deliverTx, $root.abci.RequestDeliverTx, $root.abci.ResponseDeliverTx, request, callback);
+            return this.rpcCall(deliverTx, $root.types.RequestDeliverTx, $root.types.ResponseDeliverTx, request, callback);
         }, "name", { value: "DeliverTx" });
 
         /**
          * Calls DeliverTx.
          * @function deliverTx
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestDeliverTx} request RequestDeliverTx message or plain object
-         * @returns {Promise<abci.ResponseDeliverTx>} Promise
+         * @param {types.IRequestDeliverTx} request RequestDeliverTx message or plain object
+         * @returns {Promise<types.ResponseDeliverTx>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#checkTx}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#checkTx}.
+         * @memberof types.ABCIApplication
          * @typedef CheckTxCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseCheckTx} [response] ResponseCheckTx
+         * @param {types.ResponseCheckTx} [response] ResponseCheckTx
          */
 
         /**
          * Calls CheckTx.
          * @function checkTx
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestCheckTx} request RequestCheckTx message or plain object
-         * @param {abci.ABCIApplication.CheckTxCallback} callback Node-style callback called with the error, if any, and ResponseCheckTx
+         * @param {types.IRequestCheckTx} request RequestCheckTx message or plain object
+         * @param {types.ABCIApplication.CheckTxCallback} callback Node-style callback called with the error, if any, and ResponseCheckTx
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.checkTx = function checkTx(request, callback) {
-            return this.rpcCall(checkTx, $root.abci.RequestCheckTx, $root.abci.ResponseCheckTx, request, callback);
+            return this.rpcCall(checkTx, $root.types.RequestCheckTx, $root.types.ResponseCheckTx, request, callback);
         }, "name", { value: "CheckTx" });
 
         /**
          * Calls CheckTx.
          * @function checkTx
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestCheckTx} request RequestCheckTx message or plain object
-         * @returns {Promise<abci.ResponseCheckTx>} Promise
+         * @param {types.IRequestCheckTx} request RequestCheckTx message or plain object
+         * @returns {Promise<types.ResponseCheckTx>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#query}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#query}.
+         * @memberof types.ABCIApplication
          * @typedef QueryCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseQuery} [response] ResponseQuery
+         * @param {types.ResponseQuery} [response] ResponseQuery
          */
 
         /**
          * Calls Query.
          * @function query
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestQuery} request RequestQuery message or plain object
-         * @param {abci.ABCIApplication.QueryCallback} callback Node-style callback called with the error, if any, and ResponseQuery
+         * @param {types.IRequestQuery} request RequestQuery message or plain object
+         * @param {types.ABCIApplication.QueryCallback} callback Node-style callback called with the error, if any, and ResponseQuery
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.query = function query(request, callback) {
-            return this.rpcCall(query, $root.abci.RequestQuery, $root.abci.ResponseQuery, request, callback);
+            return this.rpcCall(query, $root.types.RequestQuery, $root.types.ResponseQuery, request, callback);
         }, "name", { value: "Query" });
 
         /**
          * Calls Query.
          * @function query
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestQuery} request RequestQuery message or plain object
-         * @returns {Promise<abci.ResponseQuery>} Promise
+         * @param {types.IRequestQuery} request RequestQuery message or plain object
+         * @returns {Promise<types.ResponseQuery>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#commit}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#commit}.
+         * @memberof types.ABCIApplication
          * @typedef CommitCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseCommit} [response] ResponseCommit
+         * @param {types.ResponseCommit} [response] ResponseCommit
          */
 
         /**
          * Calls Commit.
          * @function commit
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestCommit} request RequestCommit message or plain object
-         * @param {abci.ABCIApplication.CommitCallback} callback Node-style callback called with the error, if any, and ResponseCommit
+         * @param {types.IRequestCommit} request RequestCommit message or plain object
+         * @param {types.ABCIApplication.CommitCallback} callback Node-style callback called with the error, if any, and ResponseCommit
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.commit = function commit(request, callback) {
-            return this.rpcCall(commit, $root.abci.RequestCommit, $root.abci.ResponseCommit, request, callback);
+            return this.rpcCall(commit, $root.types.RequestCommit, $root.types.ResponseCommit, request, callback);
         }, "name", { value: "Commit" });
 
         /**
          * Calls Commit.
          * @function commit
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestCommit} request RequestCommit message or plain object
-         * @returns {Promise<abci.ResponseCommit>} Promise
+         * @param {types.IRequestCommit} request RequestCommit message or plain object
+         * @returns {Promise<types.ResponseCommit>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#initChain}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#initChain}.
+         * @memberof types.ABCIApplication
          * @typedef InitChainCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseInitChain} [response] ResponseInitChain
+         * @param {types.ResponseInitChain} [response] ResponseInitChain
          */
 
         /**
          * Calls InitChain.
          * @function initChain
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestInitChain} request RequestInitChain message or plain object
-         * @param {abci.ABCIApplication.InitChainCallback} callback Node-style callback called with the error, if any, and ResponseInitChain
+         * @param {types.IRequestInitChain} request RequestInitChain message or plain object
+         * @param {types.ABCIApplication.InitChainCallback} callback Node-style callback called with the error, if any, and ResponseInitChain
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.initChain = function initChain(request, callback) {
-            return this.rpcCall(initChain, $root.abci.RequestInitChain, $root.abci.ResponseInitChain, request, callback);
+            return this.rpcCall(initChain, $root.types.RequestInitChain, $root.types.ResponseInitChain, request, callback);
         }, "name", { value: "InitChain" });
 
         /**
          * Calls InitChain.
          * @function initChain
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestInitChain} request RequestInitChain message or plain object
-         * @returns {Promise<abci.ResponseInitChain>} Promise
+         * @param {types.IRequestInitChain} request RequestInitChain message or plain object
+         * @returns {Promise<types.ResponseInitChain>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#beginBlock}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#beginBlock}.
+         * @memberof types.ABCIApplication
          * @typedef BeginBlockCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseBeginBlock} [response] ResponseBeginBlock
+         * @param {types.ResponseBeginBlock} [response] ResponseBeginBlock
          */
 
         /**
          * Calls BeginBlock.
          * @function beginBlock
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestBeginBlock} request RequestBeginBlock message or plain object
-         * @param {abci.ABCIApplication.BeginBlockCallback} callback Node-style callback called with the error, if any, and ResponseBeginBlock
+         * @param {types.IRequestBeginBlock} request RequestBeginBlock message or plain object
+         * @param {types.ABCIApplication.BeginBlockCallback} callback Node-style callback called with the error, if any, and ResponseBeginBlock
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.beginBlock = function beginBlock(request, callback) {
-            return this.rpcCall(beginBlock, $root.abci.RequestBeginBlock, $root.abci.ResponseBeginBlock, request, callback);
+            return this.rpcCall(beginBlock, $root.types.RequestBeginBlock, $root.types.ResponseBeginBlock, request, callback);
         }, "name", { value: "BeginBlock" });
 
         /**
          * Calls BeginBlock.
          * @function beginBlock
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestBeginBlock} request RequestBeginBlock message or plain object
-         * @returns {Promise<abci.ResponseBeginBlock>} Promise
+         * @param {types.IRequestBeginBlock} request RequestBeginBlock message or plain object
+         * @returns {Promise<types.ResponseBeginBlock>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#endBlock}.
-         * @memberof abci.ABCIApplication
+         * Callback as used by {@link types.ABCIApplication#endBlock}.
+         * @memberof types.ABCIApplication
          * @typedef EndBlockCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {abci.ResponseEndBlock} [response] ResponseEndBlock
+         * @param {types.ResponseEndBlock} [response] ResponseEndBlock
          */
 
         /**
          * Calls EndBlock.
          * @function endBlock
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestEndBlock} request RequestEndBlock message or plain object
-         * @param {abci.ABCIApplication.EndBlockCallback} callback Node-style callback called with the error, if any, and ResponseEndBlock
+         * @param {types.IRequestEndBlock} request RequestEndBlock message or plain object
+         * @param {types.ABCIApplication.EndBlockCallback} callback Node-style callback called with the error, if any, and ResponseEndBlock
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(ABCIApplication.prototype.endBlock = function endBlock(request, callback) {
-            return this.rpcCall(endBlock, $root.abci.RequestEndBlock, $root.abci.ResponseEndBlock, request, callback);
+            return this.rpcCall(endBlock, $root.types.RequestEndBlock, $root.types.ResponseEndBlock, request, callback);
         }, "name", { value: "EndBlock" });
 
         /**
          * Calls EndBlock.
          * @function endBlock
-         * @memberof abci.ABCIApplication
+         * @memberof types.ABCIApplication
          * @instance
-         * @param {abci.IRequestEndBlock} request RequestEndBlock message or plain object
-         * @returns {Promise<abci.ResponseEndBlock>} Promise
-         * @variation 2
-         */
-
-        /**
-         * Callback as used by {@link abci.ABCIApplication#checkBridge}.
-         * @memberof abci.ABCIApplication
-         * @typedef CheckBridgeCallback
-         * @type {function}
-         * @param {Error|null} error Error, if any
-         * @param {abci.ResponseCheckBridge} [response] ResponseCheckBridge
-         */
-
-        /**
-         * Calls CheckBridge.
-         * @function checkBridge
-         * @memberof abci.ABCIApplication
-         * @instance
-         * @param {abci.IRequestCheckBridge} request RequestCheckBridge message or plain object
-         * @param {abci.ABCIApplication.CheckBridgeCallback} callback Node-style callback called with the error, if any, and ResponseCheckBridge
-         * @returns {undefined}
-         * @variation 1
-         */
-        Object.defineProperty(ABCIApplication.prototype.checkBridge = function checkBridge(request, callback) {
-            return this.rpcCall(checkBridge, $root.abci.RequestCheckBridge, $root.abci.ResponseCheckBridge, request, callback);
-        }, "name", { value: "CheckBridge" });
-
-        /**
-         * Calls CheckBridge.
-         * @function checkBridge
-         * @memberof abci.ABCIApplication
-         * @instance
-         * @param {abci.IRequestCheckBridge} request RequestCheckBridge message or plain object
-         * @returns {Promise<abci.ResponseCheckBridge>} Promise
+         * @param {types.IRequestEndBlock} request RequestEndBlock message or plain object
+         * @returns {Promise<types.ResponseEndBlock>} Promise
          * @variation 2
          */
 
         return ABCIApplication;
     })();
 
-    return abci;
-})();
-
-$root.gogoproto = (function() {
-
-    /**
-     * Namespace gogoproto.
-     * @exports gogoproto
-     * @namespace
-     */
-    var gogoproto = {};
-
-    return gogoproto;
+    return types;
 })();
 
 $root.google = (function() {
@@ -19614,7 +19223,7 @@ $root.google = (function() {
              * @memberof google.protobuf.UninterpretedOption
              * @instance
              */
-            UninterpretedOption.prototype.positiveIntValue = 0;
+            UninterpretedOption.prototype.positiveIntValue = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
 
             /**
              * UninterpretedOption negativeIntValue.
@@ -19622,7 +19231,7 @@ $root.google = (function() {
              * @memberof google.protobuf.UninterpretedOption
              * @instance
              */
-            UninterpretedOption.prototype.negativeIntValue = 0;
+            UninterpretedOption.prototype.negativeIntValue = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
             /**
              * UninterpretedOption doubleValue.
@@ -19880,8 +19489,16 @@ $root.google = (function() {
                     object.name = [];
                 if (options.defaults) {
                     object.identifierValue = "";
-                    object.positiveIntValue = 0;
-                    object.negativeIntValue = 0;
+                    if ($util.Long) {
+                        var long = new $util.Long(0, 0, true);
+                        object.positiveIntValue = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                    } else
+                        object.positiveIntValue = options.longs === String ? "0" : 0;
+                    if ($util.Long) {
+                        var long = new $util.Long(0, 0, false);
+                        object.negativeIntValue = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                    } else
+                        object.negativeIntValue = options.longs === String ? "0" : 0;
                     object.doubleValue = 0;
                     if (options.bytes === String)
                         object.stringValue = "";
@@ -21210,7 +20827,7 @@ $root.google = (function() {
              * @memberof google.protobuf.Timestamp
              * @instance
              */
-            Timestamp.prototype.seconds = 0;
+            Timestamp.prototype.seconds = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
 
             /**
              * Timestamp nanos.
@@ -21372,7 +20989,11 @@ $root.google = (function() {
                     options = {};
                 var object = {};
                 if (options.defaults) {
-                    object.seconds = 0;
+                    if ($util.Long) {
+                        var long = new $util.Long(0, 0, false);
+                        object.seconds = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                    } else
+                        object.seconds = options.longs === String ? "0" : 0;
                     object.nanos = 0;
                 }
                 if (message.seconds != null && message.hasOwnProperty("seconds"))
@@ -21405,473 +21026,16 @@ $root.google = (function() {
     return google;
 })();
 
-$root.common = (function() {
+$root.gogoproto = (function() {
 
     /**
-     * Namespace common.
-     * @exports common
+     * Namespace gogoproto.
+     * @exports gogoproto
      * @namespace
      */
-    var common = {};
+    var gogoproto = {};
 
-    common.KVPair = (function() {
-
-        /**
-         * Properties of a KVPair.
-         * @memberof common
-         * @interface IKVPair
-         * @property {Uint8Array|null} [key] KVPair key
-         * @property {Uint8Array|null} [value] KVPair value
-         */
-
-        /**
-         * Constructs a new KVPair.
-         * @memberof common
-         * @classdesc Represents a KVPair.
-         * @implements IKVPair
-         * @constructor
-         * @param {common.IKVPair=} [properties] Properties to set
-         */
-        function KVPair(properties) {
-            if (properties)
-                for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
-                    if (properties[keys[i]] != null)
-                        this[keys[i]] = properties[keys[i]];
-        }
-
-        /**
-         * KVPair key.
-         * @member {Uint8Array} key
-         * @memberof common.KVPair
-         * @instance
-         */
-        KVPair.prototype.key = $util.newBuffer([]);
-
-        /**
-         * KVPair value.
-         * @member {Uint8Array} value
-         * @memberof common.KVPair
-         * @instance
-         */
-        KVPair.prototype.value = $util.newBuffer([]);
-
-        /**
-         * Creates a new KVPair instance using the specified properties.
-         * @function create
-         * @memberof common.KVPair
-         * @static
-         * @param {common.IKVPair=} [properties] Properties to set
-         * @returns {common.KVPair} KVPair instance
-         */
-        KVPair.create = function create(properties) {
-            return new KVPair(properties);
-        };
-
-        /**
-         * Encodes the specified KVPair message. Does not implicitly {@link common.KVPair.verify|verify} messages.
-         * @function encode
-         * @memberof common.KVPair
-         * @static
-         * @param {common.IKVPair} message KVPair message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        KVPair.encode = function encode(message, writer) {
-            if (!writer)
-                writer = $Writer.create();
-            if (message.key != null && message.hasOwnProperty("key"))
-                writer.uint32(/* id 1, wireType 2 =*/10).bytes(message.key);
-            if (message.value != null && message.hasOwnProperty("value"))
-                writer.uint32(/* id 2, wireType 2 =*/18).bytes(message.value);
-            return writer;
-        };
-
-        /**
-         * Encodes the specified KVPair message, length delimited. Does not implicitly {@link common.KVPair.verify|verify} messages.
-         * @function encodeDelimited
-         * @memberof common.KVPair
-         * @static
-         * @param {common.IKVPair} message KVPair message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        KVPair.encodeDelimited = function encodeDelimited(message, writer) {
-            return this.encode(message, writer).ldelim();
-        };
-
-        /**
-         * Decodes a KVPair message from the specified reader or buffer.
-         * @function decode
-         * @memberof common.KVPair
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @param {number} [length] Message length if known beforehand
-         * @returns {common.KVPair} KVPair
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        KVPair.decode = function decode(reader, length) {
-            if (!(reader instanceof $Reader))
-                reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.common.KVPair();
-            while (reader.pos < end) {
-                var tag = reader.uint32();
-                switch (tag >>> 3) {
-                case 1:
-                    message.key = reader.bytes();
-                    break;
-                case 2:
-                    message.value = reader.bytes();
-                    break;
-                default:
-                    reader.skipType(tag & 7);
-                    break;
-                }
-            }
-            return message;
-        };
-
-        /**
-         * Decodes a KVPair message from the specified reader or buffer, length delimited.
-         * @function decodeDelimited
-         * @memberof common.KVPair
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {common.KVPair} KVPair
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        KVPair.decodeDelimited = function decodeDelimited(reader) {
-            if (!(reader instanceof $Reader))
-                reader = new $Reader(reader);
-            return this.decode(reader, reader.uint32());
-        };
-
-        /**
-         * Verifies a KVPair message.
-         * @function verify
-         * @memberof common.KVPair
-         * @static
-         * @param {Object.<string,*>} message Plain object to verify
-         * @returns {string|null} `null` if valid, otherwise the reason why it is not
-         */
-        KVPair.verify = function verify(message) {
-            if (typeof message !== "object" || message === null)
-                return "object expected";
-            if (message.key != null && message.hasOwnProperty("key"))
-                if (!(message.key && typeof message.key.length === "number" || $util.isString(message.key)))
-                    return "key: buffer expected";
-            if (message.value != null && message.hasOwnProperty("value"))
-                if (!(message.value && typeof message.value.length === "number" || $util.isString(message.value)))
-                    return "value: buffer expected";
-            return null;
-        };
-
-        /**
-         * Creates a KVPair message from a plain object. Also converts values to their respective internal types.
-         * @function fromObject
-         * @memberof common.KVPair
-         * @static
-         * @param {Object.<string,*>} object Plain object
-         * @returns {common.KVPair} KVPair
-         */
-        KVPair.fromObject = function fromObject(object) {
-            if (object instanceof $root.common.KVPair)
-                return object;
-            var message = new $root.common.KVPair();
-            if (object.key != null)
-                if (typeof object.key === "string")
-                    $util.base64.decode(object.key, message.key = $util.newBuffer($util.base64.length(object.key)), 0);
-                else if (object.key.length)
-                    message.key = object.key;
-            if (object.value != null)
-                if (typeof object.value === "string")
-                    $util.base64.decode(object.value, message.value = $util.newBuffer($util.base64.length(object.value)), 0);
-                else if (object.value.length)
-                    message.value = object.value;
-            return message;
-        };
-
-        /**
-         * Creates a plain object from a KVPair message. Also converts values to other types if specified.
-         * @function toObject
-         * @memberof common.KVPair
-         * @static
-         * @param {common.KVPair} message KVPair
-         * @param {$protobuf.IConversionOptions} [options] Conversion options
-         * @returns {Object.<string,*>} Plain object
-         */
-        KVPair.toObject = function toObject(message, options) {
-            if (!options)
-                options = {};
-            var object = {};
-            if (options.defaults) {
-                if (options.bytes === String)
-                    object.key = "";
-                else {
-                    object.key = [];
-                    if (options.bytes !== Array)
-                        object.key = $util.newBuffer(object.key);
-                }
-                if (options.bytes === String)
-                    object.value = "";
-                else {
-                    object.value = [];
-                    if (options.bytes !== Array)
-                        object.value = $util.newBuffer(object.value);
-                }
-            }
-            if (message.key != null && message.hasOwnProperty("key"))
-                object.key = options.bytes === String ? $util.base64.encode(message.key, 0, message.key.length) : options.bytes === Array ? Array.prototype.slice.call(message.key) : message.key;
-            if (message.value != null && message.hasOwnProperty("value"))
-                object.value = options.bytes === String ? $util.base64.encode(message.value, 0, message.value.length) : options.bytes === Array ? Array.prototype.slice.call(message.value) : message.value;
-            return object;
-        };
-
-        /**
-         * Converts this KVPair to JSON.
-         * @function toJSON
-         * @memberof common.KVPair
-         * @instance
-         * @returns {Object.<string,*>} JSON object
-         */
-        KVPair.prototype.toJSON = function toJSON() {
-            return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
-        };
-
-        return KVPair;
-    })();
-
-    common.KI64Pair = (function() {
-
-        /**
-         * Properties of a KI64Pair.
-         * @memberof common
-         * @interface IKI64Pair
-         * @property {Uint8Array|null} [key] KI64Pair key
-         * @property {number|Long|null} [value] KI64Pair value
-         */
-
-        /**
-         * Constructs a new KI64Pair.
-         * @memberof common
-         * @classdesc Represents a KI64Pair.
-         * @implements IKI64Pair
-         * @constructor
-         * @param {common.IKI64Pair=} [properties] Properties to set
-         */
-        function KI64Pair(properties) {
-            if (properties)
-                for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
-                    if (properties[keys[i]] != null)
-                        this[keys[i]] = properties[keys[i]];
-        }
-
-        /**
-         * KI64Pair key.
-         * @member {Uint8Array} key
-         * @memberof common.KI64Pair
-         * @instance
-         */
-        KI64Pair.prototype.key = $util.newBuffer([]);
-
-        /**
-         * KI64Pair value.
-         * @member {number|Long} value
-         * @memberof common.KI64Pair
-         * @instance
-         */
-        KI64Pair.prototype.value = 0;
-
-        /**
-         * Creates a new KI64Pair instance using the specified properties.
-         * @function create
-         * @memberof common.KI64Pair
-         * @static
-         * @param {common.IKI64Pair=} [properties] Properties to set
-         * @returns {common.KI64Pair} KI64Pair instance
-         */
-        KI64Pair.create = function create(properties) {
-            return new KI64Pair(properties);
-        };
-
-        /**
-         * Encodes the specified KI64Pair message. Does not implicitly {@link common.KI64Pair.verify|verify} messages.
-         * @function encode
-         * @memberof common.KI64Pair
-         * @static
-         * @param {common.IKI64Pair} message KI64Pair message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        KI64Pair.encode = function encode(message, writer) {
-            if (!writer)
-                writer = $Writer.create();
-            if (message.key != null && message.hasOwnProperty("key"))
-                writer.uint32(/* id 1, wireType 2 =*/10).bytes(message.key);
-            if (message.value != null && message.hasOwnProperty("value"))
-                writer.uint32(/* id 2, wireType 0 =*/16).int64(message.value);
-            return writer;
-        };
-
-        /**
-         * Encodes the specified KI64Pair message, length delimited. Does not implicitly {@link common.KI64Pair.verify|verify} messages.
-         * @function encodeDelimited
-         * @memberof common.KI64Pair
-         * @static
-         * @param {common.IKI64Pair} message KI64Pair message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        KI64Pair.encodeDelimited = function encodeDelimited(message, writer) {
-            return this.encode(message, writer).ldelim();
-        };
-
-        /**
-         * Decodes a KI64Pair message from the specified reader or buffer.
-         * @function decode
-         * @memberof common.KI64Pair
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @param {number} [length] Message length if known beforehand
-         * @returns {common.KI64Pair} KI64Pair
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        KI64Pair.decode = function decode(reader, length) {
-            if (!(reader instanceof $Reader))
-                reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.common.KI64Pair();
-            while (reader.pos < end) {
-                var tag = reader.uint32();
-                switch (tag >>> 3) {
-                case 1:
-                    message.key = reader.bytes();
-                    break;
-                case 2:
-                    message.value = reader.int64();
-                    break;
-                default:
-                    reader.skipType(tag & 7);
-                    break;
-                }
-            }
-            return message;
-        };
-
-        /**
-         * Decodes a KI64Pair message from the specified reader or buffer, length delimited.
-         * @function decodeDelimited
-         * @memberof common.KI64Pair
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {common.KI64Pair} KI64Pair
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        KI64Pair.decodeDelimited = function decodeDelimited(reader) {
-            if (!(reader instanceof $Reader))
-                reader = new $Reader(reader);
-            return this.decode(reader, reader.uint32());
-        };
-
-        /**
-         * Verifies a KI64Pair message.
-         * @function verify
-         * @memberof common.KI64Pair
-         * @static
-         * @param {Object.<string,*>} message Plain object to verify
-         * @returns {string|null} `null` if valid, otherwise the reason why it is not
-         */
-        KI64Pair.verify = function verify(message) {
-            if (typeof message !== "object" || message === null)
-                return "object expected";
-            if (message.key != null && message.hasOwnProperty("key"))
-                if (!(message.key && typeof message.key.length === "number" || $util.isString(message.key)))
-                    return "key: buffer expected";
-            if (message.value != null && message.hasOwnProperty("value"))
-                if (!$util.isInteger(message.value) && !(message.value && $util.isInteger(message.value.low) && $util.isInteger(message.value.high)))
-                    return "value: integer|Long expected";
-            return null;
-        };
-
-        /**
-         * Creates a KI64Pair message from a plain object. Also converts values to their respective internal types.
-         * @function fromObject
-         * @memberof common.KI64Pair
-         * @static
-         * @param {Object.<string,*>} object Plain object
-         * @returns {common.KI64Pair} KI64Pair
-         */
-        KI64Pair.fromObject = function fromObject(object) {
-            if (object instanceof $root.common.KI64Pair)
-                return object;
-            var message = new $root.common.KI64Pair();
-            if (object.key != null)
-                if (typeof object.key === "string")
-                    $util.base64.decode(object.key, message.key = $util.newBuffer($util.base64.length(object.key)), 0);
-                else if (object.key.length)
-                    message.key = object.key;
-            if (object.value != null)
-                if ($util.Long)
-                    (message.value = $util.Long.fromValue(object.value)).unsigned = false;
-                else if (typeof object.value === "string")
-                    message.value = parseInt(object.value, 10);
-                else if (typeof object.value === "number")
-                    message.value = object.value;
-                else if (typeof object.value === "object")
-                    message.value = new $util.LongBits(object.value.low >>> 0, object.value.high >>> 0).toNumber();
-            return message;
-        };
-
-        /**
-         * Creates a plain object from a KI64Pair message. Also converts values to other types if specified.
-         * @function toObject
-         * @memberof common.KI64Pair
-         * @static
-         * @param {common.KI64Pair} message KI64Pair
-         * @param {$protobuf.IConversionOptions} [options] Conversion options
-         * @returns {Object.<string,*>} Plain object
-         */
-        KI64Pair.toObject = function toObject(message, options) {
-            if (!options)
-                options = {};
-            var object = {};
-            if (options.defaults) {
-                if (options.bytes === String)
-                    object.key = "";
-                else {
-                    object.key = [];
-                    if (options.bytes !== Array)
-                        object.key = $util.newBuffer(object.key);
-                }
-                object.value = 0;
-            }
-            if (message.key != null && message.hasOwnProperty("key"))
-                object.key = options.bytes === String ? $util.base64.encode(message.key, 0, message.key.length) : options.bytes === Array ? Array.prototype.slice.call(message.key) : message.key;
-            if (message.value != null && message.hasOwnProperty("value"))
-                if (typeof message.value === "number")
-                    object.value = options.longs === String ? String(message.value) : message.value;
-                else
-                    object.value = options.longs === String ? $util.Long.prototype.toString.call(message.value) : options.longs === Number ? new $util.LongBits(message.value.low >>> 0, message.value.high >>> 0).toNumber() : message.value;
-            return object;
-        };
-
-        /**
-         * Converts this KI64Pair to JSON.
-         * @function toJSON
-         * @memberof common.KI64Pair
-         * @instance
-         * @returns {Object.<string,*>} JSON object
-         */
-        KI64Pair.prototype.toJSON = function toJSON() {
-            return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
-        };
-
-        return KI64Pair;
-    })();
-
-    return common;
+    return gogoproto;
 })();
 
 $root.merkle = (function() {
@@ -22342,6 +21506,479 @@ $root.merkle = (function() {
     })();
 
     return merkle;
+})();
+
+$root.common = (function() {
+
+    /**
+     * Namespace common.
+     * @exports common
+     * @namespace
+     */
+    var common = {};
+
+    common.KVPair = (function() {
+
+        /**
+         * Properties of a KVPair.
+         * @memberof common
+         * @interface IKVPair
+         * @property {Uint8Array|null} [key] KVPair key
+         * @property {Uint8Array|null} [value] KVPair value
+         */
+
+        /**
+         * Constructs a new KVPair.
+         * @memberof common
+         * @classdesc Represents a KVPair.
+         * @implements IKVPair
+         * @constructor
+         * @param {common.IKVPair=} [properties] Properties to set
+         */
+        function KVPair(properties) {
+            if (properties)
+                for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
+                    if (properties[keys[i]] != null)
+                        this[keys[i]] = properties[keys[i]];
+        }
+
+        /**
+         * KVPair key.
+         * @member {Uint8Array} key
+         * @memberof common.KVPair
+         * @instance
+         */
+        KVPair.prototype.key = $util.newBuffer([]);
+
+        /**
+         * KVPair value.
+         * @member {Uint8Array} value
+         * @memberof common.KVPair
+         * @instance
+         */
+        KVPair.prototype.value = $util.newBuffer([]);
+
+        /**
+         * Creates a new KVPair instance using the specified properties.
+         * @function create
+         * @memberof common.KVPair
+         * @static
+         * @param {common.IKVPair=} [properties] Properties to set
+         * @returns {common.KVPair} KVPair instance
+         */
+        KVPair.create = function create(properties) {
+            return new KVPair(properties);
+        };
+
+        /**
+         * Encodes the specified KVPair message. Does not implicitly {@link common.KVPair.verify|verify} messages.
+         * @function encode
+         * @memberof common.KVPair
+         * @static
+         * @param {common.IKVPair} message KVPair message or plain object to encode
+         * @param {$protobuf.Writer} [writer] Writer to encode to
+         * @returns {$protobuf.Writer} Writer
+         */
+        KVPair.encode = function encode(message, writer) {
+            if (!writer)
+                writer = $Writer.create();
+            if (message.key != null && message.hasOwnProperty("key"))
+                writer.uint32(/* id 1, wireType 2 =*/10).bytes(message.key);
+            if (message.value != null && message.hasOwnProperty("value"))
+                writer.uint32(/* id 2, wireType 2 =*/18).bytes(message.value);
+            return writer;
+        };
+
+        /**
+         * Encodes the specified KVPair message, length delimited. Does not implicitly {@link common.KVPair.verify|verify} messages.
+         * @function encodeDelimited
+         * @memberof common.KVPair
+         * @static
+         * @param {common.IKVPair} message KVPair message or plain object to encode
+         * @param {$protobuf.Writer} [writer] Writer to encode to
+         * @returns {$protobuf.Writer} Writer
+         */
+        KVPair.encodeDelimited = function encodeDelimited(message, writer) {
+            return this.encode(message, writer).ldelim();
+        };
+
+        /**
+         * Decodes a KVPair message from the specified reader or buffer.
+         * @function decode
+         * @memberof common.KVPair
+         * @static
+         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+         * @param {number} [length] Message length if known beforehand
+         * @returns {common.KVPair} KVPair
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        KVPair.decode = function decode(reader, length) {
+            if (!(reader instanceof $Reader))
+                reader = $Reader.create(reader);
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.common.KVPair();
+            while (reader.pos < end) {
+                var tag = reader.uint32();
+                switch (tag >>> 3) {
+                case 1:
+                    message.key = reader.bytes();
+                    break;
+                case 2:
+                    message.value = reader.bytes();
+                    break;
+                default:
+                    reader.skipType(tag & 7);
+                    break;
+                }
+            }
+            return message;
+        };
+
+        /**
+         * Decodes a KVPair message from the specified reader or buffer, length delimited.
+         * @function decodeDelimited
+         * @memberof common.KVPair
+         * @static
+         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+         * @returns {common.KVPair} KVPair
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        KVPair.decodeDelimited = function decodeDelimited(reader) {
+            if (!(reader instanceof $Reader))
+                reader = new $Reader(reader);
+            return this.decode(reader, reader.uint32());
+        };
+
+        /**
+         * Verifies a KVPair message.
+         * @function verify
+         * @memberof common.KVPair
+         * @static
+         * @param {Object.<string,*>} message Plain object to verify
+         * @returns {string|null} `null` if valid, otherwise the reason why it is not
+         */
+        KVPair.verify = function verify(message) {
+            if (typeof message !== "object" || message === null)
+                return "object expected";
+            if (message.key != null && message.hasOwnProperty("key"))
+                if (!(message.key && typeof message.key.length === "number" || $util.isString(message.key)))
+                    return "key: buffer expected";
+            if (message.value != null && message.hasOwnProperty("value"))
+                if (!(message.value && typeof message.value.length === "number" || $util.isString(message.value)))
+                    return "value: buffer expected";
+            return null;
+        };
+
+        /**
+         * Creates a KVPair message from a plain object. Also converts values to their respective internal types.
+         * @function fromObject
+         * @memberof common.KVPair
+         * @static
+         * @param {Object.<string,*>} object Plain object
+         * @returns {common.KVPair} KVPair
+         */
+        KVPair.fromObject = function fromObject(object) {
+            if (object instanceof $root.common.KVPair)
+                return object;
+            var message = new $root.common.KVPair();
+            if (object.key != null)
+                if (typeof object.key === "string")
+                    $util.base64.decode(object.key, message.key = $util.newBuffer($util.base64.length(object.key)), 0);
+                else if (object.key.length)
+                    message.key = object.key;
+            if (object.value != null)
+                if (typeof object.value === "string")
+                    $util.base64.decode(object.value, message.value = $util.newBuffer($util.base64.length(object.value)), 0);
+                else if (object.value.length)
+                    message.value = object.value;
+            return message;
+        };
+
+        /**
+         * Creates a plain object from a KVPair message. Also converts values to other types if specified.
+         * @function toObject
+         * @memberof common.KVPair
+         * @static
+         * @param {common.KVPair} message KVPair
+         * @param {$protobuf.IConversionOptions} [options] Conversion options
+         * @returns {Object.<string,*>} Plain object
+         */
+        KVPair.toObject = function toObject(message, options) {
+            if (!options)
+                options = {};
+            var object = {};
+            if (options.defaults) {
+                if (options.bytes === String)
+                    object.key = "";
+                else {
+                    object.key = [];
+                    if (options.bytes !== Array)
+                        object.key = $util.newBuffer(object.key);
+                }
+                if (options.bytes === String)
+                    object.value = "";
+                else {
+                    object.value = [];
+                    if (options.bytes !== Array)
+                        object.value = $util.newBuffer(object.value);
+                }
+            }
+            if (message.key != null && message.hasOwnProperty("key"))
+                object.key = options.bytes === String ? $util.base64.encode(message.key, 0, message.key.length) : options.bytes === Array ? Array.prototype.slice.call(message.key) : message.key;
+            if (message.value != null && message.hasOwnProperty("value"))
+                object.value = options.bytes === String ? $util.base64.encode(message.value, 0, message.value.length) : options.bytes === Array ? Array.prototype.slice.call(message.value) : message.value;
+            return object;
+        };
+
+        /**
+         * Converts this KVPair to JSON.
+         * @function toJSON
+         * @memberof common.KVPair
+         * @instance
+         * @returns {Object.<string,*>} JSON object
+         */
+        KVPair.prototype.toJSON = function toJSON() {
+            return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
+        };
+
+        return KVPair;
+    })();
+
+    common.KI64Pair = (function() {
+
+        /**
+         * Properties of a KI64Pair.
+         * @memberof common
+         * @interface IKI64Pair
+         * @property {Uint8Array|null} [key] KI64Pair key
+         * @property {number|Long|null} [value] KI64Pair value
+         */
+
+        /**
+         * Constructs a new KI64Pair.
+         * @memberof common
+         * @classdesc Represents a KI64Pair.
+         * @implements IKI64Pair
+         * @constructor
+         * @param {common.IKI64Pair=} [properties] Properties to set
+         */
+        function KI64Pair(properties) {
+            if (properties)
+                for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
+                    if (properties[keys[i]] != null)
+                        this[keys[i]] = properties[keys[i]];
+        }
+
+        /**
+         * KI64Pair key.
+         * @member {Uint8Array} key
+         * @memberof common.KI64Pair
+         * @instance
+         */
+        KI64Pair.prototype.key = $util.newBuffer([]);
+
+        /**
+         * KI64Pair value.
+         * @member {number|Long} value
+         * @memberof common.KI64Pair
+         * @instance
+         */
+        KI64Pair.prototype.value = $util.Long ? $util.Long.fromBits(0,0,false) : 0;
+
+        /**
+         * Creates a new KI64Pair instance using the specified properties.
+         * @function create
+         * @memberof common.KI64Pair
+         * @static
+         * @param {common.IKI64Pair=} [properties] Properties to set
+         * @returns {common.KI64Pair} KI64Pair instance
+         */
+        KI64Pair.create = function create(properties) {
+            return new KI64Pair(properties);
+        };
+
+        /**
+         * Encodes the specified KI64Pair message. Does not implicitly {@link common.KI64Pair.verify|verify} messages.
+         * @function encode
+         * @memberof common.KI64Pair
+         * @static
+         * @param {common.IKI64Pair} message KI64Pair message or plain object to encode
+         * @param {$protobuf.Writer} [writer] Writer to encode to
+         * @returns {$protobuf.Writer} Writer
+         */
+        KI64Pair.encode = function encode(message, writer) {
+            if (!writer)
+                writer = $Writer.create();
+            if (message.key != null && message.hasOwnProperty("key"))
+                writer.uint32(/* id 1, wireType 2 =*/10).bytes(message.key);
+            if (message.value != null && message.hasOwnProperty("value"))
+                writer.uint32(/* id 2, wireType 0 =*/16).int64(message.value);
+            return writer;
+        };
+
+        /**
+         * Encodes the specified KI64Pair message, length delimited. Does not implicitly {@link common.KI64Pair.verify|verify} messages.
+         * @function encodeDelimited
+         * @memberof common.KI64Pair
+         * @static
+         * @param {common.IKI64Pair} message KI64Pair message or plain object to encode
+         * @param {$protobuf.Writer} [writer] Writer to encode to
+         * @returns {$protobuf.Writer} Writer
+         */
+        KI64Pair.encodeDelimited = function encodeDelimited(message, writer) {
+            return this.encode(message, writer).ldelim();
+        };
+
+        /**
+         * Decodes a KI64Pair message from the specified reader or buffer.
+         * @function decode
+         * @memberof common.KI64Pair
+         * @static
+         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+         * @param {number} [length] Message length if known beforehand
+         * @returns {common.KI64Pair} KI64Pair
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        KI64Pair.decode = function decode(reader, length) {
+            if (!(reader instanceof $Reader))
+                reader = $Reader.create(reader);
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.common.KI64Pair();
+            while (reader.pos < end) {
+                var tag = reader.uint32();
+                switch (tag >>> 3) {
+                case 1:
+                    message.key = reader.bytes();
+                    break;
+                case 2:
+                    message.value = reader.int64();
+                    break;
+                default:
+                    reader.skipType(tag & 7);
+                    break;
+                }
+            }
+            return message;
+        };
+
+        /**
+         * Decodes a KI64Pair message from the specified reader or buffer, length delimited.
+         * @function decodeDelimited
+         * @memberof common.KI64Pair
+         * @static
+         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+         * @returns {common.KI64Pair} KI64Pair
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        KI64Pair.decodeDelimited = function decodeDelimited(reader) {
+            if (!(reader instanceof $Reader))
+                reader = new $Reader(reader);
+            return this.decode(reader, reader.uint32());
+        };
+
+        /**
+         * Verifies a KI64Pair message.
+         * @function verify
+         * @memberof common.KI64Pair
+         * @static
+         * @param {Object.<string,*>} message Plain object to verify
+         * @returns {string|null} `null` if valid, otherwise the reason why it is not
+         */
+        KI64Pair.verify = function verify(message) {
+            if (typeof message !== "object" || message === null)
+                return "object expected";
+            if (message.key != null && message.hasOwnProperty("key"))
+                if (!(message.key && typeof message.key.length === "number" || $util.isString(message.key)))
+                    return "key: buffer expected";
+            if (message.value != null && message.hasOwnProperty("value"))
+                if (!$util.isInteger(message.value) && !(message.value && $util.isInteger(message.value.low) && $util.isInteger(message.value.high)))
+                    return "value: integer|Long expected";
+            return null;
+        };
+
+        /**
+         * Creates a KI64Pair message from a plain object. Also converts values to their respective internal types.
+         * @function fromObject
+         * @memberof common.KI64Pair
+         * @static
+         * @param {Object.<string,*>} object Plain object
+         * @returns {common.KI64Pair} KI64Pair
+         */
+        KI64Pair.fromObject = function fromObject(object) {
+            if (object instanceof $root.common.KI64Pair)
+                return object;
+            var message = new $root.common.KI64Pair();
+            if (object.key != null)
+                if (typeof object.key === "string")
+                    $util.base64.decode(object.key, message.key = $util.newBuffer($util.base64.length(object.key)), 0);
+                else if (object.key.length)
+                    message.key = object.key;
+            if (object.value != null)
+                if ($util.Long)
+                    (message.value = $util.Long.fromValue(object.value)).unsigned = false;
+                else if (typeof object.value === "string")
+                    message.value = parseInt(object.value, 10);
+                else if (typeof object.value === "number")
+                    message.value = object.value;
+                else if (typeof object.value === "object")
+                    message.value = new $util.LongBits(object.value.low >>> 0, object.value.high >>> 0).toNumber();
+            return message;
+        };
+
+        /**
+         * Creates a plain object from a KI64Pair message. Also converts values to other types if specified.
+         * @function toObject
+         * @memberof common.KI64Pair
+         * @static
+         * @param {common.KI64Pair} message KI64Pair
+         * @param {$protobuf.IConversionOptions} [options] Conversion options
+         * @returns {Object.<string,*>} Plain object
+         */
+        KI64Pair.toObject = function toObject(message, options) {
+            if (!options)
+                options = {};
+            var object = {};
+            if (options.defaults) {
+                if (options.bytes === String)
+                    object.key = "";
+                else {
+                    object.key = [];
+                    if (options.bytes !== Array)
+                        object.key = $util.newBuffer(object.key);
+                }
+                if ($util.Long) {
+                    var long = new $util.Long(0, 0, false);
+                    object.value = options.longs === String ? long.toString() : options.longs === Number ? long.toNumber() : long;
+                } else
+                    object.value = options.longs === String ? "0" : 0;
+            }
+            if (message.key != null && message.hasOwnProperty("key"))
+                object.key = options.bytes === String ? $util.base64.encode(message.key, 0, message.key.length) : options.bytes === Array ? Array.prototype.slice.call(message.key) : message.key;
+            if (message.value != null && message.hasOwnProperty("value"))
+                if (typeof message.value === "number")
+                    object.value = options.longs === String ? String(message.value) : message.value;
+                else
+                    object.value = options.longs === String ? $util.Long.prototype.toString.call(message.value) : options.longs === Number ? new $util.LongBits(message.value.low >>> 0, message.value.high >>> 0).toNumber() : message.value;
+            return object;
+        };
+
+        /**
+         * Converts this KI64Pair to JSON.
+         * @function toJSON
+         * @memberof common.KI64Pair
+         * @instance
+         * @returns {Object.<string,*>} JSON object
+         */
+        KI64Pair.prototype.toJSON = function toJSON() {
+            return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
+        };
+
+        return KI64Pair;
+    })();
+
+    return common;
 })();
 
 module.exports = $root;

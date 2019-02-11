@@ -1,45 +1,42 @@
 import * as $protobuf from "protobufjs";
-/** Namespace abci. */
-export namespace abci {
+/** Namespace types. */
+export namespace types {
 
     /** Properties of a Request. */
     interface IRequest {
 
         /** Request echo */
-        echo?: (abci.IRequestEcho|null);
+        echo?: (types.IRequestEcho|null);
 
         /** Request flush */
-        flush?: (abci.IRequestFlush|null);
+        flush?: (types.IRequestFlush|null);
 
         /** Request info */
-        info?: (abci.IRequestInfo|null);
+        info?: (types.IRequestInfo|null);
 
         /** Request setOption */
-        setOption?: (abci.IRequestSetOption|null);
+        setOption?: (types.IRequestSetOption|null);
 
         /** Request initChain */
-        initChain?: (abci.IRequestInitChain|null);
+        initChain?: (types.IRequestInitChain|null);
 
         /** Request query */
-        query?: (abci.IRequestQuery|null);
+        query?: (types.IRequestQuery|null);
 
         /** Request beginBlock */
-        beginBlock?: (abci.IRequestBeginBlock|null);
+        beginBlock?: (types.IRequestBeginBlock|null);
 
         /** Request checkTx */
-        checkTx?: (abci.IRequestCheckTx|null);
+        checkTx?: (types.IRequestCheckTx|null);
 
         /** Request deliverTx */
-        deliverTx?: (abci.IRequestDeliverTx|null);
+        deliverTx?: (types.IRequestDeliverTx|null);
 
         /** Request endBlock */
-        endBlock?: (abci.IRequestEndBlock|null);
+        endBlock?: (types.IRequestEndBlock|null);
 
         /** Request commit */
-        commit?: (abci.IRequestCommit|null);
-
-        /** Request checkBridge */
-        checkBridge?: (abci.IRequestCheckBridge|null);
+        commit?: (types.IRequestCommit|null);
     }
 
     /** Represents a Request. */
@@ -49,69 +46,66 @@ export namespace abci {
          * Constructs a new Request.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequest);
+        constructor(properties?: types.IRequest);
 
         /** Request echo. */
-        public echo?: (abci.IRequestEcho|null);
+        public echo?: (types.IRequestEcho|null);
 
         /** Request flush. */
-        public flush?: (abci.IRequestFlush|null);
+        public flush?: (types.IRequestFlush|null);
 
         /** Request info. */
-        public info?: (abci.IRequestInfo|null);
+        public info?: (types.IRequestInfo|null);
 
         /** Request setOption. */
-        public setOption?: (abci.IRequestSetOption|null);
+        public setOption?: (types.IRequestSetOption|null);
 
         /** Request initChain. */
-        public initChain?: (abci.IRequestInitChain|null);
+        public initChain?: (types.IRequestInitChain|null);
 
         /** Request query. */
-        public query?: (abci.IRequestQuery|null);
+        public query?: (types.IRequestQuery|null);
 
         /** Request beginBlock. */
-        public beginBlock?: (abci.IRequestBeginBlock|null);
+        public beginBlock?: (types.IRequestBeginBlock|null);
 
         /** Request checkTx. */
-        public checkTx?: (abci.IRequestCheckTx|null);
+        public checkTx?: (types.IRequestCheckTx|null);
 
         /** Request deliverTx. */
-        public deliverTx?: (abci.IRequestDeliverTx|null);
+        public deliverTx?: (types.IRequestDeliverTx|null);
 
         /** Request endBlock. */
-        public endBlock?: (abci.IRequestEndBlock|null);
+        public endBlock?: (types.IRequestEndBlock|null);
 
         /** Request commit. */
-        public commit?: (abci.IRequestCommit|null);
-
-        /** Request checkBridge. */
-        public checkBridge?: (abci.IRequestCheckBridge|null);
+        public commit?: (types.IRequestCommit|null);
 
         /** Request value. */
-        public value?: ("echo"|"flush"|"info"|"setOption"|"initChain"|"query"|"beginBlock"|"checkTx"|"deliverTx"|"endBlock"|"commit"|"checkBridge");
+        public value?: ("echo"|"flush"|"info"|"setOption"|"initChain"|"query"|"beginBlock"|"checkTx"|"deliverTx"|"endBlock"|"commit");
 
         /**
          * Creates a new Request instance using the specified properties.
          * @param [properties] Properties to set
          * @returns Request instance
          */
-        public static create(properties?: abci.IRequest): abci.Request;
+        public static create(properties?: types.IRequest): types.Request;
 
         /**
-         * Encodes the specified Request message. Does not implicitly {@link abci.Request.verify|verify} messages.
+         * Encodes the specified Request message. Does not implicitly {@link types.Request.verify|verify} messages.
          * @param message Request message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequest, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified Request message, length delimited. Does not implicitly {@link abci.Request.verify|verify} messages.
+         * Encodes the specified Request message, length delimited. Does not implicitly {@link types.Request.verify|verify} messages.
          * @param message Request message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequest, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a Request message from the specified reader or buffer.
@@ -121,7 +115,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.Request;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.Request;
 
         /**
          * Decodes a Request message from the specified reader or buffer, length delimited.
@@ -130,7 +124,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.Request;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.Request;
 
         /**
          * Verifies a Request message.
@@ -144,7 +138,7 @@ export namespace abci {
          * @param object Plain object
          * @returns Request
          */
-        public static fromObject(object: { [k: string]: any }): abci.Request;
+        public static fromObject(object: { [k: string]: any }): types.Request;
 
         /**
          * Creates a plain object from a Request message. Also converts values to other types if specified.
@@ -152,7 +146,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.Request, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.Request, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this Request to JSON.
@@ -175,7 +169,7 @@ export namespace abci {
          * Constructs a new RequestEcho.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestEcho);
+        constructor(properties?: types.IRequestEcho);
 
         /** RequestEcho message. */
         public message: string;
@@ -185,23 +179,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns RequestEcho instance
          */
-        public static create(properties?: abci.IRequestEcho): abci.RequestEcho;
+        public static create(properties?: types.IRequestEcho): types.RequestEcho;
 
         /**
-         * Encodes the specified RequestEcho message. Does not implicitly {@link abci.RequestEcho.verify|verify} messages.
+         * Encodes the specified RequestEcho message. Does not implicitly {@link types.RequestEcho.verify|verify} messages.
          * @param message RequestEcho message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestEcho, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestEcho, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestEcho message, length delimited. Does not implicitly {@link abci.RequestEcho.verify|verify} messages.
+         * Encodes the specified RequestEcho message, length delimited. Does not implicitly {@link types.RequestEcho.verify|verify} messages.
          * @param message RequestEcho message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestEcho, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestEcho, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestEcho message from the specified reader or buffer.
@@ -211,7 +205,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestEcho;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestEcho;
 
         /**
          * Decodes a RequestEcho message from the specified reader or buffer, length delimited.
@@ -220,7 +214,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestEcho;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestEcho;
 
         /**
          * Verifies a RequestEcho message.
@@ -234,7 +228,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestEcho
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestEcho;
+        public static fromObject(object: { [k: string]: any }): types.RequestEcho;
 
         /**
          * Creates a plain object from a RequestEcho message. Also converts values to other types if specified.
@@ -242,7 +236,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestEcho, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestEcho, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestEcho to JSON.
@@ -262,30 +256,30 @@ export namespace abci {
          * Constructs a new RequestFlush.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestFlush);
+        constructor(properties?: types.IRequestFlush);
 
         /**
          * Creates a new RequestFlush instance using the specified properties.
          * @param [properties] Properties to set
          * @returns RequestFlush instance
          */
-        public static create(properties?: abci.IRequestFlush): abci.RequestFlush;
+        public static create(properties?: types.IRequestFlush): types.RequestFlush;
 
         /**
-         * Encodes the specified RequestFlush message. Does not implicitly {@link abci.RequestFlush.verify|verify} messages.
+         * Encodes the specified RequestFlush message. Does not implicitly {@link types.RequestFlush.verify|verify} messages.
          * @param message RequestFlush message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestFlush, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestFlush, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestFlush message, length delimited. Does not implicitly {@link abci.RequestFlush.verify|verify} messages.
+         * Encodes the specified RequestFlush message, length delimited. Does not implicitly {@link types.RequestFlush.verify|verify} messages.
          * @param message RequestFlush message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestFlush, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestFlush, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestFlush message from the specified reader or buffer.
@@ -295,7 +289,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestFlush;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestFlush;
 
         /**
          * Decodes a RequestFlush message from the specified reader or buffer, length delimited.
@@ -304,7 +298,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestFlush;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestFlush;
 
         /**
          * Verifies a RequestFlush message.
@@ -318,7 +312,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestFlush
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestFlush;
+        public static fromObject(object: { [k: string]: any }): types.RequestFlush;
 
         /**
          * Creates a plain object from a RequestFlush message. Also converts values to other types if specified.
@@ -326,7 +320,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestFlush, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestFlush, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestFlush to JSON.
@@ -355,7 +349,7 @@ export namespace abci {
          * Constructs a new RequestInfo.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestInfo);
+        constructor(properties?: types.IRequestInfo);
 
         /** RequestInfo version. */
         public version: string;
@@ -371,23 +365,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns RequestInfo instance
          */
-        public static create(properties?: abci.IRequestInfo): abci.RequestInfo;
+        public static create(properties?: types.IRequestInfo): types.RequestInfo;
 
         /**
-         * Encodes the specified RequestInfo message. Does not implicitly {@link abci.RequestInfo.verify|verify} messages.
+         * Encodes the specified RequestInfo message. Does not implicitly {@link types.RequestInfo.verify|verify} messages.
          * @param message RequestInfo message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestInfo message, length delimited. Does not implicitly {@link abci.RequestInfo.verify|verify} messages.
+         * Encodes the specified RequestInfo message, length delimited. Does not implicitly {@link types.RequestInfo.verify|verify} messages.
          * @param message RequestInfo message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestInfo message from the specified reader or buffer.
@@ -397,7 +391,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestInfo;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestInfo;
 
         /**
          * Decodes a RequestInfo message from the specified reader or buffer, length delimited.
@@ -406,7 +400,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestInfo;
 
         /**
          * Verifies a RequestInfo message.
@@ -420,7 +414,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestInfo
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestInfo;
+        public static fromObject(object: { [k: string]: any }): types.RequestInfo;
 
         /**
          * Creates a plain object from a RequestInfo message. Also converts values to other types if specified.
@@ -428,7 +422,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestInfo to JSON.
@@ -454,7 +448,7 @@ export namespace abci {
          * Constructs a new RequestSetOption.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestSetOption);
+        constructor(properties?: types.IRequestSetOption);
 
         /** RequestSetOption key. */
         public key: string;
@@ -467,23 +461,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns RequestSetOption instance
          */
-        public static create(properties?: abci.IRequestSetOption): abci.RequestSetOption;
+        public static create(properties?: types.IRequestSetOption): types.RequestSetOption;
 
         /**
-         * Encodes the specified RequestSetOption message. Does not implicitly {@link abci.RequestSetOption.verify|verify} messages.
+         * Encodes the specified RequestSetOption message. Does not implicitly {@link types.RequestSetOption.verify|verify} messages.
          * @param message RequestSetOption message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestSetOption, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestSetOption, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestSetOption message, length delimited. Does not implicitly {@link abci.RequestSetOption.verify|verify} messages.
+         * Encodes the specified RequestSetOption message, length delimited. Does not implicitly {@link types.RequestSetOption.verify|verify} messages.
          * @param message RequestSetOption message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestSetOption, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestSetOption, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestSetOption message from the specified reader or buffer.
@@ -493,7 +487,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestSetOption;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestSetOption;
 
         /**
          * Decodes a RequestSetOption message from the specified reader or buffer, length delimited.
@@ -502,7 +496,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestSetOption;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestSetOption;
 
         /**
          * Verifies a RequestSetOption message.
@@ -516,7 +510,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestSetOption
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestSetOption;
+        public static fromObject(object: { [k: string]: any }): types.RequestSetOption;
 
         /**
          * Creates a plain object from a RequestSetOption message. Also converts values to other types if specified.
@@ -524,7 +518,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestSetOption, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestSetOption, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestSetOption to JSON.
@@ -543,10 +537,10 @@ export namespace abci {
         chainId?: (string|null);
 
         /** RequestInitChain consensusParams */
-        consensusParams?: (abci.IConsensusParams|null);
+        consensusParams?: (types.IConsensusParams|null);
 
         /** RequestInitChain validators */
-        validators?: (abci.IValidatorUpdate[]|null);
+        validators?: (types.IValidatorUpdate[]|null);
 
         /** RequestInitChain appStateBytes */
         appStateBytes?: (Uint8Array|null);
@@ -559,7 +553,7 @@ export namespace abci {
          * Constructs a new RequestInitChain.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestInitChain);
+        constructor(properties?: types.IRequestInitChain);
 
         /** RequestInitChain time. */
         public time?: (google.protobuf.ITimestamp|null);
@@ -568,10 +562,10 @@ export namespace abci {
         public chainId: string;
 
         /** RequestInitChain consensusParams. */
-        public consensusParams?: (abci.IConsensusParams|null);
+        public consensusParams?: (types.IConsensusParams|null);
 
         /** RequestInitChain validators. */
-        public validators: abci.IValidatorUpdate[];
+        public validators: types.IValidatorUpdate[];
 
         /** RequestInitChain appStateBytes. */
         public appStateBytes: Uint8Array;
@@ -581,23 +575,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns RequestInitChain instance
          */
-        public static create(properties?: abci.IRequestInitChain): abci.RequestInitChain;
+        public static create(properties?: types.IRequestInitChain): types.RequestInitChain;
 
         /**
-         * Encodes the specified RequestInitChain message. Does not implicitly {@link abci.RequestInitChain.verify|verify} messages.
+         * Encodes the specified RequestInitChain message. Does not implicitly {@link types.RequestInitChain.verify|verify} messages.
          * @param message RequestInitChain message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestInitChain, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestInitChain, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestInitChain message, length delimited. Does not implicitly {@link abci.RequestInitChain.verify|verify} messages.
+         * Encodes the specified RequestInitChain message, length delimited. Does not implicitly {@link types.RequestInitChain.verify|verify} messages.
          * @param message RequestInitChain message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestInitChain, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestInitChain, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestInitChain message from the specified reader or buffer.
@@ -607,7 +601,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestInitChain;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestInitChain;
 
         /**
          * Decodes a RequestInitChain message from the specified reader or buffer, length delimited.
@@ -616,7 +610,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestInitChain;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestInitChain;
 
         /**
          * Verifies a RequestInitChain message.
@@ -630,7 +624,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestInitChain
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestInitChain;
+        public static fromObject(object: { [k: string]: any }): types.RequestInitChain;
 
         /**
          * Creates a plain object from a RequestInitChain message. Also converts values to other types if specified.
@@ -638,7 +632,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestInitChain, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestInitChain, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestInitChain to JSON.
@@ -670,7 +664,7 @@ export namespace abci {
          * Constructs a new RequestQuery.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestQuery);
+        constructor(properties?: types.IRequestQuery);
 
         /** RequestQuery data. */
         public data: Uint8Array;
@@ -689,23 +683,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns RequestQuery instance
          */
-        public static create(properties?: abci.IRequestQuery): abci.RequestQuery;
+        public static create(properties?: types.IRequestQuery): types.RequestQuery;
 
         /**
-         * Encodes the specified RequestQuery message. Does not implicitly {@link abci.RequestQuery.verify|verify} messages.
+         * Encodes the specified RequestQuery message. Does not implicitly {@link types.RequestQuery.verify|verify} messages.
          * @param message RequestQuery message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestQuery, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestQuery, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestQuery message, length delimited. Does not implicitly {@link abci.RequestQuery.verify|verify} messages.
+         * Encodes the specified RequestQuery message, length delimited. Does not implicitly {@link types.RequestQuery.verify|verify} messages.
          * @param message RequestQuery message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestQuery, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestQuery, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestQuery message from the specified reader or buffer.
@@ -715,7 +709,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestQuery;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestQuery;
 
         /**
          * Decodes a RequestQuery message from the specified reader or buffer, length delimited.
@@ -724,7 +718,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestQuery;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestQuery;
 
         /**
          * Verifies a RequestQuery message.
@@ -738,7 +732,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestQuery
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestQuery;
+        public static fromObject(object: { [k: string]: any }): types.RequestQuery;
 
         /**
          * Creates a plain object from a RequestQuery message. Also converts values to other types if specified.
@@ -746,7 +740,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestQuery, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestQuery, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestQuery to JSON.
@@ -762,13 +756,13 @@ export namespace abci {
         hash?: (Uint8Array|null);
 
         /** RequestBeginBlock header */
-        header?: (abci.IHeader|null);
+        header?: (types.IHeader|null);
 
         /** RequestBeginBlock lastCommitInfo */
-        lastCommitInfo?: (abci.ILastCommitInfo|null);
+        lastCommitInfo?: (types.ILastCommitInfo|null);
 
         /** RequestBeginBlock byzantineValidators */
-        byzantineValidators?: (abci.IEvidence[]|null);
+        byzantineValidators?: (types.IEvidence[]|null);
     }
 
     /** Represents a RequestBeginBlock. */
@@ -778,42 +772,42 @@ export namespace abci {
          * Constructs a new RequestBeginBlock.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestBeginBlock);
+        constructor(properties?: types.IRequestBeginBlock);
 
         /** RequestBeginBlock hash. */
         public hash: Uint8Array;
 
         /** RequestBeginBlock header. */
-        public header?: (abci.IHeader|null);
+        public header?: (types.IHeader|null);
 
         /** RequestBeginBlock lastCommitInfo. */
-        public lastCommitInfo?: (abci.ILastCommitInfo|null);
+        public lastCommitInfo?: (types.ILastCommitInfo|null);
 
         /** RequestBeginBlock byzantineValidators. */
-        public byzantineValidators: abci.IEvidence[];
+        public byzantineValidators: types.IEvidence[];
 
         /**
          * Creates a new RequestBeginBlock instance using the specified properties.
          * @param [properties] Properties to set
          * @returns RequestBeginBlock instance
          */
-        public static create(properties?: abci.IRequestBeginBlock): abci.RequestBeginBlock;
+        public static create(properties?: types.IRequestBeginBlock): types.RequestBeginBlock;
 
         /**
-         * Encodes the specified RequestBeginBlock message. Does not implicitly {@link abci.RequestBeginBlock.verify|verify} messages.
+         * Encodes the specified RequestBeginBlock message. Does not implicitly {@link types.RequestBeginBlock.verify|verify} messages.
          * @param message RequestBeginBlock message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestBeginBlock, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestBeginBlock, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestBeginBlock message, length delimited. Does not implicitly {@link abci.RequestBeginBlock.verify|verify} messages.
+         * Encodes the specified RequestBeginBlock message, length delimited. Does not implicitly {@link types.RequestBeginBlock.verify|verify} messages.
          * @param message RequestBeginBlock message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestBeginBlock, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestBeginBlock, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestBeginBlock message from the specified reader or buffer.
@@ -823,7 +817,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestBeginBlock;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestBeginBlock;
 
         /**
          * Decodes a RequestBeginBlock message from the specified reader or buffer, length delimited.
@@ -832,7 +826,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestBeginBlock;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestBeginBlock;
 
         /**
          * Verifies a RequestBeginBlock message.
@@ -846,7 +840,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestBeginBlock
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestBeginBlock;
+        public static fromObject(object: { [k: string]: any }): types.RequestBeginBlock;
 
         /**
          * Creates a plain object from a RequestBeginBlock message. Also converts values to other types if specified.
@@ -854,7 +848,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestBeginBlock, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestBeginBlock, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestBeginBlock to JSON.
@@ -877,7 +871,7 @@ export namespace abci {
          * Constructs a new RequestCheckTx.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestCheckTx);
+        constructor(properties?: types.IRequestCheckTx);
 
         /** RequestCheckTx tx. */
         public tx: Uint8Array;
@@ -887,23 +881,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns RequestCheckTx instance
          */
-        public static create(properties?: abci.IRequestCheckTx): abci.RequestCheckTx;
+        public static create(properties?: types.IRequestCheckTx): types.RequestCheckTx;
 
         /**
-         * Encodes the specified RequestCheckTx message. Does not implicitly {@link abci.RequestCheckTx.verify|verify} messages.
+         * Encodes the specified RequestCheckTx message. Does not implicitly {@link types.RequestCheckTx.verify|verify} messages.
          * @param message RequestCheckTx message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestCheckTx, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestCheckTx, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestCheckTx message, length delimited. Does not implicitly {@link abci.RequestCheckTx.verify|verify} messages.
+         * Encodes the specified RequestCheckTx message, length delimited. Does not implicitly {@link types.RequestCheckTx.verify|verify} messages.
          * @param message RequestCheckTx message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestCheckTx, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestCheckTx, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestCheckTx message from the specified reader or buffer.
@@ -913,7 +907,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestCheckTx;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestCheckTx;
 
         /**
          * Decodes a RequestCheckTx message from the specified reader or buffer, length delimited.
@@ -922,7 +916,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestCheckTx;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestCheckTx;
 
         /**
          * Verifies a RequestCheckTx message.
@@ -936,7 +930,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestCheckTx
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestCheckTx;
+        public static fromObject(object: { [k: string]: any }): types.RequestCheckTx;
 
         /**
          * Creates a plain object from a RequestCheckTx message. Also converts values to other types if specified.
@@ -944,7 +938,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestCheckTx, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestCheckTx, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestCheckTx to JSON.
@@ -967,7 +961,7 @@ export namespace abci {
          * Constructs a new RequestDeliverTx.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestDeliverTx);
+        constructor(properties?: types.IRequestDeliverTx);
 
         /** RequestDeliverTx tx. */
         public tx: Uint8Array;
@@ -977,23 +971,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns RequestDeliverTx instance
          */
-        public static create(properties?: abci.IRequestDeliverTx): abci.RequestDeliverTx;
+        public static create(properties?: types.IRequestDeliverTx): types.RequestDeliverTx;
 
         /**
-         * Encodes the specified RequestDeliverTx message. Does not implicitly {@link abci.RequestDeliverTx.verify|verify} messages.
+         * Encodes the specified RequestDeliverTx message. Does not implicitly {@link types.RequestDeliverTx.verify|verify} messages.
          * @param message RequestDeliverTx message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestDeliverTx, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestDeliverTx, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestDeliverTx message, length delimited. Does not implicitly {@link abci.RequestDeliverTx.verify|verify} messages.
+         * Encodes the specified RequestDeliverTx message, length delimited. Does not implicitly {@link types.RequestDeliverTx.verify|verify} messages.
          * @param message RequestDeliverTx message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestDeliverTx, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestDeliverTx, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestDeliverTx message from the specified reader or buffer.
@@ -1003,7 +997,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestDeliverTx;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestDeliverTx;
 
         /**
          * Decodes a RequestDeliverTx message from the specified reader or buffer, length delimited.
@@ -1012,7 +1006,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestDeliverTx;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestDeliverTx;
 
         /**
          * Verifies a RequestDeliverTx message.
@@ -1026,7 +1020,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestDeliverTx
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestDeliverTx;
+        public static fromObject(object: { [k: string]: any }): types.RequestDeliverTx;
 
         /**
          * Creates a plain object from a RequestDeliverTx message. Also converts values to other types if specified.
@@ -1034,7 +1028,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestDeliverTx, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestDeliverTx, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestDeliverTx to JSON.
@@ -1057,7 +1051,7 @@ export namespace abci {
          * Constructs a new RequestEndBlock.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestEndBlock);
+        constructor(properties?: types.IRequestEndBlock);
 
         /** RequestEndBlock height. */
         public height: (number|Long);
@@ -1067,23 +1061,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns RequestEndBlock instance
          */
-        public static create(properties?: abci.IRequestEndBlock): abci.RequestEndBlock;
+        public static create(properties?: types.IRequestEndBlock): types.RequestEndBlock;
 
         /**
-         * Encodes the specified RequestEndBlock message. Does not implicitly {@link abci.RequestEndBlock.verify|verify} messages.
+         * Encodes the specified RequestEndBlock message. Does not implicitly {@link types.RequestEndBlock.verify|verify} messages.
          * @param message RequestEndBlock message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestEndBlock, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestEndBlock, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestEndBlock message, length delimited. Does not implicitly {@link abci.RequestEndBlock.verify|verify} messages.
+         * Encodes the specified RequestEndBlock message, length delimited. Does not implicitly {@link types.RequestEndBlock.verify|verify} messages.
          * @param message RequestEndBlock message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestEndBlock, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestEndBlock, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestEndBlock message from the specified reader or buffer.
@@ -1093,7 +1087,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestEndBlock;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestEndBlock;
 
         /**
          * Decodes a RequestEndBlock message from the specified reader or buffer, length delimited.
@@ -1102,7 +1096,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestEndBlock;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestEndBlock;
 
         /**
          * Verifies a RequestEndBlock message.
@@ -1116,7 +1110,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestEndBlock
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestEndBlock;
+        public static fromObject(object: { [k: string]: any }): types.RequestEndBlock;
 
         /**
          * Creates a plain object from a RequestEndBlock message. Also converts values to other types if specified.
@@ -1124,7 +1118,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestEndBlock, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestEndBlock, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestEndBlock to JSON.
@@ -1144,30 +1138,30 @@ export namespace abci {
          * Constructs a new RequestCommit.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IRequestCommit);
+        constructor(properties?: types.IRequestCommit);
 
         /**
          * Creates a new RequestCommit instance using the specified properties.
          * @param [properties] Properties to set
          * @returns RequestCommit instance
          */
-        public static create(properties?: abci.IRequestCommit): abci.RequestCommit;
+        public static create(properties?: types.IRequestCommit): types.RequestCommit;
 
         /**
-         * Encodes the specified RequestCommit message. Does not implicitly {@link abci.RequestCommit.verify|verify} messages.
+         * Encodes the specified RequestCommit message. Does not implicitly {@link types.RequestCommit.verify|verify} messages.
          * @param message RequestCommit message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IRequestCommit, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IRequestCommit, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified RequestCommit message, length delimited. Does not implicitly {@link abci.RequestCommit.verify|verify} messages.
+         * Encodes the specified RequestCommit message, length delimited. Does not implicitly {@link types.RequestCommit.verify|verify} messages.
          * @param message RequestCommit message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IRequestCommit, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IRequestCommit, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a RequestCommit message from the specified reader or buffer.
@@ -1177,7 +1171,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestCommit;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.RequestCommit;
 
         /**
          * Decodes a RequestCommit message from the specified reader or buffer, length delimited.
@@ -1186,7 +1180,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestCommit;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.RequestCommit;
 
         /**
          * Verifies a RequestCommit message.
@@ -1200,7 +1194,7 @@ export namespace abci {
          * @param object Plain object
          * @returns RequestCommit
          */
-        public static fromObject(object: { [k: string]: any }): abci.RequestCommit;
+        public static fromObject(object: { [k: string]: any }): types.RequestCommit;
 
         /**
          * Creates a plain object from a RequestCommit message. Also converts values to other types if specified.
@@ -1208,100 +1202,10 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.RequestCommit, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.RequestCommit, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this RequestCommit to JSON.
-         * @returns JSON object
-         */
-        public toJSON(): { [k: string]: any };
-    }
-
-    /** Properties of a RequestCheckBridge. */
-    interface IRequestCheckBridge {
-
-        /** RequestCheckBridge height */
-        height?: (number|null);
-    }
-
-    /** Represents a RequestCheckBridge. */
-    class RequestCheckBridge implements IRequestCheckBridge {
-
-        /**
-         * Constructs a new RequestCheckBridge.
-         * @param [properties] Properties to set
-         */
-        constructor(properties?: abci.IRequestCheckBridge);
-
-        /** RequestCheckBridge height. */
-        public height: number;
-
-        /**
-         * Creates a new RequestCheckBridge instance using the specified properties.
-         * @param [properties] Properties to set
-         * @returns RequestCheckBridge instance
-         */
-        public static create(properties?: abci.IRequestCheckBridge): abci.RequestCheckBridge;
-
-        /**
-         * Encodes the specified RequestCheckBridge message. Does not implicitly {@link abci.RequestCheckBridge.verify|verify} messages.
-         * @param message RequestCheckBridge message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encode(message: abci.IRequestCheckBridge, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Encodes the specified RequestCheckBridge message, length delimited. Does not implicitly {@link abci.RequestCheckBridge.verify|verify} messages.
-         * @param message RequestCheckBridge message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encodeDelimited(message: abci.IRequestCheckBridge, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Decodes a RequestCheckBridge message from the specified reader or buffer.
-         * @param reader Reader or buffer to decode from
-         * @param [length] Message length if known beforehand
-         * @returns RequestCheckBridge
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.RequestCheckBridge;
-
-        /**
-         * Decodes a RequestCheckBridge message from the specified reader or buffer, length delimited.
-         * @param reader Reader or buffer to decode from
-         * @returns RequestCheckBridge
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.RequestCheckBridge;
-
-        /**
-         * Verifies a RequestCheckBridge message.
-         * @param message Plain object to verify
-         * @returns `null` if valid, otherwise the reason why it is not
-         */
-        public static verify(message: { [k: string]: any }): (string|null);
-
-        /**
-         * Creates a RequestCheckBridge message from a plain object. Also converts values to their respective internal types.
-         * @param object Plain object
-         * @returns RequestCheckBridge
-         */
-        public static fromObject(object: { [k: string]: any }): abci.RequestCheckBridge;
-
-        /**
-         * Creates a plain object from a RequestCheckBridge message. Also converts values to other types if specified.
-         * @param message RequestCheckBridge
-         * @param [options] Conversion options
-         * @returns Plain object
-         */
-        public static toObject(message: abci.RequestCheckBridge, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-        /**
-         * Converts this RequestCheckBridge to JSON.
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
@@ -1311,43 +1215,40 @@ export namespace abci {
     interface IResponse {
 
         /** Response exception */
-        exception?: (abci.IResponseException|null);
+        exception?: (types.IResponseException|null);
 
         /** Response echo */
-        echo?: (abci.IResponseEcho|null);
+        echo?: (types.IResponseEcho|null);
 
         /** Response flush */
-        flush?: (abci.IResponseFlush|null);
+        flush?: (types.IResponseFlush|null);
 
         /** Response info */
-        info?: (abci.IResponseInfo|null);
+        info?: (types.IResponseInfo|null);
 
         /** Response setOption */
-        setOption?: (abci.IResponseSetOption|null);
+        setOption?: (types.IResponseSetOption|null);
 
         /** Response initChain */
-        initChain?: (abci.IResponseInitChain|null);
+        initChain?: (types.IResponseInitChain|null);
 
         /** Response query */
-        query?: (abci.IResponseQuery|null);
+        query?: (types.IResponseQuery|null);
 
         /** Response beginBlock */
-        beginBlock?: (abci.IResponseBeginBlock|null);
+        beginBlock?: (types.IResponseBeginBlock|null);
 
         /** Response checkTx */
-        checkTx?: (abci.IResponseCheckTx|null);
+        checkTx?: (types.IResponseCheckTx|null);
 
         /** Response deliverTx */
-        deliverTx?: (abci.IResponseDeliverTx|null);
+        deliverTx?: (types.IResponseDeliverTx|null);
 
         /** Response endBlock */
-        endBlock?: (abci.IResponseEndBlock|null);
+        endBlock?: (types.IResponseEndBlock|null);
 
         /** Response commit */
-        commit?: (abci.IResponseCommit|null);
-
-        /** Response checkBridge */
-        checkBridge?: (abci.IResponseCheckBridge|null);
+        commit?: (types.IResponseCommit|null);
     }
 
     /** Represents a Response. */
@@ -1357,72 +1258,69 @@ export namespace abci {
          * Constructs a new Response.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponse);
+        constructor(properties?: types.IResponse);
 
         /** Response exception. */
-        public exception?: (abci.IResponseException|null);
+        public exception?: (types.IResponseException|null);
 
         /** Response echo. */
-        public echo?: (abci.IResponseEcho|null);
+        public echo?: (types.IResponseEcho|null);
 
         /** Response flush. */
-        public flush?: (abci.IResponseFlush|null);
+        public flush?: (types.IResponseFlush|null);
 
         /** Response info. */
-        public info?: (abci.IResponseInfo|null);
+        public info?: (types.IResponseInfo|null);
 
         /** Response setOption. */
-        public setOption?: (abci.IResponseSetOption|null);
+        public setOption?: (types.IResponseSetOption|null);
 
         /** Response initChain. */
-        public initChain?: (abci.IResponseInitChain|null);
+        public initChain?: (types.IResponseInitChain|null);
 
         /** Response query. */
-        public query?: (abci.IResponseQuery|null);
+        public query?: (types.IResponseQuery|null);
 
         /** Response beginBlock. */
-        public beginBlock?: (abci.IResponseBeginBlock|null);
+        public beginBlock?: (types.IResponseBeginBlock|null);
 
         /** Response checkTx. */
-        public checkTx?: (abci.IResponseCheckTx|null);
+        public checkTx?: (types.IResponseCheckTx|null);
 
         /** Response deliverTx. */
-        public deliverTx?: (abci.IResponseDeliverTx|null);
+        public deliverTx?: (types.IResponseDeliverTx|null);
 
         /** Response endBlock. */
-        public endBlock?: (abci.IResponseEndBlock|null);
+        public endBlock?: (types.IResponseEndBlock|null);
 
         /** Response commit. */
-        public commit?: (abci.IResponseCommit|null);
-
-        /** Response checkBridge. */
-        public checkBridge?: (abci.IResponseCheckBridge|null);
+        public commit?: (types.IResponseCommit|null);
 
         /** Response value. */
-        public value?: ("exception"|"echo"|"flush"|"info"|"setOption"|"initChain"|"query"|"beginBlock"|"checkTx"|"deliverTx"|"endBlock"|"commit"|"checkBridge");
+        public value?: ("exception"|"echo"|"flush"|"info"|"setOption"|"initChain"|"query"|"beginBlock"|"checkTx"|"deliverTx"|"endBlock"|"commit");
 
         /**
          * Creates a new Response instance using the specified properties.
          * @param [properties] Properties to set
          * @returns Response instance
          */
-        public static create(properties?: abci.IResponse): abci.Response;
+        public static create(properties?: types.IResponse): types.Response;
 
         /**
-         * Encodes the specified Response message. Does not implicitly {@link abci.Response.verify|verify} messages.
+         * Encodes the specified Response message. Does not implicitly {@link types.Response.verify|verify} messages.
          * @param message Response message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponse, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified Response message, length delimited. Does not implicitly {@link abci.Response.verify|verify} messages.
+         * Encodes the specified Response message, length delimited. Does not implicitly {@link types.Response.verify|verify} messages.
          * @param message Response message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponse, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a Response message from the specified reader or buffer.
@@ -1432,7 +1330,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.Response;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.Response;
 
         /**
          * Decodes a Response message from the specified reader or buffer, length delimited.
@@ -1441,7 +1339,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.Response;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.Response;
 
         /**
          * Verifies a Response message.
@@ -1455,7 +1353,7 @@ export namespace abci {
          * @param object Plain object
          * @returns Response
          */
-        public static fromObject(object: { [k: string]: any }): abci.Response;
+        public static fromObject(object: { [k: string]: any }): types.Response;
 
         /**
          * Creates a plain object from a Response message. Also converts values to other types if specified.
@@ -1463,7 +1361,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.Response, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.Response, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this Response to JSON.
@@ -1486,7 +1384,7 @@ export namespace abci {
          * Constructs a new ResponseException.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseException);
+        constructor(properties?: types.IResponseException);
 
         /** ResponseException error. */
         public error: string;
@@ -1496,23 +1394,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseException instance
          */
-        public static create(properties?: abci.IResponseException): abci.ResponseException;
+        public static create(properties?: types.IResponseException): types.ResponseException;
 
         /**
-         * Encodes the specified ResponseException message. Does not implicitly {@link abci.ResponseException.verify|verify} messages.
+         * Encodes the specified ResponseException message. Does not implicitly {@link types.ResponseException.verify|verify} messages.
          * @param message ResponseException message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseException, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseException, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseException message, length delimited. Does not implicitly {@link abci.ResponseException.verify|verify} messages.
+         * Encodes the specified ResponseException message, length delimited. Does not implicitly {@link types.ResponseException.verify|verify} messages.
          * @param message ResponseException message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseException, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseException, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseException message from the specified reader or buffer.
@@ -1522,7 +1420,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseException;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseException;
 
         /**
          * Decodes a ResponseException message from the specified reader or buffer, length delimited.
@@ -1531,7 +1429,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseException;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseException;
 
         /**
          * Verifies a ResponseException message.
@@ -1545,7 +1443,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseException
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseException;
+        public static fromObject(object: { [k: string]: any }): types.ResponseException;
 
         /**
          * Creates a plain object from a ResponseException message. Also converts values to other types if specified.
@@ -1553,7 +1451,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseException, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseException, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseException to JSON.
@@ -1576,7 +1474,7 @@ export namespace abci {
          * Constructs a new ResponseEcho.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseEcho);
+        constructor(properties?: types.IResponseEcho);
 
         /** ResponseEcho message. */
         public message: string;
@@ -1586,23 +1484,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseEcho instance
          */
-        public static create(properties?: abci.IResponseEcho): abci.ResponseEcho;
+        public static create(properties?: types.IResponseEcho): types.ResponseEcho;
 
         /**
-         * Encodes the specified ResponseEcho message. Does not implicitly {@link abci.ResponseEcho.verify|verify} messages.
+         * Encodes the specified ResponseEcho message. Does not implicitly {@link types.ResponseEcho.verify|verify} messages.
          * @param message ResponseEcho message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseEcho, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseEcho, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseEcho message, length delimited. Does not implicitly {@link abci.ResponseEcho.verify|verify} messages.
+         * Encodes the specified ResponseEcho message, length delimited. Does not implicitly {@link types.ResponseEcho.verify|verify} messages.
          * @param message ResponseEcho message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseEcho, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseEcho, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseEcho message from the specified reader or buffer.
@@ -1612,7 +1510,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseEcho;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseEcho;
 
         /**
          * Decodes a ResponseEcho message from the specified reader or buffer, length delimited.
@@ -1621,7 +1519,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseEcho;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseEcho;
 
         /**
          * Verifies a ResponseEcho message.
@@ -1635,7 +1533,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseEcho
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseEcho;
+        public static fromObject(object: { [k: string]: any }): types.ResponseEcho;
 
         /**
          * Creates a plain object from a ResponseEcho message. Also converts values to other types if specified.
@@ -1643,7 +1541,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseEcho, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseEcho, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseEcho to JSON.
@@ -1663,30 +1561,30 @@ export namespace abci {
          * Constructs a new ResponseFlush.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseFlush);
+        constructor(properties?: types.IResponseFlush);
 
         /**
          * Creates a new ResponseFlush instance using the specified properties.
          * @param [properties] Properties to set
          * @returns ResponseFlush instance
          */
-        public static create(properties?: abci.IResponseFlush): abci.ResponseFlush;
+        public static create(properties?: types.IResponseFlush): types.ResponseFlush;
 
         /**
-         * Encodes the specified ResponseFlush message. Does not implicitly {@link abci.ResponseFlush.verify|verify} messages.
+         * Encodes the specified ResponseFlush message. Does not implicitly {@link types.ResponseFlush.verify|verify} messages.
          * @param message ResponseFlush message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseFlush, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseFlush, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseFlush message, length delimited. Does not implicitly {@link abci.ResponseFlush.verify|verify} messages.
+         * Encodes the specified ResponseFlush message, length delimited. Does not implicitly {@link types.ResponseFlush.verify|verify} messages.
          * @param message ResponseFlush message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseFlush, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseFlush, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseFlush message from the specified reader or buffer.
@@ -1696,7 +1594,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseFlush;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseFlush;
 
         /**
          * Decodes a ResponseFlush message from the specified reader or buffer, length delimited.
@@ -1705,7 +1603,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseFlush;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseFlush;
 
         /**
          * Verifies a ResponseFlush message.
@@ -1719,7 +1617,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseFlush
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseFlush;
+        public static fromObject(object: { [k: string]: any }): types.ResponseFlush;
 
         /**
          * Creates a plain object from a ResponseFlush message. Also converts values to other types if specified.
@@ -1727,7 +1625,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseFlush, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseFlush, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseFlush to JSON.
@@ -1762,7 +1660,7 @@ export namespace abci {
          * Constructs a new ResponseInfo.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseInfo);
+        constructor(properties?: types.IResponseInfo);
 
         /** ResponseInfo data. */
         public data: string;
@@ -1784,23 +1682,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseInfo instance
          */
-        public static create(properties?: abci.IResponseInfo): abci.ResponseInfo;
+        public static create(properties?: types.IResponseInfo): types.ResponseInfo;
 
         /**
-         * Encodes the specified ResponseInfo message. Does not implicitly {@link abci.ResponseInfo.verify|verify} messages.
+         * Encodes the specified ResponseInfo message. Does not implicitly {@link types.ResponseInfo.verify|verify} messages.
          * @param message ResponseInfo message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseInfo message, length delimited. Does not implicitly {@link abci.ResponseInfo.verify|verify} messages.
+         * Encodes the specified ResponseInfo message, length delimited. Does not implicitly {@link types.ResponseInfo.verify|verify} messages.
          * @param message ResponseInfo message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseInfo message from the specified reader or buffer.
@@ -1810,7 +1708,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseInfo;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseInfo;
 
         /**
          * Decodes a ResponseInfo message from the specified reader or buffer, length delimited.
@@ -1819,7 +1717,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseInfo;
 
         /**
          * Verifies a ResponseInfo message.
@@ -1833,7 +1731,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseInfo
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseInfo;
+        public static fromObject(object: { [k: string]: any }): types.ResponseInfo;
 
         /**
          * Creates a plain object from a ResponseInfo message. Also converts values to other types if specified.
@@ -1841,7 +1739,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseInfo to JSON.
@@ -1870,7 +1768,7 @@ export namespace abci {
          * Constructs a new ResponseSetOption.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseSetOption);
+        constructor(properties?: types.IResponseSetOption);
 
         /** ResponseSetOption code. */
         public code: number;
@@ -1886,23 +1784,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseSetOption instance
          */
-        public static create(properties?: abci.IResponseSetOption): abci.ResponseSetOption;
+        public static create(properties?: types.IResponseSetOption): types.ResponseSetOption;
 
         /**
-         * Encodes the specified ResponseSetOption message. Does not implicitly {@link abci.ResponseSetOption.verify|verify} messages.
+         * Encodes the specified ResponseSetOption message. Does not implicitly {@link types.ResponseSetOption.verify|verify} messages.
          * @param message ResponseSetOption message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseSetOption, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseSetOption, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseSetOption message, length delimited. Does not implicitly {@link abci.ResponseSetOption.verify|verify} messages.
+         * Encodes the specified ResponseSetOption message, length delimited. Does not implicitly {@link types.ResponseSetOption.verify|verify} messages.
          * @param message ResponseSetOption message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseSetOption, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseSetOption, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseSetOption message from the specified reader or buffer.
@@ -1912,7 +1810,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseSetOption;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseSetOption;
 
         /**
          * Decodes a ResponseSetOption message from the specified reader or buffer, length delimited.
@@ -1921,7 +1819,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseSetOption;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseSetOption;
 
         /**
          * Verifies a ResponseSetOption message.
@@ -1935,7 +1833,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseSetOption
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseSetOption;
+        public static fromObject(object: { [k: string]: any }): types.ResponseSetOption;
 
         /**
          * Creates a plain object from a ResponseSetOption message. Also converts values to other types if specified.
@@ -1943,7 +1841,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseSetOption, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseSetOption, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseSetOption to JSON.
@@ -1956,10 +1854,10 @@ export namespace abci {
     interface IResponseInitChain {
 
         /** ResponseInitChain consensusParams */
-        consensusParams?: (abci.IConsensusParams|null);
+        consensusParams?: (types.IConsensusParams|null);
 
         /** ResponseInitChain validators */
-        validators?: (abci.IValidatorUpdate[]|null);
+        validators?: (types.IValidatorUpdate[]|null);
     }
 
     /** Represents a ResponseInitChain. */
@@ -1969,36 +1867,36 @@ export namespace abci {
          * Constructs a new ResponseInitChain.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseInitChain);
+        constructor(properties?: types.IResponseInitChain);
 
         /** ResponseInitChain consensusParams. */
-        public consensusParams?: (abci.IConsensusParams|null);
+        public consensusParams?: (types.IConsensusParams|null);
 
         /** ResponseInitChain validators. */
-        public validators: abci.IValidatorUpdate[];
+        public validators: types.IValidatorUpdate[];
 
         /**
          * Creates a new ResponseInitChain instance using the specified properties.
          * @param [properties] Properties to set
          * @returns ResponseInitChain instance
          */
-        public static create(properties?: abci.IResponseInitChain): abci.ResponseInitChain;
+        public static create(properties?: types.IResponseInitChain): types.ResponseInitChain;
 
         /**
-         * Encodes the specified ResponseInitChain message. Does not implicitly {@link abci.ResponseInitChain.verify|verify} messages.
+         * Encodes the specified ResponseInitChain message. Does not implicitly {@link types.ResponseInitChain.verify|verify} messages.
          * @param message ResponseInitChain message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseInitChain, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseInitChain, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseInitChain message, length delimited. Does not implicitly {@link abci.ResponseInitChain.verify|verify} messages.
+         * Encodes the specified ResponseInitChain message, length delimited. Does not implicitly {@link types.ResponseInitChain.verify|verify} messages.
          * @param message ResponseInitChain message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseInitChain, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseInitChain, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseInitChain message from the specified reader or buffer.
@@ -2008,7 +1906,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseInitChain;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseInitChain;
 
         /**
          * Decodes a ResponseInitChain message from the specified reader or buffer, length delimited.
@@ -2017,7 +1915,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseInitChain;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseInitChain;
 
         /**
          * Verifies a ResponseInitChain message.
@@ -2031,7 +1929,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseInitChain
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseInitChain;
+        public static fromObject(object: { [k: string]: any }): types.ResponseInitChain;
 
         /**
          * Creates a plain object from a ResponseInitChain message. Also converts values to other types if specified.
@@ -2039,7 +1937,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseInitChain, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseInitChain, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseInitChain to JSON.
@@ -2086,7 +1984,7 @@ export namespace abci {
          * Constructs a new ResponseQuery.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseQuery);
+        constructor(properties?: types.IResponseQuery);
 
         /** ResponseQuery code. */
         public code: number;
@@ -2120,23 +2018,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseQuery instance
          */
-        public static create(properties?: abci.IResponseQuery): abci.ResponseQuery;
+        public static create(properties?: types.IResponseQuery): types.ResponseQuery;
 
         /**
-         * Encodes the specified ResponseQuery message. Does not implicitly {@link abci.ResponseQuery.verify|verify} messages.
+         * Encodes the specified ResponseQuery message. Does not implicitly {@link types.ResponseQuery.verify|verify} messages.
          * @param message ResponseQuery message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseQuery, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseQuery, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseQuery message, length delimited. Does not implicitly {@link abci.ResponseQuery.verify|verify} messages.
+         * Encodes the specified ResponseQuery message, length delimited. Does not implicitly {@link types.ResponseQuery.verify|verify} messages.
          * @param message ResponseQuery message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseQuery, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseQuery, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseQuery message from the specified reader or buffer.
@@ -2146,7 +2044,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseQuery;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseQuery;
 
         /**
          * Decodes a ResponseQuery message from the specified reader or buffer, length delimited.
@@ -2155,7 +2053,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseQuery;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseQuery;
 
         /**
          * Verifies a ResponseQuery message.
@@ -2169,7 +2067,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseQuery
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseQuery;
+        public static fromObject(object: { [k: string]: any }): types.ResponseQuery;
 
         /**
          * Creates a plain object from a ResponseQuery message. Also converts values to other types if specified.
@@ -2177,7 +2075,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseQuery, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseQuery, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseQuery to JSON.
@@ -2200,7 +2098,7 @@ export namespace abci {
          * Constructs a new ResponseBeginBlock.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseBeginBlock);
+        constructor(properties?: types.IResponseBeginBlock);
 
         /** ResponseBeginBlock tags. */
         public tags: common.IKVPair[];
@@ -2210,23 +2108,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseBeginBlock instance
          */
-        public static create(properties?: abci.IResponseBeginBlock): abci.ResponseBeginBlock;
+        public static create(properties?: types.IResponseBeginBlock): types.ResponseBeginBlock;
 
         /**
-         * Encodes the specified ResponseBeginBlock message. Does not implicitly {@link abci.ResponseBeginBlock.verify|verify} messages.
+         * Encodes the specified ResponseBeginBlock message. Does not implicitly {@link types.ResponseBeginBlock.verify|verify} messages.
          * @param message ResponseBeginBlock message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseBeginBlock, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseBeginBlock, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseBeginBlock message, length delimited. Does not implicitly {@link abci.ResponseBeginBlock.verify|verify} messages.
+         * Encodes the specified ResponseBeginBlock message, length delimited. Does not implicitly {@link types.ResponseBeginBlock.verify|verify} messages.
          * @param message ResponseBeginBlock message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseBeginBlock, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseBeginBlock, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseBeginBlock message from the specified reader or buffer.
@@ -2236,7 +2134,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseBeginBlock;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseBeginBlock;
 
         /**
          * Decodes a ResponseBeginBlock message from the specified reader or buffer, length delimited.
@@ -2245,7 +2143,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseBeginBlock;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseBeginBlock;
 
         /**
          * Verifies a ResponseBeginBlock message.
@@ -2259,7 +2157,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseBeginBlock
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseBeginBlock;
+        public static fromObject(object: { [k: string]: any }): types.ResponseBeginBlock;
 
         /**
          * Creates a plain object from a ResponseBeginBlock message. Also converts values to other types if specified.
@@ -2267,7 +2165,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseBeginBlock, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseBeginBlock, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseBeginBlock to JSON.
@@ -2311,7 +2209,7 @@ export namespace abci {
          * Constructs a new ResponseCheckTx.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseCheckTx);
+        constructor(properties?: types.IResponseCheckTx);
 
         /** ResponseCheckTx code. */
         public code: number;
@@ -2342,23 +2240,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseCheckTx instance
          */
-        public static create(properties?: abci.IResponseCheckTx): abci.ResponseCheckTx;
+        public static create(properties?: types.IResponseCheckTx): types.ResponseCheckTx;
 
         /**
-         * Encodes the specified ResponseCheckTx message. Does not implicitly {@link abci.ResponseCheckTx.verify|verify} messages.
+         * Encodes the specified ResponseCheckTx message. Does not implicitly {@link types.ResponseCheckTx.verify|verify} messages.
          * @param message ResponseCheckTx message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseCheckTx, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseCheckTx, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseCheckTx message, length delimited. Does not implicitly {@link abci.ResponseCheckTx.verify|verify} messages.
+         * Encodes the specified ResponseCheckTx message, length delimited. Does not implicitly {@link types.ResponseCheckTx.verify|verify} messages.
          * @param message ResponseCheckTx message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseCheckTx, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseCheckTx, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseCheckTx message from the specified reader or buffer.
@@ -2368,7 +2266,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseCheckTx;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseCheckTx;
 
         /**
          * Decodes a ResponseCheckTx message from the specified reader or buffer, length delimited.
@@ -2377,7 +2275,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseCheckTx;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseCheckTx;
 
         /**
          * Verifies a ResponseCheckTx message.
@@ -2391,7 +2289,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseCheckTx
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseCheckTx;
+        public static fromObject(object: { [k: string]: any }): types.ResponseCheckTx;
 
         /**
          * Creates a plain object from a ResponseCheckTx message. Also converts values to other types if specified.
@@ -2399,7 +2297,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseCheckTx, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseCheckTx, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseCheckTx to JSON.
@@ -2443,7 +2341,7 @@ export namespace abci {
          * Constructs a new ResponseDeliverTx.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseDeliverTx);
+        constructor(properties?: types.IResponseDeliverTx);
 
         /** ResponseDeliverTx code. */
         public code: number;
@@ -2474,23 +2372,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseDeliverTx instance
          */
-        public static create(properties?: abci.IResponseDeliverTx): abci.ResponseDeliverTx;
+        public static create(properties?: types.IResponseDeliverTx): types.ResponseDeliverTx;
 
         /**
-         * Encodes the specified ResponseDeliverTx message. Does not implicitly {@link abci.ResponseDeliverTx.verify|verify} messages.
+         * Encodes the specified ResponseDeliverTx message. Does not implicitly {@link types.ResponseDeliverTx.verify|verify} messages.
          * @param message ResponseDeliverTx message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseDeliverTx, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseDeliverTx, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseDeliverTx message, length delimited. Does not implicitly {@link abci.ResponseDeliverTx.verify|verify} messages.
+         * Encodes the specified ResponseDeliverTx message, length delimited. Does not implicitly {@link types.ResponseDeliverTx.verify|verify} messages.
          * @param message ResponseDeliverTx message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseDeliverTx, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseDeliverTx, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseDeliverTx message from the specified reader or buffer.
@@ -2500,7 +2398,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseDeliverTx;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseDeliverTx;
 
         /**
          * Decodes a ResponseDeliverTx message from the specified reader or buffer, length delimited.
@@ -2509,7 +2407,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseDeliverTx;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseDeliverTx;
 
         /**
          * Verifies a ResponseDeliverTx message.
@@ -2523,7 +2421,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseDeliverTx
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseDeliverTx;
+        public static fromObject(object: { [k: string]: any }): types.ResponseDeliverTx;
 
         /**
          * Creates a plain object from a ResponseDeliverTx message. Also converts values to other types if specified.
@@ -2531,7 +2429,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseDeliverTx, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseDeliverTx, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseDeliverTx to JSON.
@@ -2544,10 +2442,10 @@ export namespace abci {
     interface IResponseEndBlock {
 
         /** ResponseEndBlock validatorUpdates */
-        validatorUpdates?: (abci.IValidatorUpdate[]|null);
+        validatorUpdates?: (types.IValidatorUpdate[]|null);
 
         /** ResponseEndBlock consensusParamUpdates */
-        consensusParamUpdates?: (abci.IConsensusParams|null);
+        consensusParamUpdates?: (types.IConsensusParams|null);
 
         /** ResponseEndBlock tags */
         tags?: (common.IKVPair[]|null);
@@ -2560,13 +2458,13 @@ export namespace abci {
          * Constructs a new ResponseEndBlock.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseEndBlock);
+        constructor(properties?: types.IResponseEndBlock);
 
         /** ResponseEndBlock validatorUpdates. */
-        public validatorUpdates: abci.IValidatorUpdate[];
+        public validatorUpdates: types.IValidatorUpdate[];
 
         /** ResponseEndBlock consensusParamUpdates. */
-        public consensusParamUpdates?: (abci.IConsensusParams|null);
+        public consensusParamUpdates?: (types.IConsensusParams|null);
 
         /** ResponseEndBlock tags. */
         public tags: common.IKVPair[];
@@ -2576,23 +2474,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseEndBlock instance
          */
-        public static create(properties?: abci.IResponseEndBlock): abci.ResponseEndBlock;
+        public static create(properties?: types.IResponseEndBlock): types.ResponseEndBlock;
 
         /**
-         * Encodes the specified ResponseEndBlock message. Does not implicitly {@link abci.ResponseEndBlock.verify|verify} messages.
+         * Encodes the specified ResponseEndBlock message. Does not implicitly {@link types.ResponseEndBlock.verify|verify} messages.
          * @param message ResponseEndBlock message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseEndBlock, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseEndBlock, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseEndBlock message, length delimited. Does not implicitly {@link abci.ResponseEndBlock.verify|verify} messages.
+         * Encodes the specified ResponseEndBlock message, length delimited. Does not implicitly {@link types.ResponseEndBlock.verify|verify} messages.
          * @param message ResponseEndBlock message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseEndBlock, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseEndBlock, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseEndBlock message from the specified reader or buffer.
@@ -2602,7 +2500,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseEndBlock;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseEndBlock;
 
         /**
          * Decodes a ResponseEndBlock message from the specified reader or buffer, length delimited.
@@ -2611,7 +2509,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseEndBlock;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseEndBlock;
 
         /**
          * Verifies a ResponseEndBlock message.
@@ -2625,7 +2523,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseEndBlock
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseEndBlock;
+        public static fromObject(object: { [k: string]: any }): types.ResponseEndBlock;
 
         /**
          * Creates a plain object from a ResponseEndBlock message. Also converts values to other types if specified.
@@ -2633,7 +2531,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseEndBlock, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseEndBlock, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseEndBlock to JSON.
@@ -2656,7 +2554,7 @@ export namespace abci {
          * Constructs a new ResponseCommit.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IResponseCommit);
+        constructor(properties?: types.IResponseCommit);
 
         /** ResponseCommit data. */
         public data: Uint8Array;
@@ -2666,23 +2564,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ResponseCommit instance
          */
-        public static create(properties?: abci.IResponseCommit): abci.ResponseCommit;
+        public static create(properties?: types.IResponseCommit): types.ResponseCommit;
 
         /**
-         * Encodes the specified ResponseCommit message. Does not implicitly {@link abci.ResponseCommit.verify|verify} messages.
+         * Encodes the specified ResponseCommit message. Does not implicitly {@link types.ResponseCommit.verify|verify} messages.
          * @param message ResponseCommit message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IResponseCommit, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IResponseCommit, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ResponseCommit message, length delimited. Does not implicitly {@link abci.ResponseCommit.verify|verify} messages.
+         * Encodes the specified ResponseCommit message, length delimited. Does not implicitly {@link types.ResponseCommit.verify|verify} messages.
          * @param message ResponseCommit message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IResponseCommit, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IResponseCommit, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ResponseCommit message from the specified reader or buffer.
@@ -2692,7 +2590,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseCommit;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ResponseCommit;
 
         /**
          * Decodes a ResponseCommit message from the specified reader or buffer, length delimited.
@@ -2701,7 +2599,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseCommit;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ResponseCommit;
 
         /**
          * Verifies a ResponseCommit message.
@@ -2715,7 +2613,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ResponseCommit
          */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseCommit;
+        public static fromObject(object: { [k: string]: any }): types.ResponseCommit;
 
         /**
          * Creates a plain object from a ResponseCommit message. Also converts values to other types if specified.
@@ -2723,100 +2621,10 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ResponseCommit, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ResponseCommit, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ResponseCommit to JSON.
-         * @returns JSON object
-         */
-        public toJSON(): { [k: string]: any };
-    }
-
-    /** Properties of a ResponseCheckBridge. */
-    interface IResponseCheckBridge {
-
-        /** ResponseCheckBridge status */
-        status?: (number|null);
-    }
-
-    /** Represents a ResponseCheckBridge. */
-    class ResponseCheckBridge implements IResponseCheckBridge {
-
-        /**
-         * Constructs a new ResponseCheckBridge.
-         * @param [properties] Properties to set
-         */
-        constructor(properties?: abci.IResponseCheckBridge);
-
-        /** ResponseCheckBridge status. */
-        public status: number;
-
-        /**
-         * Creates a new ResponseCheckBridge instance using the specified properties.
-         * @param [properties] Properties to set
-         * @returns ResponseCheckBridge instance
-         */
-        public static create(properties?: abci.IResponseCheckBridge): abci.ResponseCheckBridge;
-
-        /**
-         * Encodes the specified ResponseCheckBridge message. Does not implicitly {@link abci.ResponseCheckBridge.verify|verify} messages.
-         * @param message ResponseCheckBridge message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encode(message: abci.IResponseCheckBridge, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Encodes the specified ResponseCheckBridge message, length delimited. Does not implicitly {@link abci.ResponseCheckBridge.verify|verify} messages.
-         * @param message ResponseCheckBridge message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encodeDelimited(message: abci.IResponseCheckBridge, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Decodes a ResponseCheckBridge message from the specified reader or buffer.
-         * @param reader Reader or buffer to decode from
-         * @param [length] Message length if known beforehand
-         * @returns ResponseCheckBridge
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ResponseCheckBridge;
-
-        /**
-         * Decodes a ResponseCheckBridge message from the specified reader or buffer, length delimited.
-         * @param reader Reader or buffer to decode from
-         * @returns ResponseCheckBridge
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ResponseCheckBridge;
-
-        /**
-         * Verifies a ResponseCheckBridge message.
-         * @param message Plain object to verify
-         * @returns `null` if valid, otherwise the reason why it is not
-         */
-        public static verify(message: { [k: string]: any }): (string|null);
-
-        /**
-         * Creates a ResponseCheckBridge message from a plain object. Also converts values to their respective internal types.
-         * @param object Plain object
-         * @returns ResponseCheckBridge
-         */
-        public static fromObject(object: { [k: string]: any }): abci.ResponseCheckBridge;
-
-        /**
-         * Creates a plain object from a ResponseCheckBridge message. Also converts values to other types if specified.
-         * @param message ResponseCheckBridge
-         * @param [options] Conversion options
-         * @returns Plain object
-         */
-        public static toObject(message: abci.ResponseCheckBridge, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-        /**
-         * Converts this ResponseCheckBridge to JSON.
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
@@ -2826,13 +2634,13 @@ export namespace abci {
     interface IConsensusParams {
 
         /** ConsensusParams blockSize */
-        blockSize?: (abci.IBlockSizeParams|null);
+        blockSize?: (types.IBlockSizeParams|null);
 
         /** ConsensusParams evidence */
-        evidence?: (abci.IEvidenceParams|null);
+        evidence?: (types.IEvidenceParams|null);
 
         /** ConsensusParams validator */
-        validator?: (abci.IValidatorParams|null);
+        validator?: (types.IValidatorParams|null);
     }
 
     /** Represents a ConsensusParams. */
@@ -2842,39 +2650,39 @@ export namespace abci {
          * Constructs a new ConsensusParams.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IConsensusParams);
+        constructor(properties?: types.IConsensusParams);
 
         /** ConsensusParams blockSize. */
-        public blockSize?: (abci.IBlockSizeParams|null);
+        public blockSize?: (types.IBlockSizeParams|null);
 
         /** ConsensusParams evidence. */
-        public evidence?: (abci.IEvidenceParams|null);
+        public evidence?: (types.IEvidenceParams|null);
 
         /** ConsensusParams validator. */
-        public validator?: (abci.IValidatorParams|null);
+        public validator?: (types.IValidatorParams|null);
 
         /**
          * Creates a new ConsensusParams instance using the specified properties.
          * @param [properties] Properties to set
          * @returns ConsensusParams instance
          */
-        public static create(properties?: abci.IConsensusParams): abci.ConsensusParams;
+        public static create(properties?: types.IConsensusParams): types.ConsensusParams;
 
         /**
-         * Encodes the specified ConsensusParams message. Does not implicitly {@link abci.ConsensusParams.verify|verify} messages.
+         * Encodes the specified ConsensusParams message. Does not implicitly {@link types.ConsensusParams.verify|verify} messages.
          * @param message ConsensusParams message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IConsensusParams, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IConsensusParams, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ConsensusParams message, length delimited. Does not implicitly {@link abci.ConsensusParams.verify|verify} messages.
+         * Encodes the specified ConsensusParams message, length delimited. Does not implicitly {@link types.ConsensusParams.verify|verify} messages.
          * @param message ConsensusParams message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IConsensusParams, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IConsensusParams, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ConsensusParams message from the specified reader or buffer.
@@ -2884,7 +2692,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ConsensusParams;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ConsensusParams;
 
         /**
          * Decodes a ConsensusParams message from the specified reader or buffer, length delimited.
@@ -2893,7 +2701,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ConsensusParams;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ConsensusParams;
 
         /**
          * Verifies a ConsensusParams message.
@@ -2907,7 +2715,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ConsensusParams
          */
-        public static fromObject(object: { [k: string]: any }): abci.ConsensusParams;
+        public static fromObject(object: { [k: string]: any }): types.ConsensusParams;
 
         /**
          * Creates a plain object from a ConsensusParams message. Also converts values to other types if specified.
@@ -2915,7 +2723,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ConsensusParams, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ConsensusParams, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ConsensusParams to JSON.
@@ -2941,7 +2749,7 @@ export namespace abci {
          * Constructs a new BlockSizeParams.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IBlockSizeParams);
+        constructor(properties?: types.IBlockSizeParams);
 
         /** BlockSizeParams maxBytes. */
         public maxBytes: (number|Long);
@@ -2954,23 +2762,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns BlockSizeParams instance
          */
-        public static create(properties?: abci.IBlockSizeParams): abci.BlockSizeParams;
+        public static create(properties?: types.IBlockSizeParams): types.BlockSizeParams;
 
         /**
-         * Encodes the specified BlockSizeParams message. Does not implicitly {@link abci.BlockSizeParams.verify|verify} messages.
+         * Encodes the specified BlockSizeParams message. Does not implicitly {@link types.BlockSizeParams.verify|verify} messages.
          * @param message BlockSizeParams message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IBlockSizeParams, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IBlockSizeParams, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified BlockSizeParams message, length delimited. Does not implicitly {@link abci.BlockSizeParams.verify|verify} messages.
+         * Encodes the specified BlockSizeParams message, length delimited. Does not implicitly {@link types.BlockSizeParams.verify|verify} messages.
          * @param message BlockSizeParams message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IBlockSizeParams, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IBlockSizeParams, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a BlockSizeParams message from the specified reader or buffer.
@@ -2980,7 +2788,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.BlockSizeParams;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.BlockSizeParams;
 
         /**
          * Decodes a BlockSizeParams message from the specified reader or buffer, length delimited.
@@ -2989,7 +2797,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.BlockSizeParams;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.BlockSizeParams;
 
         /**
          * Verifies a BlockSizeParams message.
@@ -3003,7 +2811,7 @@ export namespace abci {
          * @param object Plain object
          * @returns BlockSizeParams
          */
-        public static fromObject(object: { [k: string]: any }): abci.BlockSizeParams;
+        public static fromObject(object: { [k: string]: any }): types.BlockSizeParams;
 
         /**
          * Creates a plain object from a BlockSizeParams message. Also converts values to other types if specified.
@@ -3011,7 +2819,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.BlockSizeParams, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.BlockSizeParams, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this BlockSizeParams to JSON.
@@ -3034,7 +2842,7 @@ export namespace abci {
          * Constructs a new EvidenceParams.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IEvidenceParams);
+        constructor(properties?: types.IEvidenceParams);
 
         /** EvidenceParams maxAge. */
         public maxAge: (number|Long);
@@ -3044,23 +2852,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns EvidenceParams instance
          */
-        public static create(properties?: abci.IEvidenceParams): abci.EvidenceParams;
+        public static create(properties?: types.IEvidenceParams): types.EvidenceParams;
 
         /**
-         * Encodes the specified EvidenceParams message. Does not implicitly {@link abci.EvidenceParams.verify|verify} messages.
+         * Encodes the specified EvidenceParams message. Does not implicitly {@link types.EvidenceParams.verify|verify} messages.
          * @param message EvidenceParams message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IEvidenceParams, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IEvidenceParams, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified EvidenceParams message, length delimited. Does not implicitly {@link abci.EvidenceParams.verify|verify} messages.
+         * Encodes the specified EvidenceParams message, length delimited. Does not implicitly {@link types.EvidenceParams.verify|verify} messages.
          * @param message EvidenceParams message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IEvidenceParams, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IEvidenceParams, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes an EvidenceParams message from the specified reader or buffer.
@@ -3070,7 +2878,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.EvidenceParams;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.EvidenceParams;
 
         /**
          * Decodes an EvidenceParams message from the specified reader or buffer, length delimited.
@@ -3079,7 +2887,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.EvidenceParams;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.EvidenceParams;
 
         /**
          * Verifies an EvidenceParams message.
@@ -3093,7 +2901,7 @@ export namespace abci {
          * @param object Plain object
          * @returns EvidenceParams
          */
-        public static fromObject(object: { [k: string]: any }): abci.EvidenceParams;
+        public static fromObject(object: { [k: string]: any }): types.EvidenceParams;
 
         /**
          * Creates a plain object from an EvidenceParams message. Also converts values to other types if specified.
@@ -3101,7 +2909,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.EvidenceParams, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.EvidenceParams, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this EvidenceParams to JSON.
@@ -3124,7 +2932,7 @@ export namespace abci {
          * Constructs a new ValidatorParams.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IValidatorParams);
+        constructor(properties?: types.IValidatorParams);
 
         /** ValidatorParams pubKeyTypes. */
         public pubKeyTypes: string[];
@@ -3134,23 +2942,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ValidatorParams instance
          */
-        public static create(properties?: abci.IValidatorParams): abci.ValidatorParams;
+        public static create(properties?: types.IValidatorParams): types.ValidatorParams;
 
         /**
-         * Encodes the specified ValidatorParams message. Does not implicitly {@link abci.ValidatorParams.verify|verify} messages.
+         * Encodes the specified ValidatorParams message. Does not implicitly {@link types.ValidatorParams.verify|verify} messages.
          * @param message ValidatorParams message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IValidatorParams, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IValidatorParams, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ValidatorParams message, length delimited. Does not implicitly {@link abci.ValidatorParams.verify|verify} messages.
+         * Encodes the specified ValidatorParams message, length delimited. Does not implicitly {@link types.ValidatorParams.verify|verify} messages.
          * @param message ValidatorParams message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IValidatorParams, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IValidatorParams, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ValidatorParams message from the specified reader or buffer.
@@ -3160,7 +2968,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ValidatorParams;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ValidatorParams;
 
         /**
          * Decodes a ValidatorParams message from the specified reader or buffer, length delimited.
@@ -3169,7 +2977,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ValidatorParams;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ValidatorParams;
 
         /**
          * Verifies a ValidatorParams message.
@@ -3183,7 +2991,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ValidatorParams
          */
-        public static fromObject(object: { [k: string]: any }): abci.ValidatorParams;
+        public static fromObject(object: { [k: string]: any }): types.ValidatorParams;
 
         /**
          * Creates a plain object from a ValidatorParams message. Also converts values to other types if specified.
@@ -3191,7 +2999,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ValidatorParams, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ValidatorParams, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ValidatorParams to JSON.
@@ -3207,7 +3015,7 @@ export namespace abci {
         round?: (number|null);
 
         /** LastCommitInfo votes */
-        votes?: (abci.IVoteInfo[]|null);
+        votes?: (types.IVoteInfo[]|null);
     }
 
     /** Represents a LastCommitInfo. */
@@ -3217,36 +3025,36 @@ export namespace abci {
          * Constructs a new LastCommitInfo.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.ILastCommitInfo);
+        constructor(properties?: types.ILastCommitInfo);
 
         /** LastCommitInfo round. */
         public round: number;
 
         /** LastCommitInfo votes. */
-        public votes: abci.IVoteInfo[];
+        public votes: types.IVoteInfo[];
 
         /**
          * Creates a new LastCommitInfo instance using the specified properties.
          * @param [properties] Properties to set
          * @returns LastCommitInfo instance
          */
-        public static create(properties?: abci.ILastCommitInfo): abci.LastCommitInfo;
+        public static create(properties?: types.ILastCommitInfo): types.LastCommitInfo;
 
         /**
-         * Encodes the specified LastCommitInfo message. Does not implicitly {@link abci.LastCommitInfo.verify|verify} messages.
+         * Encodes the specified LastCommitInfo message. Does not implicitly {@link types.LastCommitInfo.verify|verify} messages.
          * @param message LastCommitInfo message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.ILastCommitInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.ILastCommitInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified LastCommitInfo message, length delimited. Does not implicitly {@link abci.LastCommitInfo.verify|verify} messages.
+         * Encodes the specified LastCommitInfo message, length delimited. Does not implicitly {@link types.LastCommitInfo.verify|verify} messages.
          * @param message LastCommitInfo message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.ILastCommitInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.ILastCommitInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a LastCommitInfo message from the specified reader or buffer.
@@ -3256,7 +3064,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.LastCommitInfo;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.LastCommitInfo;
 
         /**
          * Decodes a LastCommitInfo message from the specified reader or buffer, length delimited.
@@ -3265,7 +3073,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.LastCommitInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.LastCommitInfo;
 
         /**
          * Verifies a LastCommitInfo message.
@@ -3279,7 +3087,7 @@ export namespace abci {
          * @param object Plain object
          * @returns LastCommitInfo
          */
-        public static fromObject(object: { [k: string]: any }): abci.LastCommitInfo;
+        public static fromObject(object: { [k: string]: any }): types.LastCommitInfo;
 
         /**
          * Creates a plain object from a LastCommitInfo message. Also converts values to other types if specified.
@@ -3287,7 +3095,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.LastCommitInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.LastCommitInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this LastCommitInfo to JSON.
@@ -3300,7 +3108,7 @@ export namespace abci {
     interface IHeader {
 
         /** Header version */
-        version?: (abci.IVersion|null);
+        version?: (types.IVersion|null);
 
         /** Header chainId */
         chainId?: (string|null);
@@ -3318,7 +3126,7 @@ export namespace abci {
         totalTxs?: (number|Long|null);
 
         /** Header lastBlockId */
-        lastBlockId?: (abci.IBlockID|null);
+        lastBlockId?: (types.IBlockID|null);
 
         /** Header lastCommitHash */
         lastCommitHash?: (Uint8Array|null);
@@ -3355,10 +3163,10 @@ export namespace abci {
          * Constructs a new Header.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IHeader);
+        constructor(properties?: types.IHeader);
 
         /** Header version. */
-        public version?: (abci.IVersion|null);
+        public version?: (types.IVersion|null);
 
         /** Header chainId. */
         public chainId: string;
@@ -3376,7 +3184,7 @@ export namespace abci {
         public totalTxs: (number|Long);
 
         /** Header lastBlockId. */
-        public lastBlockId?: (abci.IBlockID|null);
+        public lastBlockId?: (types.IBlockID|null);
 
         /** Header lastCommitHash. */
         public lastCommitHash: Uint8Array;
@@ -3410,23 +3218,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns Header instance
          */
-        public static create(properties?: abci.IHeader): abci.Header;
+        public static create(properties?: types.IHeader): types.Header;
 
         /**
-         * Encodes the specified Header message. Does not implicitly {@link abci.Header.verify|verify} messages.
+         * Encodes the specified Header message. Does not implicitly {@link types.Header.verify|verify} messages.
          * @param message Header message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IHeader, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IHeader, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified Header message, length delimited. Does not implicitly {@link abci.Header.verify|verify} messages.
+         * Encodes the specified Header message, length delimited. Does not implicitly {@link types.Header.verify|verify} messages.
          * @param message Header message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IHeader, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IHeader, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a Header message from the specified reader or buffer.
@@ -3436,7 +3244,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.Header;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.Header;
 
         /**
          * Decodes a Header message from the specified reader or buffer, length delimited.
@@ -3445,7 +3253,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.Header;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.Header;
 
         /**
          * Verifies a Header message.
@@ -3459,7 +3267,7 @@ export namespace abci {
          * @param object Plain object
          * @returns Header
          */
-        public static fromObject(object: { [k: string]: any }): abci.Header;
+        public static fromObject(object: { [k: string]: any }): types.Header;
 
         /**
          * Creates a plain object from a Header message. Also converts values to other types if specified.
@@ -3467,7 +3275,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.Header, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.Header, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this Header to JSON.
@@ -3493,7 +3301,7 @@ export namespace abci {
          * Constructs a new Version.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IVersion);
+        constructor(properties?: types.IVersion);
 
         /** Version Block. */
         public Block: (number|Long);
@@ -3506,23 +3314,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns Version instance
          */
-        public static create(properties?: abci.IVersion): abci.Version;
+        public static create(properties?: types.IVersion): types.Version;
 
         /**
-         * Encodes the specified Version message. Does not implicitly {@link abci.Version.verify|verify} messages.
+         * Encodes the specified Version message. Does not implicitly {@link types.Version.verify|verify} messages.
          * @param message Version message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IVersion, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IVersion, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified Version message, length delimited. Does not implicitly {@link abci.Version.verify|verify} messages.
+         * Encodes the specified Version message, length delimited. Does not implicitly {@link types.Version.verify|verify} messages.
          * @param message Version message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IVersion, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IVersion, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a Version message from the specified reader or buffer.
@@ -3532,7 +3340,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.Version;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.Version;
 
         /**
          * Decodes a Version message from the specified reader or buffer, length delimited.
@@ -3541,7 +3349,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.Version;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.Version;
 
         /**
          * Verifies a Version message.
@@ -3555,7 +3363,7 @@ export namespace abci {
          * @param object Plain object
          * @returns Version
          */
-        public static fromObject(object: { [k: string]: any }): abci.Version;
+        public static fromObject(object: { [k: string]: any }): types.Version;
 
         /**
          * Creates a plain object from a Version message. Also converts values to other types if specified.
@@ -3563,7 +3371,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.Version, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.Version, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this Version to JSON.
@@ -3579,7 +3387,7 @@ export namespace abci {
         hash?: (Uint8Array|null);
 
         /** BlockID partsHeader */
-        partsHeader?: (abci.IPartSetHeader|null);
+        partsHeader?: (types.IPartSetHeader|null);
     }
 
     /** Represents a BlockID. */
@@ -3589,36 +3397,36 @@ export namespace abci {
          * Constructs a new BlockID.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IBlockID);
+        constructor(properties?: types.IBlockID);
 
         /** BlockID hash. */
         public hash: Uint8Array;
 
         /** BlockID partsHeader. */
-        public partsHeader?: (abci.IPartSetHeader|null);
+        public partsHeader?: (types.IPartSetHeader|null);
 
         /**
          * Creates a new BlockID instance using the specified properties.
          * @param [properties] Properties to set
          * @returns BlockID instance
          */
-        public static create(properties?: abci.IBlockID): abci.BlockID;
+        public static create(properties?: types.IBlockID): types.BlockID;
 
         /**
-         * Encodes the specified BlockID message. Does not implicitly {@link abci.BlockID.verify|verify} messages.
+         * Encodes the specified BlockID message. Does not implicitly {@link types.BlockID.verify|verify} messages.
          * @param message BlockID message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IBlockID, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IBlockID, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified BlockID message, length delimited. Does not implicitly {@link abci.BlockID.verify|verify} messages.
+         * Encodes the specified BlockID message, length delimited. Does not implicitly {@link types.BlockID.verify|verify} messages.
          * @param message BlockID message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IBlockID, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IBlockID, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a BlockID message from the specified reader or buffer.
@@ -3628,7 +3436,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.BlockID;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.BlockID;
 
         /**
          * Decodes a BlockID message from the specified reader or buffer, length delimited.
@@ -3637,7 +3445,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.BlockID;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.BlockID;
 
         /**
          * Verifies a BlockID message.
@@ -3651,7 +3459,7 @@ export namespace abci {
          * @param object Plain object
          * @returns BlockID
          */
-        public static fromObject(object: { [k: string]: any }): abci.BlockID;
+        public static fromObject(object: { [k: string]: any }): types.BlockID;
 
         /**
          * Creates a plain object from a BlockID message. Also converts values to other types if specified.
@@ -3659,7 +3467,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.BlockID, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.BlockID, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this BlockID to JSON.
@@ -3685,7 +3493,7 @@ export namespace abci {
          * Constructs a new PartSetHeader.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IPartSetHeader);
+        constructor(properties?: types.IPartSetHeader);
 
         /** PartSetHeader total. */
         public total: number;
@@ -3698,23 +3506,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns PartSetHeader instance
          */
-        public static create(properties?: abci.IPartSetHeader): abci.PartSetHeader;
+        public static create(properties?: types.IPartSetHeader): types.PartSetHeader;
 
         /**
-         * Encodes the specified PartSetHeader message. Does not implicitly {@link abci.PartSetHeader.verify|verify} messages.
+         * Encodes the specified PartSetHeader message. Does not implicitly {@link types.PartSetHeader.verify|verify} messages.
          * @param message PartSetHeader message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IPartSetHeader, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IPartSetHeader, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified PartSetHeader message, length delimited. Does not implicitly {@link abci.PartSetHeader.verify|verify} messages.
+         * Encodes the specified PartSetHeader message, length delimited. Does not implicitly {@link types.PartSetHeader.verify|verify} messages.
          * @param message PartSetHeader message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IPartSetHeader, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IPartSetHeader, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a PartSetHeader message from the specified reader or buffer.
@@ -3724,7 +3532,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.PartSetHeader;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.PartSetHeader;
 
         /**
          * Decodes a PartSetHeader message from the specified reader or buffer, length delimited.
@@ -3733,7 +3541,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.PartSetHeader;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.PartSetHeader;
 
         /**
          * Verifies a PartSetHeader message.
@@ -3747,7 +3555,7 @@ export namespace abci {
          * @param object Plain object
          * @returns PartSetHeader
          */
-        public static fromObject(object: { [k: string]: any }): abci.PartSetHeader;
+        public static fromObject(object: { [k: string]: any }): types.PartSetHeader;
 
         /**
          * Creates a plain object from a PartSetHeader message. Also converts values to other types if specified.
@@ -3755,7 +3563,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.PartSetHeader, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.PartSetHeader, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this PartSetHeader to JSON.
@@ -3781,7 +3589,7 @@ export namespace abci {
          * Constructs a new Validator.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IValidator);
+        constructor(properties?: types.IValidator);
 
         /** Validator address. */
         public address: Uint8Array;
@@ -3794,23 +3602,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns Validator instance
          */
-        public static create(properties?: abci.IValidator): abci.Validator;
+        public static create(properties?: types.IValidator): types.Validator;
 
         /**
-         * Encodes the specified Validator message. Does not implicitly {@link abci.Validator.verify|verify} messages.
+         * Encodes the specified Validator message. Does not implicitly {@link types.Validator.verify|verify} messages.
          * @param message Validator message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IValidator, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IValidator, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified Validator message, length delimited. Does not implicitly {@link abci.Validator.verify|verify} messages.
+         * Encodes the specified Validator message, length delimited. Does not implicitly {@link types.Validator.verify|verify} messages.
          * @param message Validator message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IValidator, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IValidator, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a Validator message from the specified reader or buffer.
@@ -3820,7 +3628,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.Validator;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.Validator;
 
         /**
          * Decodes a Validator message from the specified reader or buffer, length delimited.
@@ -3829,7 +3637,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.Validator;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.Validator;
 
         /**
          * Verifies a Validator message.
@@ -3843,7 +3651,7 @@ export namespace abci {
          * @param object Plain object
          * @returns Validator
          */
-        public static fromObject(object: { [k: string]: any }): abci.Validator;
+        public static fromObject(object: { [k: string]: any }): types.Validator;
 
         /**
          * Creates a plain object from a Validator message. Also converts values to other types if specified.
@@ -3851,7 +3659,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.Validator, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.Validator, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this Validator to JSON.
@@ -3864,7 +3672,7 @@ export namespace abci {
     interface IValidatorUpdate {
 
         /** ValidatorUpdate pubKey */
-        pubKey?: (abci.IPubKey|null);
+        pubKey?: (types.IPubKey|null);
 
         /** ValidatorUpdate power */
         power?: (number|Long|null);
@@ -3877,10 +3685,10 @@ export namespace abci {
          * Constructs a new ValidatorUpdate.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IValidatorUpdate);
+        constructor(properties?: types.IValidatorUpdate);
 
         /** ValidatorUpdate pubKey. */
-        public pubKey?: (abci.IPubKey|null);
+        public pubKey?: (types.IPubKey|null);
 
         /** ValidatorUpdate power. */
         public power: (number|Long);
@@ -3890,23 +3698,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns ValidatorUpdate instance
          */
-        public static create(properties?: abci.IValidatorUpdate): abci.ValidatorUpdate;
+        public static create(properties?: types.IValidatorUpdate): types.ValidatorUpdate;
 
         /**
-         * Encodes the specified ValidatorUpdate message. Does not implicitly {@link abci.ValidatorUpdate.verify|verify} messages.
+         * Encodes the specified ValidatorUpdate message. Does not implicitly {@link types.ValidatorUpdate.verify|verify} messages.
          * @param message ValidatorUpdate message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IValidatorUpdate, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IValidatorUpdate, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified ValidatorUpdate message, length delimited. Does not implicitly {@link abci.ValidatorUpdate.verify|verify} messages.
+         * Encodes the specified ValidatorUpdate message, length delimited. Does not implicitly {@link types.ValidatorUpdate.verify|verify} messages.
          * @param message ValidatorUpdate message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IValidatorUpdate, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IValidatorUpdate, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a ValidatorUpdate message from the specified reader or buffer.
@@ -3916,7 +3724,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.ValidatorUpdate;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.ValidatorUpdate;
 
         /**
          * Decodes a ValidatorUpdate message from the specified reader or buffer, length delimited.
@@ -3925,7 +3733,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.ValidatorUpdate;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.ValidatorUpdate;
 
         /**
          * Verifies a ValidatorUpdate message.
@@ -3939,7 +3747,7 @@ export namespace abci {
          * @param object Plain object
          * @returns ValidatorUpdate
          */
-        public static fromObject(object: { [k: string]: any }): abci.ValidatorUpdate;
+        public static fromObject(object: { [k: string]: any }): types.ValidatorUpdate;
 
         /**
          * Creates a plain object from a ValidatorUpdate message. Also converts values to other types if specified.
@@ -3947,7 +3755,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.ValidatorUpdate, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.ValidatorUpdate, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this ValidatorUpdate to JSON.
@@ -3960,7 +3768,7 @@ export namespace abci {
     interface IVoteInfo {
 
         /** VoteInfo validator */
-        validator?: (abci.IValidator|null);
+        validator?: (types.IValidator|null);
 
         /** VoteInfo signedLastBlock */
         signedLastBlock?: (boolean|null);
@@ -3973,10 +3781,10 @@ export namespace abci {
          * Constructs a new VoteInfo.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IVoteInfo);
+        constructor(properties?: types.IVoteInfo);
 
         /** VoteInfo validator. */
-        public validator?: (abci.IValidator|null);
+        public validator?: (types.IValidator|null);
 
         /** VoteInfo signedLastBlock. */
         public signedLastBlock: boolean;
@@ -3986,23 +3794,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns VoteInfo instance
          */
-        public static create(properties?: abci.IVoteInfo): abci.VoteInfo;
+        public static create(properties?: types.IVoteInfo): types.VoteInfo;
 
         /**
-         * Encodes the specified VoteInfo message. Does not implicitly {@link abci.VoteInfo.verify|verify} messages.
+         * Encodes the specified VoteInfo message. Does not implicitly {@link types.VoteInfo.verify|verify} messages.
          * @param message VoteInfo message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IVoteInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IVoteInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified VoteInfo message, length delimited. Does not implicitly {@link abci.VoteInfo.verify|verify} messages.
+         * Encodes the specified VoteInfo message, length delimited. Does not implicitly {@link types.VoteInfo.verify|verify} messages.
          * @param message VoteInfo message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IVoteInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IVoteInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a VoteInfo message from the specified reader or buffer.
@@ -4012,7 +3820,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.VoteInfo;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.VoteInfo;
 
         /**
          * Decodes a VoteInfo message from the specified reader or buffer, length delimited.
@@ -4021,7 +3829,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.VoteInfo;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.VoteInfo;
 
         /**
          * Verifies a VoteInfo message.
@@ -4035,7 +3843,7 @@ export namespace abci {
          * @param object Plain object
          * @returns VoteInfo
          */
-        public static fromObject(object: { [k: string]: any }): abci.VoteInfo;
+        public static fromObject(object: { [k: string]: any }): types.VoteInfo;
 
         /**
          * Creates a plain object from a VoteInfo message. Also converts values to other types if specified.
@@ -4043,7 +3851,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.VoteInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.VoteInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this VoteInfo to JSON.
@@ -4069,7 +3877,7 @@ export namespace abci {
          * Constructs a new PubKey.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IPubKey);
+        constructor(properties?: types.IPubKey);
 
         /** PubKey type. */
         public type: string;
@@ -4082,23 +3890,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns PubKey instance
          */
-        public static create(properties?: abci.IPubKey): abci.PubKey;
+        public static create(properties?: types.IPubKey): types.PubKey;
 
         /**
-         * Encodes the specified PubKey message. Does not implicitly {@link abci.PubKey.verify|verify} messages.
+         * Encodes the specified PubKey message. Does not implicitly {@link types.PubKey.verify|verify} messages.
          * @param message PubKey message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IPubKey, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IPubKey, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified PubKey message, length delimited. Does not implicitly {@link abci.PubKey.verify|verify} messages.
+         * Encodes the specified PubKey message, length delimited. Does not implicitly {@link types.PubKey.verify|verify} messages.
          * @param message PubKey message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IPubKey, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IPubKey, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a PubKey message from the specified reader or buffer.
@@ -4108,7 +3916,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.PubKey;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.PubKey;
 
         /**
          * Decodes a PubKey message from the specified reader or buffer, length delimited.
@@ -4117,7 +3925,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.PubKey;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.PubKey;
 
         /**
          * Verifies a PubKey message.
@@ -4131,7 +3939,7 @@ export namespace abci {
          * @param object Plain object
          * @returns PubKey
          */
-        public static fromObject(object: { [k: string]: any }): abci.PubKey;
+        public static fromObject(object: { [k: string]: any }): types.PubKey;
 
         /**
          * Creates a plain object from a PubKey message. Also converts values to other types if specified.
@@ -4139,7 +3947,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.PubKey, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.PubKey, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this PubKey to JSON.
@@ -4155,7 +3963,7 @@ export namespace abci {
         type?: (string|null);
 
         /** Evidence validator */
-        validator?: (abci.IValidator|null);
+        validator?: (types.IValidator|null);
 
         /** Evidence height */
         height?: (number|Long|null);
@@ -4174,13 +3982,13 @@ export namespace abci {
          * Constructs a new Evidence.
          * @param [properties] Properties to set
          */
-        constructor(properties?: abci.IEvidence);
+        constructor(properties?: types.IEvidence);
 
         /** Evidence type. */
         public type: string;
 
         /** Evidence validator. */
-        public validator?: (abci.IValidator|null);
+        public validator?: (types.IValidator|null);
 
         /** Evidence height. */
         public height: (number|Long);
@@ -4196,23 +4004,23 @@ export namespace abci {
          * @param [properties] Properties to set
          * @returns Evidence instance
          */
-        public static create(properties?: abci.IEvidence): abci.Evidence;
+        public static create(properties?: types.IEvidence): types.Evidence;
 
         /**
-         * Encodes the specified Evidence message. Does not implicitly {@link abci.Evidence.verify|verify} messages.
+         * Encodes the specified Evidence message. Does not implicitly {@link types.Evidence.verify|verify} messages.
          * @param message Evidence message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: abci.IEvidence, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: types.IEvidence, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified Evidence message, length delimited. Does not implicitly {@link abci.Evidence.verify|verify} messages.
+         * Encodes the specified Evidence message, length delimited. Does not implicitly {@link types.Evidence.verify|verify} messages.
          * @param message Evidence message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: abci.IEvidence, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: types.IEvidence, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes an Evidence message from the specified reader or buffer.
@@ -4222,7 +4030,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): abci.Evidence;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): types.Evidence;
 
         /**
          * Decodes an Evidence message from the specified reader or buffer, length delimited.
@@ -4231,7 +4039,7 @@ export namespace abci {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): abci.Evidence;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): types.Evidence;
 
         /**
          * Verifies an Evidence message.
@@ -4245,7 +4053,7 @@ export namespace abci {
          * @param object Plain object
          * @returns Evidence
          */
-        public static fromObject(object: { [k: string]: any }): abci.Evidence;
+        public static fromObject(object: { [k: string]: any }): types.Evidence;
 
         /**
          * Creates a plain object from an Evidence message. Also converts values to other types if specified.
@@ -4253,7 +4061,7 @@ export namespace abci {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: abci.Evidence, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: types.Evidence, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this Evidence to JSON.
@@ -4287,255 +4095,234 @@ export namespace abci {
          * @param request RequestEcho message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseEcho
          */
-        public echo(request: abci.IRequestEcho, callback: abci.ABCIApplication.EchoCallback): void;
+        public echo(request: types.IRequestEcho, callback: types.ABCIApplication.EchoCallback): void;
 
         /**
          * Calls Echo.
          * @param request RequestEcho message or plain object
          * @returns Promise
          */
-        public echo(request: abci.IRequestEcho): Promise<abci.ResponseEcho>;
+        public echo(request: types.IRequestEcho): Promise<types.ResponseEcho>;
 
         /**
          * Calls Flush.
          * @param request RequestFlush message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseFlush
          */
-        public flush(request: abci.IRequestFlush, callback: abci.ABCIApplication.FlushCallback): void;
+        public flush(request: types.IRequestFlush, callback: types.ABCIApplication.FlushCallback): void;
 
         /**
          * Calls Flush.
          * @param request RequestFlush message or plain object
          * @returns Promise
          */
-        public flush(request: abci.IRequestFlush): Promise<abci.ResponseFlush>;
+        public flush(request: types.IRequestFlush): Promise<types.ResponseFlush>;
 
         /**
          * Calls Info.
          * @param request RequestInfo message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseInfo
          */
-        public info(request: abci.IRequestInfo, callback: abci.ABCIApplication.InfoCallback): void;
+        public info(request: types.IRequestInfo, callback: types.ABCIApplication.InfoCallback): void;
 
         /**
          * Calls Info.
          * @param request RequestInfo message or plain object
          * @returns Promise
          */
-        public info(request: abci.IRequestInfo): Promise<abci.ResponseInfo>;
+        public info(request: types.IRequestInfo): Promise<types.ResponseInfo>;
 
         /**
          * Calls SetOption.
          * @param request RequestSetOption message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseSetOption
          */
-        public setOption(request: abci.IRequestSetOption, callback: abci.ABCIApplication.SetOptionCallback): void;
+        public setOption(request: types.IRequestSetOption, callback: types.ABCIApplication.SetOptionCallback): void;
 
         /**
          * Calls SetOption.
          * @param request RequestSetOption message or plain object
          * @returns Promise
          */
-        public setOption(request: abci.IRequestSetOption): Promise<abci.ResponseSetOption>;
+        public setOption(request: types.IRequestSetOption): Promise<types.ResponseSetOption>;
 
         /**
          * Calls DeliverTx.
          * @param request RequestDeliverTx message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseDeliverTx
          */
-        public deliverTx(request: abci.IRequestDeliverTx, callback: abci.ABCIApplication.DeliverTxCallback): void;
+        public deliverTx(request: types.IRequestDeliverTx, callback: types.ABCIApplication.DeliverTxCallback): void;
 
         /**
          * Calls DeliverTx.
          * @param request RequestDeliverTx message or plain object
          * @returns Promise
          */
-        public deliverTx(request: abci.IRequestDeliverTx): Promise<abci.ResponseDeliverTx>;
+        public deliverTx(request: types.IRequestDeliverTx): Promise<types.ResponseDeliverTx>;
 
         /**
          * Calls CheckTx.
          * @param request RequestCheckTx message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseCheckTx
          */
-        public checkTx(request: abci.IRequestCheckTx, callback: abci.ABCIApplication.CheckTxCallback): void;
+        public checkTx(request: types.IRequestCheckTx, callback: types.ABCIApplication.CheckTxCallback): void;
 
         /**
          * Calls CheckTx.
          * @param request RequestCheckTx message or plain object
          * @returns Promise
          */
-        public checkTx(request: abci.IRequestCheckTx): Promise<abci.ResponseCheckTx>;
+        public checkTx(request: types.IRequestCheckTx): Promise<types.ResponseCheckTx>;
 
         /**
          * Calls Query.
          * @param request RequestQuery message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseQuery
          */
-        public query(request: abci.IRequestQuery, callback: abci.ABCIApplication.QueryCallback): void;
+        public query(request: types.IRequestQuery, callback: types.ABCIApplication.QueryCallback): void;
 
         /**
          * Calls Query.
          * @param request RequestQuery message or plain object
          * @returns Promise
          */
-        public query(request: abci.IRequestQuery): Promise<abci.ResponseQuery>;
+        public query(request: types.IRequestQuery): Promise<types.ResponseQuery>;
 
         /**
          * Calls Commit.
          * @param request RequestCommit message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseCommit
          */
-        public commit(request: abci.IRequestCommit, callback: abci.ABCIApplication.CommitCallback): void;
+        public commit(request: types.IRequestCommit, callback: types.ABCIApplication.CommitCallback): void;
 
         /**
          * Calls Commit.
          * @param request RequestCommit message or plain object
          * @returns Promise
          */
-        public commit(request: abci.IRequestCommit): Promise<abci.ResponseCommit>;
+        public commit(request: types.IRequestCommit): Promise<types.ResponseCommit>;
 
         /**
          * Calls InitChain.
          * @param request RequestInitChain message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseInitChain
          */
-        public initChain(request: abci.IRequestInitChain, callback: abci.ABCIApplication.InitChainCallback): void;
+        public initChain(request: types.IRequestInitChain, callback: types.ABCIApplication.InitChainCallback): void;
 
         /**
          * Calls InitChain.
          * @param request RequestInitChain message or plain object
          * @returns Promise
          */
-        public initChain(request: abci.IRequestInitChain): Promise<abci.ResponseInitChain>;
+        public initChain(request: types.IRequestInitChain): Promise<types.ResponseInitChain>;
 
         /**
          * Calls BeginBlock.
          * @param request RequestBeginBlock message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseBeginBlock
          */
-        public beginBlock(request: abci.IRequestBeginBlock, callback: abci.ABCIApplication.BeginBlockCallback): void;
+        public beginBlock(request: types.IRequestBeginBlock, callback: types.ABCIApplication.BeginBlockCallback): void;
 
         /**
          * Calls BeginBlock.
          * @param request RequestBeginBlock message or plain object
          * @returns Promise
          */
-        public beginBlock(request: abci.IRequestBeginBlock): Promise<abci.ResponseBeginBlock>;
+        public beginBlock(request: types.IRequestBeginBlock): Promise<types.ResponseBeginBlock>;
 
         /**
          * Calls EndBlock.
          * @param request RequestEndBlock message or plain object
          * @param callback Node-style callback called with the error, if any, and ResponseEndBlock
          */
-        public endBlock(request: abci.IRequestEndBlock, callback: abci.ABCIApplication.EndBlockCallback): void;
+        public endBlock(request: types.IRequestEndBlock, callback: types.ABCIApplication.EndBlockCallback): void;
 
         /**
          * Calls EndBlock.
          * @param request RequestEndBlock message or plain object
          * @returns Promise
          */
-        public endBlock(request: abci.IRequestEndBlock): Promise<abci.ResponseEndBlock>;
-
-        /**
-         * Calls CheckBridge.
-         * @param request RequestCheckBridge message or plain object
-         * @param callback Node-style callback called with the error, if any, and ResponseCheckBridge
-         */
-        public checkBridge(request: abci.IRequestCheckBridge, callback: abci.ABCIApplication.CheckBridgeCallback): void;
-
-        /**
-         * Calls CheckBridge.
-         * @param request RequestCheckBridge message or plain object
-         * @returns Promise
-         */
-        public checkBridge(request: abci.IRequestCheckBridge): Promise<abci.ResponseCheckBridge>;
+        public endBlock(request: types.IRequestEndBlock): Promise<types.ResponseEndBlock>;
     }
 
     namespace ABCIApplication {
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#echo}.
+         * Callback as used by {@link types.ABCIApplication#echo}.
          * @param error Error, if any
          * @param [response] ResponseEcho
          */
-        type EchoCallback = (error: (Error|null), response?: abci.ResponseEcho) => void;
+        type EchoCallback = (error: (Error|null), response?: types.ResponseEcho) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#flush}.
+         * Callback as used by {@link types.ABCIApplication#flush}.
          * @param error Error, if any
          * @param [response] ResponseFlush
          */
-        type FlushCallback = (error: (Error|null), response?: abci.ResponseFlush) => void;
+        type FlushCallback = (error: (Error|null), response?: types.ResponseFlush) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#info}.
+         * Callback as used by {@link types.ABCIApplication#info}.
          * @param error Error, if any
          * @param [response] ResponseInfo
          */
-        type InfoCallback = (error: (Error|null), response?: abci.ResponseInfo) => void;
+        type InfoCallback = (error: (Error|null), response?: types.ResponseInfo) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#setOption}.
+         * Callback as used by {@link types.ABCIApplication#setOption}.
          * @param error Error, if any
          * @param [response] ResponseSetOption
          */
-        type SetOptionCallback = (error: (Error|null), response?: abci.ResponseSetOption) => void;
+        type SetOptionCallback = (error: (Error|null), response?: types.ResponseSetOption) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#deliverTx}.
+         * Callback as used by {@link types.ABCIApplication#deliverTx}.
          * @param error Error, if any
          * @param [response] ResponseDeliverTx
          */
-        type DeliverTxCallback = (error: (Error|null), response?: abci.ResponseDeliverTx) => void;
+        type DeliverTxCallback = (error: (Error|null), response?: types.ResponseDeliverTx) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#checkTx}.
+         * Callback as used by {@link types.ABCIApplication#checkTx}.
          * @param error Error, if any
          * @param [response] ResponseCheckTx
          */
-        type CheckTxCallback = (error: (Error|null), response?: abci.ResponseCheckTx) => void;
+        type CheckTxCallback = (error: (Error|null), response?: types.ResponseCheckTx) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#query}.
+         * Callback as used by {@link types.ABCIApplication#query}.
          * @param error Error, if any
          * @param [response] ResponseQuery
          */
-        type QueryCallback = (error: (Error|null), response?: abci.ResponseQuery) => void;
+        type QueryCallback = (error: (Error|null), response?: types.ResponseQuery) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#commit}.
+         * Callback as used by {@link types.ABCIApplication#commit}.
          * @param error Error, if any
          * @param [response] ResponseCommit
          */
-        type CommitCallback = (error: (Error|null), response?: abci.ResponseCommit) => void;
+        type CommitCallback = (error: (Error|null), response?: types.ResponseCommit) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#initChain}.
+         * Callback as used by {@link types.ABCIApplication#initChain}.
          * @param error Error, if any
          * @param [response] ResponseInitChain
          */
-        type InitChainCallback = (error: (Error|null), response?: abci.ResponseInitChain) => void;
+        type InitChainCallback = (error: (Error|null), response?: types.ResponseInitChain) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#beginBlock}.
+         * Callback as used by {@link types.ABCIApplication#beginBlock}.
          * @param error Error, if any
          * @param [response] ResponseBeginBlock
          */
-        type BeginBlockCallback = (error: (Error|null), response?: abci.ResponseBeginBlock) => void;
+        type BeginBlockCallback = (error: (Error|null), response?: types.ResponseBeginBlock) => void;
 
         /**
-         * Callback as used by {@link abci.ABCIApplication#endBlock}.
+         * Callback as used by {@link types.ABCIApplication#endBlock}.
          * @param error Error, if any
          * @param [response] ResponseEndBlock
          */
-        type EndBlockCallback = (error: (Error|null), response?: abci.ResponseEndBlock) => void;
-
-        /**
-         * Callback as used by {@link abci.ABCIApplication#checkBridge}.
-         * @param error Error, if any
-         * @param [response] ResponseCheckBridge
-         */
-        type CheckBridgeCallback = (error: (Error|null), response?: abci.ResponseCheckBridge) => void;
+        type EndBlockCallback = (error: (Error|null), response?: types.ResponseEndBlock) => void;
     }
 }
 
@@ -7940,202 +7727,6 @@ export namespace google {
     }
 }
 
-/** Namespace common. */
-export namespace common {
-
-    /** Properties of a KVPair. */
-    interface IKVPair {
-
-        /** KVPair key */
-        key?: (Uint8Array|null);
-
-        /** KVPair value */
-        value?: (Uint8Array|null);
-    }
-
-    /** Represents a KVPair. */
-    class KVPair implements IKVPair {
-
-        /**
-         * Constructs a new KVPair.
-         * @param [properties] Properties to set
-         */
-        constructor(properties?: common.IKVPair);
-
-        /** KVPair key. */
-        public key: Uint8Array;
-
-        /** KVPair value. */
-        public value: Uint8Array;
-
-        /**
-         * Creates a new KVPair instance using the specified properties.
-         * @param [properties] Properties to set
-         * @returns KVPair instance
-         */
-        public static create(properties?: common.IKVPair): common.KVPair;
-
-        /**
-         * Encodes the specified KVPair message. Does not implicitly {@link common.KVPair.verify|verify} messages.
-         * @param message KVPair message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encode(message: common.IKVPair, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Encodes the specified KVPair message, length delimited. Does not implicitly {@link common.KVPair.verify|verify} messages.
-         * @param message KVPair message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encodeDelimited(message: common.IKVPair, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Decodes a KVPair message from the specified reader or buffer.
-         * @param reader Reader or buffer to decode from
-         * @param [length] Message length if known beforehand
-         * @returns KVPair
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): common.KVPair;
-
-        /**
-         * Decodes a KVPair message from the specified reader or buffer, length delimited.
-         * @param reader Reader or buffer to decode from
-         * @returns KVPair
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): common.KVPair;
-
-        /**
-         * Verifies a KVPair message.
-         * @param message Plain object to verify
-         * @returns `null` if valid, otherwise the reason why it is not
-         */
-        public static verify(message: { [k: string]: any }): (string|null);
-
-        /**
-         * Creates a KVPair message from a plain object. Also converts values to their respective internal types.
-         * @param object Plain object
-         * @returns KVPair
-         */
-        public static fromObject(object: { [k: string]: any }): common.KVPair;
-
-        /**
-         * Creates a plain object from a KVPair message. Also converts values to other types if specified.
-         * @param message KVPair
-         * @param [options] Conversion options
-         * @returns Plain object
-         */
-        public static toObject(message: common.KVPair, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-        /**
-         * Converts this KVPair to JSON.
-         * @returns JSON object
-         */
-        public toJSON(): { [k: string]: any };
-    }
-
-    /** Properties of a KI64Pair. */
-    interface IKI64Pair {
-
-        /** KI64Pair key */
-        key?: (Uint8Array|null);
-
-        /** KI64Pair value */
-        value?: (number|Long|null);
-    }
-
-    /** Represents a KI64Pair. */
-    class KI64Pair implements IKI64Pair {
-
-        /**
-         * Constructs a new KI64Pair.
-         * @param [properties] Properties to set
-         */
-        constructor(properties?: common.IKI64Pair);
-
-        /** KI64Pair key. */
-        public key: Uint8Array;
-
-        /** KI64Pair value. */
-        public value: (number|Long);
-
-        /**
-         * Creates a new KI64Pair instance using the specified properties.
-         * @param [properties] Properties to set
-         * @returns KI64Pair instance
-         */
-        public static create(properties?: common.IKI64Pair): common.KI64Pair;
-
-        /**
-         * Encodes the specified KI64Pair message. Does not implicitly {@link common.KI64Pair.verify|verify} messages.
-         * @param message KI64Pair message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encode(message: common.IKI64Pair, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Encodes the specified KI64Pair message, length delimited. Does not implicitly {@link common.KI64Pair.verify|verify} messages.
-         * @param message KI64Pair message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encodeDelimited(message: common.IKI64Pair, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Decodes a KI64Pair message from the specified reader or buffer.
-         * @param reader Reader or buffer to decode from
-         * @param [length] Message length if known beforehand
-         * @returns KI64Pair
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): common.KI64Pair;
-
-        /**
-         * Decodes a KI64Pair message from the specified reader or buffer, length delimited.
-         * @param reader Reader or buffer to decode from
-         * @returns KI64Pair
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): common.KI64Pair;
-
-        /**
-         * Verifies a KI64Pair message.
-         * @param message Plain object to verify
-         * @returns `null` if valid, otherwise the reason why it is not
-         */
-        public static verify(message: { [k: string]: any }): (string|null);
-
-        /**
-         * Creates a KI64Pair message from a plain object. Also converts values to their respective internal types.
-         * @param object Plain object
-         * @returns KI64Pair
-         */
-        public static fromObject(object: { [k: string]: any }): common.KI64Pair;
-
-        /**
-         * Creates a plain object from a KI64Pair message. Also converts values to other types if specified.
-         * @param message KI64Pair
-         * @param [options] Conversion options
-         * @returns Plain object
-         */
-        public static toObject(message: common.KI64Pair, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-        /**
-         * Converts this KI64Pair to JSON.
-         * @returns JSON object
-         */
-        public toJSON(): { [k: string]: any };
-    }
-}
-
 /** Namespace merkle. */
 export namespace merkle {
 
@@ -8326,6 +7917,202 @@ export namespace merkle {
 
         /**
          * Converts this Proof to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+    }
+}
+
+/** Namespace common. */
+export namespace common {
+
+    /** Properties of a KVPair. */
+    interface IKVPair {
+
+        /** KVPair key */
+        key?: (Uint8Array|null);
+
+        /** KVPair value */
+        value?: (Uint8Array|null);
+    }
+
+    /** Represents a KVPair. */
+    class KVPair implements IKVPair {
+
+        /**
+         * Constructs a new KVPair.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: common.IKVPair);
+
+        /** KVPair key. */
+        public key: Uint8Array;
+
+        /** KVPair value. */
+        public value: Uint8Array;
+
+        /**
+         * Creates a new KVPair instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns KVPair instance
+         */
+        public static create(properties?: common.IKVPair): common.KVPair;
+
+        /**
+         * Encodes the specified KVPair message. Does not implicitly {@link common.KVPair.verify|verify} messages.
+         * @param message KVPair message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: common.IKVPair, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified KVPair message, length delimited. Does not implicitly {@link common.KVPair.verify|verify} messages.
+         * @param message KVPair message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: common.IKVPair, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a KVPair message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns KVPair
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): common.KVPair;
+
+        /**
+         * Decodes a KVPair message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns KVPair
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): common.KVPair;
+
+        /**
+         * Verifies a KVPair message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a KVPair message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns KVPair
+         */
+        public static fromObject(object: { [k: string]: any }): common.KVPair;
+
+        /**
+         * Creates a plain object from a KVPair message. Also converts values to other types if specified.
+         * @param message KVPair
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: common.KVPair, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this KVPair to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+    }
+
+    /** Properties of a KI64Pair. */
+    interface IKI64Pair {
+
+        /** KI64Pair key */
+        key?: (Uint8Array|null);
+
+        /** KI64Pair value */
+        value?: (number|Long|null);
+    }
+
+    /** Represents a KI64Pair. */
+    class KI64Pair implements IKI64Pair {
+
+        /**
+         * Constructs a new KI64Pair.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: common.IKI64Pair);
+
+        /** KI64Pair key. */
+        public key: Uint8Array;
+
+        /** KI64Pair value. */
+        public value: (number|Long);
+
+        /**
+         * Creates a new KI64Pair instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns KI64Pair instance
+         */
+        public static create(properties?: common.IKI64Pair): common.KI64Pair;
+
+        /**
+         * Encodes the specified KI64Pair message. Does not implicitly {@link common.KI64Pair.verify|verify} messages.
+         * @param message KI64Pair message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: common.IKI64Pair, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified KI64Pair message, length delimited. Does not implicitly {@link common.KI64Pair.verify|verify} messages.
+         * @param message KI64Pair message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: common.IKI64Pair, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a KI64Pair message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns KI64Pair
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): common.KI64Pair;
+
+        /**
+         * Decodes a KI64Pair message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns KI64Pair
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): common.KI64Pair;
+
+        /**
+         * Verifies a KI64Pair message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a KI64Pair message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns KI64Pair
+         */
+        public static fromObject(object: { [k: string]: any }): common.KI64Pair;
+
+        /**
+         * Creates a plain object from a KI64Pair message. Also converts values to other types if specified.
+         * @param message KI64Pair
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: common.KI64Pair, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this KI64Pair to JSON.
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
