@@ -37,7 +37,8 @@ function createServer (app) {
         conn.close()
         
         //crash process if fail
-        process.exit(1);
+        if (type !== 'query')
+          process.exit(1);
       }
 
       // message handler not implemented in app, send emtpy response
