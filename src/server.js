@@ -7,6 +7,9 @@ const Connection = require('./connection.js')
 function createServer (app) {
   let server = net.createServer((client) => {
     client.name = `${client.remoteAddress}:${client.remotePort}`
+	
+	client.setKeepAlive(true);
+	client.setNoDelay(true);
 
     let conn = new Connection(client, async (req, cb) => {
       let [ type ] = Object.keys(req)
